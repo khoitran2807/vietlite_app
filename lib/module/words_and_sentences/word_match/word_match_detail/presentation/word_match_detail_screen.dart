@@ -60,40 +60,41 @@ class WordMatchDetailScreen extends StatelessWidget {
               return AppScaffold(
                 title: wordMatch.title,
                 child: ListView.separated(
-                          padding: EdgeInsets.all(AppDimensions.s16),
-                          itemCount: wordMatch.exercises.length,
-                          separatorBuilder:
-                              (context, index) => Padding(
-                                padding: EdgeInsets.symmetric(
-                                  vertical: AppDimensions.s8,
-                                ),
-                                child: Divider(
-                                  color: context.color.neutral.shade200,
-                                  thickness: 1,
-                                ),
-                              ),
-                          itemBuilder: (context, index) {
-                            final exercise = wordMatch.exercises[index];
-                            final userExercise = state.exercises
-                                .firstWhereOrNull((ue) => ue.id == exercise.id);
-                            final String? lastAnswer = userExercise?.lastAnswer;
-                            return Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  '${context.lang.lesson} ${index + 1}',
-                                  style: context.defaultStyle.bold.s20,
-                                ),
-                                SizedBox(height: AppDimensions.s16),
-                                WordMatchExerciseItem(
-                                  lastAnswer: lastAnswer,
-                                  exercise: exercise,
-                                  wordMatch: wordMatch,
-                                ),
-                              ],
-                            );
-                          },
+                  padding: EdgeInsets.all(AppDimensions.s16),
+                  itemCount: wordMatch.exercises.length,
+                  separatorBuilder:
+                      (context, index) => Padding(
+                        padding: EdgeInsets.symmetric(
+                          vertical: AppDimensions.s8,
                         ),
+                        child: Divider(
+                          color: context.color.neutral.shade200,
+                          thickness: 1,
+                        ),
+                      ),
+                  itemBuilder: (context, index) {
+                    final exercise = wordMatch.exercises[index];
+                    final userExercise = state.exercises.firstWhereOrNull(
+                      (ue) => ue.id == exercise.id,
+                    );
+                    final String? lastAnswer = userExercise?.lastAnswer;
+                    return Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          '${context.lang.lesson} ${index + 1}',
+                          style: context.defaultStyle.bold.s20,
+                        ),
+                        SizedBox(height: AppDimensions.s16),
+                        WordMatchExerciseItem(
+                          lastAnswer: lastAnswer,
+                          exercise: exercise,
+                          wordMatch: wordMatch,
+                        ),
+                      ],
+                    );
+                  },
+                ),
               );
             },
           ),

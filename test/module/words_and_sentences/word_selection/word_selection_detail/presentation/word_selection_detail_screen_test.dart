@@ -10,7 +10,6 @@ import 'package:vietlite/common/error/app_failure.dart';
 import 'package:vietlite/module/progress/domain/entities/user_progress.dart';
 import 'package:vietlite/module/user/auth/application/auth_bloc.dart';
 import 'package:vietlite/module/user/auth/domain/entities/app_user.dart';
-import 'package:vietlite/module/user/auth/domain/entities/premium_config.dart';
 import 'package:vietlite/module/words_and_sentences/word_selection/word_selection_detail/application/word_selection_detail_bloc.dart';
 import 'package:vietlite/module/words_and_sentences/word_selection/word_selection_detail/presentation/word_selection_detail_screen.dart';
 import 'package:vietlite/module/words_and_sentences/word_selection/word_selection_exercise/application/word_selection_exercise_bloc.dart';
@@ -275,64 +274,5 @@ void main() {
       await tester.pumpWidget(createWidgetUnderTest());
       await tester.pumpAndSettle();
     });
-
-    testWidgets('shows unlock UI and button is tappable', (tester) async {
-      when(() => mockAuthBloc.state).thenReturn(
-        AuthState.initial().copyWith(
-          appUser: AppUser.empty().copyWith(id: 'user_id'),
-          premiumConfig: const PremiumConfig(wordSelection: false),
-        ),
-      );
-
-      final premiumWordSelection = mockWordSelection.copyWith(isPremium: true);
-      when(() => mockWordSelectionDetailBloc.state).thenReturn(
-        WordSelectionDetailState.initial().copyWith(
-          wordSelection: premiumWordSelection,
-          isLoading: false,
-        ),
-      );
-
-      await tester.pumpWidget(createWidgetUnderTest());
-      await tester.pumpAndSettle();
-
-      expect(
-        find.text('Bạn cần mở khoá để sử dụng chức năng này'),
-        findsOneWidget,
-      );
-      expect(find.text('Mở khoá'), findsOneWidget);
-
-      await tester.tap(find.text('Mở khoá'));
-      await tester.pump();
-    });
-
-    testWidgets(
-      'tapping feedback button calls LivechatService.sendMessage via JS mock',
-      (tester) async {
-        // Fake auth state: user logged in
-        final authState = AuthState.initial().copyWith(
-          appUser: AppUser.empty().copyWith(id: 'id1'),
-        );
-
-        // Fake WordSelectionDetail state
-        final wordSelectionDetailState = WordSelectionDetailState.initial()
-            .copyWith(
-              wordSelection: mockWordSelection.copyWith(title: 'A'),
-              isLoading: false,
-            );
-
-        when(() => mockAuthBloc.state).thenReturn(authState);
-        when(
-          () => mockWordSelectionDetailBloc.state,
-        ).thenReturn(wordSelectionDetailState);
-
-        await tester.pumpWidget(createWidgetUnderTest());
-        await tester.pumpAndSettle();
-
-        final buttonFinder = find.text('Feedback');
-        expect(buttonFinder, findsOneWidget);
-        await tester.tap(buttonFinder);
-        await tester.pumpAndSettle();
-      },
-    );
   });
 }

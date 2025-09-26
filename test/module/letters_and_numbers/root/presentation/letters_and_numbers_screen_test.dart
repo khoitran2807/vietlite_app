@@ -90,7 +90,6 @@ void main() {
     );
   }
 
-
   group('LettersAndNumbersScreen Widget Tests', () {
     setUp(() {
       when(() => mockTabviewBloc.state).thenReturn(

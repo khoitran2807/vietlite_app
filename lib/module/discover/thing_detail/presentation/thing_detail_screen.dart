@@ -99,117 +99,104 @@ class ThingDetailScreen extends StatelessWidget {
                             right: AppDimensions.s16,
                           ),
                           child: SingleChildScrollView(
-                                    child: Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        SizedBox(height: AppDimensions.s16),
-                                        Container(
-                                          width: double.infinity,
-                                          height: AppDimensions.s44,
-                                          decoration: BoxDecoration(
-                                            color:
-                                                context.color.neutral.shade300,
-                                            borderRadius: BorderRadius.circular(
-                                              AppDimensions.s8,
-                                            ),
-                                          ),
-                                          child: Stack(
-                                            alignment: Alignment.center,
-                                            children: [
-                                              Text(
-                                                thing.name,
-                                                style: TextStyle(
-                                                  fontFamily: 'iCielPony',
-                                                  fontSize: AppDimensions.s24,
-                                                  color:
-                                                      context.color.secondary,
-                                                ),
-                                              ),
-                                              Positioned(
-                                                right: AppDimensions.s12,
-                                                child: AudioButton(
-                                                  audioUrl: thing.audio,
-                                                  size: AppDimensions.s32,
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                        (thing.image.isNotEmpty)
-                                            ? Padding(
-                                              padding: EdgeInsets.only(
-                                                top: AppDimensions.s16,
-                                              ),
-                                              child: _buildImage(
-                                                context: context,
-                                                imageUrl: thing.image,
-                                              ),
-                                            )
-                                            : const SizedBox(),
-                                        SizedBox(height: AppDimensions.s24),
-                                        (thing.exercises.isNotEmpty)
-                                            ? ListView.separated(
-                                              shrinkWrap: true,
-                                              physics:
-                                                  const NeverScrollableScrollPhysics(),
-                                              itemCount: thing.exercises.length,
-                                              separatorBuilder:
-                                                  (context, index) => Padding(
-                                                    padding:
-                                                        EdgeInsets.symmetric(
-                                                          vertical:
-                                                              AppDimensions.s16,
-                                                        ),
-                                                    child: Divider(
-                                                      color:
-                                                          context
-                                                              .color
-                                                              .neutral
-                                                              .shade200,
-                                                      thickness: 1,
-                                                    ),
-                                                  ),
-                                              itemBuilder: (context, index) {
-                                                final exercise =
-                                                    thing.exercises[index];
-                                                final userExercise = state
-                                                    .exercises
-                                                    .firstWhereOrNull(
-                                                      (ue) =>
-                                                          ue.id == exercise.id,
-                                                    );
-                                                final String? lastAnswer =
-                                                    userExercise?.lastAnswer;
-
-                                                return Column(
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.start,
-                                                  children: [
-                                                    Text(
-                                                      '${context.lang.lesson} ${index + 1}',
-                                                      style:
-                                                          context
-                                                              .defaultStyle
-                                                              .bold
-                                                              .s20,
-                                                    ),
-                                                    SizedBox(
-                                                      height: AppDimensions.s16,
-                                                    ),
-                                                    ThingExerciseItem(
-                                                      exercise: exercise,
-                                                      thing: thing,
-                                                      lastAnswer: lastAnswer,
-                                                    ),
-                                                  ],
-                                                );
-                                              },
-                                            )
-                                            : const SizedBox(),
-                                      ],
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                SizedBox(height: AppDimensions.s16),
+                                Container(
+                                  width: double.infinity,
+                                  height: AppDimensions.s44,
+                                  decoration: BoxDecoration(
+                                    color: context.color.neutral.shade300,
+                                    borderRadius: BorderRadius.circular(
+                                      AppDimensions.s8,
                                     ),
                                   ),
+                                  child: Stack(
+                                    alignment: Alignment.center,
+                                    children: [
+                                      Text(
+                                        thing.name,
+                                        style: TextStyle(
+                                          fontFamily: 'iCielPony',
+                                          fontSize: AppDimensions.s24,
+                                          color: context.color.secondary,
+                                        ),
+                                      ),
+                                      Positioned(
+                                        right: AppDimensions.s12,
+                                        child: AudioButton(
+                                          audioUrl: thing.audio,
+                                          size: AppDimensions.s32,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                (thing.image.isNotEmpty)
+                                    ? Padding(
+                                      padding: EdgeInsets.only(
+                                        top: AppDimensions.s16,
+                                      ),
+                                      child: _buildImage(
+                                        context: context,
+                                        imageUrl: thing.image,
+                                      ),
+                                    )
+                                    : const SizedBox(),
+                                SizedBox(height: AppDimensions.s24),
+                                (thing.exercises.isNotEmpty)
+                                    ? ListView.separated(
+                                      shrinkWrap: true,
+                                      physics:
+                                          const NeverScrollableScrollPhysics(),
+                                      itemCount: thing.exercises.length,
+                                      separatorBuilder:
+                                          (context, index) => Padding(
+                                            padding: EdgeInsets.symmetric(
+                                              vertical: AppDimensions.s16,
+                                            ),
+                                            child: Divider(
+                                              color:
+                                                  context
+                                                      .color
+                                                      .neutral
+                                                      .shade200,
+                                              thickness: 1,
+                                            ),
+                                          ),
+                                      itemBuilder: (context, index) {
+                                        final exercise = thing.exercises[index];
+                                        final userExercise = state.exercises
+                                            .firstWhereOrNull(
+                                              (ue) => ue.id == exercise.id,
+                                            );
+                                        final String? lastAnswer =
+                                            userExercise?.lastAnswer;
+
+                                        return Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              '${context.lang.lesson} ${index + 1}',
+                                              style:
+                                                  context.defaultStyle.bold.s20,
+                                            ),
+                                            SizedBox(height: AppDimensions.s16),
+                                            ThingExerciseItem(
+                                              exercise: exercise,
+                                              thing: thing,
+                                              lastAnswer: lastAnswer,
+                                            ),
+                                          ],
+                                        );
+                                      },
+                                    )
+                                    : const SizedBox(),
+                              ],
+                            ),
+                          ),
                         ),
               );
             },

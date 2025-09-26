@@ -12,7 +12,6 @@ import 'package:vietlite/module/progress/domain/entities/user_progress.dart';
 import 'package:vietlite/module/progress/domain/enum/exercise_type.dart';
 import 'package:vietlite/module/user/auth/application/auth_bloc.dart';
 import 'package:vietlite/module/user/auth/domain/entities/app_user.dart';
-import 'package:vietlite/module/user/auth/domain/entities/premium_config.dart';
 import 'package:vietlite/module/words_and_sentences/word_match/word_match_list/application/word_match_bloc.dart';
 import 'package:vietlite/module/words_and_sentences/word_match/word_match_list/domain/entities/word_match.dart';
 import 'package:vietlite/module/words_and_sentences/word_match/word_match_list/presentation/word_match_screen.dart';
@@ -295,30 +294,5 @@ void main() {
         await tester.pumpWidget(createWidgetUnderTest());
       },
     );
-
-    testWidgets('shows unlock UI and button is tappable', (tester) async {
-      when(() => mockAuthBloc.state).thenReturn(
-        AuthState.initial().copyWith(
-          appUser: AppUser.empty().copyWith(id: 'user_id'),
-          premiumConfig: const PremiumConfig(wordMatch: false),
-        ),
-      );
-
-      final premiumWordMatch = wordMatchA.copyWith(isPremium: true);
-      when(() => mockWordMatchBloc.state).thenReturn(
-        WordMatchState.initial().copyWith(
-          wordMatches: [premiumWordMatch],
-          isLoading: false,
-        ),
-      );
-
-      await tester.pumpWidget(createWidgetUnderTest());
-      await tester.pumpAndSettle();
-
-      expect(find.text('Unlock'), findsOneWidget);
-
-      await tester.tap(find.text('Unlock'));
-      await tester.pump();
-    });
   });
 }

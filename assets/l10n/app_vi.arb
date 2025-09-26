@@ -83,8 +83,6 @@
     "confirm": "Xác nhận",
     "changePasswordSuccess": "Thay đổi mật khẩu thành công",
     "cancel": "Hủy",
-    "feedback": "Góp ý",
-    "lessonFeedback": "Tôi muốn góp ý về bài học {lessonName}",
     "wordsBottomBar": "Từ & Câu",
     "lettersBottomBar": "Chữ & Số"
 }

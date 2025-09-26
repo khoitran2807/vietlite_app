@@ -487,33 +487,6 @@ void main() {
         });
       },
     );
-
-    testWidgets(
-      'tapping feedback button calls LivechatService.sendMessage via JS mock',
-      (tester) async {
-        // Fake auth state: user logged in
-        final authState = AuthState.initial().copyWith(
-          appUser: AppUser.empty().copyWith(id: 'id1'),
-        );
-
-        // Fake LetterDetail state
-        final letterDetailState = LetterDetailState.initial().copyWith(
-          letter: mockLetter.copyWith(title: 'A'),
-          isLoading: false,
-        );
-
-        when(() => mockAuthBloc.state).thenReturn(authState);
-        when(() => mockLetterDetailBloc.state).thenReturn(letterDetailState);
-
-        await tester.pumpWidget(createWidgetUnderTest());
-        await tester.pumpAndSettle();
-
-        final buttonFinder = find.text('Feedback');
-        expect(buttonFinder, findsOneWidget);
-        await tester.tap(buttonFinder);
-        await tester.pumpAndSettle();
-      },
-    );
   });
 
   group('hightlight_text test', () {

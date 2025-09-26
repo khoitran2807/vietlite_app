@@ -257,14 +257,11 @@ class ThingsScreen extends StatelessWidget {
                                             ),
                                           ),
                                           Icon(
-                                                Icons.arrow_forward_ios,
-                                                color:
-                                                    context
-                                                        .color
-                                                        .neutral
-                                                        .shade400,
-                                                size: 16,
-                                              ),
+                                            Icons.arrow_forward_ios,
+                                            color:
+                                                context.color.neutral.shade400,
+                                            size: 16,
+                                          ),
                                         ],
                                       ),
                                     ),

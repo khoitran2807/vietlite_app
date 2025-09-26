@@ -19,7 +19,6 @@ import 'package:vietlite/module/progress/application/progress_bloc.dart';
 import 'package:vietlite/module/progress/domain/entities/user_progress.dart';
 import 'package:vietlite/module/user/auth/application/auth_bloc.dart';
 import 'package:vietlite/module/user/auth/domain/entities/app_user.dart';
-import 'package:vietlite/module/user/auth/domain/entities/premium_config.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:mocktail_image_network/mocktail_image_network.dart';
 
@@ -275,64 +274,6 @@ void main() {
         expect(box.size.width, 768);
       });
     });
-    testWidgets('shows unlock UI and button is tappable', (tester) async {
-      when(() => mockAuthBloc.state).thenReturn(
-        AuthState.initial().copyWith(
-          appUser: AppUser.empty().copyWith(id: 'user_id'),
-          premiumConfig: const PremiumConfig(things: false),
-        ),
-      );
-
-      final premiumThing = mockThing.copyWith(isPremium: true);
-      when(() => mockThingDetailBloc.state).thenReturn(
-        ThingDetailState.initial().copyWith(
-          thing: premiumThing,
-          isLoading: false,
-        ),
-      );
-
-      await tester.pumpWidget(createWidgetUnderTest());
-      await tester.pumpAndSettle();
-
-      expect(
-        find.text('Bạn cần mở khoá để sử dụng chức năng này'),
-        findsOneWidget,
-      );
-      expect(find.text('Mở khoá'), findsOneWidget);
-
-      await tester.tap(find.text('Mở khoá'));
-      await tester.pump();
-    });
-
-    testWidgets(
-      'tapping feedback button calls LivechatService.sendMessage via JS mock',
-      (tester) async {
-        // Fake auth state: user logged in
-        final authState = AuthState.initial().copyWith(
-          appUser: AppUser.empty().copyWith(id: 'user_id'),
-          premiumConfig: const PremiumConfig(
-            things: true,
-          ), // premium để feedback hiển thị
-        );
-
-        // Fake ThingDetail state
-        final thingState = ThingDetailState.initial().copyWith(
-          thing: mockThing.copyWith(name: 'Màu đỏ', isPremium: false),
-          isLoading: false,
-        );
-
-        when(() => mockAuthBloc.state).thenReturn(authState);
-        when(() => mockThingDetailBloc.state).thenReturn(thingState);
-
-        await tester.pumpWidget(createWidgetUnderTest());
-        await tester.pumpAndSettle();
-
-        final buttonFinder = find.text('Feedback');
-        expect(buttonFinder, findsOneWidget);
-        await tester.tap(buttonFinder);
-        await tester.pumpAndSettle();
-      },
-    );
     testWidgets('Displays exercises list when thing.exercises is not empty', (
       tester,
     ) async {

@@ -30,10 +30,12 @@ import 'package:vietlite/module/letters_and_numbers/numbers/presentation/numbers
 import 'package:vietlite/module/letters_and_numbers/root/presentation/letters_and_numbers_screen.dart'
     as _i6;
 import 'package:vietlite/module/root/presentation/root_screen.dart' as _i12;
-import 'package:vietlite/module/setting/presentation/setting_screen.dart' as _i13;
+import 'package:vietlite/module/setting/presentation/setting_screen.dart'
+    as _i13;
 import 'package:vietlite/module/user/forget_password/presentation/forget_password_screen.dart'
     as _i3;
-import 'package:vietlite/module/user/login/presentation/login_screen.dart' as _i8;
+import 'package:vietlite/module/user/login/presentation/login_screen.dart'
+    as _i8;
 import 'package:vietlite/module/user/register/presentation/register_screen.dart'
     as _i11;
 import 'package:vietlite/module/words_and_sentences/root/presentation/words_and_sentences_screen.dart'

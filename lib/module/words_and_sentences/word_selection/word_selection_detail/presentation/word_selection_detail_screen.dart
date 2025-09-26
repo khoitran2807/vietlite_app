@@ -66,41 +66,42 @@ class WordSelectionDetailScreen extends StatelessWidget {
               return AppScaffold(
                 title: wordSelection.title,
                 child: ListView.separated(
-                          padding: EdgeInsets.all(AppDimensions.s16),
-                          itemCount: wordSelection.exercises.length,
-                          separatorBuilder:
-                              (context, index) => Padding(
-                                padding: EdgeInsets.symmetric(
-                                  vertical: AppDimensions.s8,
-                                ),
-                                child: Divider(
-                                  color: context.color.neutral.shade200,
-                                  thickness: 1,
-                                ),
-                              ),
-                          itemBuilder: (context, index) {
-                            final exercise = wordSelection.exercises[index];
-                            final userExercise = state.exercises
-                                .firstWhereOrNull((ue) => ue.id == exercise.id);
-                            final String? lastAnswer = userExercise?.lastAnswer;
-
-                            return Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  '${context.lang.lesson} ${index + 1}',
-                                  style: context.defaultStyle.bold.s20,
-                                ),
-                                SizedBox(height: AppDimensions.s16),
-                                WordSelectionExerciseItem(
-                                  exercise: exercise,
-                                  wordSelection: wordSelection,
-                                  lastAnswer: lastAnswer,
-                                ),
-                              ],
-                            );
-                          },
+                  padding: EdgeInsets.all(AppDimensions.s16),
+                  itemCount: wordSelection.exercises.length,
+                  separatorBuilder:
+                      (context, index) => Padding(
+                        padding: EdgeInsets.symmetric(
+                          vertical: AppDimensions.s8,
                         ),
+                        child: Divider(
+                          color: context.color.neutral.shade200,
+                          thickness: 1,
+                        ),
+                      ),
+                  itemBuilder: (context, index) {
+                    final exercise = wordSelection.exercises[index];
+                    final userExercise = state.exercises.firstWhereOrNull(
+                      (ue) => ue.id == exercise.id,
+                    );
+                    final String? lastAnswer = userExercise?.lastAnswer;
+
+                    return Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          '${context.lang.lesson} ${index + 1}',
+                          style: context.defaultStyle.bold.s20,
+                        ),
+                        SizedBox(height: AppDimensions.s16),
+                        WordSelectionExerciseItem(
+                          exercise: exercise,
+                          wordSelection: wordSelection,
+                          lastAnswer: lastAnswer,
+                        ),
+                      ],
+                    );
+                  },
+                ),
               );
             },
           ),

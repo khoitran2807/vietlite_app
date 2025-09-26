@@ -83,8 +83,6 @@
     "confirm": "Confirm",
     "changePasswordSuccess": "Change Password Successfully",
     "cancel": "Cancel",
-    "feedback": "Feedback",
-    "lessonFeedback": "I want to give feedback about the lesson {lessonName}",
     "wordsBottomBar": "Words",
     "lettersBottomBar": "Letters"
 }
