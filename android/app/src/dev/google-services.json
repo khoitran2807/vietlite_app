@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "823395646309",
+    "project_id": "viet-lite",
+    "storage_bucket": "viet-lite.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823395646309:android:0d992990f160fc7af73f8c",
+        "android_client_info": {
+          "package_name": "com.khoi.vietlite.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823395646309-e2di8sv5t79g5qusmdinfaa56rtb6it4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.khoi.vietlite.dev",
+            "certificate_hash": "1078341a83d26cc748efa14f7f639916d6047cab"
+          }
+        },
+        {
+          "client_id": "823395646309-9d46o4tsq5gavq6inivivorj48rig9p4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzXsPil5bIP_CpuVMGWCXOgSgCcdIEAAY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823395646309-9d46o4tsq5gavq6inivivorj48rig9p4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "823395646309-n4ri1t9tf5gv6olavbmf8ief9s1b0e4k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.khoi.vietlite.dev"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823395646309:android:da849cb232700d64f73f8c",
+        "android_client_info": {
+          "package_name": "com.ktb.vietlite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823395646309-9d46o4tsq5gavq6inivivorj48rig9p4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzXsPil5bIP_CpuVMGWCXOgSgCcdIEAAY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823395646309-9d46o4tsq5gavq6inivivorj48rig9p4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "823395646309-n4ri1t9tf5gv6olavbmf8ief9s1b0e4k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.khoi.vietlite.dev"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
