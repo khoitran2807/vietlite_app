@@ -14,7 +14,6 @@ import 'package:vietlite/module/progress/application/progress_bloc.dart';
 import 'package:vietlite/module/progress/domain/entities/user_progress.dart';
 import 'package:vietlite/module/progress/presentation/progress_component.dart';
 import 'package:vietlite/module/user/auth/application/auth_bloc.dart';
-import 'package:vietlite/plugin/livechat/livechat_service.dart';
 import 'package:vietlite/widget/app_scaffold.dart';
 import 'package:vietlite/widget/loading.dart';
 import 'package:vietlite/widget/toast.dart';
@@ -257,23 +256,7 @@ class ThingsScreen extends StatelessWidget {
                                               ],
                                             ),
                                           ),
-                                          (thing.isPremium &&
-                                                  !userState.isThingsPremium)
-                                              ? TextButton(
-                                                onPressed: () {
-                                                  LivechatService.sendMessage(
-                                                    context.lang.unlockDiscover,
-                                                  );
-                                                },
-                                                child: Text(
-                                                  context.lang.unlock,
-                                                  style:
-                                                      context
-                                                          .primaryStyle
-                                                          .semiBold,
-                                                ),
-                                              )
-                                              : Icon(
+                                          Icon(
                                                 Icons.arrow_forward_ios,
                                                 color:
                                                     context

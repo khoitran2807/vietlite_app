@@ -16,7 +16,6 @@ import 'package:vietlite/widget/app_scaffold.dart';
 import 'package:vietlite/widget/count_items.dart';
 import 'package:vietlite/widget/loading.dart';
 import 'package:vietlite/widget/toast.dart';
-import 'package:vietlite/plugin/livechat/livechat_service.dart';
 
 @RoutePage()
 class NumberDetailScreen extends StatelessWidget {
@@ -103,23 +102,6 @@ class NumberDetailScreen extends StatelessWidget {
                     number.title.split(' ').where((e) => e.isNotEmpty).toList();
                 return AppScaffold(
                   title: context.lang.recognize,
-                  actions: [
-                    (number.title.isNotEmpty)
-                        ? TextButton(
-                          onPressed: () {
-                            LivechatService.sendMessage(
-                              context.lang.lessonFeedback(
-                                '${context.lang.number} ${number.title}',
-                              ),
-                            );
-                          },
-                          child: Text(
-                            context.lang.feedback,
-                            style: context.primaryStyle.semiBold,
-                          ),
-                        )
-                        : const SizedBox(),
-                  ],
                   child:
                       (state.isLoading)
                           ? Center(child: Loading.medium())

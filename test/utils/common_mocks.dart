@@ -54,7 +54,6 @@ import 'package:vietlite/module/words_and_sentences/word_selection/word_selectio
 import 'package:vietlite/plugin/firebase/firestore_service.dart';
 import 'package:vietlite/plugin/firebase/remote_config_service.dart';
 import 'package:vietlite/plugin/google/google_service.dart';
-import 'package:vietlite/plugin/livechat/livechat_service_mobile.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:vietlite/app/router/app_router.dart';
 import 'package:vietlite/module/setting/application/setting_bloc.dart';
@@ -296,6 +295,3 @@ class MockDiscoverRemoteDataSource extends Mock
 
 class MockDiscoverBloc extends MockBloc<DiscoverEvent, DiscoverState>
     implements DiscoverBloc {}
-
-//livechatService
-class MockLivechatService extends Mock implements LivechatService {}

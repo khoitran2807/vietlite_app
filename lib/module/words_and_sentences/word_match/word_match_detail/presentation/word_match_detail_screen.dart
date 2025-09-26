@@ -7,7 +7,6 @@ import 'package:vietlite/common/extension/extension.dart';
 import 'package:vietlite/di/locator.dart';
 import 'package:vietlite/module/words_and_sentences/word_match/word_match_detail/application/word_match_detail_bloc.dart';
 import 'package:vietlite/module/words_and_sentences/word_match/word_match_exercise/presentation/word_match_exercise_item.dart';
-import 'package:vietlite/plugin/livechat/livechat_service.dart';
 import 'package:vietlite/widget/app_scaffold.dart';
 import 'package:vietlite/widget/loading.dart';
 import 'package:vietlite/widget/toast.dart';
@@ -60,47 +59,7 @@ class WordMatchDetailScreen extends StatelessWidget {
 
               return AppScaffold(
                 title: wordMatch.title,
-                actions: [
-                  (wordMatch.title.isNotEmpty)
-                      ? TextButton(
-                        onPressed: () {
-                          LivechatService.sendMessage(
-                            context.lang.lessonFeedback(
-                              '${context.lang.matchWordToPicture} ${wordMatch.title}',
-                            ),
-                          );
-                        },
-                        child: Text(
-                          context.lang.feedback,
-                          style: context.primaryStyle.semiBold,
-                        ),
-                      )
-                      : const SizedBox(),
-                ],
-                child:
-                    (wordMatch.isPremium && !userState.isWordMatchPremium)
-                        ? Padding(
-                          padding: EdgeInsets.all(AppDimensions.s16),
-                          child: Row(
-                            children: [
-                              const Text(
-                                'Bạn cần mở khoá để sử dụng chức năng này',
-                              ),
-                              TextButton(
-                                onPressed: () {
-                                  LivechatService.sendMessage(
-                                    'Tôi muốn mở khoá tính năng Ghép từ vào tranh',
-                                  );
-                                },
-                                child: Text(
-                                  'Mở khoá',
-                                  style: context.primaryStyle.semiBold,
-                                ),
-                              ),
-                            ],
-                          ),
-                        )
-                        : ListView.separated(
+                child: ListView.separated(
                           padding: EdgeInsets.all(AppDimensions.s16),
                           itemCount: wordMatch.exercises.length,
                           separatorBuilder:

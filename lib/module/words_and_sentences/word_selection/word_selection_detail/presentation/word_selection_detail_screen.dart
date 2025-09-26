@@ -7,7 +7,6 @@ import 'package:vietlite/common/extension/extension.dart';
 import 'package:vietlite/di/locator.dart';
 import 'package:vietlite/module/words_and_sentences/word_selection/word_selection_detail/application/word_selection_detail_bloc.dart';
 import 'package:vietlite/module/words_and_sentences/word_selection/word_selection_exercise/presentation/word_selection_exercise_item.dart';
-import 'package:vietlite/plugin/livechat/livechat_service.dart';
 import 'package:vietlite/widget/app_scaffold.dart';
 import 'package:vietlite/widget/loading.dart';
 import 'package:vietlite/widget/toast.dart';
@@ -66,48 +65,7 @@ class WordSelectionDetailScreen extends StatelessWidget {
 
               return AppScaffold(
                 title: wordSelection.title,
-                actions: [
-                  (wordSelection.title.isNotEmpty)
-                      ? TextButton(
-                        onPressed: () {
-                          LivechatService.sendMessage(
-                            context.lang.lessonFeedback(
-                              '${context.lang.chooseAppropriateWord} ${wordSelection.title}',
-                            ),
-                          );
-                        },
-                        child: Text(
-                          context.lang.feedback,
-                          style: context.primaryStyle.semiBold,
-                        ),
-                      )
-                      : const SizedBox(),
-                ],
-                child:
-                    (wordSelection.isPremium &&
-                            !userState.isWordSelectionPremium)
-                        ? Padding(
-                          padding: EdgeInsets.all(AppDimensions.s16),
-                          child: Row(
-                            children: [
-                              const Text(
-                                'Bạn cần mở khoá để sử dụng chức năng này',
-                              ),
-                              TextButton(
-                                onPressed: () {
-                                  LivechatService.sendMessage(
-                                    'Tôi muốn mở khoá tính năng Chọn Từ Thích Hợp',
-                                  );
-                                },
-                                child: Text(
-                                  'Mở khoá',
-                                  style: context.primaryStyle.semiBold,
-                                ),
-                              ),
-                            ],
-                          ),
-                        )
-                        : ListView.separated(
+                child: ListView.separated(
                           padding: EdgeInsets.all(AppDimensions.s16),
                           itemCount: wordSelection.exercises.length,
                           separatorBuilder:

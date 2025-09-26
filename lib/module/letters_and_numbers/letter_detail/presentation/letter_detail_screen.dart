@@ -18,7 +18,6 @@ import 'package:vietlite/widget/alert_dialog.dart';
 import 'package:vietlite/widget/app_scaffold.dart';
 import 'package:vietlite/widget/loading.dart';
 import 'package:vietlite/widget/toast.dart';
-import 'package:vietlite/plugin/livechat/livechat_service.dart';
 
 @RoutePage()
 class LetterDetailScreen extends StatelessWidget {
@@ -107,23 +106,6 @@ class LetterDetailScreen extends StatelessWidget {
                     letter.title.split(' ').where((e) => e.isNotEmpty).toList();
                 return AppScaffold(
                   title: context.lang.recognize,
-                  actions: [
-                    (letter.title.isNotEmpty)
-                        ? TextButton(
-                          onPressed: () {
-                            LivechatService.sendMessage(
-                              context.lang.lessonFeedback(
-                                '${context.lang.letter} ${letter.title}',
-                              ),
-                            );
-                          },
-                          child: Text(
-                            context.lang.feedback,
-                            style: context.primaryStyle.semiBold,
-                          ),
-                        )
-                        : const SizedBox(),
-                  ],
                   child:
                       (state.isLoading)
                           ? Center(child: Loading.medium())

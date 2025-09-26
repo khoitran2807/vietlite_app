@@ -6,7 +6,6 @@ import 'package:vietlite/app/res/images.dart';
 import 'package:vietlite/common/extension/extension.dart';
 import 'package:vietlite/di/locator.dart';
 import 'package:vietlite/module/discover/thing_exercise/presentation/thing_exercise_item.dart';
-import 'package:vietlite/plugin/livechat/livechat_service.dart';
 import 'package:vietlite/widget/audio_button.dart';
 import 'package:vietlite/module/discover/thing_detail/application/thing_detail_bloc.dart';
 import 'package:vietlite/module/user/auth/application/auth_bloc.dart';
@@ -91,23 +90,6 @@ class ThingDetailScreen extends StatelessWidget {
               final thing = state.thing;
               return AppScaffold(
                 title: context.lang.discover,
-                actions: [
-                  (thing.name.isNotEmpty)
-                      ? TextButton(
-                        onPressed: () {
-                          LivechatService.sendMessage(
-                            context.lang.lessonFeedback(
-                              '${context.lang.discover} ${thing.name}',
-                            ),
-                          );
-                        },
-                        child: Text(
-                          context.lang.feedback,
-                          style: context.primaryStyle.semiBold,
-                        ),
-                      )
-                      : const SizedBox(),
-                ],
                 child:
                     (state.isLoading)
                         ? Center(child: Loading.medium())
@@ -116,31 +98,7 @@ class ThingDetailScreen extends StatelessWidget {
                             left: AppDimensions.s16,
                             right: AppDimensions.s16,
                           ),
-                          child:
-                              (thing.isPremium && !authState.isThingsPremium)
-                                  ? Padding(
-                                    padding: EdgeInsets.all(AppDimensions.s16),
-                                    child: Row(
-                                      children: [
-                                        const Text(
-                                          'Bạn cần mở khoá để sử dụng chức năng này',
-                                        ),
-                                        TextButton(
-                                          onPressed: () {
-                                            LivechatService.sendMessage(
-                                              'Tôi muốn mở khoá tính năng Khám phá',
-                                            );
-                                          },
-                                          child: Text(
-                                            'Mở khoá',
-                                            style:
-                                                context.primaryStyle.semiBold,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                  : SingleChildScrollView(
+                          child: SingleChildScrollView(
                                     child: Column(
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
