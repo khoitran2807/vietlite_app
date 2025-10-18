@@ -1,4 +1,4 @@
-package com.ktb.vietlite
+package com.khoi.vietlite
 
 import io.flutter.embedding.android.FlutterActivity
 
