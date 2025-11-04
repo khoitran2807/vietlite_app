@@ -13,6 +13,11 @@ class AuthService {
 
   User? get user => auth.currentUser;
 
+  bool get isPasswordUser {
+    return user?.providerData.any((info) => info.providerId == 'password') ??
+        false;
+  }
+
   Stream<User?> userChanges() {
     return auth.userChanges();
   }
@@ -219,6 +224,27 @@ class AuthService {
         message: 'An unexpected error occurred',
         stackTrace: StackTrace.current,
       );
+    }
+  }
+
+  Future<void> deleteUser() async {
+    if (user != null) {
+      try {
+        await user!.delete();
+      } on FirebaseAuthException catch (e) {
+        throw FirebaseException(
+          plugin: 'FirebaseAuth',
+          message: e.message,
+          code: e.code,
+          stackTrace: StackTrace.current,
+        );
+      } catch (e) {
+        throw FirebaseException(
+          plugin: 'FirebaseAuth',
+          message: 'An other error happened',
+          stackTrace: StackTrace.current,
+        );
+      }
     }
   }
 }

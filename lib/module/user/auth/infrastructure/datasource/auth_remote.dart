@@ -54,4 +54,8 @@ class AuthRemoteDataSource {
     }
     return PremiumConfig.fromJson(data['premium']);
   }
+
+  Future<void> deleteUser() async {
+    await authService.deleteUser();
+  }
 }

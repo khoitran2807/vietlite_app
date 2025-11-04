@@ -69,4 +69,14 @@ class AuthRepository extends IAuthRepository {
       return Left(FailureHandler.handleFailure(e));
     }
   }
+
+  @override
+  Future<Either<AppFailure, Unit>> deleteUser() async {
+    try {
+      await remoteDataSource.deleteUser();
+      return const Right(unit);
+    } catch (e) {
+      return Left(FailureHandler.handleFailure(e));
+    }
+  }
 }

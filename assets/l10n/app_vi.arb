@@ -84,5 +84,7 @@
     "changePasswordSuccess": "Thay đổi mật khẩu thành công",
     "cancel": "Hủy",
     "wordsBottomBar": "Từ & Câu",
-    "lettersBottomBar": "Chữ & Số"
+    "lettersBottomBar": "Chữ & Số",
+    "deleteData": "Xoá dữ liệu",
+    "deleteDataWarning": "Toàn bộ dữ liệu sẽ bị xoá. Bạn có chắc chắn muốn tiếp tục?"
 }

@@ -25,6 +25,7 @@ mixin _$AuthEvent {
     required TResult Function() signOut,
     required TResult Function(String currentPassword, String newPassword)
     changePassword,
+    required TResult Function() deleteUser,
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
@@ -34,6 +35,7 @@ mixin _$AuthEvent {
     TResult? Function()? signOut,
     TResult? Function(String currentPassword, String newPassword)?
     changePassword,
+    TResult? Function()? deleteUser,
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
@@ -43,6 +45,7 @@ mixin _$AuthEvent {
     TResult Function()? signOut,
     TResult Function(String currentPassword, String newPassword)?
     changePassword,
+    TResult Function()? deleteUser,
     required TResult orElse(),
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -52,6 +55,7 @@ mixin _$AuthEvent {
     required TResult Function(_GetPremiumConfig value) getPremiumConfig,
     required TResult Function(_SignOut value) signOut,
     required TResult Function(_ChangePassword value) changePassword,
+    required TResult Function(_DeleteUser value) deleteUser,
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
@@ -60,6 +64,7 @@ mixin _$AuthEvent {
     TResult? Function(_GetPremiumConfig value)? getPremiumConfig,
     TResult? Function(_SignOut value)? signOut,
     TResult? Function(_ChangePassword value)? changePassword,
+    TResult? Function(_DeleteUser value)? deleteUser,
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
@@ -68,6 +73,7 @@ mixin _$AuthEvent {
     TResult Function(_GetPremiumConfig value)? getPremiumConfig,
     TResult Function(_SignOut value)? signOut,
     TResult Function(_ChangePassword value)? changePassword,
+    TResult Function(_DeleteUser value)? deleteUser,
     required TResult orElse(),
   }) => throw _privateConstructorUsedError;
 }
@@ -141,6 +147,7 @@ class _$InitializeImpl implements _Initialize {
     required TResult Function() signOut,
     required TResult Function(String currentPassword, String newPassword)
     changePassword,
+    required TResult Function() deleteUser,
   }) {
     return initialize();
   }
@@ -154,6 +161,7 @@ class _$InitializeImpl implements _Initialize {
     TResult? Function()? signOut,
     TResult? Function(String currentPassword, String newPassword)?
     changePassword,
+    TResult? Function()? deleteUser,
   }) {
     return initialize?.call();
   }
@@ -167,6 +175,7 @@ class _$InitializeImpl implements _Initialize {
     TResult Function()? signOut,
     TResult Function(String currentPassword, String newPassword)?
     changePassword,
+    TResult Function()? deleteUser,
     required TResult orElse(),
   }) {
     if (initialize != null) {
@@ -183,6 +192,7 @@ class _$InitializeImpl implements _Initialize {
     required TResult Function(_GetPremiumConfig value) getPremiumConfig,
     required TResult Function(_SignOut value) signOut,
     required TResult Function(_ChangePassword value) changePassword,
+    required TResult Function(_DeleteUser value) deleteUser,
   }) {
     return initialize(this);
   }
@@ -195,6 +205,7 @@ class _$InitializeImpl implements _Initialize {
     TResult? Function(_GetPremiumConfig value)? getPremiumConfig,
     TResult? Function(_SignOut value)? signOut,
     TResult? Function(_ChangePassword value)? changePassword,
+    TResult? Function(_DeleteUser value)? deleteUser,
   }) {
     return initialize?.call(this);
   }
@@ -207,6 +218,7 @@ class _$InitializeImpl implements _Initialize {
     TResult Function(_GetPremiumConfig value)? getPremiumConfig,
     TResult Function(_SignOut value)? signOut,
     TResult Function(_ChangePassword value)? changePassword,
+    TResult Function(_DeleteUser value)? deleteUser,
     required TResult orElse(),
   }) {
     if (initialize != null) {
@@ -308,6 +320,7 @@ class _$UpdateUserImpl implements _UpdateUser {
     required TResult Function() signOut,
     required TResult Function(String currentPassword, String newPassword)
     changePassword,
+    required TResult Function() deleteUser,
   }) {
     return updateUser(user);
   }
@@ -321,6 +334,7 @@ class _$UpdateUserImpl implements _UpdateUser {
     TResult? Function()? signOut,
     TResult? Function(String currentPassword, String newPassword)?
     changePassword,
+    TResult? Function()? deleteUser,
   }) {
     return updateUser?.call(user);
   }
@@ -334,6 +348,7 @@ class _$UpdateUserImpl implements _UpdateUser {
     TResult Function()? signOut,
     TResult Function(String currentPassword, String newPassword)?
     changePassword,
+    TResult Function()? deleteUser,
     required TResult orElse(),
   }) {
     if (updateUser != null) {
@@ -350,6 +365,7 @@ class _$UpdateUserImpl implements _UpdateUser {
     required TResult Function(_GetPremiumConfig value) getPremiumConfig,
     required TResult Function(_SignOut value) signOut,
     required TResult Function(_ChangePassword value) changePassword,
+    required TResult Function(_DeleteUser value) deleteUser,
   }) {
     return updateUser(this);
   }
@@ -362,6 +378,7 @@ class _$UpdateUserImpl implements _UpdateUser {
     TResult? Function(_GetPremiumConfig value)? getPremiumConfig,
     TResult? Function(_SignOut value)? signOut,
     TResult? Function(_ChangePassword value)? changePassword,
+    TResult? Function(_DeleteUser value)? deleteUser,
   }) {
     return updateUser?.call(this);
   }
@@ -374,6 +391,7 @@ class _$UpdateUserImpl implements _UpdateUser {
     TResult Function(_GetPremiumConfig value)? getPremiumConfig,
     TResult Function(_SignOut value)? signOut,
     TResult Function(_ChangePassword value)? changePassword,
+    TResult Function(_DeleteUser value)? deleteUser,
     required TResult orElse(),
   }) {
     if (updateUser != null) {
@@ -444,6 +462,7 @@ class _$GetPremiumConfigImpl implements _GetPremiumConfig {
     required TResult Function() signOut,
     required TResult Function(String currentPassword, String newPassword)
     changePassword,
+    required TResult Function() deleteUser,
   }) {
     return getPremiumConfig();
   }
@@ -457,6 +476,7 @@ class _$GetPremiumConfigImpl implements _GetPremiumConfig {
     TResult? Function()? signOut,
     TResult? Function(String currentPassword, String newPassword)?
     changePassword,
+    TResult? Function()? deleteUser,
   }) {
     return getPremiumConfig?.call();
   }
@@ -470,6 +490,7 @@ class _$GetPremiumConfigImpl implements _GetPremiumConfig {
     TResult Function()? signOut,
     TResult Function(String currentPassword, String newPassword)?
     changePassword,
+    TResult Function()? deleteUser,
     required TResult orElse(),
   }) {
     if (getPremiumConfig != null) {
@@ -486,6 +507,7 @@ class _$GetPremiumConfigImpl implements _GetPremiumConfig {
     required TResult Function(_GetPremiumConfig value) getPremiumConfig,
     required TResult Function(_SignOut value) signOut,
     required TResult Function(_ChangePassword value) changePassword,
+    required TResult Function(_DeleteUser value) deleteUser,
   }) {
     return getPremiumConfig(this);
   }
@@ -498,6 +520,7 @@ class _$GetPremiumConfigImpl implements _GetPremiumConfig {
     TResult? Function(_GetPremiumConfig value)? getPremiumConfig,
     TResult? Function(_SignOut value)? signOut,
     TResult? Function(_ChangePassword value)? changePassword,
+    TResult? Function(_DeleteUser value)? deleteUser,
   }) {
     return getPremiumConfig?.call(this);
   }
@@ -510,6 +533,7 @@ class _$GetPremiumConfigImpl implements _GetPremiumConfig {
     TResult Function(_GetPremiumConfig value)? getPremiumConfig,
     TResult Function(_SignOut value)? signOut,
     TResult Function(_ChangePassword value)? changePassword,
+    TResult Function(_DeleteUser value)? deleteUser,
     required TResult orElse(),
   }) {
     if (getPremiumConfig != null) {
@@ -572,6 +596,7 @@ class _$SignOutImpl implements _SignOut {
     required TResult Function() signOut,
     required TResult Function(String currentPassword, String newPassword)
     changePassword,
+    required TResult Function() deleteUser,
   }) {
     return signOut();
   }
@@ -585,6 +610,7 @@ class _$SignOutImpl implements _SignOut {
     TResult? Function()? signOut,
     TResult? Function(String currentPassword, String newPassword)?
     changePassword,
+    TResult? Function()? deleteUser,
   }) {
     return signOut?.call();
   }
@@ -598,6 +624,7 @@ class _$SignOutImpl implements _SignOut {
     TResult Function()? signOut,
     TResult Function(String currentPassword, String newPassword)?
     changePassword,
+    TResult Function()? deleteUser,
     required TResult orElse(),
   }) {
     if (signOut != null) {
@@ -614,6 +641,7 @@ class _$SignOutImpl implements _SignOut {
     required TResult Function(_GetPremiumConfig value) getPremiumConfig,
     required TResult Function(_SignOut value) signOut,
     required TResult Function(_ChangePassword value) changePassword,
+    required TResult Function(_DeleteUser value) deleteUser,
   }) {
     return signOut(this);
   }
@@ -626,6 +654,7 @@ class _$SignOutImpl implements _SignOut {
     TResult? Function(_GetPremiumConfig value)? getPremiumConfig,
     TResult? Function(_SignOut value)? signOut,
     TResult? Function(_ChangePassword value)? changePassword,
+    TResult? Function(_DeleteUser value)? deleteUser,
   }) {
     return signOut?.call(this);
   }
@@ -638,6 +667,7 @@ class _$SignOutImpl implements _SignOut {
     TResult Function(_GetPremiumConfig value)? getPremiumConfig,
     TResult Function(_SignOut value)? signOut,
     TResult Function(_ChangePassword value)? changePassword,
+    TResult Function(_DeleteUser value)? deleteUser,
     required TResult orElse(),
   }) {
     if (signOut != null) {
@@ -744,6 +774,7 @@ class _$ChangePasswordImpl implements _ChangePassword {
     required TResult Function() signOut,
     required TResult Function(String currentPassword, String newPassword)
     changePassword,
+    required TResult Function() deleteUser,
   }) {
     return changePassword(currentPassword, newPassword);
   }
@@ -757,6 +788,7 @@ class _$ChangePasswordImpl implements _ChangePassword {
     TResult? Function()? signOut,
     TResult? Function(String currentPassword, String newPassword)?
     changePassword,
+    TResult? Function()? deleteUser,
   }) {
     return changePassword?.call(currentPassword, newPassword);
   }
@@ -770,6 +802,7 @@ class _$ChangePasswordImpl implements _ChangePassword {
     TResult Function()? signOut,
     TResult Function(String currentPassword, String newPassword)?
     changePassword,
+    TResult Function()? deleteUser,
     required TResult orElse(),
   }) {
     if (changePassword != null) {
@@ -786,6 +819,7 @@ class _$ChangePasswordImpl implements _ChangePassword {
     required TResult Function(_GetPremiumConfig value) getPremiumConfig,
     required TResult Function(_SignOut value) signOut,
     required TResult Function(_ChangePassword value) changePassword,
+    required TResult Function(_DeleteUser value) deleteUser,
   }) {
     return changePassword(this);
   }
@@ -798,6 +832,7 @@ class _$ChangePasswordImpl implements _ChangePassword {
     TResult? Function(_GetPremiumConfig value)? getPremiumConfig,
     TResult? Function(_SignOut value)? signOut,
     TResult? Function(_ChangePassword value)? changePassword,
+    TResult? Function(_DeleteUser value)? deleteUser,
   }) {
     return changePassword?.call(this);
   }
@@ -810,6 +845,7 @@ class _$ChangePasswordImpl implements _ChangePassword {
     TResult Function(_GetPremiumConfig value)? getPremiumConfig,
     TResult Function(_SignOut value)? signOut,
     TResult Function(_ChangePassword value)? changePassword,
+    TResult Function(_DeleteUser value)? deleteUser,
     required TResult orElse(),
   }) {
     if (changePassword != null) {
@@ -833,6 +869,140 @@ abstract class _ChangePassword implements AuthEvent {
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ChangePasswordImplCopyWith<_$ChangePasswordImpl> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$DeleteUserImplCopyWith<$Res> {
+  factory _$$DeleteUserImplCopyWith(
+    _$DeleteUserImpl value,
+    $Res Function(_$DeleteUserImpl) then,
+  ) = __$$DeleteUserImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$DeleteUserImplCopyWithImpl<$Res>
+    extends _$AuthEventCopyWithImpl<$Res, _$DeleteUserImpl>
+    implements _$$DeleteUserImplCopyWith<$Res> {
+  __$$DeleteUserImplCopyWithImpl(
+    _$DeleteUserImpl _value,
+    $Res Function(_$DeleteUserImpl) _then,
+  ) : super(_value, _then);
+
+  /// Create a copy of AuthEvent
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$DeleteUserImpl implements _DeleteUser {
+  const _$DeleteUserImpl();
+
+  @override
+  String toString() {
+    return 'AuthEvent.deleteUser()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$DeleteUserImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initialize,
+    required TResult Function(AppUser user) updateUser,
+    required TResult Function() getPremiumConfig,
+    required TResult Function() signOut,
+    required TResult Function(String currentPassword, String newPassword)
+    changePassword,
+    required TResult Function() deleteUser,
+  }) {
+    return deleteUser();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initialize,
+    TResult? Function(AppUser user)? updateUser,
+    TResult? Function()? getPremiumConfig,
+    TResult? Function()? signOut,
+    TResult? Function(String currentPassword, String newPassword)?
+    changePassword,
+    TResult? Function()? deleteUser,
+  }) {
+    return deleteUser?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initialize,
+    TResult Function(AppUser user)? updateUser,
+    TResult Function()? getPremiumConfig,
+    TResult Function()? signOut,
+    TResult Function(String currentPassword, String newPassword)?
+    changePassword,
+    TResult Function()? deleteUser,
+    required TResult orElse(),
+  }) {
+    if (deleteUser != null) {
+      return deleteUser();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initialize value) initialize,
+    required TResult Function(_UpdateUser value) updateUser,
+    required TResult Function(_GetPremiumConfig value) getPremiumConfig,
+    required TResult Function(_SignOut value) signOut,
+    required TResult Function(_ChangePassword value) changePassword,
+    required TResult Function(_DeleteUser value) deleteUser,
+  }) {
+    return deleteUser(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initialize value)? initialize,
+    TResult? Function(_UpdateUser value)? updateUser,
+    TResult? Function(_GetPremiumConfig value)? getPremiumConfig,
+    TResult? Function(_SignOut value)? signOut,
+    TResult? Function(_ChangePassword value)? changePassword,
+    TResult? Function(_DeleteUser value)? deleteUser,
+  }) {
+    return deleteUser?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initialize value)? initialize,
+    TResult Function(_UpdateUser value)? updateUser,
+    TResult Function(_GetPremiumConfig value)? getPremiumConfig,
+    TResult Function(_SignOut value)? signOut,
+    TResult Function(_ChangePassword value)? changePassword,
+    TResult Function(_DeleteUser value)? deleteUser,
+    required TResult orElse(),
+  }) {
+    if (deleteUser != null) {
+      return deleteUser(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _DeleteUser implements AuthEvent {
+  const factory _DeleteUser() = _$DeleteUserImpl;
 }
 
 /// @nodoc

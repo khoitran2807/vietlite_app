@@ -96,6 +96,15 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
             },
           );
         },
+        deleteUser: (_DeleteUser event) async {
+          final failureOrSuccess = await repository.deleteUser();
+
+          if (isClosed) return;
+
+          failureOrSuccess.fold((failure) => {}, (_) {
+            emit(AuthState.initial());
+          });
+        },
       );
     });
   }

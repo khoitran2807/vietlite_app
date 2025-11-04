@@ -189,23 +189,29 @@ extension GetItInjectableX on _i174.GetIt {
     gh.singleton<_i128.GoogleService>(
       () => _i128.GoogleService(googleSignIn: gh<_i116.GoogleSignIn>()),
     );
-    gh.factory<_i737.ISettingRepository>(
-      () => _i233.SettingRepository(
-        localDataSource: gh<_i89.SettingLocalDataSource>(),
-      ),
-    );
     gh.singleton<_i283.RemoteConfigService>(
       () => _i283.RemoteConfigService(
         remoteConfig: gh<_i627.FirebaseRemoteConfig>(),
       ),
     );
-    gh.lazySingleton<_i508.FirestoreService>(
-      () => _i508.FirestoreService(firestore: gh<_i974.FirebaseFirestore>()),
-    );
     gh.lazySingleton<_i449.AuthService>(
       () => _i449.AuthService(
         auth: gh<_i59.FirebaseAuth>(),
         googleService: gh<_i128.GoogleService>(),
+      ),
+    );
+    gh.lazySingleton<_i508.FirestoreService>(
+      () => _i508.FirestoreService(firestore: gh<_i974.FirebaseFirestore>()),
+    );
+    gh.factory<_i737.ISettingRepository>(
+      () => _i233.SettingRepository(
+        localDataSource: gh<_i89.SettingLocalDataSource>(),
+      ),
+    );
+    gh.factory<_i782.AuthRemoteDataSource>(
+      () => _i782.AuthRemoteDataSource(
+        authService: gh<_i449.AuthService>(),
+        firestoreService: gh<_i508.FirestoreService>(),
       ),
     );
     gh.factory<_i1061.ForgetPasswordRemoteDataSource>(
@@ -220,8 +226,10 @@ extension GetItInjectableX on _i174.GetIt {
     gh.factory<_i520.LoginRemoteDataSource>(
       () => _i520.LoginRemoteDataSource(authService: gh<_i449.AuthService>()),
     );
-    gh.singleton<_i291.SettingBloc>(
-      () => _i291.SettingBloc(repository: gh<_i737.ISettingRepository>()),
+    gh.factory<_i57.ILoginRepository>(
+      () => _i107.LoginRepository(
+        remoteDataSource: gh<_i520.LoginRemoteDataSource>(),
+      ),
     );
     gh.factory<_i758.ThingDetailRemoteDataSource>(
       () => _i758.ThingDetailRemoteDataSource(
@@ -283,50 +291,12 @@ extension GetItInjectableX on _i174.GetIt {
         firestoreService: gh<_i508.FirestoreService>(),
       ),
     );
-    gh.factory<_i324.IThingDetailRepository>(
-      () => _i158.ThingDetailRepository(
-        remoteDataSource: gh<_i758.ThingDetailRemoteDataSource>(),
-      ),
+    gh.singleton<_i291.SettingBloc>(
+      () => _i291.SettingBloc(repository: gh<_i737.ISettingRepository>()),
     );
-    gh.factory<_i732.IThingsRepository>(
-      () => _i486.ThingsRepository(
-        remoteDataSource: gh<_i806.ThingsRemoteDataSource>(),
-      ),
-    );
-    gh.factory<_i843.ILetterDetailRepository>(
-      () => _i768.LetterDetailRepository(
-        remoteDataSource: gh<_i469.LetterDetailRemoteDataSource>(),
-      ),
-    );
-    gh.factory<_i236.INumberRepository>(
-      () => _i711.NumberRepository(
-        remoteDataSource: gh<_i62.NumberRemoteDataSource>(),
-      ),
-    );
-    gh.factory<_i872.IWordMatchRepository>(
-      () => _i88.WordMatchRepository(
-        remoteDataSource: gh<_i153.WordMatchRemoteDataSource>(),
-      ),
-    );
-    gh.factory<_i959.ThingsBloc>(
-      () => _i959.ThingsBloc(repository: gh<_i732.IThingsRepository>()),
-    );
-    gh.factory<_i316.IWordMatchDetailRepository>(
-      () => _i716.WordMatchDetailRepository(
-        remoteDataSource: gh<_i393.WordMatchDetailRemoteDataSource>(),
-      ),
-    );
-    gh.factory<_i26.IRegisterRepository>(
-      () => _i594.RegisterRepository(
-        remoteDataSource: gh<_i1033.RegisterRemoteDataSource>(),
-      ),
-    );
-    gh.factory<_i28.RegisterBloc>(
-      () => _i28.RegisterBloc(repository: gh<_i26.IRegisterRepository>()),
-    );
-    gh.factory<_i1038.ILetterRepository>(
-      () => _i800.LetterRepository(
-        remoteDataSource: gh<_i395.LetterRemoteDataSource>(),
+    gh.factory<_i276.IDiscoverRepository>(
+      () => _i809.DiscoverRepository(
+        remoteDataSource: gh<_i32.DiscoverRemoteDataSource>(),
       ),
     );
     gh.factory<_i335.IForgetPasswordRepository>(
@@ -334,26 +304,32 @@ extension GetItInjectableX on _i174.GetIt {
         remoteDataSource: gh<_i1061.ForgetPasswordRemoteDataSource>(),
       ),
     );
-    gh.factory<_i68.WordMatchBloc>(
-      () => _i68.WordMatchBloc(repository: gh<_i872.IWordMatchRepository>()),
-    );
-    gh.factory<_i423.ForgetPasswordBloc>(
-      () => _i423.ForgetPasswordBloc(
-        repository: gh<_i335.IForgetPasswordRepository>(),
+    gh.factory<_i733.IAuthRepository>(
+      () => _i638.AuthRepository(
+        remoteDataSource: gh<_i782.AuthRemoteDataSource>(),
       ),
+    );
+    gh.singleton<_i831.AuthBloc>(
+      () => _i831.AuthBloc(repository: gh<_i733.IAuthRepository>()),
     );
     gh.factory<_i791.INumberDetailRepository>(
       () => _i196.NumberDetailRepository(
         remoteDataSource: gh<_i481.NumberDetailRemoteDataSource>(),
       ),
     );
-    gh.factory<_i66.LettersBloc>(
-      () => _i66.LettersBloc(repository: gh<_i1038.ILetterRepository>()),
+    gh.factory<_i732.IThingsRepository>(
+      () => _i486.ThingsRepository(
+        remoteDataSource: gh<_i806.ThingsRemoteDataSource>(),
+      ),
     );
-    gh.factory<_i782.AuthRemoteDataSource>(
-      () => _i782.AuthRemoteDataSource(
-        authService: gh<_i449.AuthService>(),
-        firestoreService: gh<_i508.FirestoreService>(),
+    gh.factory<_i236.INumberRepository>(
+      () => _i711.NumberRepository(
+        remoteDataSource: gh<_i62.NumberRemoteDataSource>(),
+      ),
+    );
+    gh.factory<_i316.IWordMatchDetailRepository>(
+      () => _i716.WordMatchDetailRepository(
+        remoteDataSource: gh<_i393.WordMatchDetailRemoteDataSource>(),
       ),
     );
     gh.factory<_i952.IWordSelectionDetailRepository>(
@@ -361,14 +337,27 @@ extension GetItInjectableX on _i174.GetIt {
         remoteDataSource: gh<_i645.WordSelectionDetailRemoteDataSource>(),
       ),
     );
-    gh.factory<_i57.ILoginRepository>(
-      () => _i107.LoginRepository(
-        remoteDataSource: gh<_i520.LoginRemoteDataSource>(),
+    gh.factory<_i872.IWordMatchRepository>(
+      () => _i88.WordMatchRepository(
+        remoteDataSource: gh<_i153.WordMatchRemoteDataSource>(),
       ),
     );
-    gh.factory<_i276.IDiscoverRepository>(
-      () => _i809.DiscoverRepository(
-        remoteDataSource: gh<_i32.DiscoverRemoteDataSource>(),
+    gh.factory<_i843.ILetterDetailRepository>(
+      () => _i768.LetterDetailRepository(
+        remoteDataSource: gh<_i469.LetterDetailRemoteDataSource>(),
+      ),
+    );
+    gh.factory<_i959.ThingsBloc>(
+      () => _i959.ThingsBloc(repository: gh<_i732.IThingsRepository>()),
+    );
+    gh.factory<_i26.IRegisterRepository>(
+      () => _i594.RegisterRepository(
+        remoteDataSource: gh<_i1033.RegisterRemoteDataSource>(),
+      ),
+    );
+    gh.factory<_i423.ForgetPasswordBloc>(
+      () => _i423.ForgetPasswordBloc(
+        repository: gh<_i335.IForgetPasswordRepository>(),
       ),
     );
     gh.factory<_i172.IProgressRepository>(
@@ -376,18 +365,29 @@ extension GetItInjectableX on _i174.GetIt {
         remoteDataSource: gh<_i360.ProgressRemoteDataSource>(),
       ),
     );
-    gh.factory<_i739.NumbersBloc>(
-      () => _i739.NumbersBloc(repository: gh<_i236.INumberRepository>()),
+    gh.factory<_i669.LetterDetailBloc>(
+      () => _i669.LetterDetailBloc(
+        repository: gh<_i843.ILetterDetailRepository>(),
+        progressRepository: gh<_i172.IProgressRepository>(),
+      ),
+    );
+    gh.factory<_i68.WordMatchBloc>(
+      () => _i68.WordMatchBloc(repository: gh<_i872.IWordMatchRepository>()),
     );
     gh.factory<_i740.IWordSelectionRepository>(
       () => _i36.WordSelectionRepository(
         remoteDataSource: gh<_i52.WordSelectionRemoteDataSource>(),
       ),
     );
-    gh.factory<_i818.NumberDetailBloc>(
-      () => _i818.NumberDetailBloc(
-        repository: gh<_i791.INumberDetailRepository>(),
-        progressRepository: gh<_i172.IProgressRepository>(),
+    gh.factory<_i739.NumbersBloc>(
+      () => _i739.NumbersBloc(repository: gh<_i236.INumberRepository>()),
+    );
+    gh.factory<_i156.LoginBloc>(
+      () => _i156.LoginBloc(repository: gh<_i57.ILoginRepository>()),
+    );
+    gh.factory<_i324.IThingDetailRepository>(
+      () => _i158.ThingDetailRepository(
+        remoteDataSource: gh<_i758.ThingDetailRemoteDataSource>(),
       ),
     );
     gh.factory<_i62.WordMatchDetailBloc>(
@@ -399,14 +399,36 @@ extension GetItInjectableX on _i174.GetIt {
     gh.factory<_i43.DiscoverBloc>(
       () => _i43.DiscoverBloc(repository: gh<_i276.IDiscoverRepository>()),
     );
-    gh.factory<_i156.LoginBloc>(
-      () => _i156.LoginBloc(repository: gh<_i57.ILoginRepository>()),
+    gh.factory<_i1038.ILetterRepository>(
+      () => _i800.LetterRepository(
+        remoteDataSource: gh<_i395.LetterRemoteDataSource>(),
+      ),
     );
-    gh.factory<_i669.LetterDetailBloc>(
-      () => _i669.LetterDetailBloc(
-        repository: gh<_i843.ILetterDetailRepository>(),
+    gh.factory<_i380.WordSelectionBloc>(
+      () => _i380.WordSelectionBloc(
+        repository: gh<_i740.IWordSelectionRepository>(),
+      ),
+    );
+    gh.factory<_i818.NumberDetailBloc>(
+      () => _i818.NumberDetailBloc(
+        repository: gh<_i791.INumberDetailRepository>(),
         progressRepository: gh<_i172.IProgressRepository>(),
       ),
+    );
+    gh.factory<_i500.WordSelectionDetailBloc>(
+      () => _i500.WordSelectionDetailBloc(
+        progressRepository: gh<_i172.IProgressRepository>(),
+        repository: gh<_i952.IWordSelectionDetailRepository>(),
+      ),
+    );
+    gh.factory<_i779.ThingDetailBloc>(
+      () => _i779.ThingDetailBloc(
+        repository: gh<_i324.IThingDetailRepository>(),
+        progressRepository: gh<_i172.IProgressRepository>(),
+      ),
+    );
+    gh.factory<_i28.RegisterBloc>(
+      () => _i28.RegisterBloc(repository: gh<_i26.IRegisterRepository>()),
     );
     gh.factory<_i756.ThingExerciseBloc>(
       () =>
@@ -425,30 +447,8 @@ extension GetItInjectableX on _i174.GetIt {
         repository: gh<_i172.IProgressRepository>(),
       ),
     );
-    gh.factory<_i380.WordSelectionBloc>(
-      () => _i380.WordSelectionBloc(
-        repository: gh<_i740.IWordSelectionRepository>(),
-      ),
-    );
-    gh.factory<_i733.IAuthRepository>(
-      () => _i638.AuthRepository(
-        remoteDataSource: gh<_i782.AuthRemoteDataSource>(),
-      ),
-    );
-    gh.factory<_i500.WordSelectionDetailBloc>(
-      () => _i500.WordSelectionDetailBloc(
-        progressRepository: gh<_i172.IProgressRepository>(),
-        repository: gh<_i952.IWordSelectionDetailRepository>(),
-      ),
-    );
-    gh.singleton<_i831.AuthBloc>(
-      () => _i831.AuthBloc(repository: gh<_i733.IAuthRepository>()),
-    );
-    gh.factory<_i779.ThingDetailBloc>(
-      () => _i779.ThingDetailBloc(
-        repository: gh<_i324.IThingDetailRepository>(),
-        progressRepository: gh<_i172.IProgressRepository>(),
-      ),
+    gh.factory<_i66.LettersBloc>(
+      () => _i66.LettersBloc(repository: gh<_i1038.ILetterRepository>()),
     );
     return this;
   }

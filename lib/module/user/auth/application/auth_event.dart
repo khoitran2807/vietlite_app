@@ -14,4 +14,6 @@ class AuthEvent with _$AuthEvent {
     required String currentPassword,
     required String newPassword,
   }) = _ChangePassword;
+
+  const factory AuthEvent.deleteUser() = _DeleteUser;
 }

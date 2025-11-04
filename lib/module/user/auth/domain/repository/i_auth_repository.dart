@@ -18,4 +18,6 @@ abstract class IAuthRepository {
   Future<Either<AppFailure, PremiumConfig>> getPremiumConfig({
     required String userId,
   });
+
+  Future<Either<AppFailure, Unit>> deleteUser();
 }

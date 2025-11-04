@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
               padding: EdgeInsets.only(
                 left: AppDimensions.s16,
                 right: AppDimensions.s16,
-                top: AppDimensions.s16,
+                top: AppDimensions.s36,
               ),
               child: Container(
                 decoration: BoxDecoration(

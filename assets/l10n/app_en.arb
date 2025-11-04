@@ -84,5 +84,7 @@
     "changePasswordSuccess": "Change Password Successfully",
     "cancel": "Cancel",
     "wordsBottomBar": "Words",
-    "lettersBottomBar": "Letters"
+    "lettersBottomBar": "Letters",
+    "deleteData": "Delete Data",
+    "deleteDataWarning": "All data will be deleted. Are you sure you want to continue?"
 }
