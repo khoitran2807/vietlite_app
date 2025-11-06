@@ -38,7 +38,7 @@ class _LoginScreenState extends State<LoginScreen> {
               (_) {
                 // when logged in anonymous, we do not need to display toast message
                 AuthState authState = context.read<AuthBloc>().state;
-                if (!authState.isLoggedInAnonymous) {
+                if (authState.isLoggedInWithEmail) {
                   showToast(context, context.lang.signInSuccess);
                 }
                 AppLocator.router.replaceAll([const RootScreenRoute()]);

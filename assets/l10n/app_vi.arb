@@ -85,6 +85,8 @@
     "cancel": "Hủy",
     "wordsBottomBar": "Từ & Câu",
     "lettersBottomBar": "Chữ & Số",
+    "privacyPolicy": "Chính sách bảo mật",
+    "terms": "Điều khoản sử dụng",
     "deleteData": "Xoá dữ liệu",
     "deleteDataWarning": "Toàn bộ dữ liệu sẽ bị xoá. Bạn có chắc chắn muốn tiếp tục?"
 }

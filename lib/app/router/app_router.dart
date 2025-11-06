@@ -13,7 +13,9 @@ class AppRouter extends RootStackRouter {
       if (locator<AuthService>().user != null ||
           resolver.routeName == LoginScreenRoute.name ||
           resolver.routeName == ForgetPasswordScreenRoute.name ||
-          resolver.routeName == RegisterScreenRoute.name) {
+          resolver.routeName == RegisterScreenRoute.name ||
+          resolver.routeName == PrivacyPolicyScreenRoute.name ||
+          resolver.routeName == TermsScreenRoute.name) {
         // we continue navigation
         resolver.next();
       } else {
@@ -87,5 +89,7 @@ class AppRouter extends RootStackRouter {
     AutoRoute(path: '/login', page: LoginScreenRoute.page),
     AutoRoute(path: '/forget-password', page: ForgetPasswordScreenRoute.page),
     AutoRoute(path: '/register', page: RegisterScreenRoute.page),
+    AutoRoute(path: '/privacyPolicy', page: PrivacyPolicyScreenRoute.page),
+    AutoRoute(path: '/terms', page: TermsScreenRoute.page),
   ];
 }

@@ -44,7 +44,7 @@ class LabelInput extends StatelessWidget {
         ),
         SizedBox(height: AppDimensions.s4),
         Input.raw(
-          fieldKey: UniqueKey(),
+          fieldKey: key ?? UniqueKey(),
           controller: controller,
           autofocus: false,
           inputType: inputType,
