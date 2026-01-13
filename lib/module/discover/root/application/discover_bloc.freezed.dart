@@ -12,8 +12,7 @@ part of 'discover_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$DiscoverEvent {
@@ -21,29 +20,35 @@ mixin _$DiscoverEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String userId) initialize,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String userId)? initialize,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String userId)? initialize,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initialize value) initialize,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initialize value)? initialize,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initialize value)? initialize,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 
   /// Create a copy of DiscoverEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -55,9 +60,8 @@ mixin _$DiscoverEvent {
 /// @nodoc
 abstract class $DiscoverEventCopyWith<$Res> {
   factory $DiscoverEventCopyWith(
-    DiscoverEvent value,
-    $Res Function(DiscoverEvent) then,
-  ) = _$DiscoverEventCopyWithImpl<$Res, DiscoverEvent>;
+          DiscoverEvent value, $Res Function(DiscoverEvent) then) =
+      _$DiscoverEventCopyWithImpl<$Res, DiscoverEvent>;
   @useResult
   $Res call({String userId});
 }
@@ -76,17 +80,15 @@ class _$DiscoverEventCopyWithImpl<$Res, $Val extends DiscoverEvent>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? userId = null}) {
-    return _then(
-      _value.copyWith(
-            userId:
-                null == userId
-                    ? _value.userId
-                    : userId // ignore: cast_nullable_to_non_nullable
-                        as String,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? userId = null,
+  }) {
+    return _then(_value.copyWith(
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
   }
 }
 
@@ -94,9 +96,8 @@ class _$DiscoverEventCopyWithImpl<$Res, $Val extends DiscoverEvent>
 abstract class _$$InitializeImplCopyWith<$Res>
     implements $DiscoverEventCopyWith<$Res> {
   factory _$$InitializeImplCopyWith(
-    _$InitializeImpl value,
-    $Res Function(_$InitializeImpl) then,
-  ) = __$$InitializeImplCopyWithImpl<$Res>;
+          _$InitializeImpl value, $Res Function(_$InitializeImpl) then) =
+      __$$InitializeImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String userId});
@@ -107,24 +108,22 @@ class __$$InitializeImplCopyWithImpl<$Res>
     extends _$DiscoverEventCopyWithImpl<$Res, _$InitializeImpl>
     implements _$$InitializeImplCopyWith<$Res> {
   __$$InitializeImplCopyWithImpl(
-    _$InitializeImpl _value,
-    $Res Function(_$InitializeImpl) _then,
-  ) : super(_value, _then);
+      _$InitializeImpl _value, $Res Function(_$InitializeImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of DiscoverEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? userId = null}) {
-    return _then(
-      _$InitializeImpl(
-        userId:
-            null == userId
-                ? _value.userId
-                : userId // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+  $Res call({
+    Object? userId = null,
+  }) {
+    return _then(_$InitializeImpl(
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
@@ -248,15 +247,13 @@ mixin _$DiscoverState {
 /// @nodoc
 abstract class $DiscoverStateCopyWith<$Res> {
   factory $DiscoverStateCopyWith(
-    DiscoverState value,
-    $Res Function(DiscoverState) then,
-  ) = _$DiscoverStateCopyWithImpl<$Res, DiscoverState>;
+          DiscoverState value, $Res Function(DiscoverState) then) =
+      _$DiscoverStateCopyWithImpl<$Res, DiscoverState>;
   @useResult
-  $Res call({
-    List<Thing> things,
-    bool isLoading,
-    Option<Either<AppFailure, dynamic>> fetchFailure,
-  });
+  $Res call(
+      {List<Thing> things,
+      bool isLoading,
+      Option<Either<AppFailure, dynamic>> fetchFailure});
 }
 
 /// @nodoc
@@ -278,26 +275,20 @@ class _$DiscoverStateCopyWithImpl<$Res, $Val extends DiscoverState>
     Object? isLoading = null,
     Object? fetchFailure = null,
   }) {
-    return _then(
-      _value.copyWith(
-            things:
-                null == things
-                    ? _value.things
-                    : things // ignore: cast_nullable_to_non_nullable
-                        as List<Thing>,
-            isLoading:
-                null == isLoading
-                    ? _value.isLoading
-                    : isLoading // ignore: cast_nullable_to_non_nullable
-                        as bool,
-            fetchFailure:
-                null == fetchFailure
-                    ? _value.fetchFailure
-                    : fetchFailure // ignore: cast_nullable_to_non_nullable
-                        as Option<Either<AppFailure, dynamic>>,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      things: null == things
+          ? _value.things
+          : things // ignore: cast_nullable_to_non_nullable
+              as List<Thing>,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      fetchFailure: null == fetchFailure
+          ? _value.fetchFailure
+          : fetchFailure // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ) as $Val);
   }
 }
 
@@ -305,16 +296,14 @@ class _$DiscoverStateCopyWithImpl<$Res, $Val extends DiscoverState>
 abstract class _$$DiscoverStateImplCopyWith<$Res>
     implements $DiscoverStateCopyWith<$Res> {
   factory _$$DiscoverStateImplCopyWith(
-    _$DiscoverStateImpl value,
-    $Res Function(_$DiscoverStateImpl) then,
-  ) = __$$DiscoverStateImplCopyWithImpl<$Res>;
+          _$DiscoverStateImpl value, $Res Function(_$DiscoverStateImpl) then) =
+      __$$DiscoverStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    List<Thing> things,
-    bool isLoading,
-    Option<Either<AppFailure, dynamic>> fetchFailure,
-  });
+  $Res call(
+      {List<Thing> things,
+      bool isLoading,
+      Option<Either<AppFailure, dynamic>> fetchFailure});
 }
 
 /// @nodoc
@@ -322,9 +311,8 @@ class __$$DiscoverStateImplCopyWithImpl<$Res>
     extends _$DiscoverStateCopyWithImpl<$Res, _$DiscoverStateImpl>
     implements _$$DiscoverStateImplCopyWith<$Res> {
   __$$DiscoverStateImplCopyWithImpl(
-    _$DiscoverStateImpl _value,
-    $Res Function(_$DiscoverStateImpl) _then,
-  ) : super(_value, _then);
+      _$DiscoverStateImpl _value, $Res Function(_$DiscoverStateImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of DiscoverState
   /// with the given fields replaced by the non-null parameter values.
@@ -335,36 +323,31 @@ class __$$DiscoverStateImplCopyWithImpl<$Res>
     Object? isLoading = null,
     Object? fetchFailure = null,
   }) {
-    return _then(
-      _$DiscoverStateImpl(
-        things:
-            null == things
-                ? _value._things
-                : things // ignore: cast_nullable_to_non_nullable
-                    as List<Thing>,
-        isLoading:
-            null == isLoading
-                ? _value.isLoading
-                : isLoading // ignore: cast_nullable_to_non_nullable
-                    as bool,
-        fetchFailure:
-            null == fetchFailure
-                ? _value.fetchFailure
-                : fetchFailure // ignore: cast_nullable_to_non_nullable
-                    as Option<Either<AppFailure, dynamic>>,
-      ),
-    );
+    return _then(_$DiscoverStateImpl(
+      things: null == things
+          ? _value._things
+          : things // ignore: cast_nullable_to_non_nullable
+              as List<Thing>,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      fetchFailure: null == fetchFailure
+          ? _value.fetchFailure
+          : fetchFailure // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$DiscoverStateImpl implements _DiscoverState {
-  const _$DiscoverStateImpl({
-    required final List<Thing> things,
-    required this.isLoading,
-    required this.fetchFailure,
-  }) : _things = things;
+  const _$DiscoverStateImpl(
+      {required final List<Thing> things,
+      required this.isLoading,
+      required this.fetchFailure})
+      : _things = things;
 
   final List<Thing> _things;
   @override
@@ -397,12 +380,8 @@ class _$DiscoverStateImpl implements _DiscoverState {
   }
 
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    const DeepCollectionEquality().hash(_things),
-    isLoading,
-    fetchFailure,
-  );
+  int get hashCode => Object.hash(runtimeType,
+      const DeepCollectionEquality().hash(_things), isLoading, fetchFailure);
 
   /// Create a copy of DiscoverState
   /// with the given fields replaced by the non-null parameter values.
@@ -414,11 +393,11 @@ class _$DiscoverStateImpl implements _DiscoverState {
 }
 
 abstract class _DiscoverState implements DiscoverState {
-  const factory _DiscoverState({
-    required final List<Thing> things,
-    required final bool isLoading,
-    required final Option<Either<AppFailure, dynamic>> fetchFailure,
-  }) = _$DiscoverStateImpl;
+  const factory _DiscoverState(
+          {required final List<Thing> things,
+          required final bool isLoading,
+          required final Option<Either<AppFailure, dynamic>> fetchFailure}) =
+      _$DiscoverStateImpl;
 
   @override
   List<Thing> get things;

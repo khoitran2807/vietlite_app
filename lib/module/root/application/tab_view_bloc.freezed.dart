@@ -12,8 +12,7 @@ part of 'tab_view_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$TabViewEvent {
@@ -22,47 +21,52 @@ mixin _$TabViewEvent {
     required TResult Function(bool isTablet, String routeName) initialize,
     required TResult Function(NavItem item) changeTab,
     required TResult Function(NavChildItem childItem) changeChildTab,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(bool isTablet, String routeName)? initialize,
     TResult? Function(NavItem item)? changeTab,
     TResult? Function(NavChildItem childItem)? changeChildTab,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(bool isTablet, String routeName)? initialize,
     TResult Function(NavItem item)? changeTab,
     TResult Function(NavChildItem childItem)? changeChildTab,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initialize value) initialize,
     required TResult Function(_ChangeTab value) changeTab,
     required TResult Function(_ChangeChildTab value) changeChildTab,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initialize value)? initialize,
     TResult? Function(_ChangeTab value)? changeTab,
     TResult? Function(_ChangeChildTab value)? changeChildTab,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initialize value)? initialize,
     TResult Function(_ChangeTab value)? changeTab,
     TResult Function(_ChangeChildTab value)? changeChildTab,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $TabViewEventCopyWith<$Res> {
   factory $TabViewEventCopyWith(
-    TabViewEvent value,
-    $Res Function(TabViewEvent) then,
-  ) = _$TabViewEventCopyWithImpl<$Res, TabViewEvent>;
+          TabViewEvent value, $Res Function(TabViewEvent) then) =
+      _$TabViewEventCopyWithImpl<$Res, TabViewEvent>;
 }
 
 /// @nodoc
@@ -82,9 +86,8 @@ class _$TabViewEventCopyWithImpl<$Res, $Val extends TabViewEvent>
 /// @nodoc
 abstract class _$$InitializeImplCopyWith<$Res> {
   factory _$$InitializeImplCopyWith(
-    _$InitializeImpl value,
-    $Res Function(_$InitializeImpl) then,
-  ) = __$$InitializeImplCopyWithImpl<$Res>;
+          _$InitializeImpl value, $Res Function(_$InitializeImpl) then) =
+      __$$InitializeImplCopyWithImpl<$Res>;
   @useResult
   $Res call({bool isTablet, String routeName});
 }
@@ -94,29 +97,27 @@ class __$$InitializeImplCopyWithImpl<$Res>
     extends _$TabViewEventCopyWithImpl<$Res, _$InitializeImpl>
     implements _$$InitializeImplCopyWith<$Res> {
   __$$InitializeImplCopyWithImpl(
-    _$InitializeImpl _value,
-    $Res Function(_$InitializeImpl) _then,
-  ) : super(_value, _then);
+      _$InitializeImpl _value, $Res Function(_$InitializeImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of TabViewEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? isTablet = null, Object? routeName = null}) {
-    return _then(
-      _$InitializeImpl(
-        isTablet:
-            null == isTablet
-                ? _value.isTablet
-                : isTablet // ignore: cast_nullable_to_non_nullable
-                    as bool,
-        routeName:
-            null == routeName
-                ? _value.routeName
-                : routeName // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+  $Res call({
+    Object? isTablet = null,
+    Object? routeName = null,
+  }) {
+    return _then(_$InitializeImpl(
+      isTablet: null == isTablet
+          ? _value.isTablet
+          : isTablet // ignore: cast_nullable_to_non_nullable
+              as bool,
+      routeName: null == routeName
+          ? _value.routeName
+          : routeName // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
@@ -227,10 +228,9 @@ class _$InitializeImpl implements _Initialize {
 }
 
 abstract class _Initialize implements TabViewEvent {
-  const factory _Initialize({
-    required final bool isTablet,
-    required final String routeName,
-  }) = _$InitializeImpl;
+  const factory _Initialize(
+      {required final bool isTablet,
+      required final String routeName}) = _$InitializeImpl;
 
   bool get isTablet;
   String get routeName;
@@ -245,9 +245,8 @@ abstract class _Initialize implements TabViewEvent {
 /// @nodoc
 abstract class _$$ChangeTabImplCopyWith<$Res> {
   factory _$$ChangeTabImplCopyWith(
-    _$ChangeTabImpl value,
-    $Res Function(_$ChangeTabImpl) then,
-  ) = __$$ChangeTabImplCopyWithImpl<$Res>;
+          _$ChangeTabImpl value, $Res Function(_$ChangeTabImpl) then) =
+      __$$ChangeTabImplCopyWithImpl<$Res>;
   @useResult
   $Res call({NavItem item});
 }
@@ -257,24 +256,22 @@ class __$$ChangeTabImplCopyWithImpl<$Res>
     extends _$TabViewEventCopyWithImpl<$Res, _$ChangeTabImpl>
     implements _$$ChangeTabImplCopyWith<$Res> {
   __$$ChangeTabImplCopyWithImpl(
-    _$ChangeTabImpl _value,
-    $Res Function(_$ChangeTabImpl) _then,
-  ) : super(_value, _then);
+      _$ChangeTabImpl _value, $Res Function(_$ChangeTabImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of TabViewEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? item = null}) {
-    return _then(
-      _$ChangeTabImpl(
-        item:
-            null == item
-                ? _value.item
-                : item // ignore: cast_nullable_to_non_nullable
-                    as NavItem,
-      ),
-    );
+  $Res call({
+    Object? item = null,
+  }) {
+    return _then(_$ChangeTabImpl(
+      item: null == item
+          ? _value.item
+          : item // ignore: cast_nullable_to_non_nullable
+              as NavItem,
+    ));
   }
 }
 
@@ -393,10 +390,9 @@ abstract class _ChangeTab implements TabViewEvent {
 
 /// @nodoc
 abstract class _$$ChangeChildTabImplCopyWith<$Res> {
-  factory _$$ChangeChildTabImplCopyWith(
-    _$ChangeChildTabImpl value,
-    $Res Function(_$ChangeChildTabImpl) then,
-  ) = __$$ChangeChildTabImplCopyWithImpl<$Res>;
+  factory _$$ChangeChildTabImplCopyWith(_$ChangeChildTabImpl value,
+          $Res Function(_$ChangeChildTabImpl) then) =
+      __$$ChangeChildTabImplCopyWithImpl<$Res>;
   @useResult
   $Res call({NavChildItem childItem});
 }
@@ -406,24 +402,22 @@ class __$$ChangeChildTabImplCopyWithImpl<$Res>
     extends _$TabViewEventCopyWithImpl<$Res, _$ChangeChildTabImpl>
     implements _$$ChangeChildTabImplCopyWith<$Res> {
   __$$ChangeChildTabImplCopyWithImpl(
-    _$ChangeChildTabImpl _value,
-    $Res Function(_$ChangeChildTabImpl) _then,
-  ) : super(_value, _then);
+      _$ChangeChildTabImpl _value, $Res Function(_$ChangeChildTabImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of TabViewEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? childItem = null}) {
-    return _then(
-      _$ChangeChildTabImpl(
-        childItem:
-            null == childItem
-                ? _value.childItem
-                : childItem // ignore: cast_nullable_to_non_nullable
-                    as NavChildItem,
-      ),
-    );
+  $Res call({
+    Object? childItem = null,
+  }) {
+    return _then(_$ChangeChildTabImpl(
+      childItem: null == childItem
+          ? _value.childItem
+          : childItem // ignore: cast_nullable_to_non_nullable
+              as NavChildItem,
+    ));
   }
 }
 
@@ -459,9 +453,7 @@ class _$ChangeChildTabImpl implements _ChangeChildTab {
   @pragma('vm:prefer-inline')
   _$$ChangeChildTabImplCopyWith<_$ChangeChildTabImpl> get copyWith =>
       __$$ChangeChildTabImplCopyWithImpl<_$ChangeChildTabImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -562,16 +554,14 @@ mixin _$TabViewState {
 /// @nodoc
 abstract class $TabViewStateCopyWith<$Res> {
   factory $TabViewStateCopyWith(
-    TabViewState value,
-    $Res Function(TabViewState) then,
-  ) = _$TabViewStateCopyWithImpl<$Res, TabViewState>;
+          TabViewState value, $Res Function(TabViewState) then) =
+      _$TabViewStateCopyWithImpl<$Res, TabViewState>;
   @useResult
-  $Res call({
-    List<NavItem> tabs,
-    bool isTablet,
-    NavItem selectedTab,
-    NavChildItem selectedChildTab,
-  });
+  $Res call(
+      {List<NavItem> tabs,
+      bool isTablet,
+      NavItem selectedTab,
+      NavChildItem selectedChildTab});
 }
 
 /// @nodoc
@@ -594,31 +584,24 @@ class _$TabViewStateCopyWithImpl<$Res, $Val extends TabViewState>
     Object? selectedTab = null,
     Object? selectedChildTab = null,
   }) {
-    return _then(
-      _value.copyWith(
-            tabs:
-                null == tabs
-                    ? _value.tabs
-                    : tabs // ignore: cast_nullable_to_non_nullable
-                        as List<NavItem>,
-            isTablet:
-                null == isTablet
-                    ? _value.isTablet
-                    : isTablet // ignore: cast_nullable_to_non_nullable
-                        as bool,
-            selectedTab:
-                null == selectedTab
-                    ? _value.selectedTab
-                    : selectedTab // ignore: cast_nullable_to_non_nullable
-                        as NavItem,
-            selectedChildTab:
-                null == selectedChildTab
-                    ? _value.selectedChildTab
-                    : selectedChildTab // ignore: cast_nullable_to_non_nullable
-                        as NavChildItem,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      tabs: null == tabs
+          ? _value.tabs
+          : tabs // ignore: cast_nullable_to_non_nullable
+              as List<NavItem>,
+      isTablet: null == isTablet
+          ? _value.isTablet
+          : isTablet // ignore: cast_nullable_to_non_nullable
+              as bool,
+      selectedTab: null == selectedTab
+          ? _value.selectedTab
+          : selectedTab // ignore: cast_nullable_to_non_nullable
+              as NavItem,
+      selectedChildTab: null == selectedChildTab
+          ? _value.selectedChildTab
+          : selectedChildTab // ignore: cast_nullable_to_non_nullable
+              as NavChildItem,
+    ) as $Val);
   }
 }
 
@@ -626,17 +609,15 @@ class _$TabViewStateCopyWithImpl<$Res, $Val extends TabViewState>
 abstract class _$$TabViewStateImplCopyWith<$Res>
     implements $TabViewStateCopyWith<$Res> {
   factory _$$TabViewStateImplCopyWith(
-    _$TabViewStateImpl value,
-    $Res Function(_$TabViewStateImpl) then,
-  ) = __$$TabViewStateImplCopyWithImpl<$Res>;
+          _$TabViewStateImpl value, $Res Function(_$TabViewStateImpl) then) =
+      __$$TabViewStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    List<NavItem> tabs,
-    bool isTablet,
-    NavItem selectedTab,
-    NavChildItem selectedChildTab,
-  });
+  $Res call(
+      {List<NavItem> tabs,
+      bool isTablet,
+      NavItem selectedTab,
+      NavChildItem selectedChildTab});
 }
 
 /// @nodoc
@@ -644,9 +625,8 @@ class __$$TabViewStateImplCopyWithImpl<$Res>
     extends _$TabViewStateCopyWithImpl<$Res, _$TabViewStateImpl>
     implements _$$TabViewStateImplCopyWith<$Res> {
   __$$TabViewStateImplCopyWithImpl(
-    _$TabViewStateImpl _value,
-    $Res Function(_$TabViewStateImpl) _then,
-  ) : super(_value, _then);
+      _$TabViewStateImpl _value, $Res Function(_$TabViewStateImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of TabViewState
   /// with the given fields replaced by the non-null parameter values.
@@ -658,43 +638,37 @@ class __$$TabViewStateImplCopyWithImpl<$Res>
     Object? selectedTab = null,
     Object? selectedChildTab = null,
   }) {
-    return _then(
-      _$TabViewStateImpl(
-        tabs:
-            null == tabs
-                ? _value._tabs
-                : tabs // ignore: cast_nullable_to_non_nullable
-                    as List<NavItem>,
-        isTablet:
-            null == isTablet
-                ? _value.isTablet
-                : isTablet // ignore: cast_nullable_to_non_nullable
-                    as bool,
-        selectedTab:
-            null == selectedTab
-                ? _value.selectedTab
-                : selectedTab // ignore: cast_nullable_to_non_nullable
-                    as NavItem,
-        selectedChildTab:
-            null == selectedChildTab
-                ? _value.selectedChildTab
-                : selectedChildTab // ignore: cast_nullable_to_non_nullable
-                    as NavChildItem,
-      ),
-    );
+    return _then(_$TabViewStateImpl(
+      tabs: null == tabs
+          ? _value._tabs
+          : tabs // ignore: cast_nullable_to_non_nullable
+              as List<NavItem>,
+      isTablet: null == isTablet
+          ? _value.isTablet
+          : isTablet // ignore: cast_nullable_to_non_nullable
+              as bool,
+      selectedTab: null == selectedTab
+          ? _value.selectedTab
+          : selectedTab // ignore: cast_nullable_to_non_nullable
+              as NavItem,
+      selectedChildTab: null == selectedChildTab
+          ? _value.selectedChildTab
+          : selectedChildTab // ignore: cast_nullable_to_non_nullable
+              as NavChildItem,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$TabViewStateImpl extends _TabViewState {
-  const _$TabViewStateImpl({
-    required final List<NavItem> tabs,
-    required this.isTablet,
-    required this.selectedTab,
-    required this.selectedChildTab,
-  }) : _tabs = tabs,
-       super._();
+  const _$TabViewStateImpl(
+      {required final List<NavItem> tabs,
+      required this.isTablet,
+      required this.selectedTab,
+      required this.selectedChildTab})
+      : _tabs = tabs,
+        super._();
 
   final List<NavItem> _tabs;
   @override
@@ -732,12 +706,11 @@ class _$TabViewStateImpl extends _TabViewState {
 
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    const DeepCollectionEquality().hash(_tabs),
-    isTablet,
-    selectedTab,
-    selectedChildTab,
-  );
+      runtimeType,
+      const DeepCollectionEquality().hash(_tabs),
+      isTablet,
+      selectedTab,
+      selectedChildTab);
 
   /// Create a copy of TabViewState
   /// with the given fields replaced by the non-null parameter values.
@@ -749,12 +722,11 @@ class _$TabViewStateImpl extends _TabViewState {
 }
 
 abstract class _TabViewState extends TabViewState {
-  const factory _TabViewState({
-    required final List<NavItem> tabs,
-    required final bool isTablet,
-    required final NavItem selectedTab,
-    required final NavChildItem selectedChildTab,
-  }) = _$TabViewStateImpl;
+  const factory _TabViewState(
+      {required final List<NavItem> tabs,
+      required final bool isTablet,
+      required final NavItem selectedTab,
+      required final NavChildItem selectedChildTab}) = _$TabViewStateImpl;
   const _TabViewState._() : super._();
 
   @override

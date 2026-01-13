@@ -12,55 +12,56 @@ part of 'thing_exercise_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$ThingExerciseEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(ThingExercise exercise, String? lastAnswer)
-    initialize,
+        initialize,
     required TResult Function(String selectedAnswer) selectAnswer,
     required TResult Function(
-      String userId,
-      String progressId,
-      int totalExercises,
-    )
-    updateAnswerProgress,
+            String userId, String progressId, int totalExercises)
+        updateAnswerProgress,
     required TResult Function() checkAnswer,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(ThingExercise exercise, String? lastAnswer)? initialize,
     TResult? Function(String selectedAnswer)? selectAnswer,
     TResult? Function(String userId, String progressId, int totalExercises)?
-    updateAnswerProgress,
+        updateAnswerProgress,
     TResult? Function()? checkAnswer,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(ThingExercise exercise, String? lastAnswer)? initialize,
     TResult Function(String selectedAnswer)? selectAnswer,
     TResult Function(String userId, String progressId, int totalExercises)?
-    updateAnswerProgress,
+        updateAnswerProgress,
     TResult Function()? checkAnswer,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initialize value) initialize,
     required TResult Function(_SelectAnswer value) selectAnswer,
     required TResult Function(_ThingAnswerProgress value) updateAnswerProgress,
     required TResult Function(_CheckAnswer value) checkAnswer,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initialize value)? initialize,
     TResult? Function(_SelectAnswer value)? selectAnswer,
     TResult? Function(_ThingAnswerProgress value)? updateAnswerProgress,
     TResult? Function(_CheckAnswer value)? checkAnswer,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initialize value)? initialize,
@@ -68,15 +69,15 @@ mixin _$ThingExerciseEvent {
     TResult Function(_ThingAnswerProgress value)? updateAnswerProgress,
     TResult Function(_CheckAnswer value)? checkAnswer,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ThingExerciseEventCopyWith<$Res> {
   factory $ThingExerciseEventCopyWith(
-    ThingExerciseEvent value,
-    $Res Function(ThingExerciseEvent) then,
-  ) = _$ThingExerciseEventCopyWithImpl<$Res, ThingExerciseEvent>;
+          ThingExerciseEvent value, $Res Function(ThingExerciseEvent) then) =
+      _$ThingExerciseEventCopyWithImpl<$Res, ThingExerciseEvent>;
 }
 
 /// @nodoc
@@ -96,9 +97,8 @@ class _$ThingExerciseEventCopyWithImpl<$Res, $Val extends ThingExerciseEvent>
 /// @nodoc
 abstract class _$$InitializeImplCopyWith<$Res> {
   factory _$$InitializeImplCopyWith(
-    _$InitializeImpl value,
-    $Res Function(_$InitializeImpl) then,
-  ) = __$$InitializeImplCopyWithImpl<$Res>;
+          _$InitializeImpl value, $Res Function(_$InitializeImpl) then) =
+      __$$InitializeImplCopyWithImpl<$Res>;
   @useResult
   $Res call({ThingExercise exercise, String? lastAnswer});
 
@@ -110,29 +110,27 @@ class __$$InitializeImplCopyWithImpl<$Res>
     extends _$ThingExerciseEventCopyWithImpl<$Res, _$InitializeImpl>
     implements _$$InitializeImplCopyWith<$Res> {
   __$$InitializeImplCopyWithImpl(
-    _$InitializeImpl _value,
-    $Res Function(_$InitializeImpl) _then,
-  ) : super(_value, _then);
+      _$InitializeImpl _value, $Res Function(_$InitializeImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ThingExerciseEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? exercise = null, Object? lastAnswer = freezed}) {
-    return _then(
-      _$InitializeImpl(
-        exercise:
-            null == exercise
-                ? _value.exercise
-                : exercise // ignore: cast_nullable_to_non_nullable
-                    as ThingExercise,
-        lastAnswer:
-            freezed == lastAnswer
-                ? _value.lastAnswer
-                : lastAnswer // ignore: cast_nullable_to_non_nullable
-                    as String?,
-      ),
-    );
+  $Res call({
+    Object? exercise = null,
+    Object? lastAnswer = freezed,
+  }) {
+    return _then(_$InitializeImpl(
+      exercise: null == exercise
+          ? _value.exercise
+          : exercise // ignore: cast_nullable_to_non_nullable
+              as ThingExercise,
+      lastAnswer: freezed == lastAnswer
+          ? _value.lastAnswer
+          : lastAnswer // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 
   /// Create a copy of ThingExerciseEvent
@@ -187,14 +185,11 @@ class _$InitializeImpl implements _Initialize {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(ThingExercise exercise, String? lastAnswer)
-    initialize,
+        initialize,
     required TResult Function(String selectedAnswer) selectAnswer,
     required TResult Function(
-      String userId,
-      String progressId,
-      int totalExercises,
-    )
-    updateAnswerProgress,
+            String userId, String progressId, int totalExercises)
+        updateAnswerProgress,
     required TResult Function() checkAnswer,
   }) {
     return initialize(exercise, lastAnswer);
@@ -206,7 +201,7 @@ class _$InitializeImpl implements _Initialize {
     TResult? Function(ThingExercise exercise, String? lastAnswer)? initialize,
     TResult? Function(String selectedAnswer)? selectAnswer,
     TResult? Function(String userId, String progressId, int totalExercises)?
-    updateAnswerProgress,
+        updateAnswerProgress,
     TResult? Function()? checkAnswer,
   }) {
     return initialize?.call(exercise, lastAnswer);
@@ -218,7 +213,7 @@ class _$InitializeImpl implements _Initialize {
     TResult Function(ThingExercise exercise, String? lastAnswer)? initialize,
     TResult Function(String selectedAnswer)? selectAnswer,
     TResult Function(String userId, String progressId, int totalExercises)?
-    updateAnswerProgress,
+        updateAnswerProgress,
     TResult Function()? checkAnswer,
     required TResult orElse(),
   }) {
@@ -267,10 +262,9 @@ class _$InitializeImpl implements _Initialize {
 }
 
 abstract class _Initialize implements ThingExerciseEvent {
-  const factory _Initialize({
-    required final ThingExercise exercise,
-    required final String? lastAnswer,
-  }) = _$InitializeImpl;
+  const factory _Initialize(
+      {required final ThingExercise exercise,
+      required final String? lastAnswer}) = _$InitializeImpl;
 
   ThingExercise get exercise;
   String? get lastAnswer;
@@ -285,9 +279,8 @@ abstract class _Initialize implements ThingExerciseEvent {
 /// @nodoc
 abstract class _$$SelectAnswerImplCopyWith<$Res> {
   factory _$$SelectAnswerImplCopyWith(
-    _$SelectAnswerImpl value,
-    $Res Function(_$SelectAnswerImpl) then,
-  ) = __$$SelectAnswerImplCopyWithImpl<$Res>;
+          _$SelectAnswerImpl value, $Res Function(_$SelectAnswerImpl) then) =
+      __$$SelectAnswerImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String selectedAnswer});
 }
@@ -297,24 +290,22 @@ class __$$SelectAnswerImplCopyWithImpl<$Res>
     extends _$ThingExerciseEventCopyWithImpl<$Res, _$SelectAnswerImpl>
     implements _$$SelectAnswerImplCopyWith<$Res> {
   __$$SelectAnswerImplCopyWithImpl(
-    _$SelectAnswerImpl _value,
-    $Res Function(_$SelectAnswerImpl) _then,
-  ) : super(_value, _then);
+      _$SelectAnswerImpl _value, $Res Function(_$SelectAnswerImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ThingExerciseEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? selectedAnswer = null}) {
-    return _then(
-      _$SelectAnswerImpl(
-        selectedAnswer:
-            null == selectedAnswer
-                ? _value.selectedAnswer
-                : selectedAnswer // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+  $Res call({
+    Object? selectedAnswer = null,
+  }) {
+    return _then(_$SelectAnswerImpl(
+      selectedAnswer: null == selectedAnswer
+          ? _value.selectedAnswer
+          : selectedAnswer // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
@@ -355,14 +346,11 @@ class _$SelectAnswerImpl implements _SelectAnswer {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(ThingExercise exercise, String? lastAnswer)
-    initialize,
+        initialize,
     required TResult Function(String selectedAnswer) selectAnswer,
     required TResult Function(
-      String userId,
-      String progressId,
-      int totalExercises,
-    )
-    updateAnswerProgress,
+            String userId, String progressId, int totalExercises)
+        updateAnswerProgress,
     required TResult Function() checkAnswer,
   }) {
     return selectAnswer(selectedAnswer);
@@ -374,7 +362,7 @@ class _$SelectAnswerImpl implements _SelectAnswer {
     TResult? Function(ThingExercise exercise, String? lastAnswer)? initialize,
     TResult? Function(String selectedAnswer)? selectAnswer,
     TResult? Function(String userId, String progressId, int totalExercises)?
-    updateAnswerProgress,
+        updateAnswerProgress,
     TResult? Function()? checkAnswer,
   }) {
     return selectAnswer?.call(selectedAnswer);
@@ -386,7 +374,7 @@ class _$SelectAnswerImpl implements _SelectAnswer {
     TResult Function(ThingExercise exercise, String? lastAnswer)? initialize,
     TResult Function(String selectedAnswer)? selectAnswer,
     TResult Function(String userId, String progressId, int totalExercises)?
-    updateAnswerProgress,
+        updateAnswerProgress,
     TResult Function()? checkAnswer,
     required TResult orElse(),
   }) {
@@ -449,10 +437,9 @@ abstract class _SelectAnswer implements ThingExerciseEvent {
 
 /// @nodoc
 abstract class _$$ThingAnswerProgressImplCopyWith<$Res> {
-  factory _$$ThingAnswerProgressImplCopyWith(
-    _$ThingAnswerProgressImpl value,
-    $Res Function(_$ThingAnswerProgressImpl) then,
-  ) = __$$ThingAnswerProgressImplCopyWithImpl<$Res>;
+  factory _$$ThingAnswerProgressImplCopyWith(_$ThingAnswerProgressImpl value,
+          $Res Function(_$ThingAnswerProgressImpl) then) =
+      __$$ThingAnswerProgressImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String userId, String progressId, int totalExercises});
 }
@@ -461,10 +448,9 @@ abstract class _$$ThingAnswerProgressImplCopyWith<$Res> {
 class __$$ThingAnswerProgressImplCopyWithImpl<$Res>
     extends _$ThingExerciseEventCopyWithImpl<$Res, _$ThingAnswerProgressImpl>
     implements _$$ThingAnswerProgressImplCopyWith<$Res> {
-  __$$ThingAnswerProgressImplCopyWithImpl(
-    _$ThingAnswerProgressImpl _value,
-    $Res Function(_$ThingAnswerProgressImpl) _then,
-  ) : super(_value, _then);
+  __$$ThingAnswerProgressImplCopyWithImpl(_$ThingAnswerProgressImpl _value,
+      $Res Function(_$ThingAnswerProgressImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ThingExerciseEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -475,36 +461,30 @@ class __$$ThingAnswerProgressImplCopyWithImpl<$Res>
     Object? progressId = null,
     Object? totalExercises = null,
   }) {
-    return _then(
-      _$ThingAnswerProgressImpl(
-        userId:
-            null == userId
-                ? _value.userId
-                : userId // ignore: cast_nullable_to_non_nullable
-                    as String,
-        progressId:
-            null == progressId
-                ? _value.progressId
-                : progressId // ignore: cast_nullable_to_non_nullable
-                    as String,
-        totalExercises:
-            null == totalExercises
-                ? _value.totalExercises
-                : totalExercises // ignore: cast_nullable_to_non_nullable
-                    as int,
-      ),
-    );
+    return _then(_$ThingAnswerProgressImpl(
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+      progressId: null == progressId
+          ? _value.progressId
+          : progressId // ignore: cast_nullable_to_non_nullable
+              as String,
+      totalExercises: null == totalExercises
+          ? _value.totalExercises
+          : totalExercises // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$ThingAnswerProgressImpl implements _ThingAnswerProgress {
-  const _$ThingAnswerProgressImpl({
-    required this.userId,
-    required this.progressId,
-    required this.totalExercises,
-  });
+  const _$ThingAnswerProgressImpl(
+      {required this.userId,
+      required this.progressId,
+      required this.totalExercises});
 
   @override
   final String userId;
@@ -541,22 +521,17 @@ class _$ThingAnswerProgressImpl implements _ThingAnswerProgress {
   @pragma('vm:prefer-inline')
   _$$ThingAnswerProgressImplCopyWith<_$ThingAnswerProgressImpl> get copyWith =>
       __$$ThingAnswerProgressImplCopyWithImpl<_$ThingAnswerProgressImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(ThingExercise exercise, String? lastAnswer)
-    initialize,
+        initialize,
     required TResult Function(String selectedAnswer) selectAnswer,
     required TResult Function(
-      String userId,
-      String progressId,
-      int totalExercises,
-    )
-    updateAnswerProgress,
+            String userId, String progressId, int totalExercises)
+        updateAnswerProgress,
     required TResult Function() checkAnswer,
   }) {
     return updateAnswerProgress(userId, progressId, totalExercises);
@@ -568,7 +543,7 @@ class _$ThingAnswerProgressImpl implements _ThingAnswerProgress {
     TResult? Function(ThingExercise exercise, String? lastAnswer)? initialize,
     TResult? Function(String selectedAnswer)? selectAnswer,
     TResult? Function(String userId, String progressId, int totalExercises)?
-    updateAnswerProgress,
+        updateAnswerProgress,
     TResult? Function()? checkAnswer,
   }) {
     return updateAnswerProgress?.call(userId, progressId, totalExercises);
@@ -580,7 +555,7 @@ class _$ThingAnswerProgressImpl implements _ThingAnswerProgress {
     TResult Function(ThingExercise exercise, String? lastAnswer)? initialize,
     TResult Function(String selectedAnswer)? selectAnswer,
     TResult Function(String userId, String progressId, int totalExercises)?
-    updateAnswerProgress,
+        updateAnswerProgress,
     TResult Function()? checkAnswer,
     required TResult orElse(),
   }) {
@@ -629,11 +604,10 @@ class _$ThingAnswerProgressImpl implements _ThingAnswerProgress {
 }
 
 abstract class _ThingAnswerProgress implements ThingExerciseEvent {
-  const factory _ThingAnswerProgress({
-    required final String userId,
-    required final String progressId,
-    required final int totalExercises,
-  }) = _$ThingAnswerProgressImpl;
+  const factory _ThingAnswerProgress(
+      {required final String userId,
+      required final String progressId,
+      required final int totalExercises}) = _$ThingAnswerProgressImpl;
 
   String get userId;
   String get progressId;
@@ -649,9 +623,8 @@ abstract class _ThingAnswerProgress implements ThingExerciseEvent {
 /// @nodoc
 abstract class _$$CheckAnswerImplCopyWith<$Res> {
   factory _$$CheckAnswerImplCopyWith(
-    _$CheckAnswerImpl value,
-    $Res Function(_$CheckAnswerImpl) then,
-  ) = __$$CheckAnswerImplCopyWithImpl<$Res>;
+          _$CheckAnswerImpl value, $Res Function(_$CheckAnswerImpl) then) =
+      __$$CheckAnswerImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -659,9 +632,8 @@ class __$$CheckAnswerImplCopyWithImpl<$Res>
     extends _$ThingExerciseEventCopyWithImpl<$Res, _$CheckAnswerImpl>
     implements _$$CheckAnswerImplCopyWith<$Res> {
   __$$CheckAnswerImplCopyWithImpl(
-    _$CheckAnswerImpl _value,
-    $Res Function(_$CheckAnswerImpl) _then,
-  ) : super(_value, _then);
+      _$CheckAnswerImpl _value, $Res Function(_$CheckAnswerImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ThingExerciseEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -690,14 +662,11 @@ class _$CheckAnswerImpl implements _CheckAnswer {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(ThingExercise exercise, String? lastAnswer)
-    initialize,
+        initialize,
     required TResult Function(String selectedAnswer) selectAnswer,
     required TResult Function(
-      String userId,
-      String progressId,
-      int totalExercises,
-    )
-    updateAnswerProgress,
+            String userId, String progressId, int totalExercises)
+        updateAnswerProgress,
     required TResult Function() checkAnswer,
   }) {
     return checkAnswer();
@@ -709,7 +678,7 @@ class _$CheckAnswerImpl implements _CheckAnswer {
     TResult? Function(ThingExercise exercise, String? lastAnswer)? initialize,
     TResult? Function(String selectedAnswer)? selectAnswer,
     TResult? Function(String userId, String progressId, int totalExercises)?
-    updateAnswerProgress,
+        updateAnswerProgress,
     TResult? Function()? checkAnswer,
   }) {
     return checkAnswer?.call();
@@ -721,7 +690,7 @@ class _$CheckAnswerImpl implements _CheckAnswer {
     TResult Function(ThingExercise exercise, String? lastAnswer)? initialize,
     TResult Function(String selectedAnswer)? selectAnswer,
     TResult Function(String userId, String progressId, int totalExercises)?
-    updateAnswerProgress,
+        updateAnswerProgress,
     TResult Function()? checkAnswer,
     required TResult orElse(),
   }) {
@@ -792,17 +761,15 @@ mixin _$ThingExerciseState {
 /// @nodoc
 abstract class $ThingExerciseStateCopyWith<$Res> {
   factory $ThingExerciseStateCopyWith(
-    ThingExerciseState value,
-    $Res Function(ThingExerciseState) then,
-  ) = _$ThingExerciseStateCopyWithImpl<$Res, ThingExerciseState>;
+          ThingExerciseState value, $Res Function(ThingExerciseState) then) =
+      _$ThingExerciseStateCopyWithImpl<$Res, ThingExerciseState>;
   @useResult
-  $Res call({
-    String? selectedAnswer,
-    bool isAnswered,
-    bool isLoading,
-    ThingExercise exercise,
-    Option<Either<AppFailure, dynamic>> failureOrSuccessOption,
-  });
+  $Res call(
+      {String? selectedAnswer,
+      bool isAnswered,
+      bool isLoading,
+      ThingExercise exercise,
+      Option<Either<AppFailure, dynamic>> failureOrSuccessOption});
 
   $ThingExerciseCopyWith<$Res> get exercise;
 }
@@ -828,36 +795,28 @@ class _$ThingExerciseStateCopyWithImpl<$Res, $Val extends ThingExerciseState>
     Object? exercise = null,
     Object? failureOrSuccessOption = null,
   }) {
-    return _then(
-      _value.copyWith(
-            selectedAnswer:
-                freezed == selectedAnswer
-                    ? _value.selectedAnswer
-                    : selectedAnswer // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            isAnswered:
-                null == isAnswered
-                    ? _value.isAnswered
-                    : isAnswered // ignore: cast_nullable_to_non_nullable
-                        as bool,
-            isLoading:
-                null == isLoading
-                    ? _value.isLoading
-                    : isLoading // ignore: cast_nullable_to_non_nullable
-                        as bool,
-            exercise:
-                null == exercise
-                    ? _value.exercise
-                    : exercise // ignore: cast_nullable_to_non_nullable
-                        as ThingExercise,
-            failureOrSuccessOption:
-                null == failureOrSuccessOption
-                    ? _value.failureOrSuccessOption
-                    : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
-                        as Option<Either<AppFailure, dynamic>>,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      selectedAnswer: freezed == selectedAnswer
+          ? _value.selectedAnswer
+          : selectedAnswer // ignore: cast_nullable_to_non_nullable
+              as String?,
+      isAnswered: null == isAnswered
+          ? _value.isAnswered
+          : isAnswered // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      exercise: null == exercise
+          ? _value.exercise
+          : exercise // ignore: cast_nullable_to_non_nullable
+              as ThingExercise,
+      failureOrSuccessOption: null == failureOrSuccessOption
+          ? _value.failureOrSuccessOption
+          : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ) as $Val);
   }
 
   /// Create a copy of ThingExerciseState
@@ -874,19 +833,17 @@ class _$ThingExerciseStateCopyWithImpl<$Res, $Val extends ThingExerciseState>
 /// @nodoc
 abstract class _$$ThingExerciseStateImplCopyWith<$Res>
     implements $ThingExerciseStateCopyWith<$Res> {
-  factory _$$ThingExerciseStateImplCopyWith(
-    _$ThingExerciseStateImpl value,
-    $Res Function(_$ThingExerciseStateImpl) then,
-  ) = __$$ThingExerciseStateImplCopyWithImpl<$Res>;
+  factory _$$ThingExerciseStateImplCopyWith(_$ThingExerciseStateImpl value,
+          $Res Function(_$ThingExerciseStateImpl) then) =
+      __$$ThingExerciseStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String? selectedAnswer,
-    bool isAnswered,
-    bool isLoading,
-    ThingExercise exercise,
-    Option<Either<AppFailure, dynamic>> failureOrSuccessOption,
-  });
+  $Res call(
+      {String? selectedAnswer,
+      bool isAnswered,
+      bool isLoading,
+      ThingExercise exercise,
+      Option<Either<AppFailure, dynamic>> failureOrSuccessOption});
 
   @override
   $ThingExerciseCopyWith<$Res> get exercise;
@@ -896,10 +853,9 @@ abstract class _$$ThingExerciseStateImplCopyWith<$Res>
 class __$$ThingExerciseStateImplCopyWithImpl<$Res>
     extends _$ThingExerciseStateCopyWithImpl<$Res, _$ThingExerciseStateImpl>
     implements _$$ThingExerciseStateImplCopyWith<$Res> {
-  __$$ThingExerciseStateImplCopyWithImpl(
-    _$ThingExerciseStateImpl _value,
-    $Res Function(_$ThingExerciseStateImpl) _then,
-  ) : super(_value, _then);
+  __$$ThingExerciseStateImplCopyWithImpl(_$ThingExerciseStateImpl _value,
+      $Res Function(_$ThingExerciseStateImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ThingExerciseState
   /// with the given fields replaced by the non-null parameter values.
@@ -912,48 +868,41 @@ class __$$ThingExerciseStateImplCopyWithImpl<$Res>
     Object? exercise = null,
     Object? failureOrSuccessOption = null,
   }) {
-    return _then(
-      _$ThingExerciseStateImpl(
-        selectedAnswer:
-            freezed == selectedAnswer
-                ? _value.selectedAnswer
-                : selectedAnswer // ignore: cast_nullable_to_non_nullable
-                    as String?,
-        isAnswered:
-            null == isAnswered
-                ? _value.isAnswered
-                : isAnswered // ignore: cast_nullable_to_non_nullable
-                    as bool,
-        isLoading:
-            null == isLoading
-                ? _value.isLoading
-                : isLoading // ignore: cast_nullable_to_non_nullable
-                    as bool,
-        exercise:
-            null == exercise
-                ? _value.exercise
-                : exercise // ignore: cast_nullable_to_non_nullable
-                    as ThingExercise,
-        failureOrSuccessOption:
-            null == failureOrSuccessOption
-                ? _value.failureOrSuccessOption
-                : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
-                    as Option<Either<AppFailure, dynamic>>,
-      ),
-    );
+    return _then(_$ThingExerciseStateImpl(
+      selectedAnswer: freezed == selectedAnswer
+          ? _value.selectedAnswer
+          : selectedAnswer // ignore: cast_nullable_to_non_nullable
+              as String?,
+      isAnswered: null == isAnswered
+          ? _value.isAnswered
+          : isAnswered // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      exercise: null == exercise
+          ? _value.exercise
+          : exercise // ignore: cast_nullable_to_non_nullable
+              as ThingExercise,
+      failureOrSuccessOption: null == failureOrSuccessOption
+          ? _value.failureOrSuccessOption
+          : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$ThingExerciseStateImpl extends _ThingExerciseState {
-  const _$ThingExerciseStateImpl({
-    required this.selectedAnswer,
-    required this.isAnswered,
-    required this.isLoading,
-    required this.exercise,
-    required this.failureOrSuccessOption,
-  }) : super._();
+  const _$ThingExerciseStateImpl(
+      {required this.selectedAnswer,
+      required this.isAnswered,
+      required this.isLoading,
+      required this.exercise,
+      required this.failureOrSuccessOption})
+      : super._();
 
   @override
   final String? selectedAnswer;
@@ -989,14 +938,8 @@ class _$ThingExerciseStateImpl extends _ThingExerciseState {
   }
 
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    selectedAnswer,
-    isAnswered,
-    isLoading,
-    exercise,
-    failureOrSuccessOption,
-  );
+  int get hashCode => Object.hash(runtimeType, selectedAnswer, isAnswered,
+      isLoading, exercise, failureOrSuccessOption);
 
   /// Create a copy of ThingExerciseState
   /// with the given fields replaced by the non-null parameter values.
@@ -1005,19 +948,17 @@ class _$ThingExerciseStateImpl extends _ThingExerciseState {
   @pragma('vm:prefer-inline')
   _$$ThingExerciseStateImplCopyWith<_$ThingExerciseStateImpl> get copyWith =>
       __$$ThingExerciseStateImplCopyWithImpl<_$ThingExerciseStateImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 }
 
 abstract class _ThingExerciseState extends ThingExerciseState {
-  const factory _ThingExerciseState({
-    required final String? selectedAnswer,
-    required final bool isAnswered,
-    required final bool isLoading,
-    required final ThingExercise exercise,
-    required final Option<Either<AppFailure, dynamic>> failureOrSuccessOption,
-  }) = _$ThingExerciseStateImpl;
+  const factory _ThingExerciseState(
+      {required final String? selectedAnswer,
+      required final bool isAnswered,
+      required final bool isLoading,
+      required final ThingExercise exercise,
+      required final Option<Either<AppFailure, dynamic>>
+          failureOrSuccessOption}) = _$ThingExerciseStateImpl;
   const _ThingExerciseState._() : super._();
 
   @override

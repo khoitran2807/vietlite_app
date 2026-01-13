@@ -57,7 +57,10 @@ import 'package:vietlite/module/words_and_sentences/word_selection/word_selectio
 /// [_i1.AlphabetScreen]
 class AlphabetScreenRoute extends _i23.PageRouteInfo<void> {
   const AlphabetScreenRoute({List<_i23.PageRouteInfo>? children})
-    : super(AlphabetScreenRoute.name, initialChildren: children);
+      : super(
+          AlphabetScreenRoute.name,
+          initialChildren: children,
+        );
 
   static const String name = 'AlphabetScreenRoute';
 
@@ -73,7 +76,10 @@ class AlphabetScreenRoute extends _i23.PageRouteInfo<void> {
 /// [_i2.DiscoverScreen]
 class DiscoverScreenRoute extends _i23.PageRouteInfo<void> {
   const DiscoverScreenRoute({List<_i23.PageRouteInfo>? children})
-    : super(DiscoverScreenRoute.name, initialChildren: children);
+      : super(
+          DiscoverScreenRoute.name,
+          initialChildren: children,
+        );
 
   static const String name = 'DiscoverScreenRoute';
 
@@ -89,7 +95,10 @@ class DiscoverScreenRoute extends _i23.PageRouteInfo<void> {
 /// [_i3.ForgetPasswordScreen]
 class ForgetPasswordScreenRoute extends _i23.PageRouteInfo<void> {
   const ForgetPasswordScreenRoute({List<_i23.PageRouteInfo>? children})
-    : super(ForgetPasswordScreenRoute.name, initialChildren: children);
+      : super(
+          ForgetPasswordScreenRoute.name,
+          initialChildren: children,
+        );
 
   static const String name = 'ForgetPasswordScreenRoute';
 
@@ -105,7 +114,10 @@ class ForgetPasswordScreenRoute extends _i23.PageRouteInfo<void> {
 /// [_i4.HomeScreen]
 class HomeScreenRoute extends _i23.PageRouteInfo<void> {
   const HomeScreenRoute({List<_i23.PageRouteInfo>? children})
-    : super(HomeScreenRoute.name, initialChildren: children);
+      : super(
+          HomeScreenRoute.name,
+          initialChildren: children,
+        );
 
   static const String name = 'HomeScreenRoute';
 
@@ -126,11 +138,14 @@ class LetterDetailScreenRoute
     required String id,
     List<_i23.PageRouteInfo>? children,
   }) : super(
-         LetterDetailScreenRoute.name,
-         args: LetterDetailScreenRouteArgs(key: key, id: id),
-         rawPathParams: {'id': id},
-         initialChildren: children,
-       );
+          LetterDetailScreenRoute.name,
+          args: LetterDetailScreenRouteArgs(
+            key: key,
+            id: id,
+          ),
+          rawPathParams: {'id': id},
+          initialChildren: children,
+        );
 
   static const String name = 'LetterDetailScreenRoute';
 
@@ -139,16 +154,21 @@ class LetterDetailScreenRoute
     builder: (data) {
       final pathParams = data.inheritedPathParams;
       final args = data.argsAs<LetterDetailScreenRouteArgs>(
-        orElse:
-            () => LetterDetailScreenRouteArgs(id: pathParams.getString('id')),
+          orElse: () =>
+              LetterDetailScreenRouteArgs(id: pathParams.getString('id')));
+      return _i5.LetterDetailScreen(
+        key: args.key,
+        id: args.id,
       );
-      return _i5.LetterDetailScreen(key: args.key, id: args.id);
     },
   );
 }
 
 class LetterDetailScreenRouteArgs {
-  const LetterDetailScreenRouteArgs({this.key, required this.id});
+  const LetterDetailScreenRouteArgs({
+    this.key,
+    required this.id,
+  });
 
   final _i24.Key? key;
 
@@ -164,7 +184,10 @@ class LetterDetailScreenRouteArgs {
 /// [_i6.LettersAndNumbersScreen]
 class LettersAndNumbersScreenRoute extends _i23.PageRouteInfo<void> {
   const LettersAndNumbersScreenRoute({List<_i23.PageRouteInfo>? children})
-    : super(LettersAndNumbersScreenRoute.name, initialChildren: children);
+      : super(
+          LettersAndNumbersScreenRoute.name,
+          initialChildren: children,
+        );
 
   static const String name = 'LettersAndNumbersScreenRoute';
 
@@ -180,7 +203,10 @@ class LettersAndNumbersScreenRoute extends _i23.PageRouteInfo<void> {
 /// [_i7.LettersScreen]
 class LettersScreenRoute extends _i23.PageRouteInfo<void> {
   const LettersScreenRoute({List<_i23.PageRouteInfo>? children})
-    : super(LettersScreenRoute.name, initialChildren: children);
+      : super(
+          LettersScreenRoute.name,
+          initialChildren: children,
+        );
 
   static const String name = 'LettersScreenRoute';
 
@@ -196,7 +222,10 @@ class LettersScreenRoute extends _i23.PageRouteInfo<void> {
 /// [_i8.LoginScreen]
 class LoginScreenRoute extends _i23.PageRouteInfo<void> {
   const LoginScreenRoute({List<_i23.PageRouteInfo>? children})
-    : super(LoginScreenRoute.name, initialChildren: children);
+      : super(
+          LoginScreenRoute.name,
+          initialChildren: children,
+        );
 
   static const String name = 'LoginScreenRoute';
 
@@ -217,11 +246,14 @@ class NumberDetailScreenRoute
     required String id,
     List<_i23.PageRouteInfo>? children,
   }) : super(
-         NumberDetailScreenRoute.name,
-         args: NumberDetailScreenRouteArgs(key: key, id: id),
-         rawPathParams: {'id': id},
-         initialChildren: children,
-       );
+          NumberDetailScreenRoute.name,
+          args: NumberDetailScreenRouteArgs(
+            key: key,
+            id: id,
+          ),
+          rawPathParams: {'id': id},
+          initialChildren: children,
+        );
 
   static const String name = 'NumberDetailScreenRoute';
 
@@ -230,16 +262,21 @@ class NumberDetailScreenRoute
     builder: (data) {
       final pathParams = data.inheritedPathParams;
       final args = data.argsAs<NumberDetailScreenRouteArgs>(
-        orElse:
-            () => NumberDetailScreenRouteArgs(id: pathParams.getString('id')),
+          orElse: () =>
+              NumberDetailScreenRouteArgs(id: pathParams.getString('id')));
+      return _i9.NumberDetailScreen(
+        key: args.key,
+        id: args.id,
       );
-      return _i9.NumberDetailScreen(key: args.key, id: args.id);
     },
   );
 }
 
 class NumberDetailScreenRouteArgs {
-  const NumberDetailScreenRouteArgs({this.key, required this.id});
+  const NumberDetailScreenRouteArgs({
+    this.key,
+    required this.id,
+  });
 
   final _i24.Key? key;
 
@@ -255,7 +292,10 @@ class NumberDetailScreenRouteArgs {
 /// [_i10.NumbersScreen]
 class NumbersScreenRoute extends _i23.PageRouteInfo<void> {
   const NumbersScreenRoute({List<_i23.PageRouteInfo>? children})
-    : super(NumbersScreenRoute.name, initialChildren: children);
+      : super(
+          NumbersScreenRoute.name,
+          initialChildren: children,
+        );
 
   static const String name = 'NumbersScreenRoute';
 
@@ -271,7 +311,10 @@ class NumbersScreenRoute extends _i23.PageRouteInfo<void> {
 /// [_i11.PrivacyPolicyScreen]
 class PrivacyPolicyScreenRoute extends _i23.PageRouteInfo<void> {
   const PrivacyPolicyScreenRoute({List<_i23.PageRouteInfo>? children})
-    : super(PrivacyPolicyScreenRoute.name, initialChildren: children);
+      : super(
+          PrivacyPolicyScreenRoute.name,
+          initialChildren: children,
+        );
 
   static const String name = 'PrivacyPolicyScreenRoute';
 
@@ -287,7 +330,10 @@ class PrivacyPolicyScreenRoute extends _i23.PageRouteInfo<void> {
 /// [_i12.RegisterScreen]
 class RegisterScreenRoute extends _i23.PageRouteInfo<void> {
   const RegisterScreenRoute({List<_i23.PageRouteInfo>? children})
-    : super(RegisterScreenRoute.name, initialChildren: children);
+      : super(
+          RegisterScreenRoute.name,
+          initialChildren: children,
+        );
 
   static const String name = 'RegisterScreenRoute';
 
@@ -303,7 +349,10 @@ class RegisterScreenRoute extends _i23.PageRouteInfo<void> {
 /// [_i13.RootScreen]
 class RootScreenRoute extends _i23.PageRouteInfo<void> {
   const RootScreenRoute({List<_i23.PageRouteInfo>? children})
-    : super(RootScreenRoute.name, initialChildren: children);
+      : super(
+          RootScreenRoute.name,
+          initialChildren: children,
+        );
 
   static const String name = 'RootScreenRoute';
 
@@ -319,7 +368,10 @@ class RootScreenRoute extends _i23.PageRouteInfo<void> {
 /// [_i14.SettingScreen]
 class SettingScreenRoute extends _i23.PageRouteInfo<void> {
   const SettingScreenRoute({List<_i23.PageRouteInfo>? children})
-    : super(SettingScreenRoute.name, initialChildren: children);
+      : super(
+          SettingScreenRoute.name,
+          initialChildren: children,
+        );
 
   static const String name = 'SettingScreenRoute';
 
@@ -335,7 +387,10 @@ class SettingScreenRoute extends _i23.PageRouteInfo<void> {
 /// [_i15.TermsScreen]
 class TermsScreenRoute extends _i23.PageRouteInfo<void> {
   const TermsScreenRoute({List<_i23.PageRouteInfo>? children})
-    : super(TermsScreenRoute.name, initialChildren: children);
+      : super(
+          TermsScreenRoute.name,
+          initialChildren: children,
+        );
 
   static const String name = 'TermsScreenRoute';
 
@@ -356,11 +411,14 @@ class ThingDetailScreenRoute
     required String id,
     List<_i23.PageRouteInfo>? children,
   }) : super(
-         ThingDetailScreenRoute.name,
-         args: ThingDetailScreenRouteArgs(key: key, id: id),
-         rawPathParams: {'id': id},
-         initialChildren: children,
-       );
+          ThingDetailScreenRoute.name,
+          args: ThingDetailScreenRouteArgs(
+            key: key,
+            id: id,
+          ),
+          rawPathParams: {'id': id},
+          initialChildren: children,
+        );
 
   static const String name = 'ThingDetailScreenRoute';
 
@@ -369,16 +427,21 @@ class ThingDetailScreenRoute
     builder: (data) {
       final pathParams = data.inheritedPathParams;
       final args = data.argsAs<ThingDetailScreenRouteArgs>(
-        orElse:
-            () => ThingDetailScreenRouteArgs(id: pathParams.getString('id')),
+          orElse: () =>
+              ThingDetailScreenRouteArgs(id: pathParams.getString('id')));
+      return _i16.ThingDetailScreen(
+        key: args.key,
+        id: args.id,
       );
-      return _i16.ThingDetailScreen(key: args.key, id: args.id);
     },
   );
 }
 
 class ThingDetailScreenRouteArgs {
-  const ThingDetailScreenRouteArgs({this.key, required this.id});
+  const ThingDetailScreenRouteArgs({
+    this.key,
+    required this.id,
+  });
 
   final _i24.Key? key;
 
@@ -398,11 +461,14 @@ class ThingsScreenRoute extends _i23.PageRouteInfo<ThingsScreenRouteArgs> {
     required String type,
     List<_i23.PageRouteInfo>? children,
   }) : super(
-         ThingsScreenRoute.name,
-         args: ThingsScreenRouteArgs(key: key, type: type),
-         rawPathParams: {'type': type},
-         initialChildren: children,
-       );
+          ThingsScreenRoute.name,
+          args: ThingsScreenRouteArgs(
+            key: key,
+            type: type,
+          ),
+          rawPathParams: {'type': type},
+          initialChildren: children,
+        );
 
   static const String name = 'ThingsScreenRoute';
 
@@ -411,15 +477,21 @@ class ThingsScreenRoute extends _i23.PageRouteInfo<ThingsScreenRouteArgs> {
     builder: (data) {
       final pathParams = data.inheritedPathParams;
       final args = data.argsAs<ThingsScreenRouteArgs>(
-        orElse: () => ThingsScreenRouteArgs(type: pathParams.getString('type')),
+          orElse: () =>
+              ThingsScreenRouteArgs(type: pathParams.getString('type')));
+      return _i17.ThingsScreen(
+        key: args.key,
+        type: args.type,
       );
-      return _i17.ThingsScreen(key: args.key, type: args.type);
     },
   );
 }
 
 class ThingsScreenRouteArgs {
-  const ThingsScreenRouteArgs({this.key, required this.type});
+  const ThingsScreenRouteArgs({
+    this.key,
+    required this.type,
+  });
 
   final _i24.Key? key;
 
@@ -440,11 +512,14 @@ class WordMatchDetailScreenRoute
     required String id,
     List<_i23.PageRouteInfo>? children,
   }) : super(
-         WordMatchDetailScreenRoute.name,
-         args: WordMatchDetailScreenRouteArgs(key: key, id: id),
-         rawPathParams: {'id': id},
-         initialChildren: children,
-       );
+          WordMatchDetailScreenRoute.name,
+          args: WordMatchDetailScreenRouteArgs(
+            key: key,
+            id: id,
+          ),
+          rawPathParams: {'id': id},
+          initialChildren: children,
+        );
 
   static const String name = 'WordMatchDetailScreenRoute';
 
@@ -453,17 +528,21 @@ class WordMatchDetailScreenRoute
     builder: (data) {
       final pathParams = data.inheritedPathParams;
       final args = data.argsAs<WordMatchDetailScreenRouteArgs>(
-        orElse:
-            () =>
-                WordMatchDetailScreenRouteArgs(id: pathParams.getString('id')),
+          orElse: () =>
+              WordMatchDetailScreenRouteArgs(id: pathParams.getString('id')));
+      return _i18.WordMatchDetailScreen(
+        key: args.key,
+        id: args.id,
       );
-      return _i18.WordMatchDetailScreen(key: args.key, id: args.id);
     },
   );
 }
 
 class WordMatchDetailScreenRouteArgs {
-  const WordMatchDetailScreenRouteArgs({this.key, required this.id});
+  const WordMatchDetailScreenRouteArgs({
+    this.key,
+    required this.id,
+  });
 
   final _i24.Key? key;
 
@@ -479,7 +558,10 @@ class WordMatchDetailScreenRouteArgs {
 /// [_i19.WordMatchScreen]
 class WordMatchScreenRoute extends _i23.PageRouteInfo<void> {
   const WordMatchScreenRoute({List<_i23.PageRouteInfo>? children})
-    : super(WordMatchScreenRoute.name, initialChildren: children);
+      : super(
+          WordMatchScreenRoute.name,
+          initialChildren: children,
+        );
 
   static const String name = 'WordMatchScreenRoute';
 
@@ -500,11 +582,14 @@ class WordSelectionDetailScreenRoute
     required String id,
     List<_i23.PageRouteInfo>? children,
   }) : super(
-         WordSelectionDetailScreenRoute.name,
-         args: WordSelectionDetailScreenRouteArgs(key: key, id: id),
-         rawPathParams: {'id': id},
-         initialChildren: children,
-       );
+          WordSelectionDetailScreenRoute.name,
+          args: WordSelectionDetailScreenRouteArgs(
+            key: key,
+            id: id,
+          ),
+          rawPathParams: {'id': id},
+          initialChildren: children,
+        );
 
   static const String name = 'WordSelectionDetailScreenRoute';
 
@@ -513,18 +598,21 @@ class WordSelectionDetailScreenRoute
     builder: (data) {
       final pathParams = data.inheritedPathParams;
       final args = data.argsAs<WordSelectionDetailScreenRouteArgs>(
-        orElse:
-            () => WordSelectionDetailScreenRouteArgs(
-              id: pathParams.getString('id'),
-            ),
+          orElse: () => WordSelectionDetailScreenRouteArgs(
+              id: pathParams.getString('id')));
+      return _i20.WordSelectionDetailScreen(
+        key: args.key,
+        id: args.id,
       );
-      return _i20.WordSelectionDetailScreen(key: args.key, id: args.id);
     },
   );
 }
 
 class WordSelectionDetailScreenRouteArgs {
-  const WordSelectionDetailScreenRouteArgs({this.key, required this.id});
+  const WordSelectionDetailScreenRouteArgs({
+    this.key,
+    required this.id,
+  });
 
   final _i24.Key? key;
 
@@ -540,7 +628,10 @@ class WordSelectionDetailScreenRouteArgs {
 /// [_i21.WordSelectionScreen]
 class WordSelectionScreenRoute extends _i23.PageRouteInfo<void> {
   const WordSelectionScreenRoute({List<_i23.PageRouteInfo>? children})
-    : super(WordSelectionScreenRoute.name, initialChildren: children);
+      : super(
+          WordSelectionScreenRoute.name,
+          initialChildren: children,
+        );
 
   static const String name = 'WordSelectionScreenRoute';
 
@@ -556,7 +647,10 @@ class WordSelectionScreenRoute extends _i23.PageRouteInfo<void> {
 /// [_i22.WordsAndSentencesScreen]
 class WordsAndSentencesScreenRoute extends _i23.PageRouteInfo<void> {
   const WordsAndSentencesScreenRoute({List<_i23.PageRouteInfo>? children})
-    : super(WordsAndSentencesScreenRoute.name, initialChildren: children);
+      : super(
+          WordsAndSentencesScreenRoute.name,
+          initialChildren: children,
+        );
 
   static const String name = 'WordsAndSentencesScreenRoute';
 

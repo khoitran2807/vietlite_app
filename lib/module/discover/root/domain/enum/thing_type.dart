@@ -4,26 +4,26 @@ import 'package:vietlite/common/extension/build_context.dart';
 
 enum ThingType {
   color,
-  fruit,
+  vietnameseFood,
   animal,
   vehicle,
-  shape,
-  schoolSupply;
+  occupation,
+  weather;
 
   String get image {
     switch (this) {
       case ThingType.color:
         return AppImages.color;
-      case ThingType.fruit:
-        return AppImages.fruit;
+      case ThingType.vietnameseFood:
+        return AppImages.vietnameseFood;
       case ThingType.animal:
         return AppImages.animal;
       case ThingType.vehicle:
         return AppImages.vehicle;
-      case ThingType.shape:
-        return AppImages.shape;
-      case ThingType.schoolSupply:
-        return AppImages.schoolSupply;
+      case ThingType.occupation:
+        return AppImages.occupation;
+      case ThingType.weather:
+        return AppImages.weather;
     }
   }
 
@@ -31,16 +31,16 @@ enum ThingType {
     switch (this) {
       case ThingType.color:
         return context.lang.color;
-      case ThingType.fruit:
-        return context.lang.fruit;
+      case ThingType.vietnameseFood:
+        return context.lang.vietnameseFood;
       case ThingType.animal:
         return context.lang.animal;
       case ThingType.vehicle:
         return context.lang.vehicle;
-      case ThingType.shape:
-        return context.lang.shape;
-      case ThingType.schoolSupply:
-        return context.lang.schoolSupply;
+      case ThingType.occupation:
+        return context.lang.occupation;
+      case ThingType.weather:
+        return context.lang.weather;
     }
   }
 }

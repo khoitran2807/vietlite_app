@@ -12,8 +12,7 @@ part of 'app_language.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$AppLanguage {
@@ -29,9 +28,8 @@ mixin _$AppLanguage {
 /// @nodoc
 abstract class $AppLanguageCopyWith<$Res> {
   factory $AppLanguageCopyWith(
-    AppLanguage value,
-    $Res Function(AppLanguage) then,
-  ) = _$AppLanguageCopyWithImpl<$Res, AppLanguage>;
+          AppLanguage value, $Res Function(AppLanguage) then) =
+      _$AppLanguageCopyWithImpl<$Res, AppLanguage>;
   @useResult
   $Res call({LanguageCode languageCode});
 }
@@ -50,17 +48,15 @@ class _$AppLanguageCopyWithImpl<$Res, $Val extends AppLanguage>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? languageCode = null}) {
-    return _then(
-      _value.copyWith(
-            languageCode:
-                null == languageCode
-                    ? _value.languageCode
-                    : languageCode // ignore: cast_nullable_to_non_nullable
-                        as LanguageCode,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? languageCode = null,
+  }) {
+    return _then(_value.copyWith(
+      languageCode: null == languageCode
+          ? _value.languageCode
+          : languageCode // ignore: cast_nullable_to_non_nullable
+              as LanguageCode,
+    ) as $Val);
   }
 }
 
@@ -68,9 +64,8 @@ class _$AppLanguageCopyWithImpl<$Res, $Val extends AppLanguage>
 abstract class _$$AppLanguageImplCopyWith<$Res>
     implements $AppLanguageCopyWith<$Res> {
   factory _$$AppLanguageImplCopyWith(
-    _$AppLanguageImpl value,
-    $Res Function(_$AppLanguageImpl) then,
-  ) = __$$AppLanguageImplCopyWithImpl<$Res>;
+          _$AppLanguageImpl value, $Res Function(_$AppLanguageImpl) then) =
+      __$$AppLanguageImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({LanguageCode languageCode});
@@ -81,24 +76,22 @@ class __$$AppLanguageImplCopyWithImpl<$Res>
     extends _$AppLanguageCopyWithImpl<$Res, _$AppLanguageImpl>
     implements _$$AppLanguageImplCopyWith<$Res> {
   __$$AppLanguageImplCopyWithImpl(
-    _$AppLanguageImpl _value,
-    $Res Function(_$AppLanguageImpl) _then,
-  ) : super(_value, _then);
+      _$AppLanguageImpl _value, $Res Function(_$AppLanguageImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of AppLanguage
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? languageCode = null}) {
-    return _then(
-      _$AppLanguageImpl(
-        languageCode:
-            null == languageCode
-                ? _value.languageCode
-                : languageCode // ignore: cast_nullable_to_non_nullable
-                    as LanguageCode,
-      ),
-    );
+  $Res call({
+    Object? languageCode = null,
+  }) {
+    return _then(_$AppLanguageImpl(
+      languageCode: null == languageCode
+          ? _value.languageCode
+          : languageCode // ignore: cast_nullable_to_non_nullable
+              as LanguageCode,
+    ));
   }
 }
 

@@ -32,9 +32,9 @@ void main() {
 
     final testThing = Thing.empty().copyWith(
       id: testId,
-      name: 'hinhvuong',
+      name: 'maudo',
       order: 1,
-      type: ThingType.shape,
+      type: ThingType.color,
     );
 
     final userExercises = [

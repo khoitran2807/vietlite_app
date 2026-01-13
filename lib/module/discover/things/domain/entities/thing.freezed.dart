@@ -12,8 +12,7 @@ part of 'thing.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$Thing {
@@ -39,18 +38,17 @@ abstract class $ThingCopyWith<$Res> {
   factory $ThingCopyWith(Thing value, $Res Function(Thing) then) =
       _$ThingCopyWithImpl<$Res, Thing>;
   @useResult
-  $Res call({
-    String id,
-    String name,
-    String audio,
-    String image,
-    List<CharacterExample> examples,
-    int order,
-    ThingType type,
-    List<ThingExercise> exercises,
-    int totalExercises,
-    bool isPremium,
-  });
+  $Res call(
+      {String id,
+      String name,
+      String audio,
+      String image,
+      List<CharacterExample> examples,
+      int order,
+      ThingType type,
+      List<ThingExercise> exercises,
+      int totalExercises,
+      bool isPremium});
 }
 
 /// @nodoc
@@ -79,84 +77,69 @@ class _$ThingCopyWithImpl<$Res, $Val extends Thing>
     Object? totalExercises = null,
     Object? isPremium = null,
   }) {
-    return _then(
-      _value.copyWith(
-            id:
-                null == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as String,
-            name:
-                null == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String,
-            audio:
-                null == audio
-                    ? _value.audio
-                    : audio // ignore: cast_nullable_to_non_nullable
-                        as String,
-            image:
-                null == image
-                    ? _value.image
-                    : image // ignore: cast_nullable_to_non_nullable
-                        as String,
-            examples:
-                null == examples
-                    ? _value.examples
-                    : examples // ignore: cast_nullable_to_non_nullable
-                        as List<CharacterExample>,
-            order:
-                null == order
-                    ? _value.order
-                    : order // ignore: cast_nullable_to_non_nullable
-                        as int,
-            type:
-                null == type
-                    ? _value.type
-                    : type // ignore: cast_nullable_to_non_nullable
-                        as ThingType,
-            exercises:
-                null == exercises
-                    ? _value.exercises
-                    : exercises // ignore: cast_nullable_to_non_nullable
-                        as List<ThingExercise>,
-            totalExercises:
-                null == totalExercises
-                    ? _value.totalExercises
-                    : totalExercises // ignore: cast_nullable_to_non_nullable
-                        as int,
-            isPremium:
-                null == isPremium
-                    ? _value.isPremium
-                    : isPremium // ignore: cast_nullable_to_non_nullable
-                        as bool,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      audio: null == audio
+          ? _value.audio
+          : audio // ignore: cast_nullable_to_non_nullable
+              as String,
+      image: null == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String,
+      examples: null == examples
+          ? _value.examples
+          : examples // ignore: cast_nullable_to_non_nullable
+              as List<CharacterExample>,
+      order: null == order
+          ? _value.order
+          : order // ignore: cast_nullable_to_non_nullable
+              as int,
+      type: null == type
+          ? _value.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as ThingType,
+      exercises: null == exercises
+          ? _value.exercises
+          : exercises // ignore: cast_nullable_to_non_nullable
+              as List<ThingExercise>,
+      totalExercises: null == totalExercises
+          ? _value.totalExercises
+          : totalExercises // ignore: cast_nullable_to_non_nullable
+              as int,
+      isPremium: null == isPremium
+          ? _value.isPremium
+          : isPremium // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$ThingImplCopyWith<$Res> implements $ThingCopyWith<$Res> {
   factory _$$ThingImplCopyWith(
-    _$ThingImpl value,
-    $Res Function(_$ThingImpl) then,
-  ) = __$$ThingImplCopyWithImpl<$Res>;
+          _$ThingImpl value, $Res Function(_$ThingImpl) then) =
+      __$$ThingImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String id,
-    String name,
-    String audio,
-    String image,
-    List<CharacterExample> examples,
-    int order,
-    ThingType type,
-    List<ThingExercise> exercises,
-    int totalExercises,
-    bool isPremium,
-  });
+  $Res call(
+      {String id,
+      String name,
+      String audio,
+      String image,
+      List<CharacterExample> examples,
+      int order,
+      ThingType type,
+      List<ThingExercise> exercises,
+      int totalExercises,
+      bool isPremium});
 }
 
 /// @nodoc
@@ -164,9 +147,8 @@ class __$$ThingImplCopyWithImpl<$Res>
     extends _$ThingCopyWithImpl<$Res, _$ThingImpl>
     implements _$$ThingImplCopyWith<$Res> {
   __$$ThingImplCopyWithImpl(
-    _$ThingImpl _value,
-    $Res Function(_$ThingImpl) _then,
-  ) : super(_value, _then);
+      _$ThingImpl _value, $Res Function(_$ThingImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of Thing
   /// with the given fields replaced by the non-null parameter values.
@@ -184,80 +166,68 @@ class __$$ThingImplCopyWithImpl<$Res>
     Object? totalExercises = null,
     Object? isPremium = null,
   }) {
-    return _then(
-      _$ThingImpl(
-        id:
-            null == id
-                ? _value.id
-                : id // ignore: cast_nullable_to_non_nullable
-                    as String,
-        name:
-            null == name
-                ? _value.name
-                : name // ignore: cast_nullable_to_non_nullable
-                    as String,
-        audio:
-            null == audio
-                ? _value.audio
-                : audio // ignore: cast_nullable_to_non_nullable
-                    as String,
-        image:
-            null == image
-                ? _value.image
-                : image // ignore: cast_nullable_to_non_nullable
-                    as String,
-        examples:
-            null == examples
-                ? _value._examples
-                : examples // ignore: cast_nullable_to_non_nullable
-                    as List<CharacterExample>,
-        order:
-            null == order
-                ? _value.order
-                : order // ignore: cast_nullable_to_non_nullable
-                    as int,
-        type:
-            null == type
-                ? _value.type
-                : type // ignore: cast_nullable_to_non_nullable
-                    as ThingType,
-        exercises:
-            null == exercises
-                ? _value._exercises
-                : exercises // ignore: cast_nullable_to_non_nullable
-                    as List<ThingExercise>,
-        totalExercises:
-            null == totalExercises
-                ? _value.totalExercises
-                : totalExercises // ignore: cast_nullable_to_non_nullable
-                    as int,
-        isPremium:
-            null == isPremium
-                ? _value.isPremium
-                : isPremium // ignore: cast_nullable_to_non_nullable
-                    as bool,
-      ),
-    );
+    return _then(_$ThingImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      audio: null == audio
+          ? _value.audio
+          : audio // ignore: cast_nullable_to_non_nullable
+              as String,
+      image: null == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String,
+      examples: null == examples
+          ? _value._examples
+          : examples // ignore: cast_nullable_to_non_nullable
+              as List<CharacterExample>,
+      order: null == order
+          ? _value.order
+          : order // ignore: cast_nullable_to_non_nullable
+              as int,
+      type: null == type
+          ? _value.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as ThingType,
+      exercises: null == exercises
+          ? _value._exercises
+          : exercises // ignore: cast_nullable_to_non_nullable
+              as List<ThingExercise>,
+      totalExercises: null == totalExercises
+          ? _value.totalExercises
+          : totalExercises // ignore: cast_nullable_to_non_nullable
+              as int,
+      isPremium: null == isPremium
+          ? _value.isPremium
+          : isPremium // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$ThingImpl extends _Thing {
-  const _$ThingImpl({
-    required this.id,
-    required this.name,
-    required this.audio,
-    required this.image,
-    required final List<CharacterExample> examples,
-    required this.order,
-    required this.type,
-    required final List<ThingExercise> exercises,
-    required this.totalExercises,
-    required this.isPremium,
-  }) : _examples = examples,
-       _exercises = exercises,
-       super._();
+  const _$ThingImpl(
+      {required this.id,
+      required this.name,
+      required this.audio,
+      required this.image,
+      required final List<CharacterExample> examples,
+      required this.order,
+      required this.type,
+      required final List<ThingExercise> exercises,
+      required this.totalExercises,
+      required this.isPremium})
+      : _examples = examples,
+        _exercises = exercises,
+        super._();
 
   @override
   final String id;
@@ -309,10 +279,8 @@ class _$ThingImpl extends _Thing {
             const DeepCollectionEquality().equals(other._examples, _examples) &&
             (identical(other.order, order) || other.order == order) &&
             (identical(other.type, type) || other.type == type) &&
-            const DeepCollectionEquality().equals(
-              other._exercises,
-              _exercises,
-            ) &&
+            const DeepCollectionEquality()
+                .equals(other._exercises, _exercises) &&
             (identical(other.totalExercises, totalExercises) ||
                 other.totalExercises == totalExercises) &&
             (identical(other.isPremium, isPremium) ||
@@ -321,18 +289,17 @@ class _$ThingImpl extends _Thing {
 
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    id,
-    name,
-    audio,
-    image,
-    const DeepCollectionEquality().hash(_examples),
-    order,
-    type,
-    const DeepCollectionEquality().hash(_exercises),
-    totalExercises,
-    isPremium,
-  );
+      runtimeType,
+      id,
+      name,
+      audio,
+      image,
+      const DeepCollectionEquality().hash(_examples),
+      order,
+      type,
+      const DeepCollectionEquality().hash(_exercises),
+      totalExercises,
+      isPremium);
 
   /// Create a copy of Thing
   /// with the given fields replaced by the non-null parameter values.
@@ -344,18 +311,17 @@ class _$ThingImpl extends _Thing {
 }
 
 abstract class _Thing extends Thing {
-  const factory _Thing({
-    required final String id,
-    required final String name,
-    required final String audio,
-    required final String image,
-    required final List<CharacterExample> examples,
-    required final int order,
-    required final ThingType type,
-    required final List<ThingExercise> exercises,
-    required final int totalExercises,
-    required final bool isPremium,
-  }) = _$ThingImpl;
+  const factory _Thing(
+      {required final String id,
+      required final String name,
+      required final String audio,
+      required final String image,
+      required final List<CharacterExample> examples,
+      required final int order,
+      required final ThingType type,
+      required final List<ThingExercise> exercises,
+      required final int totalExercises,
+      required final bool isPremium}) = _$ThingImpl;
   const _Thing._() : super._();
 
   @override
@@ -405,17 +371,15 @@ mixin _$ThingExercise {
 /// @nodoc
 abstract class $ThingExerciseCopyWith<$Res> {
   factory $ThingExerciseCopyWith(
-    ThingExercise value,
-    $Res Function(ThingExercise) then,
-  ) = _$ThingExerciseCopyWithImpl<$Res, ThingExercise>;
+          ThingExercise value, $Res Function(ThingExercise) then) =
+      _$ThingExerciseCopyWithImpl<$Res, ThingExercise>;
   @useResult
-  $Res call({
-    String id,
-    List<String> choices,
-    String answer,
-    String image,
-    String question,
-  });
+  $Res call(
+      {String id,
+      List<String> choices,
+      String answer,
+      String image,
+      String question});
 }
 
 /// @nodoc
@@ -439,36 +403,28 @@ class _$ThingExerciseCopyWithImpl<$Res, $Val extends ThingExercise>
     Object? image = null,
     Object? question = null,
   }) {
-    return _then(
-      _value.copyWith(
-            id:
-                null == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as String,
-            choices:
-                null == choices
-                    ? _value.choices
-                    : choices // ignore: cast_nullable_to_non_nullable
-                        as List<String>,
-            answer:
-                null == answer
-                    ? _value.answer
-                    : answer // ignore: cast_nullable_to_non_nullable
-                        as String,
-            image:
-                null == image
-                    ? _value.image
-                    : image // ignore: cast_nullable_to_non_nullable
-                        as String,
-            question:
-                null == question
-                    ? _value.question
-                    : question // ignore: cast_nullable_to_non_nullable
-                        as String,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      choices: null == choices
+          ? _value.choices
+          : choices // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      answer: null == answer
+          ? _value.answer
+          : answer // ignore: cast_nullable_to_non_nullable
+              as String,
+      image: null == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String,
+      question: null == question
+          ? _value.question
+          : question // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
   }
 }
 
@@ -476,18 +432,16 @@ class _$ThingExerciseCopyWithImpl<$Res, $Val extends ThingExercise>
 abstract class _$$ThingExerciseImplCopyWith<$Res>
     implements $ThingExerciseCopyWith<$Res> {
   factory _$$ThingExerciseImplCopyWith(
-    _$ThingExerciseImpl value,
-    $Res Function(_$ThingExerciseImpl) then,
-  ) = __$$ThingExerciseImplCopyWithImpl<$Res>;
+          _$ThingExerciseImpl value, $Res Function(_$ThingExerciseImpl) then) =
+      __$$ThingExerciseImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String id,
-    List<String> choices,
-    String answer,
-    String image,
-    String question,
-  });
+  $Res call(
+      {String id,
+      List<String> choices,
+      String answer,
+      String image,
+      String question});
 }
 
 /// @nodoc
@@ -495,9 +449,8 @@ class __$$ThingExerciseImplCopyWithImpl<$Res>
     extends _$ThingExerciseCopyWithImpl<$Res, _$ThingExerciseImpl>
     implements _$$ThingExerciseImplCopyWith<$Res> {
   __$$ThingExerciseImplCopyWithImpl(
-    _$ThingExerciseImpl _value,
-    $Res Function(_$ThingExerciseImpl) _then,
-  ) : super(_value, _then);
+      _$ThingExerciseImpl _value, $Res Function(_$ThingExerciseImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ThingExercise
   /// with the given fields replaced by the non-null parameter values.
@@ -510,49 +463,42 @@ class __$$ThingExerciseImplCopyWithImpl<$Res>
     Object? image = null,
     Object? question = null,
   }) {
-    return _then(
-      _$ThingExerciseImpl(
-        id:
-            null == id
-                ? _value.id
-                : id // ignore: cast_nullable_to_non_nullable
-                    as String,
-        choices:
-            null == choices
-                ? _value._choices
-                : choices // ignore: cast_nullable_to_non_nullable
-                    as List<String>,
-        answer:
-            null == answer
-                ? _value.answer
-                : answer // ignore: cast_nullable_to_non_nullable
-                    as String,
-        image:
-            null == image
-                ? _value.image
-                : image // ignore: cast_nullable_to_non_nullable
-                    as String,
-        question:
-            null == question
-                ? _value.question
-                : question // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+    return _then(_$ThingExerciseImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      choices: null == choices
+          ? _value._choices
+          : choices // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      answer: null == answer
+          ? _value.answer
+          : answer // ignore: cast_nullable_to_non_nullable
+              as String,
+      image: null == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String,
+      question: null == question
+          ? _value.question
+          : question // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$ThingExerciseImpl extends _ThingExercise {
-  const _$ThingExerciseImpl({
-    required this.id,
-    required final List<String> choices,
-    required this.answer,
-    required this.image,
-    required this.question,
-  }) : _choices = choices,
-       super._();
+  const _$ThingExerciseImpl(
+      {required this.id,
+      required final List<String> choices,
+      required this.answer,
+      required this.image,
+      required this.question})
+      : _choices = choices,
+        super._();
 
   @override
   final String id;
@@ -590,14 +536,8 @@ class _$ThingExerciseImpl extends _ThingExercise {
   }
 
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    id,
-    const DeepCollectionEquality().hash(_choices),
-    answer,
-    image,
-    question,
-  );
+  int get hashCode => Object.hash(runtimeType, id,
+      const DeepCollectionEquality().hash(_choices), answer, image, question);
 
   /// Create a copy of ThingExercise
   /// with the given fields replaced by the non-null parameter values.
@@ -609,13 +549,12 @@ class _$ThingExerciseImpl extends _ThingExercise {
 }
 
 abstract class _ThingExercise extends ThingExercise {
-  const factory _ThingExercise({
-    required final String id,
-    required final List<String> choices,
-    required final String answer,
-    required final String image,
-    required final String question,
-  }) = _$ThingExerciseImpl;
+  const factory _ThingExercise(
+      {required final String id,
+      required final List<String> choices,
+      required final String answer,
+      required final String image,
+      required final String question}) = _$ThingExerciseImpl;
   const _ThingExercise._() : super._();
 
   @override

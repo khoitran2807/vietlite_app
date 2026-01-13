@@ -12,8 +12,7 @@ part of 'progress_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$ProgressEvent {
@@ -25,9 +24,10 @@ mixin _$ProgressEvent {
     required TResult Function(List<Number> numbers) initNumbers,
     required TResult Function(List<Thing> things) initThings,
     required TResult Function(List<WordSelection> wordSelections)
-    initWordSelections,
+        initWordSelections,
     required TResult Function(List<WordMatch> wordMatches) initWordMatches,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String userId)? getUserProgresses,
@@ -37,7 +37,8 @@ mixin _$ProgressEvent {
     TResult? Function(List<Thing> things)? initThings,
     TResult? Function(List<WordSelection> wordSelections)? initWordSelections,
     TResult? Function(List<WordMatch> wordMatches)? initWordMatches,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String userId)? getUserProgresses,
@@ -48,7 +49,8 @@ mixin _$ProgressEvent {
     TResult Function(List<WordSelection> wordSelections)? initWordSelections,
     TResult Function(List<WordMatch> wordMatches)? initWordMatches,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_GetUserProgresses value) getUserProgresses,
@@ -58,7 +60,8 @@ mixin _$ProgressEvent {
     required TResult Function(_InitThings value) initThings,
     required TResult Function(_InitWordSelections value) initWordSelections,
     required TResult Function(_InitWordMatches value) initWordMatches,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_GetUserProgresses value)? getUserProgresses,
@@ -68,7 +71,8 @@ mixin _$ProgressEvent {
     TResult? Function(_InitThings value)? initThings,
     TResult? Function(_InitWordSelections value)? initWordSelections,
     TResult? Function(_InitWordMatches value)? initWordMatches,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_GetUserProgresses value)? getUserProgresses,
@@ -79,15 +83,15 @@ mixin _$ProgressEvent {
     TResult Function(_InitWordSelections value)? initWordSelections,
     TResult Function(_InitWordMatches value)? initWordMatches,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ProgressEventCopyWith<$Res> {
   factory $ProgressEventCopyWith(
-    ProgressEvent value,
-    $Res Function(ProgressEvent) then,
-  ) = _$ProgressEventCopyWithImpl<$Res, ProgressEvent>;
+          ProgressEvent value, $Res Function(ProgressEvent) then) =
+      _$ProgressEventCopyWithImpl<$Res, ProgressEvent>;
 }
 
 /// @nodoc
@@ -106,10 +110,9 @@ class _$ProgressEventCopyWithImpl<$Res, $Val extends ProgressEvent>
 
 /// @nodoc
 abstract class _$$GetUserProgressesImplCopyWith<$Res> {
-  factory _$$GetUserProgressesImplCopyWith(
-    _$GetUserProgressesImpl value,
-    $Res Function(_$GetUserProgressesImpl) then,
-  ) = __$$GetUserProgressesImplCopyWithImpl<$Res>;
+  factory _$$GetUserProgressesImplCopyWith(_$GetUserProgressesImpl value,
+          $Res Function(_$GetUserProgressesImpl) then) =
+      __$$GetUserProgressesImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String userId});
 }
@@ -118,25 +121,23 @@ abstract class _$$GetUserProgressesImplCopyWith<$Res> {
 class __$$GetUserProgressesImplCopyWithImpl<$Res>
     extends _$ProgressEventCopyWithImpl<$Res, _$GetUserProgressesImpl>
     implements _$$GetUserProgressesImplCopyWith<$Res> {
-  __$$GetUserProgressesImplCopyWithImpl(
-    _$GetUserProgressesImpl _value,
-    $Res Function(_$GetUserProgressesImpl) _then,
-  ) : super(_value, _then);
+  __$$GetUserProgressesImplCopyWithImpl(_$GetUserProgressesImpl _value,
+      $Res Function(_$GetUserProgressesImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ProgressEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? userId = null}) {
-    return _then(
-      _$GetUserProgressesImpl(
-        userId:
-            null == userId
-                ? _value.userId
-                : userId // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+  $Res call({
+    Object? userId = null,
+  }) {
+    return _then(_$GetUserProgressesImpl(
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
@@ -171,9 +172,7 @@ class _$GetUserProgressesImpl implements _GetUserProgresses {
   @pragma('vm:prefer-inline')
   _$$GetUserProgressesImplCopyWith<_$GetUserProgressesImpl> get copyWith =>
       __$$GetUserProgressesImplCopyWithImpl<_$GetUserProgressesImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -184,7 +183,7 @@ class _$GetUserProgressesImpl implements _GetUserProgresses {
     required TResult Function(List<Number> numbers) initNumbers,
     required TResult Function(List<Thing> things) initThings,
     required TResult Function(List<WordSelection> wordSelections)
-    initWordSelections,
+        initWordSelections,
     required TResult Function(List<WordMatch> wordMatches) initWordMatches,
   }) {
     return getUserProgresses(userId);
@@ -284,10 +283,9 @@ abstract class _GetUserProgresses implements ProgressEvent {
 
 /// @nodoc
 abstract class _$$UpdateProgressImplCopyWith<$Res> {
-  factory _$$UpdateProgressImplCopyWith(
-    _$UpdateProgressImpl value,
-    $Res Function(_$UpdateProgressImpl) then,
-  ) = __$$UpdateProgressImplCopyWithImpl<$Res>;
+  factory _$$UpdateProgressImplCopyWith(_$UpdateProgressImpl value,
+          $Res Function(_$UpdateProgressImpl) then) =
+      __$$UpdateProgressImplCopyWithImpl<$Res>;
   @useResult
   $Res call({UserProgress progress});
 
@@ -299,24 +297,22 @@ class __$$UpdateProgressImplCopyWithImpl<$Res>
     extends _$ProgressEventCopyWithImpl<$Res, _$UpdateProgressImpl>
     implements _$$UpdateProgressImplCopyWith<$Res> {
   __$$UpdateProgressImplCopyWithImpl(
-    _$UpdateProgressImpl _value,
-    $Res Function(_$UpdateProgressImpl) _then,
-  ) : super(_value, _then);
+      _$UpdateProgressImpl _value, $Res Function(_$UpdateProgressImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ProgressEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? progress = null}) {
-    return _then(
-      _$UpdateProgressImpl(
-        progress:
-            null == progress
-                ? _value.progress
-                : progress // ignore: cast_nullable_to_non_nullable
-                    as UserProgress,
-      ),
-    );
+  $Res call({
+    Object? progress = null,
+  }) {
+    return _then(_$UpdateProgressImpl(
+      progress: null == progress
+          ? _value.progress
+          : progress // ignore: cast_nullable_to_non_nullable
+              as UserProgress,
+    ));
   }
 
   /// Create a copy of ProgressEvent
@@ -362,9 +358,7 @@ class _$UpdateProgressImpl implements _UpdateProgress {
   @pragma('vm:prefer-inline')
   _$$UpdateProgressImplCopyWith<_$UpdateProgressImpl> get copyWith =>
       __$$UpdateProgressImplCopyWithImpl<_$UpdateProgressImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -375,7 +369,7 @@ class _$UpdateProgressImpl implements _UpdateProgress {
     required TResult Function(List<Number> numbers) initNumbers,
     required TResult Function(List<Thing> things) initThings,
     required TResult Function(List<WordSelection> wordSelections)
-    initWordSelections,
+        initWordSelections,
     required TResult Function(List<WordMatch> wordMatches) initWordMatches,
   }) {
     return updateProgress(progress);
@@ -476,9 +470,8 @@ abstract class _UpdateProgress implements ProgressEvent {
 /// @nodoc
 abstract class _$$InitLettersImplCopyWith<$Res> {
   factory _$$InitLettersImplCopyWith(
-    _$InitLettersImpl value,
-    $Res Function(_$InitLettersImpl) then,
-  ) = __$$InitLettersImplCopyWithImpl<$Res>;
+          _$InitLettersImpl value, $Res Function(_$InitLettersImpl) then) =
+      __$$InitLettersImplCopyWithImpl<$Res>;
   @useResult
   $Res call({List<Letter> letters});
 }
@@ -488,24 +481,22 @@ class __$$InitLettersImplCopyWithImpl<$Res>
     extends _$ProgressEventCopyWithImpl<$Res, _$InitLettersImpl>
     implements _$$InitLettersImplCopyWith<$Res> {
   __$$InitLettersImplCopyWithImpl(
-    _$InitLettersImpl _value,
-    $Res Function(_$InitLettersImpl) _then,
-  ) : super(_value, _then);
+      _$InitLettersImpl _value, $Res Function(_$InitLettersImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ProgressEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? letters = null}) {
-    return _then(
-      _$InitLettersImpl(
-        letters:
-            null == letters
-                ? _value._letters
-                : letters // ignore: cast_nullable_to_non_nullable
-                    as List<Letter>,
-      ),
-    );
+  $Res call({
+    Object? letters = null,
+  }) {
+    return _then(_$InitLettersImpl(
+      letters: null == letters
+          ? _value._letters
+          : letters // ignore: cast_nullable_to_non_nullable
+              as List<Letter>,
+    ));
   }
 }
 
@@ -513,7 +504,7 @@ class __$$InitLettersImplCopyWithImpl<$Res>
 
 class _$InitLettersImpl implements _InitLetters {
   const _$InitLettersImpl({required final List<Letter> letters})
-    : _letters = letters;
+      : _letters = letters;
 
   final List<Letter> _letters;
   @override
@@ -557,7 +548,7 @@ class _$InitLettersImpl implements _InitLetters {
     required TResult Function(List<Number> numbers) initNumbers,
     required TResult Function(List<Thing> things) initThings,
     required TResult Function(List<WordSelection> wordSelections)
-    initWordSelections,
+        initWordSelections,
     required TResult Function(List<WordMatch> wordMatches) initWordMatches,
   }) {
     return initLetters(letters);
@@ -658,9 +649,8 @@ abstract class _InitLetters implements ProgressEvent {
 /// @nodoc
 abstract class _$$InitNumbersImplCopyWith<$Res> {
   factory _$$InitNumbersImplCopyWith(
-    _$InitNumbersImpl value,
-    $Res Function(_$InitNumbersImpl) then,
-  ) = __$$InitNumbersImplCopyWithImpl<$Res>;
+          _$InitNumbersImpl value, $Res Function(_$InitNumbersImpl) then) =
+      __$$InitNumbersImplCopyWithImpl<$Res>;
   @useResult
   $Res call({List<Number> numbers});
 }
@@ -670,24 +660,22 @@ class __$$InitNumbersImplCopyWithImpl<$Res>
     extends _$ProgressEventCopyWithImpl<$Res, _$InitNumbersImpl>
     implements _$$InitNumbersImplCopyWith<$Res> {
   __$$InitNumbersImplCopyWithImpl(
-    _$InitNumbersImpl _value,
-    $Res Function(_$InitNumbersImpl) _then,
-  ) : super(_value, _then);
+      _$InitNumbersImpl _value, $Res Function(_$InitNumbersImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ProgressEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? numbers = null}) {
-    return _then(
-      _$InitNumbersImpl(
-        numbers:
-            null == numbers
-                ? _value._numbers
-                : numbers // ignore: cast_nullable_to_non_nullable
-                    as List<Number>,
-      ),
-    );
+  $Res call({
+    Object? numbers = null,
+  }) {
+    return _then(_$InitNumbersImpl(
+      numbers: null == numbers
+          ? _value._numbers
+          : numbers // ignore: cast_nullable_to_non_nullable
+              as List<Number>,
+    ));
   }
 }
 
@@ -695,7 +683,7 @@ class __$$InitNumbersImplCopyWithImpl<$Res>
 
 class _$InitNumbersImpl implements _InitNumbers {
   const _$InitNumbersImpl({required final List<Number> numbers})
-    : _numbers = numbers;
+      : _numbers = numbers;
 
   final List<Number> _numbers;
   @override
@@ -739,7 +727,7 @@ class _$InitNumbersImpl implements _InitNumbers {
     required TResult Function(List<Number> numbers) initNumbers,
     required TResult Function(List<Thing> things) initThings,
     required TResult Function(List<WordSelection> wordSelections)
-    initWordSelections,
+        initWordSelections,
     required TResult Function(List<WordMatch> wordMatches) initWordMatches,
   }) {
     return initNumbers(numbers);
@@ -840,9 +828,8 @@ abstract class _InitNumbers implements ProgressEvent {
 /// @nodoc
 abstract class _$$InitThingsImplCopyWith<$Res> {
   factory _$$InitThingsImplCopyWith(
-    _$InitThingsImpl value,
-    $Res Function(_$InitThingsImpl) then,
-  ) = __$$InitThingsImplCopyWithImpl<$Res>;
+          _$InitThingsImpl value, $Res Function(_$InitThingsImpl) then) =
+      __$$InitThingsImplCopyWithImpl<$Res>;
   @useResult
   $Res call({List<Thing> things});
 }
@@ -852,24 +839,22 @@ class __$$InitThingsImplCopyWithImpl<$Res>
     extends _$ProgressEventCopyWithImpl<$Res, _$InitThingsImpl>
     implements _$$InitThingsImplCopyWith<$Res> {
   __$$InitThingsImplCopyWithImpl(
-    _$InitThingsImpl _value,
-    $Res Function(_$InitThingsImpl) _then,
-  ) : super(_value, _then);
+      _$InitThingsImpl _value, $Res Function(_$InitThingsImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ProgressEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? things = null}) {
-    return _then(
-      _$InitThingsImpl(
-        things:
-            null == things
-                ? _value._things
-                : things // ignore: cast_nullable_to_non_nullable
-                    as List<Thing>,
-      ),
-    );
+  $Res call({
+    Object? things = null,
+  }) {
+    return _then(_$InitThingsImpl(
+      things: null == things
+          ? _value._things
+          : things // ignore: cast_nullable_to_non_nullable
+              as List<Thing>,
+    ));
   }
 }
 
@@ -877,7 +862,7 @@ class __$$InitThingsImplCopyWithImpl<$Res>
 
 class _$InitThingsImpl implements _InitThings {
   const _$InitThingsImpl({required final List<Thing> things})
-    : _things = things;
+      : _things = things;
 
   final List<Thing> _things;
   @override
@@ -921,7 +906,7 @@ class _$InitThingsImpl implements _InitThings {
     required TResult Function(List<Number> numbers) initNumbers,
     required TResult Function(List<Thing> things) initThings,
     required TResult Function(List<WordSelection> wordSelections)
-    initWordSelections,
+        initWordSelections,
     required TResult Function(List<WordMatch> wordMatches) initWordMatches,
   }) {
     return initThings(things);
@@ -1021,10 +1006,9 @@ abstract class _InitThings implements ProgressEvent {
 
 /// @nodoc
 abstract class _$$InitWordSelectionsImplCopyWith<$Res> {
-  factory _$$InitWordSelectionsImplCopyWith(
-    _$InitWordSelectionsImpl value,
-    $Res Function(_$InitWordSelectionsImpl) then,
-  ) = __$$InitWordSelectionsImplCopyWithImpl<$Res>;
+  factory _$$InitWordSelectionsImplCopyWith(_$InitWordSelectionsImpl value,
+          $Res Function(_$InitWordSelectionsImpl) then) =
+      __$$InitWordSelectionsImplCopyWithImpl<$Res>;
   @useResult
   $Res call({List<WordSelection> wordSelections});
 }
@@ -1033,34 +1017,32 @@ abstract class _$$InitWordSelectionsImplCopyWith<$Res> {
 class __$$InitWordSelectionsImplCopyWithImpl<$Res>
     extends _$ProgressEventCopyWithImpl<$Res, _$InitWordSelectionsImpl>
     implements _$$InitWordSelectionsImplCopyWith<$Res> {
-  __$$InitWordSelectionsImplCopyWithImpl(
-    _$InitWordSelectionsImpl _value,
-    $Res Function(_$InitWordSelectionsImpl) _then,
-  ) : super(_value, _then);
+  __$$InitWordSelectionsImplCopyWithImpl(_$InitWordSelectionsImpl _value,
+      $Res Function(_$InitWordSelectionsImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ProgressEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? wordSelections = null}) {
-    return _then(
-      _$InitWordSelectionsImpl(
-        wordSelections:
-            null == wordSelections
-                ? _value._wordSelections
-                : wordSelections // ignore: cast_nullable_to_non_nullable
-                    as List<WordSelection>,
-      ),
-    );
+  $Res call({
+    Object? wordSelections = null,
+  }) {
+    return _then(_$InitWordSelectionsImpl(
+      wordSelections: null == wordSelections
+          ? _value._wordSelections
+          : wordSelections // ignore: cast_nullable_to_non_nullable
+              as List<WordSelection>,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$InitWordSelectionsImpl implements _InitWordSelections {
-  const _$InitWordSelectionsImpl({
-    required final List<WordSelection> wordSelections,
-  }) : _wordSelections = wordSelections;
+  const _$InitWordSelectionsImpl(
+      {required final List<WordSelection> wordSelections})
+      : _wordSelections = wordSelections;
 
   final List<WordSelection> _wordSelections;
   @override
@@ -1080,17 +1062,13 @@ class _$InitWordSelectionsImpl implements _InitWordSelections {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$InitWordSelectionsImpl &&
-            const DeepCollectionEquality().equals(
-              other._wordSelections,
-              _wordSelections,
-            ));
+            const DeepCollectionEquality()
+                .equals(other._wordSelections, _wordSelections));
   }
 
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    const DeepCollectionEquality().hash(_wordSelections),
-  );
+      runtimeType, const DeepCollectionEquality().hash(_wordSelections));
 
   /// Create a copy of ProgressEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -1099,9 +1077,7 @@ class _$InitWordSelectionsImpl implements _InitWordSelections {
   @pragma('vm:prefer-inline')
   _$$InitWordSelectionsImplCopyWith<_$InitWordSelectionsImpl> get copyWith =>
       __$$InitWordSelectionsImplCopyWithImpl<_$InitWordSelectionsImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1112,7 +1088,7 @@ class _$InitWordSelectionsImpl implements _InitWordSelections {
     required TResult Function(List<Number> numbers) initNumbers,
     required TResult Function(List<Thing> things) initThings,
     required TResult Function(List<WordSelection> wordSelections)
-    initWordSelections,
+        initWordSelections,
     required TResult Function(List<WordMatch> wordMatches) initWordMatches,
   }) {
     return initWordSelections(wordSelections);
@@ -1198,9 +1174,9 @@ class _$InitWordSelectionsImpl implements _InitWordSelections {
 }
 
 abstract class _InitWordSelections implements ProgressEvent {
-  const factory _InitWordSelections({
-    required final List<WordSelection> wordSelections,
-  }) = _$InitWordSelectionsImpl;
+  const factory _InitWordSelections(
+          {required final List<WordSelection> wordSelections}) =
+      _$InitWordSelectionsImpl;
 
   List<WordSelection> get wordSelections;
 
@@ -1213,10 +1189,9 @@ abstract class _InitWordSelections implements ProgressEvent {
 
 /// @nodoc
 abstract class _$$InitWordMatchesImplCopyWith<$Res> {
-  factory _$$InitWordMatchesImplCopyWith(
-    _$InitWordMatchesImpl value,
-    $Res Function(_$InitWordMatchesImpl) then,
-  ) = __$$InitWordMatchesImplCopyWithImpl<$Res>;
+  factory _$$InitWordMatchesImplCopyWith(_$InitWordMatchesImpl value,
+          $Res Function(_$InitWordMatchesImpl) then) =
+      __$$InitWordMatchesImplCopyWithImpl<$Res>;
   @useResult
   $Res call({List<WordMatch> wordMatches});
 }
@@ -1226,24 +1201,22 @@ class __$$InitWordMatchesImplCopyWithImpl<$Res>
     extends _$ProgressEventCopyWithImpl<$Res, _$InitWordMatchesImpl>
     implements _$$InitWordMatchesImplCopyWith<$Res> {
   __$$InitWordMatchesImplCopyWithImpl(
-    _$InitWordMatchesImpl _value,
-    $Res Function(_$InitWordMatchesImpl) _then,
-  ) : super(_value, _then);
+      _$InitWordMatchesImpl _value, $Res Function(_$InitWordMatchesImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ProgressEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? wordMatches = null}) {
-    return _then(
-      _$InitWordMatchesImpl(
-        wordMatches:
-            null == wordMatches
-                ? _value._wordMatches
-                : wordMatches // ignore: cast_nullable_to_non_nullable
-                    as List<WordMatch>,
-      ),
-    );
+  $Res call({
+    Object? wordMatches = null,
+  }) {
+    return _then(_$InitWordMatchesImpl(
+      wordMatches: null == wordMatches
+          ? _value._wordMatches
+          : wordMatches // ignore: cast_nullable_to_non_nullable
+              as List<WordMatch>,
+    ));
   }
 }
 
@@ -1251,7 +1224,7 @@ class __$$InitWordMatchesImplCopyWithImpl<$Res>
 
 class _$InitWordMatchesImpl implements _InitWordMatches {
   const _$InitWordMatchesImpl({required final List<WordMatch> wordMatches})
-    : _wordMatches = wordMatches;
+      : _wordMatches = wordMatches;
 
   final List<WordMatch> _wordMatches;
   @override
@@ -1271,17 +1244,13 @@ class _$InitWordMatchesImpl implements _InitWordMatches {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$InitWordMatchesImpl &&
-            const DeepCollectionEquality().equals(
-              other._wordMatches,
-              _wordMatches,
-            ));
+            const DeepCollectionEquality()
+                .equals(other._wordMatches, _wordMatches));
   }
 
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    const DeepCollectionEquality().hash(_wordMatches),
-  );
+      runtimeType, const DeepCollectionEquality().hash(_wordMatches));
 
   /// Create a copy of ProgressEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -1290,9 +1259,7 @@ class _$InitWordMatchesImpl implements _InitWordMatches {
   @pragma('vm:prefer-inline')
   _$$InitWordMatchesImplCopyWith<_$InitWordMatchesImpl> get copyWith =>
       __$$InitWordMatchesImplCopyWithImpl<_$InitWordMatchesImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1303,7 +1270,7 @@ class _$InitWordMatchesImpl implements _InitWordMatches {
     required TResult Function(List<Number> numbers) initNumbers,
     required TResult Function(List<Thing> things) initThings,
     required TResult Function(List<WordSelection> wordSelections)
-    initWordSelections,
+        initWordSelections,
     required TResult Function(List<WordMatch> wordMatches) initWordMatches,
   }) {
     return initWordMatches(wordMatches);
@@ -1423,20 +1390,18 @@ mixin _$ProgressState {
 /// @nodoc
 abstract class $ProgressStateCopyWith<$Res> {
   factory $ProgressStateCopyWith(
-    ProgressState value,
-    $Res Function(ProgressState) then,
-  ) = _$ProgressStateCopyWithImpl<$Res, ProgressState>;
+          ProgressState value, $Res Function(ProgressState) then) =
+      _$ProgressStateCopyWithImpl<$Res, ProgressState>;
   @useResult
-  $Res call({
-    List<Letter> letters,
-    List<Number> numbers,
-    List<Thing> things,
-    List<WordSelection> wordSelections,
-    List<WordMatch> wordMatches,
-    List<UserProgress> userProgresses,
-    bool isLoading,
-    Option<Either<AppFailure, dynamic>> fetchFailure,
-  });
+  $Res call(
+      {List<Letter> letters,
+      List<Number> numbers,
+      List<Thing> things,
+      List<WordSelection> wordSelections,
+      List<WordMatch> wordMatches,
+      List<UserProgress> userProgresses,
+      bool isLoading,
+      Option<Either<AppFailure, dynamic>> fetchFailure});
 }
 
 /// @nodoc
@@ -1463,51 +1428,40 @@ class _$ProgressStateCopyWithImpl<$Res, $Val extends ProgressState>
     Object? isLoading = null,
     Object? fetchFailure = null,
   }) {
-    return _then(
-      _value.copyWith(
-            letters:
-                null == letters
-                    ? _value.letters
-                    : letters // ignore: cast_nullable_to_non_nullable
-                        as List<Letter>,
-            numbers:
-                null == numbers
-                    ? _value.numbers
-                    : numbers // ignore: cast_nullable_to_non_nullable
-                        as List<Number>,
-            things:
-                null == things
-                    ? _value.things
-                    : things // ignore: cast_nullable_to_non_nullable
-                        as List<Thing>,
-            wordSelections:
-                null == wordSelections
-                    ? _value.wordSelections
-                    : wordSelections // ignore: cast_nullable_to_non_nullable
-                        as List<WordSelection>,
-            wordMatches:
-                null == wordMatches
-                    ? _value.wordMatches
-                    : wordMatches // ignore: cast_nullable_to_non_nullable
-                        as List<WordMatch>,
-            userProgresses:
-                null == userProgresses
-                    ? _value.userProgresses
-                    : userProgresses // ignore: cast_nullable_to_non_nullable
-                        as List<UserProgress>,
-            isLoading:
-                null == isLoading
-                    ? _value.isLoading
-                    : isLoading // ignore: cast_nullable_to_non_nullable
-                        as bool,
-            fetchFailure:
-                null == fetchFailure
-                    ? _value.fetchFailure
-                    : fetchFailure // ignore: cast_nullable_to_non_nullable
-                        as Option<Either<AppFailure, dynamic>>,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      letters: null == letters
+          ? _value.letters
+          : letters // ignore: cast_nullable_to_non_nullable
+              as List<Letter>,
+      numbers: null == numbers
+          ? _value.numbers
+          : numbers // ignore: cast_nullable_to_non_nullable
+              as List<Number>,
+      things: null == things
+          ? _value.things
+          : things // ignore: cast_nullable_to_non_nullable
+              as List<Thing>,
+      wordSelections: null == wordSelections
+          ? _value.wordSelections
+          : wordSelections // ignore: cast_nullable_to_non_nullable
+              as List<WordSelection>,
+      wordMatches: null == wordMatches
+          ? _value.wordMatches
+          : wordMatches // ignore: cast_nullable_to_non_nullable
+              as List<WordMatch>,
+      userProgresses: null == userProgresses
+          ? _value.userProgresses
+          : userProgresses // ignore: cast_nullable_to_non_nullable
+              as List<UserProgress>,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      fetchFailure: null == fetchFailure
+          ? _value.fetchFailure
+          : fetchFailure // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ) as $Val);
   }
 }
 
@@ -1515,21 +1469,19 @@ class _$ProgressStateCopyWithImpl<$Res, $Val extends ProgressState>
 abstract class _$$ProgressStateImplCopyWith<$Res>
     implements $ProgressStateCopyWith<$Res> {
   factory _$$ProgressStateImplCopyWith(
-    _$ProgressStateImpl value,
-    $Res Function(_$ProgressStateImpl) then,
-  ) = __$$ProgressStateImplCopyWithImpl<$Res>;
+          _$ProgressStateImpl value, $Res Function(_$ProgressStateImpl) then) =
+      __$$ProgressStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    List<Letter> letters,
-    List<Number> numbers,
-    List<Thing> things,
-    List<WordSelection> wordSelections,
-    List<WordMatch> wordMatches,
-    List<UserProgress> userProgresses,
-    bool isLoading,
-    Option<Either<AppFailure, dynamic>> fetchFailure,
-  });
+  $Res call(
+      {List<Letter> letters,
+      List<Number> numbers,
+      List<Thing> things,
+      List<WordSelection> wordSelections,
+      List<WordMatch> wordMatches,
+      List<UserProgress> userProgresses,
+      bool isLoading,
+      Option<Either<AppFailure, dynamic>> fetchFailure});
 }
 
 /// @nodoc
@@ -1537,9 +1489,8 @@ class __$$ProgressStateImplCopyWithImpl<$Res>
     extends _$ProgressStateCopyWithImpl<$Res, _$ProgressStateImpl>
     implements _$$ProgressStateImplCopyWith<$Res> {
   __$$ProgressStateImplCopyWithImpl(
-    _$ProgressStateImpl _value,
-    $Res Function(_$ProgressStateImpl) _then,
-  ) : super(_value, _then);
+      _$ProgressStateImpl _value, $Res Function(_$ProgressStateImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ProgressState
   /// with the given fields replaced by the non-null parameter values.
@@ -1555,72 +1506,62 @@ class __$$ProgressStateImplCopyWithImpl<$Res>
     Object? isLoading = null,
     Object? fetchFailure = null,
   }) {
-    return _then(
-      _$ProgressStateImpl(
-        letters:
-            null == letters
-                ? _value._letters
-                : letters // ignore: cast_nullable_to_non_nullable
-                    as List<Letter>,
-        numbers:
-            null == numbers
-                ? _value._numbers
-                : numbers // ignore: cast_nullable_to_non_nullable
-                    as List<Number>,
-        things:
-            null == things
-                ? _value._things
-                : things // ignore: cast_nullable_to_non_nullable
-                    as List<Thing>,
-        wordSelections:
-            null == wordSelections
-                ? _value._wordSelections
-                : wordSelections // ignore: cast_nullable_to_non_nullable
-                    as List<WordSelection>,
-        wordMatches:
-            null == wordMatches
-                ? _value._wordMatches
-                : wordMatches // ignore: cast_nullable_to_non_nullable
-                    as List<WordMatch>,
-        userProgresses:
-            null == userProgresses
-                ? _value._userProgresses
-                : userProgresses // ignore: cast_nullable_to_non_nullable
-                    as List<UserProgress>,
-        isLoading:
-            null == isLoading
-                ? _value.isLoading
-                : isLoading // ignore: cast_nullable_to_non_nullable
-                    as bool,
-        fetchFailure:
-            null == fetchFailure
-                ? _value.fetchFailure
-                : fetchFailure // ignore: cast_nullable_to_non_nullable
-                    as Option<Either<AppFailure, dynamic>>,
-      ),
-    );
+    return _then(_$ProgressStateImpl(
+      letters: null == letters
+          ? _value._letters
+          : letters // ignore: cast_nullable_to_non_nullable
+              as List<Letter>,
+      numbers: null == numbers
+          ? _value._numbers
+          : numbers // ignore: cast_nullable_to_non_nullable
+              as List<Number>,
+      things: null == things
+          ? _value._things
+          : things // ignore: cast_nullable_to_non_nullable
+              as List<Thing>,
+      wordSelections: null == wordSelections
+          ? _value._wordSelections
+          : wordSelections // ignore: cast_nullable_to_non_nullable
+              as List<WordSelection>,
+      wordMatches: null == wordMatches
+          ? _value._wordMatches
+          : wordMatches // ignore: cast_nullable_to_non_nullable
+              as List<WordMatch>,
+      userProgresses: null == userProgresses
+          ? _value._userProgresses
+          : userProgresses // ignore: cast_nullable_to_non_nullable
+              as List<UserProgress>,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      fetchFailure: null == fetchFailure
+          ? _value.fetchFailure
+          : fetchFailure // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$ProgressStateImpl extends _ProgressState {
-  const _$ProgressStateImpl({
-    required final List<Letter> letters,
-    required final List<Number> numbers,
-    required final List<Thing> things,
-    required final List<WordSelection> wordSelections,
-    required final List<WordMatch> wordMatches,
-    required final List<UserProgress> userProgresses,
-    required this.isLoading,
-    required this.fetchFailure,
-  }) : _letters = letters,
-       _numbers = numbers,
-       _things = things,
-       _wordSelections = wordSelections,
-       _wordMatches = wordMatches,
-       _userProgresses = userProgresses,
-       super._();
+  const _$ProgressStateImpl(
+      {required final List<Letter> letters,
+      required final List<Number> numbers,
+      required final List<Thing> things,
+      required final List<WordSelection> wordSelections,
+      required final List<WordMatch> wordMatches,
+      required final List<UserProgress> userProgresses,
+      required this.isLoading,
+      required this.fetchFailure})
+      : _letters = letters,
+        _numbers = numbers,
+        _things = things,
+        _wordSelections = wordSelections,
+        _wordMatches = wordMatches,
+        _userProgresses = userProgresses,
+        super._();
 
   final List<Letter> _letters;
   @override
@@ -1688,18 +1629,12 @@ class _$ProgressStateImpl extends _ProgressState {
             const DeepCollectionEquality().equals(other._letters, _letters) &&
             const DeepCollectionEquality().equals(other._numbers, _numbers) &&
             const DeepCollectionEquality().equals(other._things, _things) &&
-            const DeepCollectionEquality().equals(
-              other._wordSelections,
-              _wordSelections,
-            ) &&
-            const DeepCollectionEquality().equals(
-              other._wordMatches,
-              _wordMatches,
-            ) &&
-            const DeepCollectionEquality().equals(
-              other._userProgresses,
-              _userProgresses,
-            ) &&
+            const DeepCollectionEquality()
+                .equals(other._wordSelections, _wordSelections) &&
+            const DeepCollectionEquality()
+                .equals(other._wordMatches, _wordMatches) &&
+            const DeepCollectionEquality()
+                .equals(other._userProgresses, _userProgresses) &&
             (identical(other.isLoading, isLoading) ||
                 other.isLoading == isLoading) &&
             (identical(other.fetchFailure, fetchFailure) ||
@@ -1708,16 +1643,15 @@ class _$ProgressStateImpl extends _ProgressState {
 
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    const DeepCollectionEquality().hash(_letters),
-    const DeepCollectionEquality().hash(_numbers),
-    const DeepCollectionEquality().hash(_things),
-    const DeepCollectionEquality().hash(_wordSelections),
-    const DeepCollectionEquality().hash(_wordMatches),
-    const DeepCollectionEquality().hash(_userProgresses),
-    isLoading,
-    fetchFailure,
-  );
+      runtimeType,
+      const DeepCollectionEquality().hash(_letters),
+      const DeepCollectionEquality().hash(_numbers),
+      const DeepCollectionEquality().hash(_things),
+      const DeepCollectionEquality().hash(_wordSelections),
+      const DeepCollectionEquality().hash(_wordMatches),
+      const DeepCollectionEquality().hash(_userProgresses),
+      isLoading,
+      fetchFailure);
 
   /// Create a copy of ProgressState
   /// with the given fields replaced by the non-null parameter values.
@@ -1729,16 +1663,16 @@ class _$ProgressStateImpl extends _ProgressState {
 }
 
 abstract class _ProgressState extends ProgressState {
-  const factory _ProgressState({
-    required final List<Letter> letters,
-    required final List<Number> numbers,
-    required final List<Thing> things,
-    required final List<WordSelection> wordSelections,
-    required final List<WordMatch> wordMatches,
-    required final List<UserProgress> userProgresses,
-    required final bool isLoading,
-    required final Option<Either<AppFailure, dynamic>> fetchFailure,
-  }) = _$ProgressStateImpl;
+  const factory _ProgressState(
+          {required final List<Letter> letters,
+          required final List<Number> numbers,
+          required final List<Thing> things,
+          required final List<WordSelection> wordSelections,
+          required final List<WordMatch> wordMatches,
+          required final List<UserProgress> userProgresses,
+          required final bool isLoading,
+          required final Option<Either<AppFailure, dynamic>> fetchFailure}) =
+      _$ProgressStateImpl;
   const _ProgressState._() : super._();
 
   @override

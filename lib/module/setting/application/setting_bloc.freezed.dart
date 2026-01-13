@@ -12,60 +12,64 @@ part of 'setting_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$SettingEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(LanguageCode languageCode, ThemeCode themeCode)
-    initialize,
+        initialize,
     required TResult Function(AppLanguage language) changeLocale,
     required TResult Function(AppTheme theme) changeTheme,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(LanguageCode languageCode, ThemeCode themeCode)?
-    initialize,
+        initialize,
     TResult? Function(AppLanguage language)? changeLocale,
     TResult? Function(AppTheme theme)? changeTheme,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(LanguageCode languageCode, ThemeCode themeCode)?
-    initialize,
+        initialize,
     TResult Function(AppLanguage language)? changeLocale,
     TResult Function(AppTheme theme)? changeTheme,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initialize value) initialize,
     required TResult Function(_ChangeLocale value) changeLocale,
     required TResult Function(_ChangeTheme value) changeTheme,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initialize value)? initialize,
     TResult? Function(_ChangeLocale value)? changeLocale,
     TResult? Function(_ChangeTheme value)? changeTheme,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initialize value)? initialize,
     TResult Function(_ChangeLocale value)? changeLocale,
     TResult Function(_ChangeTheme value)? changeTheme,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $SettingEventCopyWith<$Res> {
   factory $SettingEventCopyWith(
-    SettingEvent value,
-    $Res Function(SettingEvent) then,
-  ) = _$SettingEventCopyWithImpl<$Res, SettingEvent>;
+          SettingEvent value, $Res Function(SettingEvent) then) =
+      _$SettingEventCopyWithImpl<$Res, SettingEvent>;
 }
 
 /// @nodoc
@@ -85,9 +89,8 @@ class _$SettingEventCopyWithImpl<$Res, $Val extends SettingEvent>
 /// @nodoc
 abstract class _$$InitializeImplCopyWith<$Res> {
   factory _$$InitializeImplCopyWith(
-    _$InitializeImpl value,
-    $Res Function(_$InitializeImpl) then,
-  ) = __$$InitializeImplCopyWithImpl<$Res>;
+          _$InitializeImpl value, $Res Function(_$InitializeImpl) then) =
+      __$$InitializeImplCopyWithImpl<$Res>;
   @useResult
   $Res call({LanguageCode languageCode, ThemeCode themeCode});
 }
@@ -97,29 +100,27 @@ class __$$InitializeImplCopyWithImpl<$Res>
     extends _$SettingEventCopyWithImpl<$Res, _$InitializeImpl>
     implements _$$InitializeImplCopyWith<$Res> {
   __$$InitializeImplCopyWithImpl(
-    _$InitializeImpl _value,
-    $Res Function(_$InitializeImpl) _then,
-  ) : super(_value, _then);
+      _$InitializeImpl _value, $Res Function(_$InitializeImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of SettingEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? languageCode = null, Object? themeCode = null}) {
-    return _then(
-      _$InitializeImpl(
-        languageCode:
-            null == languageCode
-                ? _value.languageCode
-                : languageCode // ignore: cast_nullable_to_non_nullable
-                    as LanguageCode,
-        themeCode:
-            null == themeCode
-                ? _value.themeCode
-                : themeCode // ignore: cast_nullable_to_non_nullable
-                    as ThemeCode,
-      ),
-    );
+  $Res call({
+    Object? languageCode = null,
+    Object? themeCode = null,
+  }) {
+    return _then(_$InitializeImpl(
+      languageCode: null == languageCode
+          ? _value.languageCode
+          : languageCode // ignore: cast_nullable_to_non_nullable
+              as LanguageCode,
+      themeCode: null == themeCode
+          ? _value.themeCode
+          : themeCode // ignore: cast_nullable_to_non_nullable
+              as ThemeCode,
+    ));
   }
 }
 
@@ -164,7 +165,7 @@ class _$InitializeImpl implements _Initialize {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(LanguageCode languageCode, ThemeCode themeCode)
-    initialize,
+        initialize,
     required TResult Function(AppLanguage language) changeLocale,
     required TResult Function(AppTheme theme) changeTheme,
   }) {
@@ -175,7 +176,7 @@ class _$InitializeImpl implements _Initialize {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(LanguageCode languageCode, ThemeCode themeCode)?
-    initialize,
+        initialize,
     TResult? Function(AppLanguage language)? changeLocale,
     TResult? Function(AppTheme theme)? changeTheme,
   }) {
@@ -186,7 +187,7 @@ class _$InitializeImpl implements _Initialize {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(LanguageCode languageCode, ThemeCode themeCode)?
-    initialize,
+        initialize,
     TResult Function(AppLanguage language)? changeLocale,
     TResult Function(AppTheme theme)? changeTheme,
     required TResult orElse(),
@@ -233,10 +234,9 @@ class _$InitializeImpl implements _Initialize {
 }
 
 abstract class _Initialize implements SettingEvent {
-  const factory _Initialize({
-    required final LanguageCode languageCode,
-    required final ThemeCode themeCode,
-  }) = _$InitializeImpl;
+  const factory _Initialize(
+      {required final LanguageCode languageCode,
+      required final ThemeCode themeCode}) = _$InitializeImpl;
 
   LanguageCode get languageCode;
   ThemeCode get themeCode;
@@ -251,9 +251,8 @@ abstract class _Initialize implements SettingEvent {
 /// @nodoc
 abstract class _$$ChangeLocaleImplCopyWith<$Res> {
   factory _$$ChangeLocaleImplCopyWith(
-    _$ChangeLocaleImpl value,
-    $Res Function(_$ChangeLocaleImpl) then,
-  ) = __$$ChangeLocaleImplCopyWithImpl<$Res>;
+          _$ChangeLocaleImpl value, $Res Function(_$ChangeLocaleImpl) then) =
+      __$$ChangeLocaleImplCopyWithImpl<$Res>;
   @useResult
   $Res call({AppLanguage language});
 
@@ -265,24 +264,22 @@ class __$$ChangeLocaleImplCopyWithImpl<$Res>
     extends _$SettingEventCopyWithImpl<$Res, _$ChangeLocaleImpl>
     implements _$$ChangeLocaleImplCopyWith<$Res> {
   __$$ChangeLocaleImplCopyWithImpl(
-    _$ChangeLocaleImpl _value,
-    $Res Function(_$ChangeLocaleImpl) _then,
-  ) : super(_value, _then);
+      _$ChangeLocaleImpl _value, $Res Function(_$ChangeLocaleImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of SettingEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? language = null}) {
-    return _then(
-      _$ChangeLocaleImpl(
-        language:
-            null == language
-                ? _value.language
-                : language // ignore: cast_nullable_to_non_nullable
-                    as AppLanguage,
-      ),
-    );
+  $Res call({
+    Object? language = null,
+  }) {
+    return _then(_$ChangeLocaleImpl(
+      language: null == language
+          ? _value.language
+          : language // ignore: cast_nullable_to_non_nullable
+              as AppLanguage,
+    ));
   }
 
   /// Create a copy of SettingEvent
@@ -333,7 +330,7 @@ class _$ChangeLocaleImpl implements _ChangeLocale {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(LanguageCode languageCode, ThemeCode themeCode)
-    initialize,
+        initialize,
     required TResult Function(AppLanguage language) changeLocale,
     required TResult Function(AppTheme theme) changeTheme,
   }) {
@@ -344,7 +341,7 @@ class _$ChangeLocaleImpl implements _ChangeLocale {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(LanguageCode languageCode, ThemeCode themeCode)?
-    initialize,
+        initialize,
     TResult? Function(AppLanguage language)? changeLocale,
     TResult? Function(AppTheme theme)? changeTheme,
   }) {
@@ -355,7 +352,7 @@ class _$ChangeLocaleImpl implements _ChangeLocale {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(LanguageCode languageCode, ThemeCode themeCode)?
-    initialize,
+        initialize,
     TResult Function(AppLanguage language)? changeLocale,
     TResult Function(AppTheme theme)? changeTheme,
     required TResult orElse(),
@@ -417,9 +414,8 @@ abstract class _ChangeLocale implements SettingEvent {
 /// @nodoc
 abstract class _$$ChangeThemeImplCopyWith<$Res> {
   factory _$$ChangeThemeImplCopyWith(
-    _$ChangeThemeImpl value,
-    $Res Function(_$ChangeThemeImpl) then,
-  ) = __$$ChangeThemeImplCopyWithImpl<$Res>;
+          _$ChangeThemeImpl value, $Res Function(_$ChangeThemeImpl) then) =
+      __$$ChangeThemeImplCopyWithImpl<$Res>;
   @useResult
   $Res call({AppTheme theme});
 
@@ -431,24 +427,22 @@ class __$$ChangeThemeImplCopyWithImpl<$Res>
     extends _$SettingEventCopyWithImpl<$Res, _$ChangeThemeImpl>
     implements _$$ChangeThemeImplCopyWith<$Res> {
   __$$ChangeThemeImplCopyWithImpl(
-    _$ChangeThemeImpl _value,
-    $Res Function(_$ChangeThemeImpl) _then,
-  ) : super(_value, _then);
+      _$ChangeThemeImpl _value, $Res Function(_$ChangeThemeImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of SettingEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? theme = null}) {
-    return _then(
-      _$ChangeThemeImpl(
-        theme:
-            null == theme
-                ? _value.theme
-                : theme // ignore: cast_nullable_to_non_nullable
-                    as AppTheme,
-      ),
-    );
+  $Res call({
+    Object? theme = null,
+  }) {
+    return _then(_$ChangeThemeImpl(
+      theme: null == theme
+          ? _value.theme
+          : theme // ignore: cast_nullable_to_non_nullable
+              as AppTheme,
+    ));
   }
 
   /// Create a copy of SettingEvent
@@ -498,7 +492,7 @@ class _$ChangeThemeImpl implements _ChangeTheme {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(LanguageCode languageCode, ThemeCode themeCode)
-    initialize,
+        initialize,
     required TResult Function(AppLanguage language) changeLocale,
     required TResult Function(AppTheme theme) changeTheme,
   }) {
@@ -509,7 +503,7 @@ class _$ChangeThemeImpl implements _ChangeTheme {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(LanguageCode languageCode, ThemeCode themeCode)?
-    initialize,
+        initialize,
     TResult? Function(AppLanguage language)? changeLocale,
     TResult? Function(AppTheme theme)? changeTheme,
   }) {
@@ -520,7 +514,7 @@ class _$ChangeThemeImpl implements _ChangeTheme {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(LanguageCode languageCode, ThemeCode themeCode)?
-    initialize,
+        initialize,
     TResult Function(AppLanguage language)? changeLocale,
     TResult Function(AppTheme theme)? changeTheme,
     required TResult orElse(),
@@ -596,15 +590,13 @@ mixin _$SettingState {
 /// @nodoc
 abstract class $SettingStateCopyWith<$Res> {
   factory $SettingStateCopyWith(
-    SettingState value,
-    $Res Function(SettingState) then,
-  ) = _$SettingStateCopyWithImpl<$Res, SettingState>;
+          SettingState value, $Res Function(SettingState) then) =
+      _$SettingStateCopyWithImpl<$Res, SettingState>;
   @useResult
-  $Res call({
-    AppLanguage language,
-    AppTheme theme,
-    Option<Either<AppFailure, dynamic>> failureOrSuccessOption,
-  });
+  $Res call(
+      {AppLanguage language,
+      AppTheme theme,
+      Option<Either<AppFailure, dynamic>> failureOrSuccessOption});
 
   $AppLanguageCopyWith<$Res> get language;
   $AppThemeCopyWith<$Res> get theme;
@@ -629,26 +621,20 @@ class _$SettingStateCopyWithImpl<$Res, $Val extends SettingState>
     Object? theme = null,
     Object? failureOrSuccessOption = null,
   }) {
-    return _then(
-      _value.copyWith(
-            language:
-                null == language
-                    ? _value.language
-                    : language // ignore: cast_nullable_to_non_nullable
-                        as AppLanguage,
-            theme:
-                null == theme
-                    ? _value.theme
-                    : theme // ignore: cast_nullable_to_non_nullable
-                        as AppTheme,
-            failureOrSuccessOption:
-                null == failureOrSuccessOption
-                    ? _value.failureOrSuccessOption
-                    : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
-                        as Option<Either<AppFailure, dynamic>>,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      language: null == language
+          ? _value.language
+          : language // ignore: cast_nullable_to_non_nullable
+              as AppLanguage,
+      theme: null == theme
+          ? _value.theme
+          : theme // ignore: cast_nullable_to_non_nullable
+              as AppTheme,
+      failureOrSuccessOption: null == failureOrSuccessOption
+          ? _value.failureOrSuccessOption
+          : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ) as $Val);
   }
 
   /// Create a copy of SettingState
@@ -676,16 +662,14 @@ class _$SettingStateCopyWithImpl<$Res, $Val extends SettingState>
 abstract class _$$SettingStateImplCopyWith<$Res>
     implements $SettingStateCopyWith<$Res> {
   factory _$$SettingStateImplCopyWith(
-    _$SettingStateImpl value,
-    $Res Function(_$SettingStateImpl) then,
-  ) = __$$SettingStateImplCopyWithImpl<$Res>;
+          _$SettingStateImpl value, $Res Function(_$SettingStateImpl) then) =
+      __$$SettingStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    AppLanguage language,
-    AppTheme theme,
-    Option<Either<AppFailure, dynamic>> failureOrSuccessOption,
-  });
+  $Res call(
+      {AppLanguage language,
+      AppTheme theme,
+      Option<Either<AppFailure, dynamic>> failureOrSuccessOption});
 
   @override
   $AppLanguageCopyWith<$Res> get language;
@@ -698,9 +682,8 @@ class __$$SettingStateImplCopyWithImpl<$Res>
     extends _$SettingStateCopyWithImpl<$Res, _$SettingStateImpl>
     implements _$$SettingStateImplCopyWith<$Res> {
   __$$SettingStateImplCopyWithImpl(
-    _$SettingStateImpl _value,
-    $Res Function(_$SettingStateImpl) _then,
-  ) : super(_value, _then);
+      _$SettingStateImpl _value, $Res Function(_$SettingStateImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of SettingState
   /// with the given fields replaced by the non-null parameter values.
@@ -711,36 +694,30 @@ class __$$SettingStateImplCopyWithImpl<$Res>
     Object? theme = null,
     Object? failureOrSuccessOption = null,
   }) {
-    return _then(
-      _$SettingStateImpl(
-        language:
-            null == language
-                ? _value.language
-                : language // ignore: cast_nullable_to_non_nullable
-                    as AppLanguage,
-        theme:
-            null == theme
-                ? _value.theme
-                : theme // ignore: cast_nullable_to_non_nullable
-                    as AppTheme,
-        failureOrSuccessOption:
-            null == failureOrSuccessOption
-                ? _value.failureOrSuccessOption
-                : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
-                    as Option<Either<AppFailure, dynamic>>,
-      ),
-    );
+    return _then(_$SettingStateImpl(
+      language: null == language
+          ? _value.language
+          : language // ignore: cast_nullable_to_non_nullable
+              as AppLanguage,
+      theme: null == theme
+          ? _value.theme
+          : theme // ignore: cast_nullable_to_non_nullable
+              as AppTheme,
+      failureOrSuccessOption: null == failureOrSuccessOption
+          ? _value.failureOrSuccessOption
+          : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$SettingStateImpl implements _SettingState {
-  const _$SettingStateImpl({
-    required this.language,
-    required this.theme,
-    required this.failureOrSuccessOption,
-  });
+  const _$SettingStateImpl(
+      {required this.language,
+      required this.theme,
+      required this.failureOrSuccessOption});
 
   @override
   final AppLanguage language;
@@ -780,11 +757,11 @@ class _$SettingStateImpl implements _SettingState {
 }
 
 abstract class _SettingState implements SettingState {
-  const factory _SettingState({
-    required final AppLanguage language,
-    required final AppTheme theme,
-    required final Option<Either<AppFailure, dynamic>> failureOrSuccessOption,
-  }) = _$SettingStateImpl;
+  const factory _SettingState(
+      {required final AppLanguage language,
+      required final AppTheme theme,
+      required final Option<Either<AppFailure, dynamic>>
+          failureOrSuccessOption}) = _$SettingStateImpl;
 
   @override
   AppLanguage get language;

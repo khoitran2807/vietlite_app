@@ -12,8 +12,7 @@ part of 'things_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$ThingsEvent {
@@ -21,29 +20,35 @@ mixin _$ThingsEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(ThingType type) getThings,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(ThingType type)? getThings,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(ThingType type)? getThings,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_GetThings value) getThings,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_GetThings value)? getThings,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_GetThings value)? getThings,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 
   /// Create a copy of ThingsEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -55,9 +60,8 @@ mixin _$ThingsEvent {
 /// @nodoc
 abstract class $ThingsEventCopyWith<$Res> {
   factory $ThingsEventCopyWith(
-    ThingsEvent value,
-    $Res Function(ThingsEvent) then,
-  ) = _$ThingsEventCopyWithImpl<$Res, ThingsEvent>;
+          ThingsEvent value, $Res Function(ThingsEvent) then) =
+      _$ThingsEventCopyWithImpl<$Res, ThingsEvent>;
   @useResult
   $Res call({ThingType type});
 }
@@ -76,17 +80,15 @@ class _$ThingsEventCopyWithImpl<$Res, $Val extends ThingsEvent>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? type = null}) {
-    return _then(
-      _value.copyWith(
-            type:
-                null == type
-                    ? _value.type
-                    : type // ignore: cast_nullable_to_non_nullable
-                        as ThingType,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? type = null,
+  }) {
+    return _then(_value.copyWith(
+      type: null == type
+          ? _value.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as ThingType,
+    ) as $Val);
   }
 }
 
@@ -94,9 +96,8 @@ class _$ThingsEventCopyWithImpl<$Res, $Val extends ThingsEvent>
 abstract class _$$GetThingsImplCopyWith<$Res>
     implements $ThingsEventCopyWith<$Res> {
   factory _$$GetThingsImplCopyWith(
-    _$GetThingsImpl value,
-    $Res Function(_$GetThingsImpl) then,
-  ) = __$$GetThingsImplCopyWithImpl<$Res>;
+          _$GetThingsImpl value, $Res Function(_$GetThingsImpl) then) =
+      __$$GetThingsImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({ThingType type});
@@ -107,24 +108,22 @@ class __$$GetThingsImplCopyWithImpl<$Res>
     extends _$ThingsEventCopyWithImpl<$Res, _$GetThingsImpl>
     implements _$$GetThingsImplCopyWith<$Res> {
   __$$GetThingsImplCopyWithImpl(
-    _$GetThingsImpl _value,
-    $Res Function(_$GetThingsImpl) _then,
-  ) : super(_value, _then);
+      _$GetThingsImpl _value, $Res Function(_$GetThingsImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ThingsEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? type = null}) {
-    return _then(
-      _$GetThingsImpl(
-        type:
-            null == type
-                ? _value.type
-                : type // ignore: cast_nullable_to_non_nullable
-                    as ThingType,
-      ),
-    );
+  $Res call({
+    Object? type = null,
+  }) {
+    return _then(_$GetThingsImpl(
+      type: null == type
+          ? _value.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as ThingType,
+    ));
   }
 }
 
@@ -248,15 +247,13 @@ mixin _$ThingsState {
 /// @nodoc
 abstract class $ThingsStateCopyWith<$Res> {
   factory $ThingsStateCopyWith(
-    ThingsState value,
-    $Res Function(ThingsState) then,
-  ) = _$ThingsStateCopyWithImpl<$Res, ThingsState>;
+          ThingsState value, $Res Function(ThingsState) then) =
+      _$ThingsStateCopyWithImpl<$Res, ThingsState>;
   @useResult
-  $Res call({
-    List<Thing> things,
-    bool isLoading,
-    Option<Either<AppFailure, List<Thing>>> failureOrSuccessOption,
-  });
+  $Res call(
+      {List<Thing> things,
+      bool isLoading,
+      Option<Either<AppFailure, List<Thing>>> failureOrSuccessOption});
 }
 
 /// @nodoc
@@ -278,26 +275,20 @@ class _$ThingsStateCopyWithImpl<$Res, $Val extends ThingsState>
     Object? isLoading = null,
     Object? failureOrSuccessOption = null,
   }) {
-    return _then(
-      _value.copyWith(
-            things:
-                null == things
-                    ? _value.things
-                    : things // ignore: cast_nullable_to_non_nullable
-                        as List<Thing>,
-            isLoading:
-                null == isLoading
-                    ? _value.isLoading
-                    : isLoading // ignore: cast_nullable_to_non_nullable
-                        as bool,
-            failureOrSuccessOption:
-                null == failureOrSuccessOption
-                    ? _value.failureOrSuccessOption
-                    : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
-                        as Option<Either<AppFailure, List<Thing>>>,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      things: null == things
+          ? _value.things
+          : things // ignore: cast_nullable_to_non_nullable
+              as List<Thing>,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      failureOrSuccessOption: null == failureOrSuccessOption
+          ? _value.failureOrSuccessOption
+          : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, List<Thing>>>,
+    ) as $Val);
   }
 }
 
@@ -305,16 +296,14 @@ class _$ThingsStateCopyWithImpl<$Res, $Val extends ThingsState>
 abstract class _$$ThingsStateImplCopyWith<$Res>
     implements $ThingsStateCopyWith<$Res> {
   factory _$$ThingsStateImplCopyWith(
-    _$ThingsStateImpl value,
-    $Res Function(_$ThingsStateImpl) then,
-  ) = __$$ThingsStateImplCopyWithImpl<$Res>;
+          _$ThingsStateImpl value, $Res Function(_$ThingsStateImpl) then) =
+      __$$ThingsStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    List<Thing> things,
-    bool isLoading,
-    Option<Either<AppFailure, List<Thing>>> failureOrSuccessOption,
-  });
+  $Res call(
+      {List<Thing> things,
+      bool isLoading,
+      Option<Either<AppFailure, List<Thing>>> failureOrSuccessOption});
 }
 
 /// @nodoc
@@ -322,9 +311,8 @@ class __$$ThingsStateImplCopyWithImpl<$Res>
     extends _$ThingsStateCopyWithImpl<$Res, _$ThingsStateImpl>
     implements _$$ThingsStateImplCopyWith<$Res> {
   __$$ThingsStateImplCopyWithImpl(
-    _$ThingsStateImpl _value,
-    $Res Function(_$ThingsStateImpl) _then,
-  ) : super(_value, _then);
+      _$ThingsStateImpl _value, $Res Function(_$ThingsStateImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ThingsState
   /// with the given fields replaced by the non-null parameter values.
@@ -335,36 +323,31 @@ class __$$ThingsStateImplCopyWithImpl<$Res>
     Object? isLoading = null,
     Object? failureOrSuccessOption = null,
   }) {
-    return _then(
-      _$ThingsStateImpl(
-        things:
-            null == things
-                ? _value._things
-                : things // ignore: cast_nullable_to_non_nullable
-                    as List<Thing>,
-        isLoading:
-            null == isLoading
-                ? _value.isLoading
-                : isLoading // ignore: cast_nullable_to_non_nullable
-                    as bool,
-        failureOrSuccessOption:
-            null == failureOrSuccessOption
-                ? _value.failureOrSuccessOption
-                : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
-                    as Option<Either<AppFailure, List<Thing>>>,
-      ),
-    );
+    return _then(_$ThingsStateImpl(
+      things: null == things
+          ? _value._things
+          : things // ignore: cast_nullable_to_non_nullable
+              as List<Thing>,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      failureOrSuccessOption: null == failureOrSuccessOption
+          ? _value.failureOrSuccessOption
+          : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, List<Thing>>>,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$ThingsStateImpl implements _ThingsState {
-  const _$ThingsStateImpl({
-    required final List<Thing> things,
-    required this.isLoading,
-    required this.failureOrSuccessOption,
-  }) : _things = things;
+  const _$ThingsStateImpl(
+      {required final List<Thing> things,
+      required this.isLoading,
+      required this.failureOrSuccessOption})
+      : _things = things;
 
   final List<Thing> _things;
   @override
@@ -398,11 +381,10 @@ class _$ThingsStateImpl implements _ThingsState {
 
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    const DeepCollectionEquality().hash(_things),
-    isLoading,
-    failureOrSuccessOption,
-  );
+      runtimeType,
+      const DeepCollectionEquality().hash(_things),
+      isLoading,
+      failureOrSuccessOption);
 
   /// Create a copy of ThingsState
   /// with the given fields replaced by the non-null parameter values.
@@ -414,12 +396,11 @@ class _$ThingsStateImpl implements _ThingsState {
 }
 
 abstract class _ThingsState implements ThingsState {
-  const factory _ThingsState({
-    required final List<Thing> things,
-    required final bool isLoading,
-    required final Option<Either<AppFailure, List<Thing>>>
-    failureOrSuccessOption,
-  }) = _$ThingsStateImpl;
+  const factory _ThingsState(
+      {required final List<Thing> things,
+      required final bool isLoading,
+      required final Option<Either<AppFailure, List<Thing>>>
+          failureOrSuccessOption}) = _$ThingsStateImpl;
 
   @override
   List<Thing> get things;

@@ -12,8 +12,7 @@ part of 'thing_detail_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$ThingDetailEvent {
@@ -22,29 +21,35 @@ mixin _$ThingDetailEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String id, String userId) getThingDetail,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String id, String userId)? getThingDetail,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String id, String userId)? getThingDetail,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_GetThingDetail value) getThingDetail,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_GetThingDetail value)? getThingDetail,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_GetThingDetail value)? getThingDetail,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 
   /// Create a copy of ThingDetailEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -56,9 +61,8 @@ mixin _$ThingDetailEvent {
 /// @nodoc
 abstract class $ThingDetailEventCopyWith<$Res> {
   factory $ThingDetailEventCopyWith(
-    ThingDetailEvent value,
-    $Res Function(ThingDetailEvent) then,
-  ) = _$ThingDetailEventCopyWithImpl<$Res, ThingDetailEvent>;
+          ThingDetailEvent value, $Res Function(ThingDetailEvent) then) =
+      _$ThingDetailEventCopyWithImpl<$Res, ThingDetailEvent>;
   @useResult
   $Res call({String id, String userId});
 }
@@ -77,32 +81,29 @@ class _$ThingDetailEventCopyWithImpl<$Res, $Val extends ThingDetailEvent>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? id = null, Object? userId = null}) {
-    return _then(
-      _value.copyWith(
-            id:
-                null == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as String,
-            userId:
-                null == userId
-                    ? _value.userId
-                    : userId // ignore: cast_nullable_to_non_nullable
-                        as String,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? id = null,
+    Object? userId = null,
+  }) {
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$GetThingDetailImplCopyWith<$Res>
     implements $ThingDetailEventCopyWith<$Res> {
-  factory _$$GetThingDetailImplCopyWith(
-    _$GetThingDetailImpl value,
-    $Res Function(_$GetThingDetailImpl) then,
-  ) = __$$GetThingDetailImplCopyWithImpl<$Res>;
+  factory _$$GetThingDetailImplCopyWith(_$GetThingDetailImpl value,
+          $Res Function(_$GetThingDetailImpl) then) =
+      __$$GetThingDetailImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String id, String userId});
@@ -113,29 +114,27 @@ class __$$GetThingDetailImplCopyWithImpl<$Res>
     extends _$ThingDetailEventCopyWithImpl<$Res, _$GetThingDetailImpl>
     implements _$$GetThingDetailImplCopyWith<$Res> {
   __$$GetThingDetailImplCopyWithImpl(
-    _$GetThingDetailImpl _value,
-    $Res Function(_$GetThingDetailImpl) _then,
-  ) : super(_value, _then);
+      _$GetThingDetailImpl _value, $Res Function(_$GetThingDetailImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ThingDetailEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? id = null, Object? userId = null}) {
-    return _then(
-      _$GetThingDetailImpl(
-        id:
-            null == id
-                ? _value.id
-                : id // ignore: cast_nullable_to_non_nullable
-                    as String,
-        userId:
-            null == userId
-                ? _value.userId
-                : userId // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+  $Res call({
+    Object? id = null,
+    Object? userId = null,
+  }) {
+    return _then(_$GetThingDetailImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
@@ -173,9 +172,7 @@ class _$GetThingDetailImpl implements _GetThingDetail {
   @pragma('vm:prefer-inline')
   _$$GetThingDetailImplCopyWith<_$GetThingDetailImpl> get copyWith =>
       __$$GetThingDetailImplCopyWithImpl<_$GetThingDetailImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -235,10 +232,9 @@ class _$GetThingDetailImpl implements _GetThingDetail {
 }
 
 abstract class _GetThingDetail implements ThingDetailEvent {
-  const factory _GetThingDetail({
-    required final String id,
-    required final String userId,
-  }) = _$GetThingDetailImpl;
+  const factory _GetThingDetail(
+      {required final String id,
+      required final String userId}) = _$GetThingDetailImpl;
 
   @override
   String get id;
@@ -271,16 +267,14 @@ mixin _$ThingDetailState {
 /// @nodoc
 abstract class $ThingDetailStateCopyWith<$Res> {
   factory $ThingDetailStateCopyWith(
-    ThingDetailState value,
-    $Res Function(ThingDetailState) then,
-  ) = _$ThingDetailStateCopyWithImpl<$Res, ThingDetailState>;
+          ThingDetailState value, $Res Function(ThingDetailState) then) =
+      _$ThingDetailStateCopyWithImpl<$Res, ThingDetailState>;
   @useResult
-  $Res call({
-    bool isLoading,
-    Thing thing,
-    List<UserExercise> exercises,
-    Option<Either<AppFailure, dynamic>> failureOrSuccessOption,
-  });
+  $Res call(
+      {bool isLoading,
+      Thing thing,
+      List<UserExercise> exercises,
+      Option<Either<AppFailure, dynamic>> failureOrSuccessOption});
 
   $ThingCopyWith<$Res> get thing;
 }
@@ -305,31 +299,24 @@ class _$ThingDetailStateCopyWithImpl<$Res, $Val extends ThingDetailState>
     Object? exercises = null,
     Object? failureOrSuccessOption = null,
   }) {
-    return _then(
-      _value.copyWith(
-            isLoading:
-                null == isLoading
-                    ? _value.isLoading
-                    : isLoading // ignore: cast_nullable_to_non_nullable
-                        as bool,
-            thing:
-                null == thing
-                    ? _value.thing
-                    : thing // ignore: cast_nullable_to_non_nullable
-                        as Thing,
-            exercises:
-                null == exercises
-                    ? _value.exercises
-                    : exercises // ignore: cast_nullable_to_non_nullable
-                        as List<UserExercise>,
-            failureOrSuccessOption:
-                null == failureOrSuccessOption
-                    ? _value.failureOrSuccessOption
-                    : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
-                        as Option<Either<AppFailure, dynamic>>,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      thing: null == thing
+          ? _value.thing
+          : thing // ignore: cast_nullable_to_non_nullable
+              as Thing,
+      exercises: null == exercises
+          ? _value.exercises
+          : exercises // ignore: cast_nullable_to_non_nullable
+              as List<UserExercise>,
+      failureOrSuccessOption: null == failureOrSuccessOption
+          ? _value.failureOrSuccessOption
+          : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ) as $Val);
   }
 
   /// Create a copy of ThingDetailState
@@ -346,18 +333,16 @@ class _$ThingDetailStateCopyWithImpl<$Res, $Val extends ThingDetailState>
 /// @nodoc
 abstract class _$$ThingDetailStateImplCopyWith<$Res>
     implements $ThingDetailStateCopyWith<$Res> {
-  factory _$$ThingDetailStateImplCopyWith(
-    _$ThingDetailStateImpl value,
-    $Res Function(_$ThingDetailStateImpl) then,
-  ) = __$$ThingDetailStateImplCopyWithImpl<$Res>;
+  factory _$$ThingDetailStateImplCopyWith(_$ThingDetailStateImpl value,
+          $Res Function(_$ThingDetailStateImpl) then) =
+      __$$ThingDetailStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    bool isLoading,
-    Thing thing,
-    List<UserExercise> exercises,
-    Option<Either<AppFailure, dynamic>> failureOrSuccessOption,
-  });
+  $Res call(
+      {bool isLoading,
+      Thing thing,
+      List<UserExercise> exercises,
+      Option<Either<AppFailure, dynamic>> failureOrSuccessOption});
 
   @override
   $ThingCopyWith<$Res> get thing;
@@ -367,10 +352,9 @@ abstract class _$$ThingDetailStateImplCopyWith<$Res>
 class __$$ThingDetailStateImplCopyWithImpl<$Res>
     extends _$ThingDetailStateCopyWithImpl<$Res, _$ThingDetailStateImpl>
     implements _$$ThingDetailStateImplCopyWith<$Res> {
-  __$$ThingDetailStateImplCopyWithImpl(
-    _$ThingDetailStateImpl _value,
-    $Res Function(_$ThingDetailStateImpl) _then,
-  ) : super(_value, _then);
+  __$$ThingDetailStateImplCopyWithImpl(_$ThingDetailStateImpl _value,
+      $Res Function(_$ThingDetailStateImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ThingDetailState
   /// with the given fields replaced by the non-null parameter values.
@@ -382,42 +366,36 @@ class __$$ThingDetailStateImplCopyWithImpl<$Res>
     Object? exercises = null,
     Object? failureOrSuccessOption = null,
   }) {
-    return _then(
-      _$ThingDetailStateImpl(
-        isLoading:
-            null == isLoading
-                ? _value.isLoading
-                : isLoading // ignore: cast_nullable_to_non_nullable
-                    as bool,
-        thing:
-            null == thing
-                ? _value.thing
-                : thing // ignore: cast_nullable_to_non_nullable
-                    as Thing,
-        exercises:
-            null == exercises
-                ? _value._exercises
-                : exercises // ignore: cast_nullable_to_non_nullable
-                    as List<UserExercise>,
-        failureOrSuccessOption:
-            null == failureOrSuccessOption
-                ? _value.failureOrSuccessOption
-                : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
-                    as Option<Either<AppFailure, dynamic>>,
-      ),
-    );
+    return _then(_$ThingDetailStateImpl(
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      thing: null == thing
+          ? _value.thing
+          : thing // ignore: cast_nullable_to_non_nullable
+              as Thing,
+      exercises: null == exercises
+          ? _value._exercises
+          : exercises // ignore: cast_nullable_to_non_nullable
+              as List<UserExercise>,
+      failureOrSuccessOption: null == failureOrSuccessOption
+          ? _value.failureOrSuccessOption
+          : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$ThingDetailStateImpl implements _ThingDetailState {
-  const _$ThingDetailStateImpl({
-    required this.isLoading,
-    required this.thing,
-    required final List<UserExercise> exercises,
-    required this.failureOrSuccessOption,
-  }) : _exercises = exercises;
+  const _$ThingDetailStateImpl(
+      {required this.isLoading,
+      required this.thing,
+      required final List<UserExercise> exercises,
+      required this.failureOrSuccessOption})
+      : _exercises = exercises;
 
   @override
   final bool isLoading;
@@ -447,22 +425,15 @@ class _$ThingDetailStateImpl implements _ThingDetailState {
             (identical(other.isLoading, isLoading) ||
                 other.isLoading == isLoading) &&
             (identical(other.thing, thing) || other.thing == thing) &&
-            const DeepCollectionEquality().equals(
-              other._exercises,
-              _exercises,
-            ) &&
+            const DeepCollectionEquality()
+                .equals(other._exercises, _exercises) &&
             (identical(other.failureOrSuccessOption, failureOrSuccessOption) ||
                 other.failureOrSuccessOption == failureOrSuccessOption));
   }
 
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    isLoading,
-    thing,
-    const DeepCollectionEquality().hash(_exercises),
-    failureOrSuccessOption,
-  );
+  int get hashCode => Object.hash(runtimeType, isLoading, thing,
+      const DeepCollectionEquality().hash(_exercises), failureOrSuccessOption);
 
   /// Create a copy of ThingDetailState
   /// with the given fields replaced by the non-null parameter values.
@@ -471,18 +442,16 @@ class _$ThingDetailStateImpl implements _ThingDetailState {
   @pragma('vm:prefer-inline')
   _$$ThingDetailStateImplCopyWith<_$ThingDetailStateImpl> get copyWith =>
       __$$ThingDetailStateImplCopyWithImpl<_$ThingDetailStateImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 }
 
 abstract class _ThingDetailState implements ThingDetailState {
-  const factory _ThingDetailState({
-    required final bool isLoading,
-    required final Thing thing,
-    required final List<UserExercise> exercises,
-    required final Option<Either<AppFailure, dynamic>> failureOrSuccessOption,
-  }) = _$ThingDetailStateImpl;
+  const factory _ThingDetailState(
+      {required final bool isLoading,
+      required final Thing thing,
+      required final List<UserExercise> exercises,
+      required final Option<Either<AppFailure, dynamic>>
+          failureOrSuccessOption}) = _$ThingDetailStateImpl;
 
   @override
   bool get isLoading;

@@ -158,298 +158,179 @@ import '../plugin/google/google_service.dart' as _i128;
 import '../plugin/storage/local_storage.dart' as _i938;
 
 extension GetItInjectableX on _i174.GetIt {
-  // initializes the registration of main-scope dependencies inside of GetIt
+// initializes the registration of main-scope dependencies inside of GetIt
   _i174.GetIt init({
     String? environment,
     _i526.EnvironmentFilter? environmentFilter,
   }) {
-    final gh = _i526.GetItHelper(this, environment, environmentFilter);
+    final gh = _i526.GetItHelper(
+      this,
+      environment,
+      environmentFilter,
+    );
     final googleInjectableModule = _$GoogleInjectableModule();
     final firebaseInjectableModule = _$FirebaseInjectableModule();
     gh.factory<_i89.SettingLocalDataSource>(
-      () => const _i89.SettingLocalDataSource(),
-    );
+        () => const _i89.SettingLocalDataSource());
     gh.singleton<_i273.AppConfig>(() => _i273.AppConfig());
     gh.singleton<_i559.AppRouter>(() => _i559.AppRouter());
     gh.singleton<_i1050.TabViewBloc>(() => _i1050.TabViewBloc());
     gh.singleton<_i116.GoogleSignIn>(() => googleInjectableModule.googleSignIn);
     gh.singleton<_i938.LocalStorage>(() => _i938.LocalStorage());
     gh.singleton<_i59.GoogleAuthProvider>(
-      () => firebaseInjectableModule.googleAuthProvider,
-    );
+        () => firebaseInjectableModule.googleAuthProvider);
     gh.lazySingleton<_i59.FirebaseAuth>(
-      () => firebaseInjectableModule.firebaseAuth,
-    );
+        () => firebaseInjectableModule.firebaseAuth);
     gh.lazySingleton<_i974.FirebaseFirestore>(
-      () => firebaseInjectableModule.firebaseFirestore,
-    );
+        () => firebaseInjectableModule.firebaseFirestore);
     gh.lazySingleton<_i627.FirebaseRemoteConfig>(
-      () => firebaseInjectableModule.remoteConfig,
-    );
+        () => firebaseInjectableModule.remoteConfig);
     gh.singleton<_i128.GoogleService>(
-      () => _i128.GoogleService(googleSignIn: gh<_i116.GoogleSignIn>()),
-    );
-    gh.singleton<_i283.RemoteConfigService>(
-      () => _i283.RemoteConfigService(
-        remoteConfig: gh<_i627.FirebaseRemoteConfig>(),
-      ),
-    );
-    gh.lazySingleton<_i449.AuthService>(
-      () => _i449.AuthService(
-        auth: gh<_i59.FirebaseAuth>(),
-        googleService: gh<_i128.GoogleService>(),
-      ),
-    );
+        () => _i128.GoogleService(googleSignIn: gh<_i116.GoogleSignIn>()));
+    gh.singleton<_i283.RemoteConfigService>(() => _i283.RemoteConfigService(
+        remoteConfig: gh<_i627.FirebaseRemoteConfig>()));
+    gh.lazySingleton<_i449.AuthService>(() => _i449.AuthService(
+          auth: gh<_i59.FirebaseAuth>(),
+          googleService: gh<_i128.GoogleService>(),
+        ));
     gh.lazySingleton<_i508.FirestoreService>(
-      () => _i508.FirestoreService(firestore: gh<_i974.FirebaseFirestore>()),
-    );
-    gh.factory<_i737.ISettingRepository>(
-      () => _i233.SettingRepository(
-        localDataSource: gh<_i89.SettingLocalDataSource>(),
-      ),
-    );
-    gh.factory<_i782.AuthRemoteDataSource>(
-      () => _i782.AuthRemoteDataSource(
-        authService: gh<_i449.AuthService>(),
-        firestoreService: gh<_i508.FirestoreService>(),
-      ),
-    );
-    gh.factory<_i1061.ForgetPasswordRemoteDataSource>(
-      () => _i1061.ForgetPasswordRemoteDataSource(
-        authService: gh<_i449.AuthService>(),
-      ),
-    );
-    gh.factory<_i1033.RegisterRemoteDataSource>(
-      () =>
-          _i1033.RegisterRemoteDataSource(authService: gh<_i449.AuthService>()),
-    );
-    gh.factory<_i520.LoginRemoteDataSource>(
-      () => _i520.LoginRemoteDataSource(authService: gh<_i449.AuthService>()),
-    );
-    gh.factory<_i57.ILoginRepository>(
-      () => _i107.LoginRepository(
-        remoteDataSource: gh<_i520.LoginRemoteDataSource>(),
-      ),
-    );
-    gh.factory<_i758.ThingDetailRemoteDataSource>(
-      () => _i758.ThingDetailRemoteDataSource(
-        firestoreService: gh<_i508.FirestoreService>(),
-      ),
-    );
-    gh.factory<_i32.DiscoverRemoteDataSource>(
-      () => _i32.DiscoverRemoteDataSource(
-        firestoreService: gh<_i508.FirestoreService>(),
-      ),
-    );
-    gh.factory<_i806.ThingsRemoteDataSource>(
-      () => _i806.ThingsRemoteDataSource(
-        firestoreService: gh<_i508.FirestoreService>(),
-      ),
-    );
-    gh.factory<_i360.ProgressRemoteDataSource>(
-      () => _i360.ProgressRemoteDataSource(
-        firestoreService: gh<_i508.FirestoreService>(),
-      ),
-    );
-    gh.factory<_i469.LetterDetailRemoteDataSource>(
-      () => _i469.LetterDetailRemoteDataSource(
-        firestoreService: gh<_i508.FirestoreService>(),
-      ),
-    );
-    gh.factory<_i395.LetterRemoteDataSource>(
-      () => _i395.LetterRemoteDataSource(
-        firestoreService: gh<_i508.FirestoreService>(),
-      ),
-    );
-    gh.factory<_i62.NumberRemoteDataSource>(
-      () => _i62.NumberRemoteDataSource(
-        firestoreService: gh<_i508.FirestoreService>(),
-      ),
-    );
-    gh.factory<_i481.NumberDetailRemoteDataSource>(
-      () => _i481.NumberDetailRemoteDataSource(
-        firestoreService: gh<_i508.FirestoreService>(),
-      ),
-    );
-    gh.factory<_i153.WordMatchRemoteDataSource>(
-      () => _i153.WordMatchRemoteDataSource(
-        firestoreService: gh<_i508.FirestoreService>(),
-      ),
-    );
-    gh.factory<_i393.WordMatchDetailRemoteDataSource>(
-      () => _i393.WordMatchDetailRemoteDataSource(
-        firestoreService: gh<_i508.FirestoreService>(),
-      ),
-    );
-    gh.factory<_i52.WordSelectionRemoteDataSource>(
-      () => _i52.WordSelectionRemoteDataSource(
-        firestoreService: gh<_i508.FirestoreService>(),
-      ),
-    );
-    gh.factory<_i645.WordSelectionDetailRemoteDataSource>(
-      () => _i645.WordSelectionDetailRemoteDataSource(
-        firestoreService: gh<_i508.FirestoreService>(),
-      ),
-    );
+        () => _i508.FirestoreService(firestore: gh<_i974.FirebaseFirestore>()));
+    gh.factory<_i737.ISettingRepository>(() => _i233.SettingRepository(
+        localDataSource: gh<_i89.SettingLocalDataSource>()));
+    gh.factory<_i782.AuthRemoteDataSource>(() => _i782.AuthRemoteDataSource(
+          authService: gh<_i449.AuthService>(),
+          firestoreService: gh<_i508.FirestoreService>(),
+        ));
+    gh.factory<_i1061.ForgetPasswordRemoteDataSource>(() =>
+        _i1061.ForgetPasswordRemoteDataSource(
+            authService: gh<_i449.AuthService>()));
+    gh.factory<_i1033.RegisterRemoteDataSource>(() =>
+        _i1033.RegisterRemoteDataSource(authService: gh<_i449.AuthService>()));
+    gh.factory<_i520.LoginRemoteDataSource>(() =>
+        _i520.LoginRemoteDataSource(authService: gh<_i449.AuthService>()));
+    gh.factory<_i57.ILoginRepository>(() => _i107.LoginRepository(
+        remoteDataSource: gh<_i520.LoginRemoteDataSource>()));
+    gh.factory<_i758.ThingDetailRemoteDataSource>(() =>
+        _i758.ThingDetailRemoteDataSource(
+            firestoreService: gh<_i508.FirestoreService>()));
+    gh.factory<_i32.DiscoverRemoteDataSource>(() =>
+        _i32.DiscoverRemoteDataSource(
+            firestoreService: gh<_i508.FirestoreService>()));
+    gh.factory<_i806.ThingsRemoteDataSource>(() => _i806.ThingsRemoteDataSource(
+        firestoreService: gh<_i508.FirestoreService>()));
+    gh.factory<_i360.ProgressRemoteDataSource>(() =>
+        _i360.ProgressRemoteDataSource(
+            firestoreService: gh<_i508.FirestoreService>()));
+    gh.factory<_i469.LetterDetailRemoteDataSource>(() =>
+        _i469.LetterDetailRemoteDataSource(
+            firestoreService: gh<_i508.FirestoreService>()));
+    gh.factory<_i395.LetterRemoteDataSource>(() => _i395.LetterRemoteDataSource(
+        firestoreService: gh<_i508.FirestoreService>()));
+    gh.factory<_i62.NumberRemoteDataSource>(() => _i62.NumberRemoteDataSource(
+        firestoreService: gh<_i508.FirestoreService>()));
+    gh.factory<_i481.NumberDetailRemoteDataSource>(() =>
+        _i481.NumberDetailRemoteDataSource(
+            firestoreService: gh<_i508.FirestoreService>()));
+    gh.factory<_i153.WordMatchRemoteDataSource>(() =>
+        _i153.WordMatchRemoteDataSource(
+            firestoreService: gh<_i508.FirestoreService>()));
+    gh.factory<_i393.WordMatchDetailRemoteDataSource>(() =>
+        _i393.WordMatchDetailRemoteDataSource(
+            firestoreService: gh<_i508.FirestoreService>()));
+    gh.factory<_i52.WordSelectionRemoteDataSource>(() =>
+        _i52.WordSelectionRemoteDataSource(
+            firestoreService: gh<_i508.FirestoreService>()));
+    gh.factory<_i645.WordSelectionDetailRemoteDataSource>(() =>
+        _i645.WordSelectionDetailRemoteDataSource(
+            firestoreService: gh<_i508.FirestoreService>()));
     gh.singleton<_i291.SettingBloc>(
-      () => _i291.SettingBloc(repository: gh<_i737.ISettingRepository>()),
-    );
-    gh.factory<_i276.IDiscoverRepository>(
-      () => _i809.DiscoverRepository(
-        remoteDataSource: gh<_i32.DiscoverRemoteDataSource>(),
-      ),
-    );
-    gh.factory<_i335.IForgetPasswordRepository>(
-      () => _i173.ForgetPasswordRepository(
-        remoteDataSource: gh<_i1061.ForgetPasswordRemoteDataSource>(),
-      ),
-    );
-    gh.factory<_i733.IAuthRepository>(
-      () => _i638.AuthRepository(
-        remoteDataSource: gh<_i782.AuthRemoteDataSource>(),
-      ),
-    );
+        () => _i291.SettingBloc(repository: gh<_i737.ISettingRepository>()));
+    gh.factory<_i276.IDiscoverRepository>(() => _i809.DiscoverRepository(
+        remoteDataSource: gh<_i32.DiscoverRemoteDataSource>()));
+    gh.factory<_i335.IForgetPasswordRepository>(() =>
+        _i173.ForgetPasswordRepository(
+            remoteDataSource: gh<_i1061.ForgetPasswordRemoteDataSource>()));
+    gh.factory<_i733.IAuthRepository>(() => _i638.AuthRepository(
+        remoteDataSource: gh<_i782.AuthRemoteDataSource>()));
     gh.singleton<_i831.AuthBloc>(
-      () => _i831.AuthBloc(repository: gh<_i733.IAuthRepository>()),
-    );
-    gh.factory<_i791.INumberDetailRepository>(
-      () => _i196.NumberDetailRepository(
-        remoteDataSource: gh<_i481.NumberDetailRemoteDataSource>(),
-      ),
-    );
-    gh.factory<_i732.IThingsRepository>(
-      () => _i486.ThingsRepository(
-        remoteDataSource: gh<_i806.ThingsRemoteDataSource>(),
-      ),
-    );
-    gh.factory<_i236.INumberRepository>(
-      () => _i711.NumberRepository(
-        remoteDataSource: gh<_i62.NumberRemoteDataSource>(),
-      ),
-    );
-    gh.factory<_i316.IWordMatchDetailRepository>(
-      () => _i716.WordMatchDetailRepository(
-        remoteDataSource: gh<_i393.WordMatchDetailRemoteDataSource>(),
-      ),
-    );
-    gh.factory<_i952.IWordSelectionDetailRepository>(
-      () => _i459.WordSelectionDetailRepository(
-        remoteDataSource: gh<_i645.WordSelectionDetailRemoteDataSource>(),
-      ),
-    );
-    gh.factory<_i872.IWordMatchRepository>(
-      () => _i88.WordMatchRepository(
-        remoteDataSource: gh<_i153.WordMatchRemoteDataSource>(),
-      ),
-    );
-    gh.factory<_i843.ILetterDetailRepository>(
-      () => _i768.LetterDetailRepository(
-        remoteDataSource: gh<_i469.LetterDetailRemoteDataSource>(),
-      ),
-    );
+        () => _i831.AuthBloc(repository: gh<_i733.IAuthRepository>()));
+    gh.factory<_i791.INumberDetailRepository>(() =>
+        _i196.NumberDetailRepository(
+            remoteDataSource: gh<_i481.NumberDetailRemoteDataSource>()));
+    gh.factory<_i732.IThingsRepository>(() => _i486.ThingsRepository(
+        remoteDataSource: gh<_i806.ThingsRemoteDataSource>()));
+    gh.factory<_i236.INumberRepository>(() => _i711.NumberRepository(
+        remoteDataSource: gh<_i62.NumberRemoteDataSource>()));
+    gh.factory<_i316.IWordMatchDetailRepository>(() =>
+        _i716.WordMatchDetailRepository(
+            remoteDataSource: gh<_i393.WordMatchDetailRemoteDataSource>()));
+    gh.factory<_i952.IWordSelectionDetailRepository>(() =>
+        _i459.WordSelectionDetailRepository(
+            remoteDataSource: gh<_i645.WordSelectionDetailRemoteDataSource>()));
+    gh.factory<_i872.IWordMatchRepository>(() => _i88.WordMatchRepository(
+        remoteDataSource: gh<_i153.WordMatchRemoteDataSource>()));
+    gh.factory<_i843.ILetterDetailRepository>(() =>
+        _i768.LetterDetailRepository(
+            remoteDataSource: gh<_i469.LetterDetailRemoteDataSource>()));
     gh.factory<_i959.ThingsBloc>(
-      () => _i959.ThingsBloc(repository: gh<_i732.IThingsRepository>()),
-    );
-    gh.factory<_i26.IRegisterRepository>(
-      () => _i594.RegisterRepository(
-        remoteDataSource: gh<_i1033.RegisterRemoteDataSource>(),
-      ),
-    );
-    gh.factory<_i423.ForgetPasswordBloc>(
-      () => _i423.ForgetPasswordBloc(
-        repository: gh<_i335.IForgetPasswordRepository>(),
-      ),
-    );
-    gh.factory<_i172.IProgressRepository>(
-      () => _i137.ProgressRepository(
-        remoteDataSource: gh<_i360.ProgressRemoteDataSource>(),
-      ),
-    );
-    gh.factory<_i669.LetterDetailBloc>(
-      () => _i669.LetterDetailBloc(
-        repository: gh<_i843.ILetterDetailRepository>(),
-        progressRepository: gh<_i172.IProgressRepository>(),
-      ),
-    );
+        () => _i959.ThingsBloc(repository: gh<_i732.IThingsRepository>()));
+    gh.factory<_i26.IRegisterRepository>(() => _i594.RegisterRepository(
+        remoteDataSource: gh<_i1033.RegisterRemoteDataSource>()));
+    gh.factory<_i423.ForgetPasswordBloc>(() => _i423.ForgetPasswordBloc(
+        repository: gh<_i335.IForgetPasswordRepository>()));
+    gh.factory<_i172.IProgressRepository>(() => _i137.ProgressRepository(
+        remoteDataSource: gh<_i360.ProgressRemoteDataSource>()));
+    gh.factory<_i669.LetterDetailBloc>(() => _i669.LetterDetailBloc(
+          repository: gh<_i843.ILetterDetailRepository>(),
+          progressRepository: gh<_i172.IProgressRepository>(),
+        ));
     gh.factory<_i68.WordMatchBloc>(
-      () => _i68.WordMatchBloc(repository: gh<_i872.IWordMatchRepository>()),
-    );
-    gh.factory<_i740.IWordSelectionRepository>(
-      () => _i36.WordSelectionRepository(
-        remoteDataSource: gh<_i52.WordSelectionRemoteDataSource>(),
-      ),
-    );
+        () => _i68.WordMatchBloc(repository: gh<_i872.IWordMatchRepository>()));
+    gh.factory<_i740.IWordSelectionRepository>(() =>
+        _i36.WordSelectionRepository(
+            remoteDataSource: gh<_i52.WordSelectionRemoteDataSource>()));
     gh.factory<_i739.NumbersBloc>(
-      () => _i739.NumbersBloc(repository: gh<_i236.INumberRepository>()),
-    );
+        () => _i739.NumbersBloc(repository: gh<_i236.INumberRepository>()));
     gh.factory<_i156.LoginBloc>(
-      () => _i156.LoginBloc(repository: gh<_i57.ILoginRepository>()),
-    );
-    gh.factory<_i324.IThingDetailRepository>(
-      () => _i158.ThingDetailRepository(
-        remoteDataSource: gh<_i758.ThingDetailRemoteDataSource>(),
-      ),
-    );
-    gh.factory<_i62.WordMatchDetailBloc>(
-      () => _i62.WordMatchDetailBloc(
-        progressRepository: gh<_i172.IProgressRepository>(),
-        repository: gh<_i316.IWordMatchDetailRepository>(),
-      ),
-    );
+        () => _i156.LoginBloc(repository: gh<_i57.ILoginRepository>()));
+    gh.factory<_i324.IThingDetailRepository>(() => _i158.ThingDetailRepository(
+        remoteDataSource: gh<_i758.ThingDetailRemoteDataSource>()));
+    gh.factory<_i62.WordMatchDetailBloc>(() => _i62.WordMatchDetailBloc(
+          progressRepository: gh<_i172.IProgressRepository>(),
+          repository: gh<_i316.IWordMatchDetailRepository>(),
+        ));
     gh.factory<_i43.DiscoverBloc>(
-      () => _i43.DiscoverBloc(repository: gh<_i276.IDiscoverRepository>()),
-    );
-    gh.factory<_i1038.ILetterRepository>(
-      () => _i800.LetterRepository(
-        remoteDataSource: gh<_i395.LetterRemoteDataSource>(),
-      ),
-    );
-    gh.factory<_i380.WordSelectionBloc>(
-      () => _i380.WordSelectionBloc(
-        repository: gh<_i740.IWordSelectionRepository>(),
-      ),
-    );
-    gh.factory<_i818.NumberDetailBloc>(
-      () => _i818.NumberDetailBloc(
-        repository: gh<_i791.INumberDetailRepository>(),
-        progressRepository: gh<_i172.IProgressRepository>(),
-      ),
-    );
+        () => _i43.DiscoverBloc(repository: gh<_i276.IDiscoverRepository>()));
+    gh.factory<_i1038.ILetterRepository>(() => _i800.LetterRepository(
+        remoteDataSource: gh<_i395.LetterRemoteDataSource>()));
+    gh.factory<_i380.WordSelectionBloc>(() => _i380.WordSelectionBloc(
+        repository: gh<_i740.IWordSelectionRepository>()));
+    gh.factory<_i818.NumberDetailBloc>(() => _i818.NumberDetailBloc(
+          repository: gh<_i791.INumberDetailRepository>(),
+          progressRepository: gh<_i172.IProgressRepository>(),
+        ));
     gh.factory<_i500.WordSelectionDetailBloc>(
-      () => _i500.WordSelectionDetailBloc(
-        progressRepository: gh<_i172.IProgressRepository>(),
-        repository: gh<_i952.IWordSelectionDetailRepository>(),
-      ),
-    );
-    gh.factory<_i779.ThingDetailBloc>(
-      () => _i779.ThingDetailBloc(
-        repository: gh<_i324.IThingDetailRepository>(),
-        progressRepository: gh<_i172.IProgressRepository>(),
-      ),
-    );
+        () => _i500.WordSelectionDetailBloc(
+              progressRepository: gh<_i172.IProgressRepository>(),
+              repository: gh<_i952.IWordSelectionDetailRepository>(),
+            ));
+    gh.factory<_i779.ThingDetailBloc>(() => _i779.ThingDetailBloc(
+          repository: gh<_i324.IThingDetailRepository>(),
+          progressRepository: gh<_i172.IProgressRepository>(),
+        ));
     gh.factory<_i28.RegisterBloc>(
-      () => _i28.RegisterBloc(repository: gh<_i26.IRegisterRepository>()),
-    );
-    gh.factory<_i756.ThingExerciseBloc>(
-      () =>
-          _i756.ThingExerciseBloc(repository: gh<_i172.IProgressRepository>()),
-    );
+        () => _i28.RegisterBloc(repository: gh<_i26.IRegisterRepository>()));
+    gh.factory<_i756.ThingExerciseBloc>(() =>
+        _i756.ThingExerciseBloc(repository: gh<_i172.IProgressRepository>()));
     gh.factory<_i576.ProgressBloc>(
-      () => _i576.ProgressBloc(repository: gh<_i172.IProgressRepository>()),
-    );
-    gh.factory<_i421.WordMatchExerciseBloc>(
-      () => _i421.WordMatchExerciseBloc(
-        repository: gh<_i172.IProgressRepository>(),
-      ),
-    );
-    gh.factory<_i337.WordSelectionExerciseBloc>(
-      () => _i337.WordSelectionExerciseBloc(
-        repository: gh<_i172.IProgressRepository>(),
-      ),
-    );
+        () => _i576.ProgressBloc(repository: gh<_i172.IProgressRepository>()));
+    gh.factory<_i421.WordMatchExerciseBloc>(() => _i421.WordMatchExerciseBloc(
+        repository: gh<_i172.IProgressRepository>()));
+    gh.factory<_i337.WordSelectionExerciseBloc>(() =>
+        _i337.WordSelectionExerciseBloc(
+            repository: gh<_i172.IProgressRepository>()));
     gh.factory<_i66.LettersBloc>(
-      () => _i66.LettersBloc(repository: gh<_i1038.ILetterRepository>()),
-    );
+        () => _i66.LettersBloc(repository: gh<_i1038.ILetterRepository>()));
     return this;
   }
 }
