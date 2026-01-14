@@ -37,8 +37,6 @@ mixin _$ThingDto {
   List<ThingExerciseDto> get exercises => throw _privateConstructorUsedError;
   @JsonKey(defaultValue: 0)
   int get totalExercises => throw _privateConstructorUsedError;
-  @JsonKey(defaultValue: false)
-  bool get isPremium => throw _privateConstructorUsedError;
 
   /// Serializes this ThingDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -64,8 +62,7 @@ abstract class $ThingDtoCopyWith<$Res> {
       @JsonKey(defaultValue: 0) int order,
       @JsonKey(defaultValue: '') String type,
       @JsonKey(defaultValue: []) List<ThingExerciseDto> exercises,
-      @JsonKey(defaultValue: 0) int totalExercises,
-      @JsonKey(defaultValue: false) bool isPremium});
+      @JsonKey(defaultValue: 0) int totalExercises});
 }
 
 /// @nodoc
@@ -92,7 +89,6 @@ class _$ThingDtoCopyWithImpl<$Res, $Val extends ThingDto>
     Object? type = null,
     Object? exercises = null,
     Object? totalExercises = null,
-    Object? isPremium = null,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -131,10 +127,6 @@ class _$ThingDtoCopyWithImpl<$Res, $Val extends ThingDto>
           ? _value.totalExercises
           : totalExercises // ignore: cast_nullable_to_non_nullable
               as int,
-      isPremium: null == isPremium
-          ? _value.isPremium
-          : isPremium // ignore: cast_nullable_to_non_nullable
-              as bool,
     ) as $Val);
   }
 }
@@ -156,8 +148,7 @@ abstract class _$$ThingDtoImplCopyWith<$Res>
       @JsonKey(defaultValue: 0) int order,
       @JsonKey(defaultValue: '') String type,
       @JsonKey(defaultValue: []) List<ThingExerciseDto> exercises,
-      @JsonKey(defaultValue: 0) int totalExercises,
-      @JsonKey(defaultValue: false) bool isPremium});
+      @JsonKey(defaultValue: 0) int totalExercises});
 }
 
 /// @nodoc
@@ -182,7 +173,6 @@ class __$$ThingDtoImplCopyWithImpl<$Res>
     Object? type = null,
     Object? exercises = null,
     Object? totalExercises = null,
-    Object? isPremium = null,
   }) {
     return _then(_$ThingDtoImpl(
       id: null == id
@@ -221,10 +211,6 @@ class __$$ThingDtoImplCopyWithImpl<$Res>
           ? _value.totalExercises
           : totalExercises // ignore: cast_nullable_to_non_nullable
               as int,
-      isPremium: null == isPremium
-          ? _value.isPremium
-          : isPremium // ignore: cast_nullable_to_non_nullable
-              as bool,
     ));
   }
 }
@@ -242,8 +228,7 @@ class _$ThingDtoImpl extends _ThingDto {
       @JsonKey(defaultValue: '') required this.type,
       @JsonKey(defaultValue: [])
       required final List<ThingExerciseDto> exercises,
-      @JsonKey(defaultValue: 0) required this.totalExercises,
-      @JsonKey(defaultValue: false) required this.isPremium})
+      @JsonKey(defaultValue: 0) required this.totalExercises})
       : _examples = examples,
         _exercises = exercises,
         super._();
@@ -289,13 +274,10 @@ class _$ThingDtoImpl extends _ThingDto {
   @override
   @JsonKey(defaultValue: 0)
   final int totalExercises;
-  @override
-  @JsonKey(defaultValue: false)
-  final bool isPremium;
 
   @override
   String toString() {
-    return 'ThingDto(id: $id, name: $name, audio: $audio, image: $image, examples: $examples, order: $order, type: $type, exercises: $exercises, totalExercises: $totalExercises, isPremium: $isPremium)';
+    return 'ThingDto(id: $id, name: $name, audio: $audio, image: $image, examples: $examples, order: $order, type: $type, exercises: $exercises, totalExercises: $totalExercises)';
   }
 
   @override
@@ -313,9 +295,7 @@ class _$ThingDtoImpl extends _ThingDto {
             const DeepCollectionEquality()
                 .equals(other._exercises, _exercises) &&
             (identical(other.totalExercises, totalExercises) ||
-                other.totalExercises == totalExercises) &&
-            (identical(other.isPremium, isPremium) ||
-                other.isPremium == isPremium));
+                other.totalExercises == totalExercises));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
@@ -330,8 +310,7 @@ class _$ThingDtoImpl extends _ThingDto {
       order,
       type,
       const DeepCollectionEquality().hash(_exercises),
-      totalExercises,
-      isPremium);
+      totalExercises);
 
   /// Create a copy of ThingDto
   /// with the given fields replaced by the non-null parameter values.
@@ -360,9 +339,8 @@ abstract class _ThingDto extends ThingDto {
       @JsonKey(defaultValue: '') required final String type,
       @JsonKey(defaultValue: [])
       required final List<ThingExerciseDto> exercises,
-      @JsonKey(defaultValue: 0) required final int totalExercises,
-      @JsonKey(defaultValue: false)
-      required final bool isPremium}) = _$ThingDtoImpl;
+      @JsonKey(defaultValue: 0)
+      required final int totalExercises}) = _$ThingDtoImpl;
   const _ThingDto._() : super._();
 
   factory _ThingDto.fromJson(Map<String, dynamic> json) =
@@ -394,9 +372,6 @@ abstract class _ThingDto extends ThingDto {
   @override
   @JsonKey(defaultValue: 0)
   int get totalExercises;
-  @override
-  @JsonKey(defaultValue: false)
-  bool get isPremium;
 
   /// Create a copy of ThingDto
   /// with the given fields replaced by the non-null parameter values.

@@ -10,7 +10,6 @@ class WordSelection with _$WordSelection {
     required String title,
     required int totalExercises,
     required int order,
-    required bool isPremium,
     required List<WordSelectionExercise> exercises,
   }) = _WordSelection;
 
@@ -20,7 +19,6 @@ class WordSelection with _$WordSelection {
     order: 0,
     exercises: [],
     totalExercises: 0,
-    isPremium: false,
   );
 }
 

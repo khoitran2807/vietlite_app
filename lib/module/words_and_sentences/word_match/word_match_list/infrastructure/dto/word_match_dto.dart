@@ -28,7 +28,6 @@ class WordMatchDto with _$WordMatchDto {
       order: order,
       totalExercises: totalExercises,
       exercises: exercises.map((e) => e.toDomain).toList(),
-      isPremium: isPremium,
     );
   }
 }

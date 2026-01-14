@@ -252,7 +252,6 @@ void main() {
                 ],
                 totalExercises: 2,
                 order: 1,
-                isPremium: false,
               ),
             ],
             isLoading: false,

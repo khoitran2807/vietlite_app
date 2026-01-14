@@ -11,7 +11,6 @@ void main() {
         exercises: [],
         totalExercises: 0,
         order: 0,
-        isPremium: false,
       );
 
       expect(dto.id, 'ws1');
@@ -47,7 +46,6 @@ void main() {
         exercises: [],
         totalExercises: 0,
         order: 0,
-        isPremium: false,
       );
 
       final domainEntity = dto.toDomain;
@@ -106,7 +104,6 @@ void main() {
         ],
         totalExercises: 1,
         order: 1,
-        isPremium: false,
       );
 
       final json = dto.toJson();

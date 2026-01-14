@@ -12,8 +12,7 @@ part of 'word_match.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$WordMatch {
@@ -21,7 +20,6 @@ mixin _$WordMatch {
   String get title => throw _privateConstructorUsedError;
   int get order => throw _privateConstructorUsedError;
   int get totalExercises => throw _privateConstructorUsedError;
-  bool get isPremium => throw _privateConstructorUsedError;
   List<WordMatchExercise> get exercises => throw _privateConstructorUsedError;
 
   /// Create a copy of WordMatch
@@ -36,14 +34,12 @@ abstract class $WordMatchCopyWith<$Res> {
   factory $WordMatchCopyWith(WordMatch value, $Res Function(WordMatch) then) =
       _$WordMatchCopyWithImpl<$Res, WordMatch>;
   @useResult
-  $Res call({
-    String id,
-    String title,
-    int order,
-    int totalExercises,
-    bool isPremium,
-    List<WordMatchExercise> exercises,
-  });
+  $Res call(
+      {String id,
+      String title,
+      int order,
+      int totalExercises,
+      List<WordMatchExercise> exercises});
 }
 
 /// @nodoc
@@ -65,44 +61,30 @@ class _$WordMatchCopyWithImpl<$Res, $Val extends WordMatch>
     Object? title = null,
     Object? order = null,
     Object? totalExercises = null,
-    Object? isPremium = null,
     Object? exercises = null,
   }) {
-    return _then(
-      _value.copyWith(
-            id:
-                null == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as String,
-            title:
-                null == title
-                    ? _value.title
-                    : title // ignore: cast_nullable_to_non_nullable
-                        as String,
-            order:
-                null == order
-                    ? _value.order
-                    : order // ignore: cast_nullable_to_non_nullable
-                        as int,
-            totalExercises:
-                null == totalExercises
-                    ? _value.totalExercises
-                    : totalExercises // ignore: cast_nullable_to_non_nullable
-                        as int,
-            isPremium:
-                null == isPremium
-                    ? _value.isPremium
-                    : isPremium // ignore: cast_nullable_to_non_nullable
-                        as bool,
-            exercises:
-                null == exercises
-                    ? _value.exercises
-                    : exercises // ignore: cast_nullable_to_non_nullable
-                        as List<WordMatchExercise>,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      order: null == order
+          ? _value.order
+          : order // ignore: cast_nullable_to_non_nullable
+              as int,
+      totalExercises: null == totalExercises
+          ? _value.totalExercises
+          : totalExercises // ignore: cast_nullable_to_non_nullable
+              as int,
+      exercises: null == exercises
+          ? _value.exercises
+          : exercises // ignore: cast_nullable_to_non_nullable
+              as List<WordMatchExercise>,
+    ) as $Val);
   }
 }
 
@@ -110,19 +92,16 @@ class _$WordMatchCopyWithImpl<$Res, $Val extends WordMatch>
 abstract class _$$WordMatchImplCopyWith<$Res>
     implements $WordMatchCopyWith<$Res> {
   factory _$$WordMatchImplCopyWith(
-    _$WordMatchImpl value,
-    $Res Function(_$WordMatchImpl) then,
-  ) = __$$WordMatchImplCopyWithImpl<$Res>;
+          _$WordMatchImpl value, $Res Function(_$WordMatchImpl) then) =
+      __$$WordMatchImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String id,
-    String title,
-    int order,
-    int totalExercises,
-    bool isPremium,
-    List<WordMatchExercise> exercises,
-  });
+  $Res call(
+      {String id,
+      String title,
+      int order,
+      int totalExercises,
+      List<WordMatchExercise> exercises});
 }
 
 /// @nodoc
@@ -130,9 +109,8 @@ class __$$WordMatchImplCopyWithImpl<$Res>
     extends _$WordMatchCopyWithImpl<$Res, _$WordMatchImpl>
     implements _$$WordMatchImplCopyWith<$Res> {
   __$$WordMatchImplCopyWithImpl(
-    _$WordMatchImpl _value,
-    $Res Function(_$WordMatchImpl) _then,
-  ) : super(_value, _then);
+      _$WordMatchImpl _value, $Res Function(_$WordMatchImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of WordMatch
   /// with the given fields replaced by the non-null parameter values.
@@ -143,58 +121,44 @@ class __$$WordMatchImplCopyWithImpl<$Res>
     Object? title = null,
     Object? order = null,
     Object? totalExercises = null,
-    Object? isPremium = null,
     Object? exercises = null,
   }) {
-    return _then(
-      _$WordMatchImpl(
-        id:
-            null == id
-                ? _value.id
-                : id // ignore: cast_nullable_to_non_nullable
-                    as String,
-        title:
-            null == title
-                ? _value.title
-                : title // ignore: cast_nullable_to_non_nullable
-                    as String,
-        order:
-            null == order
-                ? _value.order
-                : order // ignore: cast_nullable_to_non_nullable
-                    as int,
-        totalExercises:
-            null == totalExercises
-                ? _value.totalExercises
-                : totalExercises // ignore: cast_nullable_to_non_nullable
-                    as int,
-        isPremium:
-            null == isPremium
-                ? _value.isPremium
-                : isPremium // ignore: cast_nullable_to_non_nullable
-                    as bool,
-        exercises:
-            null == exercises
-                ? _value._exercises
-                : exercises // ignore: cast_nullable_to_non_nullable
-                    as List<WordMatchExercise>,
-      ),
-    );
+    return _then(_$WordMatchImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      order: null == order
+          ? _value.order
+          : order // ignore: cast_nullable_to_non_nullable
+              as int,
+      totalExercises: null == totalExercises
+          ? _value.totalExercises
+          : totalExercises // ignore: cast_nullable_to_non_nullable
+              as int,
+      exercises: null == exercises
+          ? _value._exercises
+          : exercises // ignore: cast_nullable_to_non_nullable
+              as List<WordMatchExercise>,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$WordMatchImpl extends _WordMatch {
-  const _$WordMatchImpl({
-    required this.id,
-    required this.title,
-    required this.order,
-    required this.totalExercises,
-    required this.isPremium,
-    required final List<WordMatchExercise> exercises,
-  }) : _exercises = exercises,
-       super._();
+  const _$WordMatchImpl(
+      {required this.id,
+      required this.title,
+      required this.order,
+      required this.totalExercises,
+      required final List<WordMatchExercise> exercises})
+      : _exercises = exercises,
+        super._();
 
   @override
   final String id;
@@ -204,8 +168,6 @@ class _$WordMatchImpl extends _WordMatch {
   final int order;
   @override
   final int totalExercises;
-  @override
-  final bool isPremium;
   final List<WordMatchExercise> _exercises;
   @override
   List<WordMatchExercise> get exercises {
@@ -216,7 +178,7 @@ class _$WordMatchImpl extends _WordMatch {
 
   @override
   String toString() {
-    return 'WordMatch(id: $id, title: $title, order: $order, totalExercises: $totalExercises, isPremium: $isPremium, exercises: $exercises)';
+    return 'WordMatch(id: $id, title: $title, order: $order, totalExercises: $totalExercises, exercises: $exercises)';
   }
 
   @override
@@ -229,24 +191,13 @@ class _$WordMatchImpl extends _WordMatch {
             (identical(other.order, order) || other.order == order) &&
             (identical(other.totalExercises, totalExercises) ||
                 other.totalExercises == totalExercises) &&
-            (identical(other.isPremium, isPremium) ||
-                other.isPremium == isPremium) &&
-            const DeepCollectionEquality().equals(
-              other._exercises,
-              _exercises,
-            ));
+            const DeepCollectionEquality()
+                .equals(other._exercises, _exercises));
   }
 
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    id,
-    title,
-    order,
-    totalExercises,
-    isPremium,
-    const DeepCollectionEquality().hash(_exercises),
-  );
+  int get hashCode => Object.hash(runtimeType, id, title, order, totalExercises,
+      const DeepCollectionEquality().hash(_exercises));
 
   /// Create a copy of WordMatch
   /// with the given fields replaced by the non-null parameter values.
@@ -258,14 +209,12 @@ class _$WordMatchImpl extends _WordMatch {
 }
 
 abstract class _WordMatch extends WordMatch {
-  const factory _WordMatch({
-    required final String id,
-    required final String title,
-    required final int order,
-    required final int totalExercises,
-    required final bool isPremium,
-    required final List<WordMatchExercise> exercises,
-  }) = _$WordMatchImpl;
+  const factory _WordMatch(
+      {required final String id,
+      required final String title,
+      required final int order,
+      required final int totalExercises,
+      required final List<WordMatchExercise> exercises}) = _$WordMatchImpl;
   const _WordMatch._() : super._();
 
   @override
@@ -276,8 +225,6 @@ abstract class _WordMatch extends WordMatch {
   int get order;
   @override
   int get totalExercises;
-  @override
-  bool get isPremium;
   @override
   List<WordMatchExercise> get exercises;
 
@@ -306,9 +253,8 @@ mixin _$WordMatchExercise {
 /// @nodoc
 abstract class $WordMatchExerciseCopyWith<$Res> {
   factory $WordMatchExerciseCopyWith(
-    WordMatchExercise value,
-    $Res Function(WordMatchExercise) then,
-  ) = _$WordMatchExerciseCopyWithImpl<$Res, WordMatchExercise>;
+          WordMatchExercise value, $Res Function(WordMatchExercise) then) =
+      _$WordMatchExerciseCopyWithImpl<$Res, WordMatchExercise>;
   @useResult
   $Res call({String id, List<String> choices, String answer, String image});
 }
@@ -333,41 +279,33 @@ class _$WordMatchExerciseCopyWithImpl<$Res, $Val extends WordMatchExercise>
     Object? answer = null,
     Object? image = null,
   }) {
-    return _then(
-      _value.copyWith(
-            id:
-                null == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as String,
-            choices:
-                null == choices
-                    ? _value.choices
-                    : choices // ignore: cast_nullable_to_non_nullable
-                        as List<String>,
-            answer:
-                null == answer
-                    ? _value.answer
-                    : answer // ignore: cast_nullable_to_non_nullable
-                        as String,
-            image:
-                null == image
-                    ? _value.image
-                    : image // ignore: cast_nullable_to_non_nullable
-                        as String,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      choices: null == choices
+          ? _value.choices
+          : choices // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      answer: null == answer
+          ? _value.answer
+          : answer // ignore: cast_nullable_to_non_nullable
+              as String,
+      image: null == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$WordMatchExerciseImplCopyWith<$Res>
     implements $WordMatchExerciseCopyWith<$Res> {
-  factory _$$WordMatchExerciseImplCopyWith(
-    _$WordMatchExerciseImpl value,
-    $Res Function(_$WordMatchExerciseImpl) then,
-  ) = __$$WordMatchExerciseImplCopyWithImpl<$Res>;
+  factory _$$WordMatchExerciseImplCopyWith(_$WordMatchExerciseImpl value,
+          $Res Function(_$WordMatchExerciseImpl) then) =
+      __$$WordMatchExerciseImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String id, List<String> choices, String answer, String image});
@@ -377,10 +315,9 @@ abstract class _$$WordMatchExerciseImplCopyWith<$Res>
 class __$$WordMatchExerciseImplCopyWithImpl<$Res>
     extends _$WordMatchExerciseCopyWithImpl<$Res, _$WordMatchExerciseImpl>
     implements _$$WordMatchExerciseImplCopyWith<$Res> {
-  __$$WordMatchExerciseImplCopyWithImpl(
-    _$WordMatchExerciseImpl _value,
-    $Res Function(_$WordMatchExerciseImpl) _then,
-  ) : super(_value, _then);
+  __$$WordMatchExerciseImplCopyWithImpl(_$WordMatchExerciseImpl _value,
+      $Res Function(_$WordMatchExerciseImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of WordMatchExercise
   /// with the given fields replaced by the non-null parameter values.
@@ -392,43 +329,37 @@ class __$$WordMatchExerciseImplCopyWithImpl<$Res>
     Object? answer = null,
     Object? image = null,
   }) {
-    return _then(
-      _$WordMatchExerciseImpl(
-        id:
-            null == id
-                ? _value.id
-                : id // ignore: cast_nullable_to_non_nullable
-                    as String,
-        choices:
-            null == choices
-                ? _value._choices
-                : choices // ignore: cast_nullable_to_non_nullable
-                    as List<String>,
-        answer:
-            null == answer
-                ? _value.answer
-                : answer // ignore: cast_nullable_to_non_nullable
-                    as String,
-        image:
-            null == image
-                ? _value.image
-                : image // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+    return _then(_$WordMatchExerciseImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      choices: null == choices
+          ? _value._choices
+          : choices // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      answer: null == answer
+          ? _value.answer
+          : answer // ignore: cast_nullable_to_non_nullable
+              as String,
+      image: null == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$WordMatchExerciseImpl extends _WordMatchExercise {
-  const _$WordMatchExerciseImpl({
-    required this.id,
-    required final List<String> choices,
-    required this.answer,
-    required this.image,
-  }) : _choices = choices,
-       super._();
+  const _$WordMatchExerciseImpl(
+      {required this.id,
+      required final List<String> choices,
+      required this.answer,
+      required this.image})
+      : _choices = choices,
+        super._();
 
   @override
   final String id;
@@ -462,13 +393,8 @@ class _$WordMatchExerciseImpl extends _WordMatchExercise {
   }
 
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    id,
-    const DeepCollectionEquality().hash(_choices),
-    answer,
-    image,
-  );
+  int get hashCode => Object.hash(runtimeType, id,
+      const DeepCollectionEquality().hash(_choices), answer, image);
 
   /// Create a copy of WordMatchExercise
   /// with the given fields replaced by the non-null parameter values.
@@ -477,18 +403,15 @@ class _$WordMatchExerciseImpl extends _WordMatchExercise {
   @pragma('vm:prefer-inline')
   _$$WordMatchExerciseImplCopyWith<_$WordMatchExerciseImpl> get copyWith =>
       __$$WordMatchExerciseImplCopyWithImpl<_$WordMatchExerciseImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 }
 
 abstract class _WordMatchExercise extends WordMatchExercise {
-  const factory _WordMatchExercise({
-    required final String id,
-    required final List<String> choices,
-    required final String answer,
-    required final String image,
-  }) = _$WordMatchExerciseImpl;
+  const factory _WordMatchExercise(
+      {required final String id,
+      required final List<String> choices,
+      required final String answer,
+      required final String image}) = _$WordMatchExerciseImpl;
   const _WordMatchExercise._() : super._();
 
   @override

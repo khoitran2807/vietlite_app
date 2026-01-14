@@ -10,7 +10,6 @@ class WordMatch with _$WordMatch {
     required String title,
     required int order,
     required int totalExercises,
-    required bool isPremium,
     required List<WordMatchExercise> exercises,
   }) = _WordMatch;
 
@@ -19,7 +18,6 @@ class WordMatch with _$WordMatch {
     title: '',
     order: 0,
     exercises: [],
-    isPremium: false,
     totalExercises: 0,
   );
 }

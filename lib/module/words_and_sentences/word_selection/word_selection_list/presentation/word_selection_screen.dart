@@ -95,17 +95,13 @@ class WordSelectionScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(
                                 AppDimensions.s12,
                               ),
-                              onTap:
-                                  (!wordSelection.isPremium ||
-                                          userState.isWordSelectionPremium)
-                                      ? () {
+                              onTap: () {
                                         AppLocator.router.push(
                                           WordSelectionDetailScreenRoute(
                                             id: wordSelection.id,
                                           ),
                                         );
-                                      }
-                                      : null,
+                                      },
                               child: Container(
                                 padding: EdgeInsets.symmetric(
                                   horizontal: AppDimensions.s16,
@@ -117,12 +113,7 @@ class WordSelectionScreen extends StatelessWidget {
                                     AppDimensions.s12,
                                   ),
                                   border: Border.all(
-                                    color:
-                                        (!wordSelection.isPremium ||
-                                                userState
-                                                    .isWordSelectionPremium)
-                                            ? context.color.neutral.shade200
-                                            : context.color.neutral.shade300,
+                                    color: context.color.neutral.shade200
                                   ),
                                 ),
                                 child: Row(
@@ -162,15 +153,9 @@ class WordSelectionScreen extends StatelessWidget {
                                             overflow: TextOverflow.ellipsis,
                                             style: context.defaultStyle.bold
                                                 .copyWith(
-                                                  color:
-                                                      (!wordSelection
-                                                                  .isPremium ||
-                                                              userState
-                                                                  .isWordSelectionPremium)
-                                                          ? context
-                                                              .color
-                                                              .neutral
-                                                          : Colors.grey,
+                                                  color: context
+                                                      .color
+                                                      .neutral
                                                 ),
                                           ),
                                           SizedBox(height: AppDimensions.s4),

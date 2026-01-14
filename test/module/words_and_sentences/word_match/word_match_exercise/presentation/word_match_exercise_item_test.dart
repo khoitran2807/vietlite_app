@@ -51,7 +51,6 @@ void main() {
       exercises: [exercise],
       totalExercises: 1,
       order: 1,
-      isPremium: false,
     );
     GetIt.instance.registerFactory<WordMatchExerciseBloc>(
       () => mockWordMatchExerciseBloc,

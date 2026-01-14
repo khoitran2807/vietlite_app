@@ -89,17 +89,13 @@ class WordMatchScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(
                                 AppDimensions.s12,
                               ),
-                              onTap:
-                                  (!wordMatch.isPremium ||
-                                          userState.isWordMatchPremium)
-                                      ? () {
-                                        AppLocator.router.push(
-                                          WordMatchDetailScreenRoute(
-                                            id: wordMatch.id,
-                                          ),
-                                        );
-                                      }
-                                      : null,
+                              onTap: () {
+                                AppLocator.router.push(
+                                  WordMatchDetailScreenRoute(
+                                    id: wordMatch.id,
+                                  ),
+                                );
+                              },
                               child: Container(
                                 padding: EdgeInsets.symmetric(
                                   horizontal: AppDimensions.s16,
@@ -111,11 +107,7 @@ class WordMatchScreen extends StatelessWidget {
                                     AppDimensions.s12,
                                   ),
                                   border: Border.all(
-                                    color:
-                                        (!wordMatch.isPremium ||
-                                                userState.isWordMatchPremium)
-                                            ? context.color.neutral.shade200
-                                            : context.color.neutral.shade300,
+                                    color: context.color.neutral.shade200
                                   ),
                                 ),
                                 child: Row(
@@ -153,17 +145,9 @@ class WordMatchScreen extends StatelessWidget {
                                           Text(
                                             wordMatch.title,
                                             overflow: TextOverflow.ellipsis,
-                                            style: context.defaultStyle.bold
-                                                .copyWith(
-                                                  color:
-                                                      (!wordMatch.isPremium ||
-                                                              userState
-                                                                  .isWordMatchPremium)
-                                                          ? context
-                                                              .color
-                                                              .neutral
-                                                          : Colors.grey,
-                                                ),
+                                            style: context.defaultStyle.bold.copyWith(
+                                              color: context.color.neutral,
+                                            ),
                                           ),
                                           SizedBox(height: AppDimensions.s4),
                                           Text.rich(

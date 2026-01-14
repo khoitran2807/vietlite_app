@@ -12,57 +12,58 @@ part of 'word_match_exercise_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$WordMatchExerciseEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(WordMatchExercise exercise, String? lastAnswer)
-    initialize,
+        initialize,
     required TResult Function(String selectedAnswer) selectAnswer,
     required TResult Function(
-      String userId,
-      String progressId,
-      int totalExercises,
-    )
-    updateAnswerProgress,
+            String userId, String progressId, int totalExercises)
+        updateAnswerProgress,
     required TResult Function() checkAnswer,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(WordMatchExercise exercise, String? lastAnswer)?
-    initialize,
+        initialize,
     TResult? Function(String selectedAnswer)? selectAnswer,
     TResult? Function(String userId, String progressId, int totalExercises)?
-    updateAnswerProgress,
+        updateAnswerProgress,
     TResult? Function()? checkAnswer,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(WordMatchExercise exercise, String? lastAnswer)?
-    initialize,
+        initialize,
     TResult Function(String selectedAnswer)? selectAnswer,
     TResult Function(String userId, String progressId, int totalExercises)?
-    updateAnswerProgress,
+        updateAnswerProgress,
     TResult Function()? checkAnswer,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initialize value) initialize,
     required TResult Function(_SelectAnswer value) selectAnswer,
     required TResult Function(_UpdateAnswerProgress value) updateAnswerProgress,
     required TResult Function(_CheckAnswer value) checkAnswer,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initialize value)? initialize,
     TResult? Function(_SelectAnswer value)? selectAnswer,
     TResult? Function(_UpdateAnswerProgress value)? updateAnswerProgress,
     TResult? Function(_CheckAnswer value)? checkAnswer,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initialize value)? initialize,
@@ -70,22 +71,20 @@ mixin _$WordMatchExerciseEvent {
     TResult Function(_UpdateAnswerProgress value)? updateAnswerProgress,
     TResult Function(_CheckAnswer value)? checkAnswer,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $WordMatchExerciseEventCopyWith<$Res> {
-  factory $WordMatchExerciseEventCopyWith(
-    WordMatchExerciseEvent value,
-    $Res Function(WordMatchExerciseEvent) then,
-  ) = _$WordMatchExerciseEventCopyWithImpl<$Res, WordMatchExerciseEvent>;
+  factory $WordMatchExerciseEventCopyWith(WordMatchExerciseEvent value,
+          $Res Function(WordMatchExerciseEvent) then) =
+      _$WordMatchExerciseEventCopyWithImpl<$Res, WordMatchExerciseEvent>;
 }
 
 /// @nodoc
-class _$WordMatchExerciseEventCopyWithImpl<
-  $Res,
-  $Val extends WordMatchExerciseEvent
->
+class _$WordMatchExerciseEventCopyWithImpl<$Res,
+        $Val extends WordMatchExerciseEvent>
     implements $WordMatchExerciseEventCopyWith<$Res> {
   _$WordMatchExerciseEventCopyWithImpl(this._value, this._then);
 
@@ -101,9 +100,8 @@ class _$WordMatchExerciseEventCopyWithImpl<
 /// @nodoc
 abstract class _$$InitializeImplCopyWith<$Res> {
   factory _$$InitializeImplCopyWith(
-    _$InitializeImpl value,
-    $Res Function(_$InitializeImpl) then,
-  ) = __$$InitializeImplCopyWithImpl<$Res>;
+          _$InitializeImpl value, $Res Function(_$InitializeImpl) then) =
+      __$$InitializeImplCopyWithImpl<$Res>;
   @useResult
   $Res call({WordMatchExercise exercise, String? lastAnswer});
 
@@ -115,29 +113,27 @@ class __$$InitializeImplCopyWithImpl<$Res>
     extends _$WordMatchExerciseEventCopyWithImpl<$Res, _$InitializeImpl>
     implements _$$InitializeImplCopyWith<$Res> {
   __$$InitializeImplCopyWithImpl(
-    _$InitializeImpl _value,
-    $Res Function(_$InitializeImpl) _then,
-  ) : super(_value, _then);
+      _$InitializeImpl _value, $Res Function(_$InitializeImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of WordMatchExerciseEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? exercise = null, Object? lastAnswer = freezed}) {
-    return _then(
-      _$InitializeImpl(
-        exercise:
-            null == exercise
-                ? _value.exercise
-                : exercise // ignore: cast_nullable_to_non_nullable
-                    as WordMatchExercise,
-        lastAnswer:
-            freezed == lastAnswer
-                ? _value.lastAnswer
-                : lastAnswer // ignore: cast_nullable_to_non_nullable
-                    as String?,
-      ),
-    );
+  $Res call({
+    Object? exercise = null,
+    Object? lastAnswer = freezed,
+  }) {
+    return _then(_$InitializeImpl(
+      exercise: null == exercise
+          ? _value.exercise
+          : exercise // ignore: cast_nullable_to_non_nullable
+              as WordMatchExercise,
+      lastAnswer: freezed == lastAnswer
+          ? _value.lastAnswer
+          : lastAnswer // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 
   /// Create a copy of WordMatchExerciseEvent
@@ -192,14 +188,11 @@ class _$InitializeImpl implements _Initialize {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(WordMatchExercise exercise, String? lastAnswer)
-    initialize,
+        initialize,
     required TResult Function(String selectedAnswer) selectAnswer,
     required TResult Function(
-      String userId,
-      String progressId,
-      int totalExercises,
-    )
-    updateAnswerProgress,
+            String userId, String progressId, int totalExercises)
+        updateAnswerProgress,
     required TResult Function() checkAnswer,
   }) {
     return initialize(exercise, lastAnswer);
@@ -209,10 +202,10 @@ class _$InitializeImpl implements _Initialize {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(WordMatchExercise exercise, String? lastAnswer)?
-    initialize,
+        initialize,
     TResult? Function(String selectedAnswer)? selectAnswer,
     TResult? Function(String userId, String progressId, int totalExercises)?
-    updateAnswerProgress,
+        updateAnswerProgress,
     TResult? Function()? checkAnswer,
   }) {
     return initialize?.call(exercise, lastAnswer);
@@ -222,10 +215,10 @@ class _$InitializeImpl implements _Initialize {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(WordMatchExercise exercise, String? lastAnswer)?
-    initialize,
+        initialize,
     TResult Function(String selectedAnswer)? selectAnswer,
     TResult Function(String userId, String progressId, int totalExercises)?
-    updateAnswerProgress,
+        updateAnswerProgress,
     TResult Function()? checkAnswer,
     required TResult orElse(),
   }) {
@@ -274,10 +267,9 @@ class _$InitializeImpl implements _Initialize {
 }
 
 abstract class _Initialize implements WordMatchExerciseEvent {
-  const factory _Initialize({
-    required final WordMatchExercise exercise,
-    required final String? lastAnswer,
-  }) = _$InitializeImpl;
+  const factory _Initialize(
+      {required final WordMatchExercise exercise,
+      required final String? lastAnswer}) = _$InitializeImpl;
 
   WordMatchExercise get exercise;
   String? get lastAnswer;
@@ -292,9 +284,8 @@ abstract class _Initialize implements WordMatchExerciseEvent {
 /// @nodoc
 abstract class _$$SelectAnswerImplCopyWith<$Res> {
   factory _$$SelectAnswerImplCopyWith(
-    _$SelectAnswerImpl value,
-    $Res Function(_$SelectAnswerImpl) then,
-  ) = __$$SelectAnswerImplCopyWithImpl<$Res>;
+          _$SelectAnswerImpl value, $Res Function(_$SelectAnswerImpl) then) =
+      __$$SelectAnswerImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String selectedAnswer});
 }
@@ -304,24 +295,22 @@ class __$$SelectAnswerImplCopyWithImpl<$Res>
     extends _$WordMatchExerciseEventCopyWithImpl<$Res, _$SelectAnswerImpl>
     implements _$$SelectAnswerImplCopyWith<$Res> {
   __$$SelectAnswerImplCopyWithImpl(
-    _$SelectAnswerImpl _value,
-    $Res Function(_$SelectAnswerImpl) _then,
-  ) : super(_value, _then);
+      _$SelectAnswerImpl _value, $Res Function(_$SelectAnswerImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of WordMatchExerciseEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? selectedAnswer = null}) {
-    return _then(
-      _$SelectAnswerImpl(
-        selectedAnswer:
-            null == selectedAnswer
-                ? _value.selectedAnswer
-                : selectedAnswer // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+  $Res call({
+    Object? selectedAnswer = null,
+  }) {
+    return _then(_$SelectAnswerImpl(
+      selectedAnswer: null == selectedAnswer
+          ? _value.selectedAnswer
+          : selectedAnswer // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
@@ -362,14 +351,11 @@ class _$SelectAnswerImpl implements _SelectAnswer {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(WordMatchExercise exercise, String? lastAnswer)
-    initialize,
+        initialize,
     required TResult Function(String selectedAnswer) selectAnswer,
     required TResult Function(
-      String userId,
-      String progressId,
-      int totalExercises,
-    )
-    updateAnswerProgress,
+            String userId, String progressId, int totalExercises)
+        updateAnswerProgress,
     required TResult Function() checkAnswer,
   }) {
     return selectAnswer(selectedAnswer);
@@ -379,10 +365,10 @@ class _$SelectAnswerImpl implements _SelectAnswer {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(WordMatchExercise exercise, String? lastAnswer)?
-    initialize,
+        initialize,
     TResult? Function(String selectedAnswer)? selectAnswer,
     TResult? Function(String userId, String progressId, int totalExercises)?
-    updateAnswerProgress,
+        updateAnswerProgress,
     TResult? Function()? checkAnswer,
   }) {
     return selectAnswer?.call(selectedAnswer);
@@ -392,10 +378,10 @@ class _$SelectAnswerImpl implements _SelectAnswer {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(WordMatchExercise exercise, String? lastAnswer)?
-    initialize,
+        initialize,
     TResult Function(String selectedAnswer)? selectAnswer,
     TResult Function(String userId, String progressId, int totalExercises)?
-    updateAnswerProgress,
+        updateAnswerProgress,
     TResult Function()? checkAnswer,
     required TResult orElse(),
   }) {
@@ -458,23 +444,21 @@ abstract class _SelectAnswer implements WordMatchExerciseEvent {
 
 /// @nodoc
 abstract class _$$UpdateAnswerProgressImplCopyWith<$Res> {
-  factory _$$UpdateAnswerProgressImplCopyWith(
-    _$UpdateAnswerProgressImpl value,
-    $Res Function(_$UpdateAnswerProgressImpl) then,
-  ) = __$$UpdateAnswerProgressImplCopyWithImpl<$Res>;
+  factory _$$UpdateAnswerProgressImplCopyWith(_$UpdateAnswerProgressImpl value,
+          $Res Function(_$UpdateAnswerProgressImpl) then) =
+      __$$UpdateAnswerProgressImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String userId, String progressId, int totalExercises});
 }
 
 /// @nodoc
 class __$$UpdateAnswerProgressImplCopyWithImpl<$Res>
-    extends
-        _$WordMatchExerciseEventCopyWithImpl<$Res, _$UpdateAnswerProgressImpl>
+    extends _$WordMatchExerciseEventCopyWithImpl<$Res,
+        _$UpdateAnswerProgressImpl>
     implements _$$UpdateAnswerProgressImplCopyWith<$Res> {
-  __$$UpdateAnswerProgressImplCopyWithImpl(
-    _$UpdateAnswerProgressImpl _value,
-    $Res Function(_$UpdateAnswerProgressImpl) _then,
-  ) : super(_value, _then);
+  __$$UpdateAnswerProgressImplCopyWithImpl(_$UpdateAnswerProgressImpl _value,
+      $Res Function(_$UpdateAnswerProgressImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of WordMatchExerciseEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -485,36 +469,30 @@ class __$$UpdateAnswerProgressImplCopyWithImpl<$Res>
     Object? progressId = null,
     Object? totalExercises = null,
   }) {
-    return _then(
-      _$UpdateAnswerProgressImpl(
-        userId:
-            null == userId
-                ? _value.userId
-                : userId // ignore: cast_nullable_to_non_nullable
-                    as String,
-        progressId:
-            null == progressId
-                ? _value.progressId
-                : progressId // ignore: cast_nullable_to_non_nullable
-                    as String,
-        totalExercises:
-            null == totalExercises
-                ? _value.totalExercises
-                : totalExercises // ignore: cast_nullable_to_non_nullable
-                    as int,
-      ),
-    );
+    return _then(_$UpdateAnswerProgressImpl(
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+      progressId: null == progressId
+          ? _value.progressId
+          : progressId // ignore: cast_nullable_to_non_nullable
+              as String,
+      totalExercises: null == totalExercises
+          ? _value.totalExercises
+          : totalExercises // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$UpdateAnswerProgressImpl implements _UpdateAnswerProgress {
-  const _$UpdateAnswerProgressImpl({
-    required this.userId,
-    required this.progressId,
-    required this.totalExercises,
-  });
+  const _$UpdateAnswerProgressImpl(
+      {required this.userId,
+      required this.progressId,
+      required this.totalExercises});
 
   @override
   final String userId;
@@ -550,24 +528,19 @@ class _$UpdateAnswerProgressImpl implements _UpdateAnswerProgress {
   @override
   @pragma('vm:prefer-inline')
   _$$UpdateAnswerProgressImplCopyWith<_$UpdateAnswerProgressImpl>
-  get copyWith =>
-      __$$UpdateAnswerProgressImplCopyWithImpl<_$UpdateAnswerProgressImpl>(
-        this,
-        _$identity,
-      );
+      get copyWith =>
+          __$$UpdateAnswerProgressImplCopyWithImpl<_$UpdateAnswerProgressImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(WordMatchExercise exercise, String? lastAnswer)
-    initialize,
+        initialize,
     required TResult Function(String selectedAnswer) selectAnswer,
     required TResult Function(
-      String userId,
-      String progressId,
-      int totalExercises,
-    )
-    updateAnswerProgress,
+            String userId, String progressId, int totalExercises)
+        updateAnswerProgress,
     required TResult Function() checkAnswer,
   }) {
     return updateAnswerProgress(userId, progressId, totalExercises);
@@ -577,10 +550,10 @@ class _$UpdateAnswerProgressImpl implements _UpdateAnswerProgress {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(WordMatchExercise exercise, String? lastAnswer)?
-    initialize,
+        initialize,
     TResult? Function(String selectedAnswer)? selectAnswer,
     TResult? Function(String userId, String progressId, int totalExercises)?
-    updateAnswerProgress,
+        updateAnswerProgress,
     TResult? Function()? checkAnswer,
   }) {
     return updateAnswerProgress?.call(userId, progressId, totalExercises);
@@ -590,10 +563,10 @@ class _$UpdateAnswerProgressImpl implements _UpdateAnswerProgress {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(WordMatchExercise exercise, String? lastAnswer)?
-    initialize,
+        initialize,
     TResult Function(String selectedAnswer)? selectAnswer,
     TResult Function(String userId, String progressId, int totalExercises)?
-    updateAnswerProgress,
+        updateAnswerProgress,
     TResult Function()? checkAnswer,
     required TResult orElse(),
   }) {
@@ -642,11 +615,10 @@ class _$UpdateAnswerProgressImpl implements _UpdateAnswerProgress {
 }
 
 abstract class _UpdateAnswerProgress implements WordMatchExerciseEvent {
-  const factory _UpdateAnswerProgress({
-    required final String userId,
-    required final String progressId,
-    required final int totalExercises,
-  }) = _$UpdateAnswerProgressImpl;
+  const factory _UpdateAnswerProgress(
+      {required final String userId,
+      required final String progressId,
+      required final int totalExercises}) = _$UpdateAnswerProgressImpl;
 
   String get userId;
   String get progressId;
@@ -656,15 +628,14 @@ abstract class _UpdateAnswerProgress implements WordMatchExerciseEvent {
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$UpdateAnswerProgressImplCopyWith<_$UpdateAnswerProgressImpl>
-  get copyWith => throw _privateConstructorUsedError;
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$CheckAnswerImplCopyWith<$Res> {
   factory _$$CheckAnswerImplCopyWith(
-    _$CheckAnswerImpl value,
-    $Res Function(_$CheckAnswerImpl) then,
-  ) = __$$CheckAnswerImplCopyWithImpl<$Res>;
+          _$CheckAnswerImpl value, $Res Function(_$CheckAnswerImpl) then) =
+      __$$CheckAnswerImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -672,9 +643,8 @@ class __$$CheckAnswerImplCopyWithImpl<$Res>
     extends _$WordMatchExerciseEventCopyWithImpl<$Res, _$CheckAnswerImpl>
     implements _$$CheckAnswerImplCopyWith<$Res> {
   __$$CheckAnswerImplCopyWithImpl(
-    _$CheckAnswerImpl _value,
-    $Res Function(_$CheckAnswerImpl) _then,
-  ) : super(_value, _then);
+      _$CheckAnswerImpl _value, $Res Function(_$CheckAnswerImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of WordMatchExerciseEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -703,14 +673,11 @@ class _$CheckAnswerImpl implements _CheckAnswer {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(WordMatchExercise exercise, String? lastAnswer)
-    initialize,
+        initialize,
     required TResult Function(String selectedAnswer) selectAnswer,
     required TResult Function(
-      String userId,
-      String progressId,
-      int totalExercises,
-    )
-    updateAnswerProgress,
+            String userId, String progressId, int totalExercises)
+        updateAnswerProgress,
     required TResult Function() checkAnswer,
   }) {
     return checkAnswer();
@@ -720,10 +687,10 @@ class _$CheckAnswerImpl implements _CheckAnswer {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(WordMatchExercise exercise, String? lastAnswer)?
-    initialize,
+        initialize,
     TResult? Function(String selectedAnswer)? selectAnswer,
     TResult? Function(String userId, String progressId, int totalExercises)?
-    updateAnswerProgress,
+        updateAnswerProgress,
     TResult? Function()? checkAnswer,
   }) {
     return checkAnswer?.call();
@@ -733,10 +700,10 @@ class _$CheckAnswerImpl implements _CheckAnswer {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(WordMatchExercise exercise, String? lastAnswer)?
-    initialize,
+        initialize,
     TResult Function(String selectedAnswer)? selectAnswer,
     TResult Function(String userId, String progressId, int totalExercises)?
-    updateAnswerProgress,
+        updateAnswerProgress,
     TResult Function()? checkAnswer,
     required TResult orElse(),
   }) {
@@ -806,27 +773,23 @@ mixin _$WordMatchExerciseState {
 
 /// @nodoc
 abstract class $WordMatchExerciseStateCopyWith<$Res> {
-  factory $WordMatchExerciseStateCopyWith(
-    WordMatchExerciseState value,
-    $Res Function(WordMatchExerciseState) then,
-  ) = _$WordMatchExerciseStateCopyWithImpl<$Res, WordMatchExerciseState>;
+  factory $WordMatchExerciseStateCopyWith(WordMatchExerciseState value,
+          $Res Function(WordMatchExerciseState) then) =
+      _$WordMatchExerciseStateCopyWithImpl<$Res, WordMatchExerciseState>;
   @useResult
-  $Res call({
-    String? selectedAnswer,
-    bool isAnswered,
-    bool isLoading,
-    WordMatchExercise exercise,
-    Option<Either<AppFailure, dynamic>> failureOrSuccessOption,
-  });
+  $Res call(
+      {String? selectedAnswer,
+      bool isAnswered,
+      bool isLoading,
+      WordMatchExercise exercise,
+      Option<Either<AppFailure, dynamic>> failureOrSuccessOption});
 
   $WordMatchExerciseCopyWith<$Res> get exercise;
 }
 
 /// @nodoc
-class _$WordMatchExerciseStateCopyWithImpl<
-  $Res,
-  $Val extends WordMatchExerciseState
->
+class _$WordMatchExerciseStateCopyWithImpl<$Res,
+        $Val extends WordMatchExerciseState>
     implements $WordMatchExerciseStateCopyWith<$Res> {
   _$WordMatchExerciseStateCopyWithImpl(this._value, this._then);
 
@@ -846,36 +809,28 @@ class _$WordMatchExerciseStateCopyWithImpl<
     Object? exercise = null,
     Object? failureOrSuccessOption = null,
   }) {
-    return _then(
-      _value.copyWith(
-            selectedAnswer:
-                freezed == selectedAnswer
-                    ? _value.selectedAnswer
-                    : selectedAnswer // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            isAnswered:
-                null == isAnswered
-                    ? _value.isAnswered
-                    : isAnswered // ignore: cast_nullable_to_non_nullable
-                        as bool,
-            isLoading:
-                null == isLoading
-                    ? _value.isLoading
-                    : isLoading // ignore: cast_nullable_to_non_nullable
-                        as bool,
-            exercise:
-                null == exercise
-                    ? _value.exercise
-                    : exercise // ignore: cast_nullable_to_non_nullable
-                        as WordMatchExercise,
-            failureOrSuccessOption:
-                null == failureOrSuccessOption
-                    ? _value.failureOrSuccessOption
-                    : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
-                        as Option<Either<AppFailure, dynamic>>,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      selectedAnswer: freezed == selectedAnswer
+          ? _value.selectedAnswer
+          : selectedAnswer // ignore: cast_nullable_to_non_nullable
+              as String?,
+      isAnswered: null == isAnswered
+          ? _value.isAnswered
+          : isAnswered // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      exercise: null == exercise
+          ? _value.exercise
+          : exercise // ignore: cast_nullable_to_non_nullable
+              as WordMatchExercise,
+      failureOrSuccessOption: null == failureOrSuccessOption
+          ? _value.failureOrSuccessOption
+          : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ) as $Val);
   }
 
   /// Create a copy of WordMatchExerciseState
@@ -893,18 +848,17 @@ class _$WordMatchExerciseStateCopyWithImpl<
 abstract class _$$WordMatchExerciseStateImplCopyWith<$Res>
     implements $WordMatchExerciseStateCopyWith<$Res> {
   factory _$$WordMatchExerciseStateImplCopyWith(
-    _$WordMatchExerciseStateImpl value,
-    $Res Function(_$WordMatchExerciseStateImpl) then,
-  ) = __$$WordMatchExerciseStateImplCopyWithImpl<$Res>;
+          _$WordMatchExerciseStateImpl value,
+          $Res Function(_$WordMatchExerciseStateImpl) then) =
+      __$$WordMatchExerciseStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String? selectedAnswer,
-    bool isAnswered,
-    bool isLoading,
-    WordMatchExercise exercise,
-    Option<Either<AppFailure, dynamic>> failureOrSuccessOption,
-  });
+  $Res call(
+      {String? selectedAnswer,
+      bool isAnswered,
+      bool isLoading,
+      WordMatchExercise exercise,
+      Option<Either<AppFailure, dynamic>> failureOrSuccessOption});
 
   @override
   $WordMatchExerciseCopyWith<$Res> get exercise;
@@ -912,13 +866,13 @@ abstract class _$$WordMatchExerciseStateImplCopyWith<$Res>
 
 /// @nodoc
 class __$$WordMatchExerciseStateImplCopyWithImpl<$Res>
-    extends
-        _$WordMatchExerciseStateCopyWithImpl<$Res, _$WordMatchExerciseStateImpl>
+    extends _$WordMatchExerciseStateCopyWithImpl<$Res,
+        _$WordMatchExerciseStateImpl>
     implements _$$WordMatchExerciseStateImplCopyWith<$Res> {
   __$$WordMatchExerciseStateImplCopyWithImpl(
-    _$WordMatchExerciseStateImpl _value,
-    $Res Function(_$WordMatchExerciseStateImpl) _then,
-  ) : super(_value, _then);
+      _$WordMatchExerciseStateImpl _value,
+      $Res Function(_$WordMatchExerciseStateImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of WordMatchExerciseState
   /// with the given fields replaced by the non-null parameter values.
@@ -931,48 +885,41 @@ class __$$WordMatchExerciseStateImplCopyWithImpl<$Res>
     Object? exercise = null,
     Object? failureOrSuccessOption = null,
   }) {
-    return _then(
-      _$WordMatchExerciseStateImpl(
-        selectedAnswer:
-            freezed == selectedAnswer
-                ? _value.selectedAnswer
-                : selectedAnswer // ignore: cast_nullable_to_non_nullable
-                    as String?,
-        isAnswered:
-            null == isAnswered
-                ? _value.isAnswered
-                : isAnswered // ignore: cast_nullable_to_non_nullable
-                    as bool,
-        isLoading:
-            null == isLoading
-                ? _value.isLoading
-                : isLoading // ignore: cast_nullable_to_non_nullable
-                    as bool,
-        exercise:
-            null == exercise
-                ? _value.exercise
-                : exercise // ignore: cast_nullable_to_non_nullable
-                    as WordMatchExercise,
-        failureOrSuccessOption:
-            null == failureOrSuccessOption
-                ? _value.failureOrSuccessOption
-                : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
-                    as Option<Either<AppFailure, dynamic>>,
-      ),
-    );
+    return _then(_$WordMatchExerciseStateImpl(
+      selectedAnswer: freezed == selectedAnswer
+          ? _value.selectedAnswer
+          : selectedAnswer // ignore: cast_nullable_to_non_nullable
+              as String?,
+      isAnswered: null == isAnswered
+          ? _value.isAnswered
+          : isAnswered // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      exercise: null == exercise
+          ? _value.exercise
+          : exercise // ignore: cast_nullable_to_non_nullable
+              as WordMatchExercise,
+      failureOrSuccessOption: null == failureOrSuccessOption
+          ? _value.failureOrSuccessOption
+          : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$WordMatchExerciseStateImpl extends _WordMatchExerciseState {
-  const _$WordMatchExerciseStateImpl({
-    required this.selectedAnswer,
-    required this.isAnswered,
-    required this.isLoading,
-    required this.exercise,
-    required this.failureOrSuccessOption,
-  }) : super._();
+  const _$WordMatchExerciseStateImpl(
+      {required this.selectedAnswer,
+      required this.isAnswered,
+      required this.isLoading,
+      required this.exercise,
+      required this.failureOrSuccessOption})
+      : super._();
 
   @override
   final String? selectedAnswer;
@@ -1008,14 +955,8 @@ class _$WordMatchExerciseStateImpl extends _WordMatchExerciseState {
   }
 
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    selectedAnswer,
-    isAnswered,
-    isLoading,
-    exercise,
-    failureOrSuccessOption,
-  );
+  int get hashCode => Object.hash(runtimeType, selectedAnswer, isAnswered,
+      isLoading, exercise, failureOrSuccessOption);
 
   /// Create a copy of WordMatchExerciseState
   /// with the given fields replaced by the non-null parameter values.
@@ -1023,21 +964,18 @@ class _$WordMatchExerciseStateImpl extends _WordMatchExerciseState {
   @override
   @pragma('vm:prefer-inline')
   _$$WordMatchExerciseStateImplCopyWith<_$WordMatchExerciseStateImpl>
-  get copyWith =>
-      __$$WordMatchExerciseStateImplCopyWithImpl<_$WordMatchExerciseStateImpl>(
-        this,
-        _$identity,
-      );
+      get copyWith => __$$WordMatchExerciseStateImplCopyWithImpl<
+          _$WordMatchExerciseStateImpl>(this, _$identity);
 }
 
 abstract class _WordMatchExerciseState extends WordMatchExerciseState {
-  const factory _WordMatchExerciseState({
-    required final String? selectedAnswer,
-    required final bool isAnswered,
-    required final bool isLoading,
-    required final WordMatchExercise exercise,
-    required final Option<Either<AppFailure, dynamic>> failureOrSuccessOption,
-  }) = _$WordMatchExerciseStateImpl;
+  const factory _WordMatchExerciseState(
+      {required final String? selectedAnswer,
+      required final bool isAnswered,
+      required final bool isLoading,
+      required final WordMatchExercise exercise,
+      required final Option<Either<AppFailure, dynamic>>
+          failureOrSuccessOption}) = _$WordMatchExerciseStateImpl;
   const _WordMatchExerciseState._() : super._();
 
   @override
@@ -1056,5 +994,5 @@ abstract class _WordMatchExerciseState extends WordMatchExerciseState {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$WordMatchExerciseStateImplCopyWith<_$WordMatchExerciseStateImpl>
-  get copyWith => throw _privateConstructorUsedError;
+      get copyWith => throw _privateConstructorUsedError;
 }

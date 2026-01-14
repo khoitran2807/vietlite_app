@@ -12,11 +12,9 @@ _$WordMatchDtoImpl _$$WordMatchDtoImplFromJson(Map<String, dynamic> json) =>
       title: json['title'] as String? ?? '',
       order: (json['order'] as num?)?.toInt() ?? 0,
       totalExercises: (json['totalExercises'] as num?)?.toInt() ?? 0,
-      exercises:
-          (json['exercises'] as List<dynamic>?)
-              ?.map(
-                (e) => WordMatchExerciseDto.fromJson(e as Map<String, dynamic>),
-              )
+      exercises: (json['exercises'] as List<dynamic>?)
+              ?.map((e) =>
+                  WordMatchExerciseDto.fromJson(e as Map<String, dynamic>))
               .toList() ??
           [],
       isPremium: json['isPremium'] as bool? ?? false,
@@ -33,21 +31,22 @@ Map<String, dynamic> _$$WordMatchDtoImplToJson(_$WordMatchDtoImpl instance) =>
     };
 
 _$WordMatchExerciseDtoImpl _$$WordMatchExerciseDtoImplFromJson(
-  Map<String, dynamic> json,
-) => _$WordMatchExerciseDtoImpl(
-  id: json['id'] as String,
-  answer: json['answer'] as String? ?? '',
-  choices:
-      (json['choices'] as List<dynamic>?)?.map((e) => e as String).toList() ??
-      [],
-  image: json['image'] as String? ?? '',
-);
+        Map<String, dynamic> json) =>
+    _$WordMatchExerciseDtoImpl(
+      id: json['id'] as String,
+      answer: json['answer'] as String? ?? '',
+      choices: (json['choices'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          [],
+      image: json['image'] as String? ?? '',
+    );
 
 Map<String, dynamic> _$$WordMatchExerciseDtoImplToJson(
-  _$WordMatchExerciseDtoImpl instance,
-) => <String, dynamic>{
-  'id': instance.id,
-  'answer': instance.answer,
-  'choices': instance.choices,
-  'image': instance.image,
-};
+        _$WordMatchExerciseDtoImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'answer': instance.answer,
+      'choices': instance.choices,
+      'image': instance.image,
+    };

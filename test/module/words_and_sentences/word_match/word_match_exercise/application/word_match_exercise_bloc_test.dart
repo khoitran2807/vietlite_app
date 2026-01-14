@@ -37,7 +37,6 @@ void main() {
     ],
     totalExercises: 1,
     order: 1,
-    isPremium: false,
   );
 
   blocTest<WordMatchExerciseBloc, WordMatchExerciseState>(

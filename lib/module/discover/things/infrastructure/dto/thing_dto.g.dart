@@ -23,7 +23,6 @@ _$ThingDtoImpl _$$ThingDtoImplFromJson(Map<String, dynamic> json) =>
               .toList() ??
           [],
       totalExercises: (json['totalExercises'] as num?)?.toInt() ?? 0,
-      isPremium: json['isPremium'] as bool? ?? false,
     );
 
 Map<String, dynamic> _$$ThingDtoImplToJson(_$ThingDtoImpl instance) =>
@@ -37,7 +36,6 @@ Map<String, dynamic> _$$ThingDtoImplToJson(_$ThingDtoImpl instance) =>
       'type': instance.type,
       'exercises': instance.exercises,
       'totalExercises': instance.totalExercises,
-      'isPremium': instance.isPremium,
     };
 
 _$ThingExampleDtoImpl _$$ThingExampleDtoImplFromJson(

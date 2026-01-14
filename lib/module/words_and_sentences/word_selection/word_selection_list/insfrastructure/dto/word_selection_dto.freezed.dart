@@ -12,8 +12,7 @@ part of 'word_selection_dto.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 WordSelectionDto _$WordSelectionDtoFromJson(Map<String, dynamic> json) {
   return _WordSelectionDto.fromJson(json);
@@ -31,8 +30,6 @@ mixin _$WordSelectionDto {
   @JsonKey(defaultValue: [])
   List<WordSelectionExerciseDto> get exercises =>
       throw _privateConstructorUsedError;
-  @JsonKey(defaultValue: false)
-  bool get isPremium => throw _privateConstructorUsedError;
 
   /// Serializes this WordSelectionDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -47,18 +44,15 @@ mixin _$WordSelectionDto {
 /// @nodoc
 abstract class $WordSelectionDtoCopyWith<$Res> {
   factory $WordSelectionDtoCopyWith(
-    WordSelectionDto value,
-    $Res Function(WordSelectionDto) then,
-  ) = _$WordSelectionDtoCopyWithImpl<$Res, WordSelectionDto>;
+          WordSelectionDto value, $Res Function(WordSelectionDto) then) =
+      _$WordSelectionDtoCopyWithImpl<$Res, WordSelectionDto>;
   @useResult
-  $Res call({
-    String id,
-    @JsonKey(defaultValue: '') String title,
-    @JsonKey(defaultValue: 0) int totalExercises,
-    @JsonKey(defaultValue: 0) int order,
-    @JsonKey(defaultValue: []) List<WordSelectionExerciseDto> exercises,
-    @JsonKey(defaultValue: false) bool isPremium,
-  });
+  $Res call(
+      {String id,
+      @JsonKey(defaultValue: '') String title,
+      @JsonKey(defaultValue: 0) int totalExercises,
+      @JsonKey(defaultValue: 0) int order,
+      @JsonKey(defaultValue: []) List<WordSelectionExerciseDto> exercises});
 }
 
 /// @nodoc
@@ -81,73 +75,55 @@ class _$WordSelectionDtoCopyWithImpl<$Res, $Val extends WordSelectionDto>
     Object? totalExercises = null,
     Object? order = null,
     Object? exercises = null,
-    Object? isPremium = null,
   }) {
-    return _then(
-      _value.copyWith(
-            id:
-                null == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as String,
-            title:
-                null == title
-                    ? _value.title
-                    : title // ignore: cast_nullable_to_non_nullable
-                        as String,
-            totalExercises:
-                null == totalExercises
-                    ? _value.totalExercises
-                    : totalExercises // ignore: cast_nullable_to_non_nullable
-                        as int,
-            order:
-                null == order
-                    ? _value.order
-                    : order // ignore: cast_nullable_to_non_nullable
-                        as int,
-            exercises:
-                null == exercises
-                    ? _value.exercises
-                    : exercises // ignore: cast_nullable_to_non_nullable
-                        as List<WordSelectionExerciseDto>,
-            isPremium:
-                null == isPremium
-                    ? _value.isPremium
-                    : isPremium // ignore: cast_nullable_to_non_nullable
-                        as bool,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      totalExercises: null == totalExercises
+          ? _value.totalExercises
+          : totalExercises // ignore: cast_nullable_to_non_nullable
+              as int,
+      order: null == order
+          ? _value.order
+          : order // ignore: cast_nullable_to_non_nullable
+              as int,
+      exercises: null == exercises
+          ? _value.exercises
+          : exercises // ignore: cast_nullable_to_non_nullable
+              as List<WordSelectionExerciseDto>,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$WordSelectionDtoImplCopyWith<$Res>
     implements $WordSelectionDtoCopyWith<$Res> {
-  factory _$$WordSelectionDtoImplCopyWith(
-    _$WordSelectionDtoImpl value,
-    $Res Function(_$WordSelectionDtoImpl) then,
-  ) = __$$WordSelectionDtoImplCopyWithImpl<$Res>;
+  factory _$$WordSelectionDtoImplCopyWith(_$WordSelectionDtoImpl value,
+          $Res Function(_$WordSelectionDtoImpl) then) =
+      __$$WordSelectionDtoImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String id,
-    @JsonKey(defaultValue: '') String title,
-    @JsonKey(defaultValue: 0) int totalExercises,
-    @JsonKey(defaultValue: 0) int order,
-    @JsonKey(defaultValue: []) List<WordSelectionExerciseDto> exercises,
-    @JsonKey(defaultValue: false) bool isPremium,
-  });
+  $Res call(
+      {String id,
+      @JsonKey(defaultValue: '') String title,
+      @JsonKey(defaultValue: 0) int totalExercises,
+      @JsonKey(defaultValue: 0) int order,
+      @JsonKey(defaultValue: []) List<WordSelectionExerciseDto> exercises});
 }
 
 /// @nodoc
 class __$$WordSelectionDtoImplCopyWithImpl<$Res>
     extends _$WordSelectionDtoCopyWithImpl<$Res, _$WordSelectionDtoImpl>
     implements _$$WordSelectionDtoImplCopyWith<$Res> {
-  __$$WordSelectionDtoImplCopyWithImpl(
-    _$WordSelectionDtoImpl _value,
-    $Res Function(_$WordSelectionDtoImpl) _then,
-  ) : super(_value, _then);
+  __$$WordSelectionDtoImplCopyWithImpl(_$WordSelectionDtoImpl _value,
+      $Res Function(_$WordSelectionDtoImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of WordSelectionDto
   /// with the given fields replaced by the non-null parameter values.
@@ -159,58 +135,44 @@ class __$$WordSelectionDtoImplCopyWithImpl<$Res>
     Object? totalExercises = null,
     Object? order = null,
     Object? exercises = null,
-    Object? isPremium = null,
   }) {
-    return _then(
-      _$WordSelectionDtoImpl(
-        id:
-            null == id
-                ? _value.id
-                : id // ignore: cast_nullable_to_non_nullable
-                    as String,
-        title:
-            null == title
-                ? _value.title
-                : title // ignore: cast_nullable_to_non_nullable
-                    as String,
-        totalExercises:
-            null == totalExercises
-                ? _value.totalExercises
-                : totalExercises // ignore: cast_nullable_to_non_nullable
-                    as int,
-        order:
-            null == order
-                ? _value.order
-                : order // ignore: cast_nullable_to_non_nullable
-                    as int,
-        exercises:
-            null == exercises
-                ? _value._exercises
-                : exercises // ignore: cast_nullable_to_non_nullable
-                    as List<WordSelectionExerciseDto>,
-        isPremium:
-            null == isPremium
-                ? _value.isPremium
-                : isPremium // ignore: cast_nullable_to_non_nullable
-                    as bool,
-      ),
-    );
+    return _then(_$WordSelectionDtoImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      totalExercises: null == totalExercises
+          ? _value.totalExercises
+          : totalExercises // ignore: cast_nullable_to_non_nullable
+              as int,
+      order: null == order
+          ? _value.order
+          : order // ignore: cast_nullable_to_non_nullable
+              as int,
+      exercises: null == exercises
+          ? _value._exercises
+          : exercises // ignore: cast_nullable_to_non_nullable
+              as List<WordSelectionExerciseDto>,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$WordSelectionDtoImpl extends _WordSelectionDto {
-  const _$WordSelectionDtoImpl({
-    required this.id,
-    @JsonKey(defaultValue: '') required this.title,
-    @JsonKey(defaultValue: 0) required this.totalExercises,
-    @JsonKey(defaultValue: 0) required this.order,
-    @JsonKey(defaultValue: [])
-    required final List<WordSelectionExerciseDto> exercises,
-    @JsonKey(defaultValue: false) required this.isPremium,
-  }) : _exercises = exercises,
-       super._();
+  const _$WordSelectionDtoImpl(
+      {required this.id,
+      @JsonKey(defaultValue: '') required this.title,
+      @JsonKey(defaultValue: 0) required this.totalExercises,
+      @JsonKey(defaultValue: 0) required this.order,
+      @JsonKey(defaultValue: [])
+      required final List<WordSelectionExerciseDto> exercises})
+      : _exercises = exercises,
+        super._();
 
   factory _$WordSelectionDtoImpl.fromJson(Map<String, dynamic> json) =>
       _$$WordSelectionDtoImplFromJson(json);
@@ -236,12 +198,8 @@ class _$WordSelectionDtoImpl extends _WordSelectionDto {
   }
 
   @override
-  @JsonKey(defaultValue: false)
-  final bool isPremium;
-
-  @override
   String toString() {
-    return 'WordSelectionDto(id: $id, title: $title, totalExercises: $totalExercises, order: $order, exercises: $exercises, isPremium: $isPremium)';
+    return 'WordSelectionDto(id: $id, title: $title, totalExercises: $totalExercises, order: $order, exercises: $exercises)';
   }
 
   @override
@@ -254,25 +212,14 @@ class _$WordSelectionDtoImpl extends _WordSelectionDto {
             (identical(other.totalExercises, totalExercises) ||
                 other.totalExercises == totalExercises) &&
             (identical(other.order, order) || other.order == order) &&
-            const DeepCollectionEquality().equals(
-              other._exercises,
-              _exercises,
-            ) &&
-            (identical(other.isPremium, isPremium) ||
-                other.isPremium == isPremium));
+            const DeepCollectionEquality()
+                .equals(other._exercises, _exercises));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    id,
-    title,
-    totalExercises,
-    order,
-    const DeepCollectionEquality().hash(_exercises),
-    isPremium,
-  );
+  int get hashCode => Object.hash(runtimeType, id, title, totalExercises, order,
+      const DeepCollectionEquality().hash(_exercises));
 
   /// Create a copy of WordSelectionDto
   /// with the given fields replaced by the non-null parameter values.
@@ -281,26 +228,25 @@ class _$WordSelectionDtoImpl extends _WordSelectionDto {
   @pragma('vm:prefer-inline')
   _$$WordSelectionDtoImplCopyWith<_$WordSelectionDtoImpl> get copyWith =>
       __$$WordSelectionDtoImplCopyWithImpl<_$WordSelectionDtoImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$WordSelectionDtoImplToJson(this);
+    return _$$WordSelectionDtoImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _WordSelectionDto extends WordSelectionDto {
-  const factory _WordSelectionDto({
-    required final String id,
-    @JsonKey(defaultValue: '') required final String title,
-    @JsonKey(defaultValue: 0) required final int totalExercises,
-    @JsonKey(defaultValue: 0) required final int order,
-    @JsonKey(defaultValue: [])
-    required final List<WordSelectionExerciseDto> exercises,
-    @JsonKey(defaultValue: false) required final bool isPremium,
-  }) = _$WordSelectionDtoImpl;
+  const factory _WordSelectionDto(
+          {required final String id,
+          @JsonKey(defaultValue: '') required final String title,
+          @JsonKey(defaultValue: 0) required final int totalExercises,
+          @JsonKey(defaultValue: 0) required final int order,
+          @JsonKey(defaultValue: [])
+          required final List<WordSelectionExerciseDto> exercises}) =
+      _$WordSelectionDtoImpl;
   const _WordSelectionDto._() : super._();
 
   factory _WordSelectionDto.fromJson(Map<String, dynamic> json) =
@@ -320,9 +266,6 @@ abstract class _WordSelectionDto extends WordSelectionDto {
   @override
   @JsonKey(defaultValue: [])
   List<WordSelectionExerciseDto> get exercises;
-  @override
-  @JsonKey(defaultValue: false)
-  bool get isPremium;
 
   /// Create a copy of WordSelectionDto
   /// with the given fields replaced by the non-null parameter values.
@@ -333,8 +276,7 @@ abstract class _WordSelectionDto extends WordSelectionDto {
 }
 
 WordSelectionExerciseDto _$WordSelectionExerciseDtoFromJson(
-  Map<String, dynamic> json,
-) {
+    Map<String, dynamic> json) {
   return _WordSelectionExerciseDto.fromJson(json);
 }
 
@@ -360,24 +302,20 @@ mixin _$WordSelectionExerciseDto {
 
 /// @nodoc
 abstract class $WordSelectionExerciseDtoCopyWith<$Res> {
-  factory $WordSelectionExerciseDtoCopyWith(
-    WordSelectionExerciseDto value,
-    $Res Function(WordSelectionExerciseDto) then,
-  ) = _$WordSelectionExerciseDtoCopyWithImpl<$Res, WordSelectionExerciseDto>;
+  factory $WordSelectionExerciseDtoCopyWith(WordSelectionExerciseDto value,
+          $Res Function(WordSelectionExerciseDto) then) =
+      _$WordSelectionExerciseDtoCopyWithImpl<$Res, WordSelectionExerciseDto>;
   @useResult
-  $Res call({
-    String id,
-    @JsonKey(defaultValue: '') String answer,
-    @JsonKey(defaultValue: <String>[]) List<String> choices,
-    @JsonKey(defaultValue: '') String question,
-  });
+  $Res call(
+      {String id,
+      @JsonKey(defaultValue: '') String answer,
+      @JsonKey(defaultValue: <String>[]) List<String> choices,
+      @JsonKey(defaultValue: '') String question});
 }
 
 /// @nodoc
-class _$WordSelectionExerciseDtoCopyWithImpl<
-  $Res,
-  $Val extends WordSelectionExerciseDto
->
+class _$WordSelectionExerciseDtoCopyWithImpl<$Res,
+        $Val extends WordSelectionExerciseDto>
     implements $WordSelectionExerciseDtoCopyWith<$Res> {
   _$WordSelectionExerciseDtoCopyWithImpl(this._value, this._then);
 
@@ -396,31 +334,24 @@ class _$WordSelectionExerciseDtoCopyWithImpl<
     Object? choices = null,
     Object? question = null,
   }) {
-    return _then(
-      _value.copyWith(
-            id:
-                null == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as String,
-            answer:
-                null == answer
-                    ? _value.answer
-                    : answer // ignore: cast_nullable_to_non_nullable
-                        as String,
-            choices:
-                null == choices
-                    ? _value.choices
-                    : choices // ignore: cast_nullable_to_non_nullable
-                        as List<String>,
-            question:
-                null == question
-                    ? _value.question
-                    : question // ignore: cast_nullable_to_non_nullable
-                        as String,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      answer: null == answer
+          ? _value.answer
+          : answer // ignore: cast_nullable_to_non_nullable
+              as String,
+      choices: null == choices
+          ? _value.choices
+          : choices // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      question: null == question
+          ? _value.question
+          : question // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
   }
 }
 
@@ -428,31 +359,27 @@ class _$WordSelectionExerciseDtoCopyWithImpl<
 abstract class _$$WordSelectionExerciseDtoImplCopyWith<$Res>
     implements $WordSelectionExerciseDtoCopyWith<$Res> {
   factory _$$WordSelectionExerciseDtoImplCopyWith(
-    _$WordSelectionExerciseDtoImpl value,
-    $Res Function(_$WordSelectionExerciseDtoImpl) then,
-  ) = __$$WordSelectionExerciseDtoImplCopyWithImpl<$Res>;
+          _$WordSelectionExerciseDtoImpl value,
+          $Res Function(_$WordSelectionExerciseDtoImpl) then) =
+      __$$WordSelectionExerciseDtoImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String id,
-    @JsonKey(defaultValue: '') String answer,
-    @JsonKey(defaultValue: <String>[]) List<String> choices,
-    @JsonKey(defaultValue: '') String question,
-  });
+  $Res call(
+      {String id,
+      @JsonKey(defaultValue: '') String answer,
+      @JsonKey(defaultValue: <String>[]) List<String> choices,
+      @JsonKey(defaultValue: '') String question});
 }
 
 /// @nodoc
 class __$$WordSelectionExerciseDtoImplCopyWithImpl<$Res>
-    extends
-        _$WordSelectionExerciseDtoCopyWithImpl<
-          $Res,
-          _$WordSelectionExerciseDtoImpl
-        >
+    extends _$WordSelectionExerciseDtoCopyWithImpl<$Res,
+        _$WordSelectionExerciseDtoImpl>
     implements _$$WordSelectionExerciseDtoImplCopyWith<$Res> {
   __$$WordSelectionExerciseDtoImplCopyWithImpl(
-    _$WordSelectionExerciseDtoImpl _value,
-    $Res Function(_$WordSelectionExerciseDtoImpl) _then,
-  ) : super(_value, _then);
+      _$WordSelectionExerciseDtoImpl _value,
+      $Res Function(_$WordSelectionExerciseDtoImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of WordSelectionExerciseDto
   /// with the given fields replaced by the non-null parameter values.
@@ -464,43 +391,37 @@ class __$$WordSelectionExerciseDtoImplCopyWithImpl<$Res>
     Object? choices = null,
     Object? question = null,
   }) {
-    return _then(
-      _$WordSelectionExerciseDtoImpl(
-        id:
-            null == id
-                ? _value.id
-                : id // ignore: cast_nullable_to_non_nullable
-                    as String,
-        answer:
-            null == answer
-                ? _value.answer
-                : answer // ignore: cast_nullable_to_non_nullable
-                    as String,
-        choices:
-            null == choices
-                ? _value._choices
-                : choices // ignore: cast_nullable_to_non_nullable
-                    as List<String>,
-        question:
-            null == question
-                ? _value.question
-                : question // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+    return _then(_$WordSelectionExerciseDtoImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      answer: null == answer
+          ? _value.answer
+          : answer // ignore: cast_nullable_to_non_nullable
+              as String,
+      choices: null == choices
+          ? _value._choices
+          : choices // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      question: null == question
+          ? _value.question
+          : question // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$WordSelectionExerciseDtoImpl extends _WordSelectionExerciseDto {
-  const _$WordSelectionExerciseDtoImpl({
-    required this.id,
-    @JsonKey(defaultValue: '') required this.answer,
-    @JsonKey(defaultValue: <String>[]) required final List<String> choices,
-    @JsonKey(defaultValue: '') required this.question,
-  }) : _choices = choices,
-       super._();
+  const _$WordSelectionExerciseDtoImpl(
+      {required this.id,
+      @JsonKey(defaultValue: '') required this.answer,
+      @JsonKey(defaultValue: <String>[]) required final List<String> choices,
+      @JsonKey(defaultValue: '') required this.question})
+      : _choices = choices,
+        super._();
 
   factory _$WordSelectionExerciseDtoImpl.fromJson(Map<String, dynamic> json) =>
       _$$WordSelectionExerciseDtoImplFromJson(json);
@@ -542,13 +463,8 @@ class _$WordSelectionExerciseDtoImpl extends _WordSelectionExerciseDto {
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    id,
-    answer,
-    const DeepCollectionEquality().hash(_choices),
-    question,
-  );
+  int get hashCode => Object.hash(runtimeType, id, answer,
+      const DeepCollectionEquality().hash(_choices), question);
 
   /// Create a copy of WordSelectionExerciseDto
   /// with the given fields replaced by the non-null parameter values.
@@ -556,23 +472,24 @@ class _$WordSelectionExerciseDtoImpl extends _WordSelectionExerciseDto {
   @override
   @pragma('vm:prefer-inline')
   _$$WordSelectionExerciseDtoImplCopyWith<_$WordSelectionExerciseDtoImpl>
-  get copyWith => __$$WordSelectionExerciseDtoImplCopyWithImpl<
-    _$WordSelectionExerciseDtoImpl
-  >(this, _$identity);
+      get copyWith => __$$WordSelectionExerciseDtoImplCopyWithImpl<
+          _$WordSelectionExerciseDtoImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$WordSelectionExerciseDtoImplToJson(this);
+    return _$$WordSelectionExerciseDtoImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _WordSelectionExerciseDto extends WordSelectionExerciseDto {
-  const factory _WordSelectionExerciseDto({
-    required final String id,
-    @JsonKey(defaultValue: '') required final String answer,
-    @JsonKey(defaultValue: <String>[]) required final List<String> choices,
-    @JsonKey(defaultValue: '') required final String question,
-  }) = _$WordSelectionExerciseDtoImpl;
+  const factory _WordSelectionExerciseDto(
+      {required final String id,
+      @JsonKey(defaultValue: '') required final String answer,
+      @JsonKey(defaultValue: <String>[]) required final List<String> choices,
+      @JsonKey(defaultValue: '')
+      required final String question}) = _$WordSelectionExerciseDtoImpl;
   const _WordSelectionExerciseDto._() : super._();
 
   factory _WordSelectionExerciseDto.fromJson(Map<String, dynamic> json) =
@@ -595,5 +512,5 @@ abstract class _WordSelectionExerciseDto extends WordSelectionExerciseDto {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$WordSelectionExerciseDtoImplCopyWith<_$WordSelectionExerciseDtoImpl>
-  get copyWith => throw _privateConstructorUsedError;
+      get copyWith => throw _privateConstructorUsedError;
 }

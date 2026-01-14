@@ -12,8 +12,7 @@ part of 'word_selection_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$WordSelectionEvent {
@@ -21,29 +20,35 @@ mixin _$WordSelectionEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String userId) initialize,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String userId)? initialize,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String userId)? initialize,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initialize value) initialize,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initialize value)? initialize,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initialize value)? initialize,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 
   /// Create a copy of WordSelectionEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -55,9 +60,8 @@ mixin _$WordSelectionEvent {
 /// @nodoc
 abstract class $WordSelectionEventCopyWith<$Res> {
   factory $WordSelectionEventCopyWith(
-    WordSelectionEvent value,
-    $Res Function(WordSelectionEvent) then,
-  ) = _$WordSelectionEventCopyWithImpl<$Res, WordSelectionEvent>;
+          WordSelectionEvent value, $Res Function(WordSelectionEvent) then) =
+      _$WordSelectionEventCopyWithImpl<$Res, WordSelectionEvent>;
   @useResult
   $Res call({String userId});
 }
@@ -76,17 +80,15 @@ class _$WordSelectionEventCopyWithImpl<$Res, $Val extends WordSelectionEvent>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? userId = null}) {
-    return _then(
-      _value.copyWith(
-            userId:
-                null == userId
-                    ? _value.userId
-                    : userId // ignore: cast_nullable_to_non_nullable
-                        as String,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? userId = null,
+  }) {
+    return _then(_value.copyWith(
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
   }
 }
 
@@ -94,9 +96,8 @@ class _$WordSelectionEventCopyWithImpl<$Res, $Val extends WordSelectionEvent>
 abstract class _$$InitializeImplCopyWith<$Res>
     implements $WordSelectionEventCopyWith<$Res> {
   factory _$$InitializeImplCopyWith(
-    _$InitializeImpl value,
-    $Res Function(_$InitializeImpl) then,
-  ) = __$$InitializeImplCopyWithImpl<$Res>;
+          _$InitializeImpl value, $Res Function(_$InitializeImpl) then) =
+      __$$InitializeImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String userId});
@@ -107,24 +108,22 @@ class __$$InitializeImplCopyWithImpl<$Res>
     extends _$WordSelectionEventCopyWithImpl<$Res, _$InitializeImpl>
     implements _$$InitializeImplCopyWith<$Res> {
   __$$InitializeImplCopyWithImpl(
-    _$InitializeImpl _value,
-    $Res Function(_$InitializeImpl) _then,
-  ) : super(_value, _then);
+      _$InitializeImpl _value, $Res Function(_$InitializeImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of WordSelectionEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? userId = null}) {
-    return _then(
-      _$InitializeImpl(
-        userId:
-            null == userId
-                ? _value.userId
-                : userId // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+  $Res call({
+    Object? userId = null,
+  }) {
+    return _then(_$InitializeImpl(
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
@@ -248,15 +247,13 @@ mixin _$WordSelectionState {
 /// @nodoc
 abstract class $WordSelectionStateCopyWith<$Res> {
   factory $WordSelectionStateCopyWith(
-    WordSelectionState value,
-    $Res Function(WordSelectionState) then,
-  ) = _$WordSelectionStateCopyWithImpl<$Res, WordSelectionState>;
+          WordSelectionState value, $Res Function(WordSelectionState) then) =
+      _$WordSelectionStateCopyWithImpl<$Res, WordSelectionState>;
   @useResult
-  $Res call({
-    List<WordSelection> wordSelections,
-    bool isLoading,
-    Option<Either<AppFailure, dynamic>> fetchFailure,
-  });
+  $Res call(
+      {List<WordSelection> wordSelections,
+      bool isLoading,
+      Option<Either<AppFailure, dynamic>> fetchFailure});
 }
 
 /// @nodoc
@@ -278,53 +275,44 @@ class _$WordSelectionStateCopyWithImpl<$Res, $Val extends WordSelectionState>
     Object? isLoading = null,
     Object? fetchFailure = null,
   }) {
-    return _then(
-      _value.copyWith(
-            wordSelections:
-                null == wordSelections
-                    ? _value.wordSelections
-                    : wordSelections // ignore: cast_nullable_to_non_nullable
-                        as List<WordSelection>,
-            isLoading:
-                null == isLoading
-                    ? _value.isLoading
-                    : isLoading // ignore: cast_nullable_to_non_nullable
-                        as bool,
-            fetchFailure:
-                null == fetchFailure
-                    ? _value.fetchFailure
-                    : fetchFailure // ignore: cast_nullable_to_non_nullable
-                        as Option<Either<AppFailure, dynamic>>,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      wordSelections: null == wordSelections
+          ? _value.wordSelections
+          : wordSelections // ignore: cast_nullable_to_non_nullable
+              as List<WordSelection>,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      fetchFailure: null == fetchFailure
+          ? _value.fetchFailure
+          : fetchFailure // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$WordSelectionStateImplCopyWith<$Res>
     implements $WordSelectionStateCopyWith<$Res> {
-  factory _$$WordSelectionStateImplCopyWith(
-    _$WordSelectionStateImpl value,
-    $Res Function(_$WordSelectionStateImpl) then,
-  ) = __$$WordSelectionStateImplCopyWithImpl<$Res>;
+  factory _$$WordSelectionStateImplCopyWith(_$WordSelectionStateImpl value,
+          $Res Function(_$WordSelectionStateImpl) then) =
+      __$$WordSelectionStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    List<WordSelection> wordSelections,
-    bool isLoading,
-    Option<Either<AppFailure, dynamic>> fetchFailure,
-  });
+  $Res call(
+      {List<WordSelection> wordSelections,
+      bool isLoading,
+      Option<Either<AppFailure, dynamic>> fetchFailure});
 }
 
 /// @nodoc
 class __$$WordSelectionStateImplCopyWithImpl<$Res>
     extends _$WordSelectionStateCopyWithImpl<$Res, _$WordSelectionStateImpl>
     implements _$$WordSelectionStateImplCopyWith<$Res> {
-  __$$WordSelectionStateImplCopyWithImpl(
-    _$WordSelectionStateImpl _value,
-    $Res Function(_$WordSelectionStateImpl) _then,
-  ) : super(_value, _then);
+  __$$WordSelectionStateImplCopyWithImpl(_$WordSelectionStateImpl _value,
+      $Res Function(_$WordSelectionStateImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of WordSelectionState
   /// with the given fields replaced by the non-null parameter values.
@@ -335,37 +323,32 @@ class __$$WordSelectionStateImplCopyWithImpl<$Res>
     Object? isLoading = null,
     Object? fetchFailure = null,
   }) {
-    return _then(
-      _$WordSelectionStateImpl(
-        wordSelections:
-            null == wordSelections
-                ? _value._wordSelections
-                : wordSelections // ignore: cast_nullable_to_non_nullable
-                    as List<WordSelection>,
-        isLoading:
-            null == isLoading
-                ? _value.isLoading
-                : isLoading // ignore: cast_nullable_to_non_nullable
-                    as bool,
-        fetchFailure:
-            null == fetchFailure
-                ? _value.fetchFailure
-                : fetchFailure // ignore: cast_nullable_to_non_nullable
-                    as Option<Either<AppFailure, dynamic>>,
-      ),
-    );
+    return _then(_$WordSelectionStateImpl(
+      wordSelections: null == wordSelections
+          ? _value._wordSelections
+          : wordSelections // ignore: cast_nullable_to_non_nullable
+              as List<WordSelection>,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      fetchFailure: null == fetchFailure
+          ? _value.fetchFailure
+          : fetchFailure // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$WordSelectionStateImpl extends _WordSelectionState {
-  const _$WordSelectionStateImpl({
-    required final List<WordSelection> wordSelections,
-    required this.isLoading,
-    required this.fetchFailure,
-  }) : _wordSelections = wordSelections,
-       super._();
+  const _$WordSelectionStateImpl(
+      {required final List<WordSelection> wordSelections,
+      required this.isLoading,
+      required this.fetchFailure})
+      : _wordSelections = wordSelections,
+        super._();
 
   final List<WordSelection> _wordSelections;
   @override
@@ -390,10 +373,8 @@ class _$WordSelectionStateImpl extends _WordSelectionState {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$WordSelectionStateImpl &&
-            const DeepCollectionEquality().equals(
-              other._wordSelections,
-              _wordSelections,
-            ) &&
+            const DeepCollectionEquality()
+                .equals(other._wordSelections, _wordSelections) &&
             (identical(other.isLoading, isLoading) ||
                 other.isLoading == isLoading) &&
             (identical(other.fetchFailure, fetchFailure) ||
@@ -402,11 +383,10 @@ class _$WordSelectionStateImpl extends _WordSelectionState {
 
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    const DeepCollectionEquality().hash(_wordSelections),
-    isLoading,
-    fetchFailure,
-  );
+      runtimeType,
+      const DeepCollectionEquality().hash(_wordSelections),
+      isLoading,
+      fetchFailure);
 
   /// Create a copy of WordSelectionState
   /// with the given fields replaced by the non-null parameter values.
@@ -415,17 +395,15 @@ class _$WordSelectionStateImpl extends _WordSelectionState {
   @pragma('vm:prefer-inline')
   _$$WordSelectionStateImplCopyWith<_$WordSelectionStateImpl> get copyWith =>
       __$$WordSelectionStateImplCopyWithImpl<_$WordSelectionStateImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 }
 
 abstract class _WordSelectionState extends WordSelectionState {
-  const factory _WordSelectionState({
-    required final List<WordSelection> wordSelections,
-    required final bool isLoading,
-    required final Option<Either<AppFailure, dynamic>> fetchFailure,
-  }) = _$WordSelectionStateImpl;
+  const factory _WordSelectionState(
+          {required final List<WordSelection> wordSelections,
+          required final bool isLoading,
+          required final Option<Either<AppFailure, dynamic>> fetchFailure}) =
+      _$WordSelectionStateImpl;
   const _WordSelectionState._() : super._();
 
   @override

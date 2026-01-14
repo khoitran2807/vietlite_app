@@ -18,7 +18,6 @@ class Thing with _$Thing {
     required ThingType type,
     required List<ThingExercise> exercises,
     required int totalExercises,
-    required bool isPremium,
   }) = _Thing;
 
   factory Thing.empty() => const Thing(
@@ -31,7 +30,6 @@ class Thing with _$Thing {
     order: 0,
     exercises: [],
     totalExercises: 0,
-    isPremium: false,
   );
 }
 

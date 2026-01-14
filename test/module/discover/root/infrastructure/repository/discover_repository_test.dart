@@ -49,7 +49,6 @@ void main() {
           image: 'maudo.png',
           exercises: [],
           totalExercises: 2,
-          isPremium: false,
         ),
         const Thing(
           id: '2',
@@ -75,7 +74,6 @@ void main() {
           image: 'mauxanh.png',
           exercises: [],
           totalExercises: 2,
-          isPremium: false,
         ),
       ];
 

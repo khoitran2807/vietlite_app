@@ -30,7 +30,6 @@ void main() {
         image: 'xemay.',
         exercises: [],
         totalExercises: 2,
-        isPremium: false,
       ),
     ];
 

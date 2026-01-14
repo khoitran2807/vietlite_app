@@ -15,7 +15,6 @@ class WordSelectionDto with _$WordSelectionDto {
     @JsonKey(defaultValue: 0) required int order,
     @JsonKey(defaultValue: [])
     required List<WordSelectionExerciseDto> exercises,
-    @JsonKey(defaultValue: false) required bool isPremium,
   }) = _WordSelectionDto;
 
   factory WordSelectionDto.fromJson(Map<String, dynamic> json) =>
@@ -29,7 +28,6 @@ class WordSelectionDto with _$WordSelectionDto {
       order: order,
       totalExercises: totalExercises,
       exercises: exercises.map((e) => e.toDomain).toList(),
-      isPremium: isPremium,
     );
   }
 }

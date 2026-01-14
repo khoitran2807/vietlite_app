@@ -21,7 +21,6 @@ class ThingDto with _$ThingDto {
     @JsonKey(defaultValue: '') required String type,
     @JsonKey(defaultValue: []) required List<ThingExerciseDto> exercises,
     @JsonKey(defaultValue: 0) required int totalExercises,
-    @JsonKey(defaultValue: false) required bool isPremium,
   }) = _ThingDto;
 
   factory ThingDto.fromJson(Map<String, dynamic> json) =>
@@ -41,7 +40,6 @@ class ThingDto with _$ThingDto {
       examples: examples.map((item) => item.toDomain).toList(),
       exercises: exercises.map((e) => e.toDomain).toList(),
       totalExercises: totalExercises,
-      isPremium: isPremium,
     );
   }
 }

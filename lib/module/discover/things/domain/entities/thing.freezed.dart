@@ -25,7 +25,6 @@ mixin _$Thing {
   ThingType get type => throw _privateConstructorUsedError;
   List<ThingExercise> get exercises => throw _privateConstructorUsedError;
   int get totalExercises => throw _privateConstructorUsedError;
-  bool get isPremium => throw _privateConstructorUsedError;
 
   /// Create a copy of Thing
   /// with the given fields replaced by the non-null parameter values.
@@ -47,8 +46,7 @@ abstract class $ThingCopyWith<$Res> {
       int order,
       ThingType type,
       List<ThingExercise> exercises,
-      int totalExercises,
-      bool isPremium});
+      int totalExercises});
 }
 
 /// @nodoc
@@ -75,7 +73,6 @@ class _$ThingCopyWithImpl<$Res, $Val extends Thing>
     Object? type = null,
     Object? exercises = null,
     Object? totalExercises = null,
-    Object? isPremium = null,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -114,10 +111,6 @@ class _$ThingCopyWithImpl<$Res, $Val extends Thing>
           ? _value.totalExercises
           : totalExercises // ignore: cast_nullable_to_non_nullable
               as int,
-      isPremium: null == isPremium
-          ? _value.isPremium
-          : isPremium // ignore: cast_nullable_to_non_nullable
-              as bool,
     ) as $Val);
   }
 }
@@ -138,8 +131,7 @@ abstract class _$$ThingImplCopyWith<$Res> implements $ThingCopyWith<$Res> {
       int order,
       ThingType type,
       List<ThingExercise> exercises,
-      int totalExercises,
-      bool isPremium});
+      int totalExercises});
 }
 
 /// @nodoc
@@ -164,7 +156,6 @@ class __$$ThingImplCopyWithImpl<$Res>
     Object? type = null,
     Object? exercises = null,
     Object? totalExercises = null,
-    Object? isPremium = null,
   }) {
     return _then(_$ThingImpl(
       id: null == id
@@ -203,10 +194,6 @@ class __$$ThingImplCopyWithImpl<$Res>
           ? _value.totalExercises
           : totalExercises // ignore: cast_nullable_to_non_nullable
               as int,
-      isPremium: null == isPremium
-          ? _value.isPremium
-          : isPremium // ignore: cast_nullable_to_non_nullable
-              as bool,
     ));
   }
 }
@@ -223,8 +210,7 @@ class _$ThingImpl extends _Thing {
       required this.order,
       required this.type,
       required final List<ThingExercise> exercises,
-      required this.totalExercises,
-      required this.isPremium})
+      required this.totalExercises})
       : _examples = examples,
         _exercises = exercises,
         super._();
@@ -259,12 +245,10 @@ class _$ThingImpl extends _Thing {
 
   @override
   final int totalExercises;
-  @override
-  final bool isPremium;
 
   @override
   String toString() {
-    return 'Thing(id: $id, name: $name, audio: $audio, image: $image, examples: $examples, order: $order, type: $type, exercises: $exercises, totalExercises: $totalExercises, isPremium: $isPremium)';
+    return 'Thing(id: $id, name: $name, audio: $audio, image: $image, examples: $examples, order: $order, type: $type, exercises: $exercises, totalExercises: $totalExercises)';
   }
 
   @override
@@ -282,9 +266,7 @@ class _$ThingImpl extends _Thing {
             const DeepCollectionEquality()
                 .equals(other._exercises, _exercises) &&
             (identical(other.totalExercises, totalExercises) ||
-                other.totalExercises == totalExercises) &&
-            (identical(other.isPremium, isPremium) ||
-                other.isPremium == isPremium));
+                other.totalExercises == totalExercises));
   }
 
   @override
@@ -298,8 +280,7 @@ class _$ThingImpl extends _Thing {
       order,
       type,
       const DeepCollectionEquality().hash(_exercises),
-      totalExercises,
-      isPremium);
+      totalExercises);
 
   /// Create a copy of Thing
   /// with the given fields replaced by the non-null parameter values.
@@ -320,8 +301,7 @@ abstract class _Thing extends Thing {
       required final int order,
       required final ThingType type,
       required final List<ThingExercise> exercises,
-      required final int totalExercises,
-      required final bool isPremium}) = _$ThingImpl;
+      required final int totalExercises}) = _$ThingImpl;
   const _Thing._() : super._();
 
   @override
@@ -342,8 +322,6 @@ abstract class _Thing extends Thing {
   List<ThingExercise> get exercises;
   @override
   int get totalExercises;
-  @override
-  bool get isPremium;
 
   /// Create a copy of Thing
   /// with the given fields replaced by the non-null parameter values.

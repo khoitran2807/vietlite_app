@@ -37,8 +37,7 @@ class ThingsScreen extends StatelessWidget {
       child: BlocBuilder<AuthBloc, AuthState>(
         buildWhen:
             (previous, current) =>
-                previous.isLoggedIn != current.isLoggedIn ||
-                previous.isThingsPremium != current.isThingsPremium,
+                previous.isLoggedIn != current.isLoggedIn,
         builder: (context, userState) {
           if (!userState.isLoggedIn) {
             return const SizedBox.shrink();
@@ -110,17 +109,14 @@ class ThingsScreen extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(
                                       AppDimensions.s12,
                                     ),
-                                    onTap:
-                                        (!thing.isPremium ||
-                                                userState.isThingsPremium)
-                                            ? () {
-                                              AppLocator.router.push(
-                                                ThingDetailScreenRoute(
-                                                  id: thing.id,
-                                                ),
-                                              );
-                                            }
-                                            : null,
+                                    onTap: () {
+                                      AppLocator.router.push(
+                                        ThingDetailScreenRoute(
+                                          id: thing.id,
+                                        ),
+                                      );
+                                    },
+
                                     child: Container(
                                       padding: EdgeInsets.symmetric(
                                         horizontal: AppDimensions.s16,
@@ -132,17 +128,7 @@ class ThingsScreen extends StatelessWidget {
                                           AppDimensions.s12,
                                         ),
                                         border: Border.all(
-                                          color:
-                                              (!thing.isPremium ||
-                                                      userState.isThingsPremium)
-                                                  ? context
-                                                      .color
-                                                      .neutral
-                                                      .shade200
-                                                  : context
-                                                      .color
-                                                      .neutral
-                                                      .shade300,
+                                          color: context.color.neutral.shade200,
                                         ),
                                       ),
                                       child: Row(
@@ -195,19 +181,9 @@ class ThingsScreen extends StatelessWidget {
                                                   thing.name,
                                                   overflow:
                                                       TextOverflow.ellipsis,
-                                                  style: context
-                                                      .defaultStyle
-                                                      .bold
-                                                      .copyWith(
-                                                        color:
-                                                            (!thing.isPremium ||
-                                                                    userState
-                                                                        .isThingsPremium)
-                                                                ? context
-                                                                    .color
-                                                                    .neutral
-                                                                : Colors.grey,
-                                                      ),
+                                                  style: context.defaultStyle.bold.copyWith(
+                                                    color: context.color.neutral,
+                                                  ),
                                                 ),
                                                 SizedBox(
                                                   height: AppDimensions.s4,

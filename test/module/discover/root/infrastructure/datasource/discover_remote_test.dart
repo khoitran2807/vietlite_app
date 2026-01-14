@@ -152,7 +152,6 @@ void main() {
         image: 'maudo.png',
         exercises: [],
         totalExercises: 2,
-        isPremium: false,
       );
 
       final json = dto.toJson();

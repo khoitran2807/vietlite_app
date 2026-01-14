@@ -37,7 +37,6 @@ void main() {
         image: 'maudo.png',
         exercises: [],
         totalExercises: 2,
-        isPremium: false,
       );
 
       expect(thing.id, '1');

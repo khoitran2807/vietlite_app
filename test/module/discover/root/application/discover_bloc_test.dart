@@ -51,7 +51,6 @@ void main() {
         image: '',
         exercises: [],
         totalExercises: 2,
-        isPremium: false,
       ),
       const Thing(
         id: '2',
@@ -77,7 +76,6 @@ void main() {
         image: '',
         exercises: [],
         totalExercises: 2,
-        isPremium: false,
       ),
     ];
     blocTest<DiscoverBloc, DiscoverState>(

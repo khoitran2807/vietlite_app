@@ -28,11 +28,11 @@ class RemoteConfigService {
   Future<void> _initDefaults() async {
     try {
       await remoteConfig.setDefaults({
-        RemoteConfigConstants.numbers: 10,
-        RemoteConfigConstants.letters: 63,
+        RemoteConfigConstants.numbers: 9,
+        RemoteConfigConstants.letters: 62,
         RemoteConfigConstants.wordSelections: 10,
         RemoteConfigConstants.wordMatches: 10,
-        RemoteConfigConstants.things: 60,
+        RemoteConfigConstants.things: 50,
       });
     } catch (e) {
       debugPrint("Error setting default values: $e");
