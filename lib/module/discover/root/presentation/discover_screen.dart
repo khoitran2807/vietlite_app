@@ -129,12 +129,22 @@ class DiscoverScreen extends StatelessWidget {
                                           padding: const EdgeInsets.symmetric(
                                             vertical: 4,
                                           ),
-                                          child: Text(
+                                          child: context.isTablet ?
+                                          Text(
                                             item.title(context),
                                             textAlign: TextAlign.center,
                                             style: TextStyle(
                                               fontFamily: 'iCielPony',
                                               fontSize: AppDimensions.s24,
+                                              color: context.color.foreground,
+                                            ),
+                                          )
+                                              : Text(
+                                            item.title(context),
+                                            textAlign: TextAlign.center,
+                                            style: TextStyle(
+                                              fontFamily: 'iCielPony',
+                                              fontSize: AppDimensions.s16,
                                               color: context.color.foreground,
                                             ),
                                           ),
