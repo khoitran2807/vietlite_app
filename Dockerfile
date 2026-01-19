@@ -1,10 +1,11 @@
+# Build Flutter web
+FROM cirrusci/flutter:stable AS build
+WORKDIR /app
+COPY . .
+RUN flutter build web
+
+# Serve bằng nginx
 FROM nginx:alpine
-
-# Copy Flutter web build vào nginx
-COPY build/web /usr/share/nginx/html
-
-# Mở cổng 80
+COPY --from=build /app/build/web /usr/share/nginx/html
 EXPOSE 80
-
-# Chạy nginx
 CMD ["nginx", "-g", "daemon off;"]
