@@ -1,0 +1,11 @@
+.git
+.gitignore
+node_modules
+build/app
+android
+ios
+macos
+windows
+linux
+test
+coverage
