@@ -1,11 +1,18 @@
 .git
 .gitignore
 node_modules
-build/app
+
+# Không cần các platform native khi deploy web
 android
 ios
 macos
 windows
 linux
+
+# Test & coverage
 test
 coverage
+
+# KHÔNG ignore build/web
+# Chỉ ignore build/app nếu có
+build/app
