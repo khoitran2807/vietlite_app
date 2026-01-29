@@ -12,8 +12,7 @@ part of 'register_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$RegisterEvent {
@@ -23,39 +22,42 @@ mixin _$RegisterEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(
-      String name,
-      EmailAddress email,
-      Password password,
-    )
-    registerWithEmailAndPassword,
-  }) => throw _privateConstructorUsedError;
+            String name, EmailAddress email, Password password)
+        registerWithEmailAndPassword,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String name, EmailAddress email, Password password)?
-    registerWithEmailAndPassword,
-  }) => throw _privateConstructorUsedError;
+        registerWithEmailAndPassword,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String name, EmailAddress email, Password password)?
-    registerWithEmailAndPassword,
+        registerWithEmailAndPassword,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_RegisterWithEmailAndPassword value)
-    registerWithEmailAndPassword,
-  }) => throw _privateConstructorUsedError;
+        registerWithEmailAndPassword,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_RegisterWithEmailAndPassword value)?
-    registerWithEmailAndPassword,
-  }) => throw _privateConstructorUsedError;
+        registerWithEmailAndPassword,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_RegisterWithEmailAndPassword value)?
-    registerWithEmailAndPassword,
+        registerWithEmailAndPassword,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 
   /// Create a copy of RegisterEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -67,9 +69,8 @@ mixin _$RegisterEvent {
 /// @nodoc
 abstract class $RegisterEventCopyWith<$Res> {
   factory $RegisterEventCopyWith(
-    RegisterEvent value,
-    $Res Function(RegisterEvent) then,
-  ) = _$RegisterEventCopyWithImpl<$Res, RegisterEvent>;
+          RegisterEvent value, $Res Function(RegisterEvent) then) =
+      _$RegisterEventCopyWithImpl<$Res, RegisterEvent>;
   @useResult
   $Res call({String name, EmailAddress email, Password password});
 }
@@ -93,26 +94,20 @@ class _$RegisterEventCopyWithImpl<$Res, $Val extends RegisterEvent>
     Object? email = null,
     Object? password = null,
   }) {
-    return _then(
-      _value.copyWith(
-            name:
-                null == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String,
-            email:
-                null == email
-                    ? _value.email
-                    : email // ignore: cast_nullable_to_non_nullable
-                        as EmailAddress,
-            password:
-                null == password
-                    ? _value.password
-                    : password // ignore: cast_nullable_to_non_nullable
-                        as Password,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      email: null == email
+          ? _value.email
+          : email // ignore: cast_nullable_to_non_nullable
+              as EmailAddress,
+      password: null == password
+          ? _value.password
+          : password // ignore: cast_nullable_to_non_nullable
+              as Password,
+    ) as $Val);
   }
 }
 
@@ -120,9 +115,9 @@ class _$RegisterEventCopyWithImpl<$Res, $Val extends RegisterEvent>
 abstract class _$$RegisterWithEmailAndPasswordImplCopyWith<$Res>
     implements $RegisterEventCopyWith<$Res> {
   factory _$$RegisterWithEmailAndPasswordImplCopyWith(
-    _$RegisterWithEmailAndPasswordImpl value,
-    $Res Function(_$RegisterWithEmailAndPasswordImpl) then,
-  ) = __$$RegisterWithEmailAndPasswordImplCopyWithImpl<$Res>;
+          _$RegisterWithEmailAndPasswordImpl value,
+          $Res Function(_$RegisterWithEmailAndPasswordImpl) then) =
+      __$$RegisterWithEmailAndPasswordImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String name, EmailAddress email, Password password});
@@ -130,13 +125,13 @@ abstract class _$$RegisterWithEmailAndPasswordImplCopyWith<$Res>
 
 /// @nodoc
 class __$$RegisterWithEmailAndPasswordImplCopyWithImpl<$Res>
-    extends
-        _$RegisterEventCopyWithImpl<$Res, _$RegisterWithEmailAndPasswordImpl>
+    extends _$RegisterEventCopyWithImpl<$Res,
+        _$RegisterWithEmailAndPasswordImpl>
     implements _$$RegisterWithEmailAndPasswordImplCopyWith<$Res> {
   __$$RegisterWithEmailAndPasswordImplCopyWithImpl(
-    _$RegisterWithEmailAndPasswordImpl _value,
-    $Res Function(_$RegisterWithEmailAndPasswordImpl) _then,
-  ) : super(_value, _then);
+      _$RegisterWithEmailAndPasswordImpl _value,
+      $Res Function(_$RegisterWithEmailAndPasswordImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of RegisterEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -147,25 +142,20 @@ class __$$RegisterWithEmailAndPasswordImplCopyWithImpl<$Res>
     Object? email = null,
     Object? password = null,
   }) {
-    return _then(
-      _$RegisterWithEmailAndPasswordImpl(
-        name:
-            null == name
-                ? _value.name
-                : name // ignore: cast_nullable_to_non_nullable
-                    as String,
-        email:
-            null == email
-                ? _value.email
-                : email // ignore: cast_nullable_to_non_nullable
-                    as EmailAddress,
-        password:
-            null == password
-                ? _value.password
-                : password // ignore: cast_nullable_to_non_nullable
-                    as Password,
-      ),
-    );
+    return _then(_$RegisterWithEmailAndPasswordImpl(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      email: null == email
+          ? _value.email
+          : email // ignore: cast_nullable_to_non_nullable
+              as EmailAddress,
+      password: null == password
+          ? _value.password
+          : password // ignore: cast_nullable_to_non_nullable
+              as Password,
+    ));
   }
 }
 
@@ -173,11 +163,8 @@ class __$$RegisterWithEmailAndPasswordImplCopyWithImpl<$Res>
 
 class _$RegisterWithEmailAndPasswordImpl
     implements _RegisterWithEmailAndPassword {
-  const _$RegisterWithEmailAndPasswordImpl({
-    required this.name,
-    required this.email,
-    required this.password,
-  });
+  const _$RegisterWithEmailAndPasswordImpl(
+      {required this.name, required this.email, required this.password});
 
   @override
   final String name;
@@ -211,21 +198,16 @@ class _$RegisterWithEmailAndPasswordImpl
   @override
   @pragma('vm:prefer-inline')
   _$$RegisterWithEmailAndPasswordImplCopyWith<
-    _$RegisterWithEmailAndPasswordImpl
-  >
-  get copyWith => __$$RegisterWithEmailAndPasswordImplCopyWithImpl<
-    _$RegisterWithEmailAndPasswordImpl
-  >(this, _$identity);
+          _$RegisterWithEmailAndPasswordImpl>
+      get copyWith => __$$RegisterWithEmailAndPasswordImplCopyWithImpl<
+          _$RegisterWithEmailAndPasswordImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(
-      String name,
-      EmailAddress email,
-      Password password,
-    )
-    registerWithEmailAndPassword,
+            String name, EmailAddress email, Password password)
+        registerWithEmailAndPassword,
   }) {
     return registerWithEmailAndPassword(name, email, password);
   }
@@ -234,7 +216,7 @@ class _$RegisterWithEmailAndPasswordImpl
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String name, EmailAddress email, Password password)?
-    registerWithEmailAndPassword,
+        registerWithEmailAndPassword,
   }) {
     return registerWithEmailAndPassword?.call(name, email, password);
   }
@@ -243,7 +225,7 @@ class _$RegisterWithEmailAndPasswordImpl
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String name, EmailAddress email, Password password)?
-    registerWithEmailAndPassword,
+        registerWithEmailAndPassword,
     required TResult orElse(),
   }) {
     if (registerWithEmailAndPassword != null) {
@@ -256,7 +238,7 @@ class _$RegisterWithEmailAndPasswordImpl
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_RegisterWithEmailAndPassword value)
-    registerWithEmailAndPassword,
+        registerWithEmailAndPassword,
   }) {
     return registerWithEmailAndPassword(this);
   }
@@ -265,7 +247,7 @@ class _$RegisterWithEmailAndPasswordImpl
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_RegisterWithEmailAndPassword value)?
-    registerWithEmailAndPassword,
+        registerWithEmailAndPassword,
   }) {
     return registerWithEmailAndPassword?.call(this);
   }
@@ -274,7 +256,7 @@ class _$RegisterWithEmailAndPasswordImpl
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_RegisterWithEmailAndPassword value)?
-    registerWithEmailAndPassword,
+        registerWithEmailAndPassword,
     required TResult orElse(),
   }) {
     if (registerWithEmailAndPassword != null) {
@@ -285,11 +267,10 @@ class _$RegisterWithEmailAndPasswordImpl
 }
 
 abstract class _RegisterWithEmailAndPassword implements RegisterEvent {
-  const factory _RegisterWithEmailAndPassword({
-    required final String name,
-    required final EmailAddress email,
-    required final Password password,
-  }) = _$RegisterWithEmailAndPasswordImpl;
+  const factory _RegisterWithEmailAndPassword(
+      {required final String name,
+      required final EmailAddress email,
+      required final Password password}) = _$RegisterWithEmailAndPasswordImpl;
 
   @override
   String get name;
@@ -303,9 +284,8 @@ abstract class _RegisterWithEmailAndPassword implements RegisterEvent {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$RegisterWithEmailAndPasswordImplCopyWith<
-    _$RegisterWithEmailAndPasswordImpl
-  >
-  get copyWith => throw _privateConstructorUsedError;
+          _$RegisterWithEmailAndPasswordImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -324,14 +304,12 @@ mixin _$RegisterState {
 /// @nodoc
 abstract class $RegisterStateCopyWith<$Res> {
   factory $RegisterStateCopyWith(
-    RegisterState value,
-    $Res Function(RegisterState) then,
-  ) = _$RegisterStateCopyWithImpl<$Res, RegisterState>;
+          RegisterState value, $Res Function(RegisterState) then) =
+      _$RegisterStateCopyWithImpl<$Res, RegisterState>;
   @useResult
-  $Res call({
-    bool isRegister,
-    Option<Either<AppFailure, dynamic>> failureOrSuccessOption,
-  });
+  $Res call(
+      {bool isRegister,
+      Option<Either<AppFailure, dynamic>> failureOrSuccessOption});
 }
 
 /// @nodoc
@@ -352,21 +330,16 @@ class _$RegisterStateCopyWithImpl<$Res, $Val extends RegisterState>
     Object? isRegister = null,
     Object? failureOrSuccessOption = null,
   }) {
-    return _then(
-      _value.copyWith(
-            isRegister:
-                null == isRegister
-                    ? _value.isRegister
-                    : isRegister // ignore: cast_nullable_to_non_nullable
-                        as bool,
-            failureOrSuccessOption:
-                null == failureOrSuccessOption
-                    ? _value.failureOrSuccessOption
-                    : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
-                        as Option<Either<AppFailure, dynamic>>,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      isRegister: null == isRegister
+          ? _value.isRegister
+          : isRegister // ignore: cast_nullable_to_non_nullable
+              as bool,
+      failureOrSuccessOption: null == failureOrSuccessOption
+          ? _value.failureOrSuccessOption
+          : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ) as $Val);
   }
 }
 
@@ -374,15 +347,13 @@ class _$RegisterStateCopyWithImpl<$Res, $Val extends RegisterState>
 abstract class _$$RegisterStateImplCopyWith<$Res>
     implements $RegisterStateCopyWith<$Res> {
   factory _$$RegisterStateImplCopyWith(
-    _$RegisterStateImpl value,
-    $Res Function(_$RegisterStateImpl) then,
-  ) = __$$RegisterStateImplCopyWithImpl<$Res>;
+          _$RegisterStateImpl value, $Res Function(_$RegisterStateImpl) then) =
+      __$$RegisterStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    bool isRegister,
-    Option<Either<AppFailure, dynamic>> failureOrSuccessOption,
-  });
+  $Res call(
+      {bool isRegister,
+      Option<Either<AppFailure, dynamic>> failureOrSuccessOption});
 }
 
 /// @nodoc
@@ -390,9 +361,8 @@ class __$$RegisterStateImplCopyWithImpl<$Res>
     extends _$RegisterStateCopyWithImpl<$Res, _$RegisterStateImpl>
     implements _$$RegisterStateImplCopyWith<$Res> {
   __$$RegisterStateImplCopyWithImpl(
-    _$RegisterStateImpl _value,
-    $Res Function(_$RegisterStateImpl) _then,
-  ) : super(_value, _then);
+      _$RegisterStateImpl _value, $Res Function(_$RegisterStateImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of RegisterState
   /// with the given fields replaced by the non-null parameter values.
@@ -402,30 +372,24 @@ class __$$RegisterStateImplCopyWithImpl<$Res>
     Object? isRegister = null,
     Object? failureOrSuccessOption = null,
   }) {
-    return _then(
-      _$RegisterStateImpl(
-        isRegister:
-            null == isRegister
-                ? _value.isRegister
-                : isRegister // ignore: cast_nullable_to_non_nullable
-                    as bool,
-        failureOrSuccessOption:
-            null == failureOrSuccessOption
-                ? _value.failureOrSuccessOption
-                : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
-                    as Option<Either<AppFailure, dynamic>>,
-      ),
-    );
+    return _then(_$RegisterStateImpl(
+      isRegister: null == isRegister
+          ? _value.isRegister
+          : isRegister // ignore: cast_nullable_to_non_nullable
+              as bool,
+      failureOrSuccessOption: null == failureOrSuccessOption
+          ? _value.failureOrSuccessOption
+          : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$RegisterStateImpl implements _RegisterState {
-  const _$RegisterStateImpl({
-    required this.isRegister,
-    required this.failureOrSuccessOption,
-  });
+  const _$RegisterStateImpl(
+      {required this.isRegister, required this.failureOrSuccessOption});
 
   @override
   final bool isRegister;
@@ -462,10 +426,10 @@ class _$RegisterStateImpl implements _RegisterState {
 }
 
 abstract class _RegisterState implements RegisterState {
-  const factory _RegisterState({
-    required final bool isRegister,
-    required final Option<Either<AppFailure, dynamic>> failureOrSuccessOption,
-  }) = _$RegisterStateImpl;
+  const factory _RegisterState(
+      {required final bool isRegister,
+      required final Option<Either<AppFailure, dynamic>>
+          failureOrSuccessOption}) = _$RegisterStateImpl;
 
   @override
   bool get isRegister;

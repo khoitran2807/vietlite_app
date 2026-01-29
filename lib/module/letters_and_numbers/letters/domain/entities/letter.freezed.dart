@@ -12,8 +12,7 @@ part of 'letter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$Letter {
@@ -36,15 +35,14 @@ abstract class $LetterCopyWith<$Res> {
   factory $LetterCopyWith(Letter value, $Res Function(Letter) then) =
       _$LetterCopyWithImpl<$Res, Letter>;
   @useResult
-  $Res call({
-    String id,
-    String title,
-    int order,
-    String audioTitle,
-    LetterSpell spell,
-    CharacterExample mainExample,
-    List<CharacterExample> examples,
-  });
+  $Res call(
+      {String id,
+      String title,
+      int order,
+      String audioTitle,
+      LetterSpell spell,
+      CharacterExample mainExample,
+      List<CharacterExample> examples});
 
   $LetterSpellCopyWith<$Res> get spell;
   $CharacterExampleCopyWith<$Res> get mainExample;
@@ -73,46 +71,36 @@ class _$LetterCopyWithImpl<$Res, $Val extends Letter>
     Object? mainExample = null,
     Object? examples = null,
   }) {
-    return _then(
-      _value.copyWith(
-            id:
-                null == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as String,
-            title:
-                null == title
-                    ? _value.title
-                    : title // ignore: cast_nullable_to_non_nullable
-                        as String,
-            order:
-                null == order
-                    ? _value.order
-                    : order // ignore: cast_nullable_to_non_nullable
-                        as int,
-            audioTitle:
-                null == audioTitle
-                    ? _value.audioTitle
-                    : audioTitle // ignore: cast_nullable_to_non_nullable
-                        as String,
-            spell:
-                null == spell
-                    ? _value.spell
-                    : spell // ignore: cast_nullable_to_non_nullable
-                        as LetterSpell,
-            mainExample:
-                null == mainExample
-                    ? _value.mainExample
-                    : mainExample // ignore: cast_nullable_to_non_nullable
-                        as CharacterExample,
-            examples:
-                null == examples
-                    ? _value.examples
-                    : examples // ignore: cast_nullable_to_non_nullable
-                        as List<CharacterExample>,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      order: null == order
+          ? _value.order
+          : order // ignore: cast_nullable_to_non_nullable
+              as int,
+      audioTitle: null == audioTitle
+          ? _value.audioTitle
+          : audioTitle // ignore: cast_nullable_to_non_nullable
+              as String,
+      spell: null == spell
+          ? _value.spell
+          : spell // ignore: cast_nullable_to_non_nullable
+              as LetterSpell,
+      mainExample: null == mainExample
+          ? _value.mainExample
+          : mainExample // ignore: cast_nullable_to_non_nullable
+              as CharacterExample,
+      examples: null == examples
+          ? _value.examples
+          : examples // ignore: cast_nullable_to_non_nullable
+              as List<CharacterExample>,
+    ) as $Val);
   }
 
   /// Create a copy of Letter
@@ -139,20 +127,18 @@ class _$LetterCopyWithImpl<$Res, $Val extends Letter>
 /// @nodoc
 abstract class _$$LetterImplCopyWith<$Res> implements $LetterCopyWith<$Res> {
   factory _$$LetterImplCopyWith(
-    _$LetterImpl value,
-    $Res Function(_$LetterImpl) then,
-  ) = __$$LetterImplCopyWithImpl<$Res>;
+          _$LetterImpl value, $Res Function(_$LetterImpl) then) =
+      __$$LetterImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String id,
-    String title,
-    int order,
-    String audioTitle,
-    LetterSpell spell,
-    CharacterExample mainExample,
-    List<CharacterExample> examples,
-  });
+  $Res call(
+      {String id,
+      String title,
+      int order,
+      String audioTitle,
+      LetterSpell spell,
+      CharacterExample mainExample,
+      List<CharacterExample> examples});
 
   @override
   $LetterSpellCopyWith<$Res> get spell;
@@ -165,9 +151,8 @@ class __$$LetterImplCopyWithImpl<$Res>
     extends _$LetterCopyWithImpl<$Res, _$LetterImpl>
     implements _$$LetterImplCopyWith<$Res> {
   __$$LetterImplCopyWithImpl(
-    _$LetterImpl _value,
-    $Res Function(_$LetterImpl) _then,
-  ) : super(_value, _then);
+      _$LetterImpl _value, $Res Function(_$LetterImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of Letter
   /// with the given fields replaced by the non-null parameter values.
@@ -182,61 +167,52 @@ class __$$LetterImplCopyWithImpl<$Res>
     Object? mainExample = null,
     Object? examples = null,
   }) {
-    return _then(
-      _$LetterImpl(
-        id:
-            null == id
-                ? _value.id
-                : id // ignore: cast_nullable_to_non_nullable
-                    as String,
-        title:
-            null == title
-                ? _value.title
-                : title // ignore: cast_nullable_to_non_nullable
-                    as String,
-        order:
-            null == order
-                ? _value.order
-                : order // ignore: cast_nullable_to_non_nullable
-                    as int,
-        audioTitle:
-            null == audioTitle
-                ? _value.audioTitle
-                : audioTitle // ignore: cast_nullable_to_non_nullable
-                    as String,
-        spell:
-            null == spell
-                ? _value.spell
-                : spell // ignore: cast_nullable_to_non_nullable
-                    as LetterSpell,
-        mainExample:
-            null == mainExample
-                ? _value.mainExample
-                : mainExample // ignore: cast_nullable_to_non_nullable
-                    as CharacterExample,
-        examples:
-            null == examples
-                ? _value._examples
-                : examples // ignore: cast_nullable_to_non_nullable
-                    as List<CharacterExample>,
-      ),
-    );
+    return _then(_$LetterImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      order: null == order
+          ? _value.order
+          : order // ignore: cast_nullable_to_non_nullable
+              as int,
+      audioTitle: null == audioTitle
+          ? _value.audioTitle
+          : audioTitle // ignore: cast_nullable_to_non_nullable
+              as String,
+      spell: null == spell
+          ? _value.spell
+          : spell // ignore: cast_nullable_to_non_nullable
+              as LetterSpell,
+      mainExample: null == mainExample
+          ? _value.mainExample
+          : mainExample // ignore: cast_nullable_to_non_nullable
+              as CharacterExample,
+      examples: null == examples
+          ? _value._examples
+          : examples // ignore: cast_nullable_to_non_nullable
+              as List<CharacterExample>,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$LetterImpl extends _Letter {
-  const _$LetterImpl({
-    required this.id,
-    required this.title,
-    required this.order,
-    required this.audioTitle,
-    required this.spell,
-    required this.mainExample,
-    required final List<CharacterExample> examples,
-  }) : _examples = examples,
-       super._();
+  const _$LetterImpl(
+      {required this.id,
+      required this.title,
+      required this.order,
+      required this.audioTitle,
+      required this.spell,
+      required this.mainExample,
+      required final List<CharacterExample> examples})
+      : _examples = examples,
+        super._();
 
   @override
   final String id;
@@ -280,16 +256,8 @@ class _$LetterImpl extends _Letter {
   }
 
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    id,
-    title,
-    order,
-    audioTitle,
-    spell,
-    mainExample,
-    const DeepCollectionEquality().hash(_examples),
-  );
+  int get hashCode => Object.hash(runtimeType, id, title, order, audioTitle,
+      spell, mainExample, const DeepCollectionEquality().hash(_examples));
 
   /// Create a copy of Letter
   /// with the given fields replaced by the non-null parameter values.
@@ -301,15 +269,14 @@ class _$LetterImpl extends _Letter {
 }
 
 abstract class _Letter extends Letter {
-  const factory _Letter({
-    required final String id,
-    required final String title,
-    required final int order,
-    required final String audioTitle,
-    required final LetterSpell spell,
-    required final CharacterExample mainExample,
-    required final List<CharacterExample> examples,
-  }) = _$LetterImpl;
+  const factory _Letter(
+      {required final String id,
+      required final String title,
+      required final int order,
+      required final String audioTitle,
+      required final LetterSpell spell,
+      required final CharacterExample mainExample,
+      required final List<CharacterExample> examples}) = _$LetterImpl;
   const _Letter._() : super._();
 
   @override
@@ -352,16 +319,14 @@ mixin _$LetterSpell {
 /// @nodoc
 abstract class $LetterSpellCopyWith<$Res> {
   factory $LetterSpellCopyWith(
-    LetterSpell value,
-    $Res Function(LetterSpell) then,
-  ) = _$LetterSpellCopyWithImpl<$Res, LetterSpell>;
+          LetterSpell value, $Res Function(LetterSpell) then) =
+      _$LetterSpellCopyWithImpl<$Res, LetterSpell>;
   @useResult
-  $Res call({
-    List<String> accents,
-    String audioAccent,
-    List<String> spells,
-    String audioSpell,
-  });
+  $Res call(
+      {List<String> accents,
+      String audioAccent,
+      List<String> spells,
+      String audioSpell});
 }
 
 /// @nodoc
@@ -384,31 +349,24 @@ class _$LetterSpellCopyWithImpl<$Res, $Val extends LetterSpell>
     Object? spells = null,
     Object? audioSpell = null,
   }) {
-    return _then(
-      _value.copyWith(
-            accents:
-                null == accents
-                    ? _value.accents
-                    : accents // ignore: cast_nullable_to_non_nullable
-                        as List<String>,
-            audioAccent:
-                null == audioAccent
-                    ? _value.audioAccent
-                    : audioAccent // ignore: cast_nullable_to_non_nullable
-                        as String,
-            spells:
-                null == spells
-                    ? _value.spells
-                    : spells // ignore: cast_nullable_to_non_nullable
-                        as List<String>,
-            audioSpell:
-                null == audioSpell
-                    ? _value.audioSpell
-                    : audioSpell // ignore: cast_nullable_to_non_nullable
-                        as String,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      accents: null == accents
+          ? _value.accents
+          : accents // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      audioAccent: null == audioAccent
+          ? _value.audioAccent
+          : audioAccent // ignore: cast_nullable_to_non_nullable
+              as String,
+      spells: null == spells
+          ? _value.spells
+          : spells // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      audioSpell: null == audioSpell
+          ? _value.audioSpell
+          : audioSpell // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
   }
 }
 
@@ -416,17 +374,15 @@ class _$LetterSpellCopyWithImpl<$Res, $Val extends LetterSpell>
 abstract class _$$LetterSpellImplCopyWith<$Res>
     implements $LetterSpellCopyWith<$Res> {
   factory _$$LetterSpellImplCopyWith(
-    _$LetterSpellImpl value,
-    $Res Function(_$LetterSpellImpl) then,
-  ) = __$$LetterSpellImplCopyWithImpl<$Res>;
+          _$LetterSpellImpl value, $Res Function(_$LetterSpellImpl) then) =
+      __$$LetterSpellImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    List<String> accents,
-    String audioAccent,
-    List<String> spells,
-    String audioSpell,
-  });
+  $Res call(
+      {List<String> accents,
+      String audioAccent,
+      List<String> spells,
+      String audioSpell});
 }
 
 /// @nodoc
@@ -434,9 +390,8 @@ class __$$LetterSpellImplCopyWithImpl<$Res>
     extends _$LetterSpellCopyWithImpl<$Res, _$LetterSpellImpl>
     implements _$$LetterSpellImplCopyWith<$Res> {
   __$$LetterSpellImplCopyWithImpl(
-    _$LetterSpellImpl _value,
-    $Res Function(_$LetterSpellImpl) _then,
-  ) : super(_value, _then);
+      _$LetterSpellImpl _value, $Res Function(_$LetterSpellImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of LetterSpell
   /// with the given fields replaced by the non-null parameter values.
@@ -448,44 +403,38 @@ class __$$LetterSpellImplCopyWithImpl<$Res>
     Object? spells = null,
     Object? audioSpell = null,
   }) {
-    return _then(
-      _$LetterSpellImpl(
-        accents:
-            null == accents
-                ? _value._accents
-                : accents // ignore: cast_nullable_to_non_nullable
-                    as List<String>,
-        audioAccent:
-            null == audioAccent
-                ? _value.audioAccent
-                : audioAccent // ignore: cast_nullable_to_non_nullable
-                    as String,
-        spells:
-            null == spells
-                ? _value._spells
-                : spells // ignore: cast_nullable_to_non_nullable
-                    as List<String>,
-        audioSpell:
-            null == audioSpell
-                ? _value.audioSpell
-                : audioSpell // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+    return _then(_$LetterSpellImpl(
+      accents: null == accents
+          ? _value._accents
+          : accents // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      audioAccent: null == audioAccent
+          ? _value.audioAccent
+          : audioAccent // ignore: cast_nullable_to_non_nullable
+              as String,
+      spells: null == spells
+          ? _value._spells
+          : spells // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      audioSpell: null == audioSpell
+          ? _value.audioSpell
+          : audioSpell // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$LetterSpellImpl extends _LetterSpell {
-  const _$LetterSpellImpl({
-    required final List<String> accents,
-    required this.audioAccent,
-    required final List<String> spells,
-    required this.audioSpell,
-  }) : _accents = accents,
-       _spells = spells,
-       super._();
+  const _$LetterSpellImpl(
+      {required final List<String> accents,
+      required this.audioAccent,
+      required final List<String> spells,
+      required this.audioSpell})
+      : _accents = accents,
+        _spells = spells,
+        super._();
 
   final List<String> _accents;
   @override
@@ -528,12 +477,11 @@ class _$LetterSpellImpl extends _LetterSpell {
 
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    const DeepCollectionEquality().hash(_accents),
-    audioAccent,
-    const DeepCollectionEquality().hash(_spells),
-    audioSpell,
-  );
+      runtimeType,
+      const DeepCollectionEquality().hash(_accents),
+      audioAccent,
+      const DeepCollectionEquality().hash(_spells),
+      audioSpell);
 
   /// Create a copy of LetterSpell
   /// with the given fields replaced by the non-null parameter values.
@@ -545,12 +493,11 @@ class _$LetterSpellImpl extends _LetterSpell {
 }
 
 abstract class _LetterSpell extends LetterSpell {
-  const factory _LetterSpell({
-    required final List<String> accents,
-    required final String audioAccent,
-    required final List<String> spells,
-    required final String audioSpell,
-  }) = _$LetterSpellImpl;
+  const factory _LetterSpell(
+      {required final List<String> accents,
+      required final String audioAccent,
+      required final List<String> spells,
+      required final String audioSpell}) = _$LetterSpellImpl;
   const _LetterSpell._() : super._();
 
   @override

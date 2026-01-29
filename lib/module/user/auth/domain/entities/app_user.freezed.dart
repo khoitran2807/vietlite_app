@@ -12,8 +12,7 @@ part of 'app_user.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 AppUser _$AppUserFromJson(Map<String, dynamic> json) {
   return _AppUser.fromJson(json);
@@ -41,13 +40,8 @@ abstract class $AppUserCopyWith<$Res> {
   factory $AppUserCopyWith(AppUser value, $Res Function(AppUser) then) =
       _$AppUserCopyWithImpl<$Res, AppUser>;
   @useResult
-  $Res call({
-    String id,
-    String email,
-    String name,
-    String avatar,
-    bool isAnonymous,
-  });
+  $Res call(
+      {String id, String email, String name, String avatar, bool isAnonymous});
 }
 
 /// @nodoc
@@ -71,54 +65,40 @@ class _$AppUserCopyWithImpl<$Res, $Val extends AppUser>
     Object? avatar = null,
     Object? isAnonymous = null,
   }) {
-    return _then(
-      _value.copyWith(
-            id:
-                null == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as String,
-            email:
-                null == email
-                    ? _value.email
-                    : email // ignore: cast_nullable_to_non_nullable
-                        as String,
-            name:
-                null == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String,
-            avatar:
-                null == avatar
-                    ? _value.avatar
-                    : avatar // ignore: cast_nullable_to_non_nullable
-                        as String,
-            isAnonymous:
-                null == isAnonymous
-                    ? _value.isAnonymous
-                    : isAnonymous // ignore: cast_nullable_to_non_nullable
-                        as bool,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      email: null == email
+          ? _value.email
+          : email // ignore: cast_nullable_to_non_nullable
+              as String,
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      avatar: null == avatar
+          ? _value.avatar
+          : avatar // ignore: cast_nullable_to_non_nullable
+              as String,
+      isAnonymous: null == isAnonymous
+          ? _value.isAnonymous
+          : isAnonymous // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$AppUserImplCopyWith<$Res> implements $AppUserCopyWith<$Res> {
   factory _$$AppUserImplCopyWith(
-    _$AppUserImpl value,
-    $Res Function(_$AppUserImpl) then,
-  ) = __$$AppUserImplCopyWithImpl<$Res>;
+          _$AppUserImpl value, $Res Function(_$AppUserImpl) then) =
+      __$$AppUserImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String id,
-    String email,
-    String name,
-    String avatar,
-    bool isAnonymous,
-  });
+  $Res call(
+      {String id, String email, String name, String avatar, bool isAnonymous});
 }
 
 /// @nodoc
@@ -126,9 +106,8 @@ class __$$AppUserImplCopyWithImpl<$Res>
     extends _$AppUserCopyWithImpl<$Res, _$AppUserImpl>
     implements _$$AppUserImplCopyWith<$Res> {
   __$$AppUserImplCopyWithImpl(
-    _$AppUserImpl _value,
-    $Res Function(_$AppUserImpl) _then,
-  ) : super(_value, _then);
+      _$AppUserImpl _value, $Res Function(_$AppUserImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of AppUser
   /// with the given fields replaced by the non-null parameter values.
@@ -141,48 +120,41 @@ class __$$AppUserImplCopyWithImpl<$Res>
     Object? avatar = null,
     Object? isAnonymous = null,
   }) {
-    return _then(
-      _$AppUserImpl(
-        id:
-            null == id
-                ? _value.id
-                : id // ignore: cast_nullable_to_non_nullable
-                    as String,
-        email:
-            null == email
-                ? _value.email
-                : email // ignore: cast_nullable_to_non_nullable
-                    as String,
-        name:
-            null == name
-                ? _value.name
-                : name // ignore: cast_nullable_to_non_nullable
-                    as String,
-        avatar:
-            null == avatar
-                ? _value.avatar
-                : avatar // ignore: cast_nullable_to_non_nullable
-                    as String,
-        isAnonymous:
-            null == isAnonymous
-                ? _value.isAnonymous
-                : isAnonymous // ignore: cast_nullable_to_non_nullable
-                    as bool,
-      ),
-    );
+    return _then(_$AppUserImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      email: null == email
+          ? _value.email
+          : email // ignore: cast_nullable_to_non_nullable
+              as String,
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      avatar: null == avatar
+          ? _value.avatar
+          : avatar // ignore: cast_nullable_to_non_nullable
+              as String,
+      isAnonymous: null == isAnonymous
+          ? _value.isAnonymous
+          : isAnonymous // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$AppUserImpl extends _AppUser {
-  const _$AppUserImpl({
-    required this.id,
-    required this.email,
-    required this.name,
-    required this.avatar,
-    required this.isAnonymous,
-  }) : super._();
+  const _$AppUserImpl(
+      {required this.id,
+      required this.email,
+      required this.name,
+      required this.avatar,
+      required this.isAnonymous})
+      : super._();
 
   factory _$AppUserImpl.fromJson(Map<String, dynamic> json) =>
       _$$AppUserImplFromJson(json);
@@ -231,18 +203,19 @@ class _$AppUserImpl extends _AppUser {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$AppUserImplToJson(this);
+    return _$$AppUserImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _AppUser extends AppUser {
-  const factory _AppUser({
-    required final String id,
-    required final String email,
-    required final String name,
-    required final String avatar,
-    required final bool isAnonymous,
-  }) = _$AppUserImpl;
+  const factory _AppUser(
+      {required final String id,
+      required final String email,
+      required final String name,
+      required final String avatar,
+      required final bool isAnonymous}) = _$AppUserImpl;
   const _AppUser._() : super._();
 
   factory _AppUser.fromJson(Map<String, dynamic> json) = _$AppUserImpl.fromJson;

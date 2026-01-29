@@ -12,8 +12,7 @@ part of 'forget_password_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$ForgetPasswordEvent {
@@ -21,29 +20,35 @@ mixin _$ForgetPasswordEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(EmailAddress email) forgetPassword,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(EmailAddress email)? forgetPassword,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(EmailAddress email)? forgetPassword,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_ForgetPassword value) forgetPassword,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_ForgetPassword value)? forgetPassword,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_ForgetPassword value)? forgetPassword,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 
   /// Create a copy of ForgetPasswordEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -55,9 +60,8 @@ mixin _$ForgetPasswordEvent {
 /// @nodoc
 abstract class $ForgetPasswordEventCopyWith<$Res> {
   factory $ForgetPasswordEventCopyWith(
-    ForgetPasswordEvent value,
-    $Res Function(ForgetPasswordEvent) then,
-  ) = _$ForgetPasswordEventCopyWithImpl<$Res, ForgetPasswordEvent>;
+          ForgetPasswordEvent value, $Res Function(ForgetPasswordEvent) then) =
+      _$ForgetPasswordEventCopyWithImpl<$Res, ForgetPasswordEvent>;
   @useResult
   $Res call({EmailAddress email});
 }
@@ -76,27 +80,24 @@ class _$ForgetPasswordEventCopyWithImpl<$Res, $Val extends ForgetPasswordEvent>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? email = null}) {
-    return _then(
-      _value.copyWith(
-            email:
-                null == email
-                    ? _value.email
-                    : email // ignore: cast_nullable_to_non_nullable
-                        as EmailAddress,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? email = null,
+  }) {
+    return _then(_value.copyWith(
+      email: null == email
+          ? _value.email
+          : email // ignore: cast_nullable_to_non_nullable
+              as EmailAddress,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$ForgetPasswordImplCopyWith<$Res>
     implements $ForgetPasswordEventCopyWith<$Res> {
-  factory _$$ForgetPasswordImplCopyWith(
-    _$ForgetPasswordImpl value,
-    $Res Function(_$ForgetPasswordImpl) then,
-  ) = __$$ForgetPasswordImplCopyWithImpl<$Res>;
+  factory _$$ForgetPasswordImplCopyWith(_$ForgetPasswordImpl value,
+          $Res Function(_$ForgetPasswordImpl) then) =
+      __$$ForgetPasswordImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({EmailAddress email});
@@ -107,24 +108,22 @@ class __$$ForgetPasswordImplCopyWithImpl<$Res>
     extends _$ForgetPasswordEventCopyWithImpl<$Res, _$ForgetPasswordImpl>
     implements _$$ForgetPasswordImplCopyWith<$Res> {
   __$$ForgetPasswordImplCopyWithImpl(
-    _$ForgetPasswordImpl _value,
-    $Res Function(_$ForgetPasswordImpl) _then,
-  ) : super(_value, _then);
+      _$ForgetPasswordImpl _value, $Res Function(_$ForgetPasswordImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ForgetPasswordEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? email = null}) {
-    return _then(
-      _$ForgetPasswordImpl(
-        email:
-            null == email
-                ? _value.email
-                : email // ignore: cast_nullable_to_non_nullable
-                    as EmailAddress,
-      ),
-    );
+  $Res call({
+    Object? email = null,
+  }) {
+    return _then(_$ForgetPasswordImpl(
+      email: null == email
+          ? _value.email
+          : email // ignore: cast_nullable_to_non_nullable
+              as EmailAddress,
+    ));
   }
 }
 
@@ -159,9 +158,7 @@ class _$ForgetPasswordImpl implements _ForgetPassword {
   @pragma('vm:prefer-inline')
   _$$ForgetPasswordImplCopyWith<_$ForgetPasswordImpl> get copyWith =>
       __$$ForgetPasswordImplCopyWithImpl<_$ForgetPasswordImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -251,14 +248,12 @@ mixin _$ForgetPasswordState {
 /// @nodoc
 abstract class $ForgetPasswordStateCopyWith<$Res> {
   factory $ForgetPasswordStateCopyWith(
-    ForgetPasswordState value,
-    $Res Function(ForgetPasswordState) then,
-  ) = _$ForgetPasswordStateCopyWithImpl<$Res, ForgetPasswordState>;
+          ForgetPasswordState value, $Res Function(ForgetPasswordState) then) =
+      _$ForgetPasswordStateCopyWithImpl<$Res, ForgetPasswordState>;
   @useResult
-  $Res call({
-    bool isForgetPassword,
-    Option<Either<AppFailure, dynamic>> failureOrSuccessOption,
-  });
+  $Res call(
+      {bool isForgetPassword,
+      Option<Either<AppFailure, dynamic>> failureOrSuccessOption});
 }
 
 /// @nodoc
@@ -279,47 +274,39 @@ class _$ForgetPasswordStateCopyWithImpl<$Res, $Val extends ForgetPasswordState>
     Object? isForgetPassword = null,
     Object? failureOrSuccessOption = null,
   }) {
-    return _then(
-      _value.copyWith(
-            isForgetPassword:
-                null == isForgetPassword
-                    ? _value.isForgetPassword
-                    : isForgetPassword // ignore: cast_nullable_to_non_nullable
-                        as bool,
-            failureOrSuccessOption:
-                null == failureOrSuccessOption
-                    ? _value.failureOrSuccessOption
-                    : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
-                        as Option<Either<AppFailure, dynamic>>,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      isForgetPassword: null == isForgetPassword
+          ? _value.isForgetPassword
+          : isForgetPassword // ignore: cast_nullable_to_non_nullable
+              as bool,
+      failureOrSuccessOption: null == failureOrSuccessOption
+          ? _value.failureOrSuccessOption
+          : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$ForgetPasswordStateImplCopyWith<$Res>
     implements $ForgetPasswordStateCopyWith<$Res> {
-  factory _$$ForgetPasswordStateImplCopyWith(
-    _$ForgetPasswordStateImpl value,
-    $Res Function(_$ForgetPasswordStateImpl) then,
-  ) = __$$ForgetPasswordStateImplCopyWithImpl<$Res>;
+  factory _$$ForgetPasswordStateImplCopyWith(_$ForgetPasswordStateImpl value,
+          $Res Function(_$ForgetPasswordStateImpl) then) =
+      __$$ForgetPasswordStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    bool isForgetPassword,
-    Option<Either<AppFailure, dynamic>> failureOrSuccessOption,
-  });
+  $Res call(
+      {bool isForgetPassword,
+      Option<Either<AppFailure, dynamic>> failureOrSuccessOption});
 }
 
 /// @nodoc
 class __$$ForgetPasswordStateImplCopyWithImpl<$Res>
     extends _$ForgetPasswordStateCopyWithImpl<$Res, _$ForgetPasswordStateImpl>
     implements _$$ForgetPasswordStateImplCopyWith<$Res> {
-  __$$ForgetPasswordStateImplCopyWithImpl(
-    _$ForgetPasswordStateImpl _value,
-    $Res Function(_$ForgetPasswordStateImpl) _then,
-  ) : super(_value, _then);
+  __$$ForgetPasswordStateImplCopyWithImpl(_$ForgetPasswordStateImpl _value,
+      $Res Function(_$ForgetPasswordStateImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of ForgetPasswordState
   /// with the given fields replaced by the non-null parameter values.
@@ -329,30 +316,24 @@ class __$$ForgetPasswordStateImplCopyWithImpl<$Res>
     Object? isForgetPassword = null,
     Object? failureOrSuccessOption = null,
   }) {
-    return _then(
-      _$ForgetPasswordStateImpl(
-        isForgetPassword:
-            null == isForgetPassword
-                ? _value.isForgetPassword
-                : isForgetPassword // ignore: cast_nullable_to_non_nullable
-                    as bool,
-        failureOrSuccessOption:
-            null == failureOrSuccessOption
-                ? _value.failureOrSuccessOption
-                : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
-                    as Option<Either<AppFailure, dynamic>>,
-      ),
-    );
+    return _then(_$ForgetPasswordStateImpl(
+      isForgetPassword: null == isForgetPassword
+          ? _value.isForgetPassword
+          : isForgetPassword // ignore: cast_nullable_to_non_nullable
+              as bool,
+      failureOrSuccessOption: null == failureOrSuccessOption
+          ? _value.failureOrSuccessOption
+          : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$ForgetPasswordStateImpl implements _ForgetPasswordState {
-  const _$ForgetPasswordStateImpl({
-    required this.isForgetPassword,
-    required this.failureOrSuccessOption,
-  });
+  const _$ForgetPasswordStateImpl(
+      {required this.isForgetPassword, required this.failureOrSuccessOption});
 
   @override
   final bool isForgetPassword;
@@ -386,16 +367,14 @@ class _$ForgetPasswordStateImpl implements _ForgetPasswordState {
   @pragma('vm:prefer-inline')
   _$$ForgetPasswordStateImplCopyWith<_$ForgetPasswordStateImpl> get copyWith =>
       __$$ForgetPasswordStateImplCopyWithImpl<_$ForgetPasswordStateImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 }
 
 abstract class _ForgetPasswordState implements ForgetPasswordState {
-  const factory _ForgetPasswordState({
-    required final bool isForgetPassword,
-    required final Option<Either<AppFailure, dynamic>> failureOrSuccessOption,
-  }) = _$ForgetPasswordStateImpl;
+  const factory _ForgetPasswordState(
+      {required final bool isForgetPassword,
+      required final Option<Either<AppFailure, dynamic>>
+          failureOrSuccessOption}) = _$ForgetPasswordStateImpl;
 
   @override
   bool get isForgetPassword;

@@ -12,8 +12,7 @@ part of 'letter_dto.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 LetterDto _$LetterDtoFromJson(Map<String, dynamic> json) {
   return _LetterDto.fromJson(json);
@@ -50,15 +49,14 @@ abstract class $LetterDtoCopyWith<$Res> {
   factory $LetterDtoCopyWith(LetterDto value, $Res Function(LetterDto) then) =
       _$LetterDtoCopyWithImpl<$Res, LetterDto>;
   @useResult
-  $Res call({
-    String id,
-    @JsonKey(defaultValue: '') String title,
-    @JsonKey(defaultValue: '') String audioTitle,
-    @JsonKey(defaultValue: 0) int order,
-    @JsonKey(readValue: handleNullableMapKey) LetterExampleDto mainExample,
-    @JsonKey(readValue: handleNullableMapKey) LetterSpellDto spell,
-    @JsonKey(defaultValue: []) List<LetterExampleDto> examples,
-  });
+  $Res call(
+      {String id,
+      @JsonKey(defaultValue: '') String title,
+      @JsonKey(defaultValue: '') String audioTitle,
+      @JsonKey(defaultValue: 0) int order,
+      @JsonKey(readValue: handleNullableMapKey) LetterExampleDto mainExample,
+      @JsonKey(readValue: handleNullableMapKey) LetterSpellDto spell,
+      @JsonKey(defaultValue: []) List<LetterExampleDto> examples});
 
   $LetterExampleDtoCopyWith<$Res> get mainExample;
   $LetterSpellDtoCopyWith<$Res> get spell;
@@ -87,46 +85,36 @@ class _$LetterDtoCopyWithImpl<$Res, $Val extends LetterDto>
     Object? spell = null,
     Object? examples = null,
   }) {
-    return _then(
-      _value.copyWith(
-            id:
-                null == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as String,
-            title:
-                null == title
-                    ? _value.title
-                    : title // ignore: cast_nullable_to_non_nullable
-                        as String,
-            audioTitle:
-                null == audioTitle
-                    ? _value.audioTitle
-                    : audioTitle // ignore: cast_nullable_to_non_nullable
-                        as String,
-            order:
-                null == order
-                    ? _value.order
-                    : order // ignore: cast_nullable_to_non_nullable
-                        as int,
-            mainExample:
-                null == mainExample
-                    ? _value.mainExample
-                    : mainExample // ignore: cast_nullable_to_non_nullable
-                        as LetterExampleDto,
-            spell:
-                null == spell
-                    ? _value.spell
-                    : spell // ignore: cast_nullable_to_non_nullable
-                        as LetterSpellDto,
-            examples:
-                null == examples
-                    ? _value.examples
-                    : examples // ignore: cast_nullable_to_non_nullable
-                        as List<LetterExampleDto>,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      audioTitle: null == audioTitle
+          ? _value.audioTitle
+          : audioTitle // ignore: cast_nullable_to_non_nullable
+              as String,
+      order: null == order
+          ? _value.order
+          : order // ignore: cast_nullable_to_non_nullable
+              as int,
+      mainExample: null == mainExample
+          ? _value.mainExample
+          : mainExample // ignore: cast_nullable_to_non_nullable
+              as LetterExampleDto,
+      spell: null == spell
+          ? _value.spell
+          : spell // ignore: cast_nullable_to_non_nullable
+              as LetterSpellDto,
+      examples: null == examples
+          ? _value.examples
+          : examples // ignore: cast_nullable_to_non_nullable
+              as List<LetterExampleDto>,
+    ) as $Val);
   }
 
   /// Create a copy of LetterDto
@@ -154,20 +142,18 @@ class _$LetterDtoCopyWithImpl<$Res, $Val extends LetterDto>
 abstract class _$$LetterDtoImplCopyWith<$Res>
     implements $LetterDtoCopyWith<$Res> {
   factory _$$LetterDtoImplCopyWith(
-    _$LetterDtoImpl value,
-    $Res Function(_$LetterDtoImpl) then,
-  ) = __$$LetterDtoImplCopyWithImpl<$Res>;
+          _$LetterDtoImpl value, $Res Function(_$LetterDtoImpl) then) =
+      __$$LetterDtoImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String id,
-    @JsonKey(defaultValue: '') String title,
-    @JsonKey(defaultValue: '') String audioTitle,
-    @JsonKey(defaultValue: 0) int order,
-    @JsonKey(readValue: handleNullableMapKey) LetterExampleDto mainExample,
-    @JsonKey(readValue: handleNullableMapKey) LetterSpellDto spell,
-    @JsonKey(defaultValue: []) List<LetterExampleDto> examples,
-  });
+  $Res call(
+      {String id,
+      @JsonKey(defaultValue: '') String title,
+      @JsonKey(defaultValue: '') String audioTitle,
+      @JsonKey(defaultValue: 0) int order,
+      @JsonKey(readValue: handleNullableMapKey) LetterExampleDto mainExample,
+      @JsonKey(readValue: handleNullableMapKey) LetterSpellDto spell,
+      @JsonKey(defaultValue: []) List<LetterExampleDto> examples});
 
   @override
   $LetterExampleDtoCopyWith<$Res> get mainExample;
@@ -180,9 +166,8 @@ class __$$LetterDtoImplCopyWithImpl<$Res>
     extends _$LetterDtoCopyWithImpl<$Res, _$LetterDtoImpl>
     implements _$$LetterDtoImplCopyWith<$Res> {
   __$$LetterDtoImplCopyWithImpl(
-    _$LetterDtoImpl _value,
-    $Res Function(_$LetterDtoImpl) _then,
-  ) : super(_value, _then);
+      _$LetterDtoImpl _value, $Res Function(_$LetterDtoImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of LetterDto
   /// with the given fields replaced by the non-null parameter values.
@@ -197,61 +182,53 @@ class __$$LetterDtoImplCopyWithImpl<$Res>
     Object? spell = null,
     Object? examples = null,
   }) {
-    return _then(
-      _$LetterDtoImpl(
-        id:
-            null == id
-                ? _value.id
-                : id // ignore: cast_nullable_to_non_nullable
-                    as String,
-        title:
-            null == title
-                ? _value.title
-                : title // ignore: cast_nullable_to_non_nullable
-                    as String,
-        audioTitle:
-            null == audioTitle
-                ? _value.audioTitle
-                : audioTitle // ignore: cast_nullable_to_non_nullable
-                    as String,
-        order:
-            null == order
-                ? _value.order
-                : order // ignore: cast_nullable_to_non_nullable
-                    as int,
-        mainExample:
-            null == mainExample
-                ? _value.mainExample
-                : mainExample // ignore: cast_nullable_to_non_nullable
-                    as LetterExampleDto,
-        spell:
-            null == spell
-                ? _value.spell
-                : spell // ignore: cast_nullable_to_non_nullable
-                    as LetterSpellDto,
-        examples:
-            null == examples
-                ? _value._examples
-                : examples // ignore: cast_nullable_to_non_nullable
-                    as List<LetterExampleDto>,
-      ),
-    );
+    return _then(_$LetterDtoImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      audioTitle: null == audioTitle
+          ? _value.audioTitle
+          : audioTitle // ignore: cast_nullable_to_non_nullable
+              as String,
+      order: null == order
+          ? _value.order
+          : order // ignore: cast_nullable_to_non_nullable
+              as int,
+      mainExample: null == mainExample
+          ? _value.mainExample
+          : mainExample // ignore: cast_nullable_to_non_nullable
+              as LetterExampleDto,
+      spell: null == spell
+          ? _value.spell
+          : spell // ignore: cast_nullable_to_non_nullable
+              as LetterSpellDto,
+      examples: null == examples
+          ? _value._examples
+          : examples // ignore: cast_nullable_to_non_nullable
+              as List<LetterExampleDto>,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$LetterDtoImpl extends _LetterDto {
-  const _$LetterDtoImpl({
-    required this.id,
-    @JsonKey(defaultValue: '') required this.title,
-    @JsonKey(defaultValue: '') required this.audioTitle,
-    @JsonKey(defaultValue: 0) required this.order,
-    @JsonKey(readValue: handleNullableMapKey) required this.mainExample,
-    @JsonKey(readValue: handleNullableMapKey) required this.spell,
-    @JsonKey(defaultValue: []) required final List<LetterExampleDto> examples,
-  }) : _examples = examples,
-       super._();
+  const _$LetterDtoImpl(
+      {required this.id,
+      @JsonKey(defaultValue: '') required this.title,
+      @JsonKey(defaultValue: '') required this.audioTitle,
+      @JsonKey(defaultValue: 0) required this.order,
+      @JsonKey(readValue: handleNullableMapKey) required this.mainExample,
+      @JsonKey(readValue: handleNullableMapKey) required this.spell,
+      @JsonKey(defaultValue: [])
+      required final List<LetterExampleDto> examples})
+      : _examples = examples,
+        super._();
 
   factory _$LetterDtoImpl.fromJson(Map<String, dynamic> json) =>
       _$$LetterDtoImplFromJson(json);
@@ -305,16 +282,8 @@ class _$LetterDtoImpl extends _LetterDto {
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    id,
-    title,
-    audioTitle,
-    order,
-    mainExample,
-    spell,
-    const DeepCollectionEquality().hash(_examples),
-  );
+  int get hashCode => Object.hash(runtimeType, id, title, audioTitle, order,
+      mainExample, spell, const DeepCollectionEquality().hash(_examples));
 
   /// Create a copy of LetterDto
   /// with the given fields replaced by the non-null parameter values.
@@ -326,22 +295,24 @@ class _$LetterDtoImpl extends _LetterDto {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$LetterDtoImplToJson(this);
+    return _$$LetterDtoImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _LetterDto extends LetterDto {
-  const factory _LetterDto({
-    required final String id,
-    @JsonKey(defaultValue: '') required final String title,
-    @JsonKey(defaultValue: '') required final String audioTitle,
-    @JsonKey(defaultValue: 0) required final int order,
-    @JsonKey(readValue: handleNullableMapKey)
-    required final LetterExampleDto mainExample,
-    @JsonKey(readValue: handleNullableMapKey)
-    required final LetterSpellDto spell,
-    @JsonKey(defaultValue: []) required final List<LetterExampleDto> examples,
-  }) = _$LetterDtoImpl;
+  const factory _LetterDto(
+      {required final String id,
+      @JsonKey(defaultValue: '') required final String title,
+      @JsonKey(defaultValue: '') required final String audioTitle,
+      @JsonKey(defaultValue: 0) required final int order,
+      @JsonKey(readValue: handleNullableMapKey)
+      required final LetterExampleDto mainExample,
+      @JsonKey(readValue: handleNullableMapKey)
+      required final LetterSpellDto spell,
+      @JsonKey(defaultValue: [])
+      required final List<LetterExampleDto> examples}) = _$LetterDtoImpl;
   const _LetterDto._() : super._();
 
   factory _LetterDto.fromJson(Map<String, dynamic> json) =
@@ -402,15 +373,13 @@ mixin _$LetterExampleDto {
 /// @nodoc
 abstract class $LetterExampleDtoCopyWith<$Res> {
   factory $LetterExampleDtoCopyWith(
-    LetterExampleDto value,
-    $Res Function(LetterExampleDto) then,
-  ) = _$LetterExampleDtoCopyWithImpl<$Res, LetterExampleDto>;
+          LetterExampleDto value, $Res Function(LetterExampleDto) then) =
+      _$LetterExampleDtoCopyWithImpl<$Res, LetterExampleDto>;
   @useResult
-  $Res call({
-    @JsonKey(defaultValue: '') String title,
-    @JsonKey(defaultValue: '') String image,
-    @JsonKey(defaultValue: '') String audio,
-  });
+  $Res call(
+      {@JsonKey(defaultValue: '') String title,
+      @JsonKey(defaultValue: '') String image,
+      @JsonKey(defaultValue: '') String audio});
 }
 
 /// @nodoc
@@ -432,53 +401,44 @@ class _$LetterExampleDtoCopyWithImpl<$Res, $Val extends LetterExampleDto>
     Object? image = null,
     Object? audio = null,
   }) {
-    return _then(
-      _value.copyWith(
-            title:
-                null == title
-                    ? _value.title
-                    : title // ignore: cast_nullable_to_non_nullable
-                        as String,
-            image:
-                null == image
-                    ? _value.image
-                    : image // ignore: cast_nullable_to_non_nullable
-                        as String,
-            audio:
-                null == audio
-                    ? _value.audio
-                    : audio // ignore: cast_nullable_to_non_nullable
-                        as String,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      image: null == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String,
+      audio: null == audio
+          ? _value.audio
+          : audio // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$LetterExampleDtoImplCopyWith<$Res>
     implements $LetterExampleDtoCopyWith<$Res> {
-  factory _$$LetterExampleDtoImplCopyWith(
-    _$LetterExampleDtoImpl value,
-    $Res Function(_$LetterExampleDtoImpl) then,
-  ) = __$$LetterExampleDtoImplCopyWithImpl<$Res>;
+  factory _$$LetterExampleDtoImplCopyWith(_$LetterExampleDtoImpl value,
+          $Res Function(_$LetterExampleDtoImpl) then) =
+      __$$LetterExampleDtoImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    @JsonKey(defaultValue: '') String title,
-    @JsonKey(defaultValue: '') String image,
-    @JsonKey(defaultValue: '') String audio,
-  });
+  $Res call(
+      {@JsonKey(defaultValue: '') String title,
+      @JsonKey(defaultValue: '') String image,
+      @JsonKey(defaultValue: '') String audio});
 }
 
 /// @nodoc
 class __$$LetterExampleDtoImplCopyWithImpl<$Res>
     extends _$LetterExampleDtoCopyWithImpl<$Res, _$LetterExampleDtoImpl>
     implements _$$LetterExampleDtoImplCopyWith<$Res> {
-  __$$LetterExampleDtoImplCopyWithImpl(
-    _$LetterExampleDtoImpl _value,
-    $Res Function(_$LetterExampleDtoImpl) _then,
-  ) : super(_value, _then);
+  __$$LetterExampleDtoImplCopyWithImpl(_$LetterExampleDtoImpl _value,
+      $Res Function(_$LetterExampleDtoImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of LetterExampleDto
   /// with the given fields replaced by the non-null parameter values.
@@ -489,36 +449,31 @@ class __$$LetterExampleDtoImplCopyWithImpl<$Res>
     Object? image = null,
     Object? audio = null,
   }) {
-    return _then(
-      _$LetterExampleDtoImpl(
-        title:
-            null == title
-                ? _value.title
-                : title // ignore: cast_nullable_to_non_nullable
-                    as String,
-        image:
-            null == image
-                ? _value.image
-                : image // ignore: cast_nullable_to_non_nullable
-                    as String,
-        audio:
-            null == audio
-                ? _value.audio
-                : audio // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+    return _then(_$LetterExampleDtoImpl(
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      image: null == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String,
+      audio: null == audio
+          ? _value.audio
+          : audio // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$LetterExampleDtoImpl extends _LetterExampleDto {
-  const _$LetterExampleDtoImpl({
-    @JsonKey(defaultValue: '') required this.title,
-    @JsonKey(defaultValue: '') required this.image,
-    @JsonKey(defaultValue: '') required this.audio,
-  }) : super._();
+  const _$LetterExampleDtoImpl(
+      {@JsonKey(defaultValue: '') required this.title,
+      @JsonKey(defaultValue: '') required this.image,
+      @JsonKey(defaultValue: '') required this.audio})
+      : super._();
 
   factory _$LetterExampleDtoImpl.fromJson(Map<String, dynamic> json) =>
       _$$LetterExampleDtoImplFromJson(json);
@@ -559,22 +514,22 @@ class _$LetterExampleDtoImpl extends _LetterExampleDto {
   @pragma('vm:prefer-inline')
   _$$LetterExampleDtoImplCopyWith<_$LetterExampleDtoImpl> get copyWith =>
       __$$LetterExampleDtoImplCopyWithImpl<_$LetterExampleDtoImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$LetterExampleDtoImplToJson(this);
+    return _$$LetterExampleDtoImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _LetterExampleDto extends LetterExampleDto {
-  const factory _LetterExampleDto({
-    @JsonKey(defaultValue: '') required final String title,
-    @JsonKey(defaultValue: '') required final String image,
-    @JsonKey(defaultValue: '') required final String audio,
-  }) = _$LetterExampleDtoImpl;
+  const factory _LetterExampleDto(
+          {@JsonKey(defaultValue: '') required final String title,
+          @JsonKey(defaultValue: '') required final String image,
+          @JsonKey(defaultValue: '') required final String audio}) =
+      _$LetterExampleDtoImpl;
   const _LetterExampleDto._() : super._();
 
   factory _LetterExampleDto.fromJson(Map<String, dynamic> json) =
@@ -626,16 +581,14 @@ mixin _$LetterSpellDto {
 /// @nodoc
 abstract class $LetterSpellDtoCopyWith<$Res> {
   factory $LetterSpellDtoCopyWith(
-    LetterSpellDto value,
-    $Res Function(LetterSpellDto) then,
-  ) = _$LetterSpellDtoCopyWithImpl<$Res, LetterSpellDto>;
+          LetterSpellDto value, $Res Function(LetterSpellDto) then) =
+      _$LetterSpellDtoCopyWithImpl<$Res, LetterSpellDto>;
   @useResult
-  $Res call({
-    @JsonKey(defaultValue: <String>[]) List<String> spells,
-    @JsonKey(defaultValue: <String>[]) List<String> accents,
-    @JsonKey(defaultValue: '') String audioSpell,
-    @JsonKey(defaultValue: '') String audioAccent,
-  });
+  $Res call(
+      {@JsonKey(defaultValue: <String>[]) List<String> spells,
+      @JsonKey(defaultValue: <String>[]) List<String> accents,
+      @JsonKey(defaultValue: '') String audioSpell,
+      @JsonKey(defaultValue: '') String audioAccent});
 }
 
 /// @nodoc
@@ -658,49 +611,40 @@ class _$LetterSpellDtoCopyWithImpl<$Res, $Val extends LetterSpellDto>
     Object? audioSpell = null,
     Object? audioAccent = null,
   }) {
-    return _then(
-      _value.copyWith(
-            spells:
-                null == spells
-                    ? _value.spells
-                    : spells // ignore: cast_nullable_to_non_nullable
-                        as List<String>,
-            accents:
-                null == accents
-                    ? _value.accents
-                    : accents // ignore: cast_nullable_to_non_nullable
-                        as List<String>,
-            audioSpell:
-                null == audioSpell
-                    ? _value.audioSpell
-                    : audioSpell // ignore: cast_nullable_to_non_nullable
-                        as String,
-            audioAccent:
-                null == audioAccent
-                    ? _value.audioAccent
-                    : audioAccent // ignore: cast_nullable_to_non_nullable
-                        as String,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      spells: null == spells
+          ? _value.spells
+          : spells // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      accents: null == accents
+          ? _value.accents
+          : accents // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      audioSpell: null == audioSpell
+          ? _value.audioSpell
+          : audioSpell // ignore: cast_nullable_to_non_nullable
+              as String,
+      audioAccent: null == audioAccent
+          ? _value.audioAccent
+          : audioAccent // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$LetterSpellDtoImplCopyWith<$Res>
     implements $LetterSpellDtoCopyWith<$Res> {
-  factory _$$LetterSpellDtoImplCopyWith(
-    _$LetterSpellDtoImpl value,
-    $Res Function(_$LetterSpellDtoImpl) then,
-  ) = __$$LetterSpellDtoImplCopyWithImpl<$Res>;
+  factory _$$LetterSpellDtoImplCopyWith(_$LetterSpellDtoImpl value,
+          $Res Function(_$LetterSpellDtoImpl) then) =
+      __$$LetterSpellDtoImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    @JsonKey(defaultValue: <String>[]) List<String> spells,
-    @JsonKey(defaultValue: <String>[]) List<String> accents,
-    @JsonKey(defaultValue: '') String audioSpell,
-    @JsonKey(defaultValue: '') String audioAccent,
-  });
+  $Res call(
+      {@JsonKey(defaultValue: <String>[]) List<String> spells,
+      @JsonKey(defaultValue: <String>[]) List<String> accents,
+      @JsonKey(defaultValue: '') String audioSpell,
+      @JsonKey(defaultValue: '') String audioAccent});
 }
 
 /// @nodoc
@@ -708,9 +652,8 @@ class __$$LetterSpellDtoImplCopyWithImpl<$Res>
     extends _$LetterSpellDtoCopyWithImpl<$Res, _$LetterSpellDtoImpl>
     implements _$$LetterSpellDtoImplCopyWith<$Res> {
   __$$LetterSpellDtoImplCopyWithImpl(
-    _$LetterSpellDtoImpl _value,
-    $Res Function(_$LetterSpellDtoImpl) _then,
-  ) : super(_value, _then);
+      _$LetterSpellDtoImpl _value, $Res Function(_$LetterSpellDtoImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of LetterSpellDto
   /// with the given fields replaced by the non-null parameter values.
@@ -722,44 +665,38 @@ class __$$LetterSpellDtoImplCopyWithImpl<$Res>
     Object? audioSpell = null,
     Object? audioAccent = null,
   }) {
-    return _then(
-      _$LetterSpellDtoImpl(
-        spells:
-            null == spells
-                ? _value._spells
-                : spells // ignore: cast_nullable_to_non_nullable
-                    as List<String>,
-        accents:
-            null == accents
-                ? _value._accents
-                : accents // ignore: cast_nullable_to_non_nullable
-                    as List<String>,
-        audioSpell:
-            null == audioSpell
-                ? _value.audioSpell
-                : audioSpell // ignore: cast_nullable_to_non_nullable
-                    as String,
-        audioAccent:
-            null == audioAccent
-                ? _value.audioAccent
-                : audioAccent // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+    return _then(_$LetterSpellDtoImpl(
+      spells: null == spells
+          ? _value._spells
+          : spells // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      accents: null == accents
+          ? _value._accents
+          : accents // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      audioSpell: null == audioSpell
+          ? _value.audioSpell
+          : audioSpell // ignore: cast_nullable_to_non_nullable
+              as String,
+      audioAccent: null == audioAccent
+          ? _value.audioAccent
+          : audioAccent // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$LetterSpellDtoImpl extends _LetterSpellDto {
-  const _$LetterSpellDtoImpl({
-    @JsonKey(defaultValue: <String>[]) required final List<String> spells,
-    @JsonKey(defaultValue: <String>[]) required final List<String> accents,
-    @JsonKey(defaultValue: '') required this.audioSpell,
-    @JsonKey(defaultValue: '') required this.audioAccent,
-  }) : _spells = spells,
-       _accents = accents,
-       super._();
+  const _$LetterSpellDtoImpl(
+      {@JsonKey(defaultValue: <String>[]) required final List<String> spells,
+      @JsonKey(defaultValue: <String>[]) required final List<String> accents,
+      @JsonKey(defaultValue: '') required this.audioSpell,
+      @JsonKey(defaultValue: '') required this.audioAccent})
+      : _spells = spells,
+        _accents = accents,
+        super._();
 
   factory _$LetterSpellDtoImpl.fromJson(Map<String, dynamic> json) =>
       _$$LetterSpellDtoImplFromJson(json);
@@ -810,12 +747,11 @@ class _$LetterSpellDtoImpl extends _LetterSpellDto {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    const DeepCollectionEquality().hash(_spells),
-    const DeepCollectionEquality().hash(_accents),
-    audioSpell,
-    audioAccent,
-  );
+      runtimeType,
+      const DeepCollectionEquality().hash(_spells),
+      const DeepCollectionEquality().hash(_accents),
+      audioSpell,
+      audioAccent);
 
   /// Create a copy of LetterSpellDto
   /// with the given fields replaced by the non-null parameter values.
@@ -824,23 +760,23 @@ class _$LetterSpellDtoImpl extends _LetterSpellDto {
   @pragma('vm:prefer-inline')
   _$$LetterSpellDtoImplCopyWith<_$LetterSpellDtoImpl> get copyWith =>
       __$$LetterSpellDtoImplCopyWithImpl<_$LetterSpellDtoImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$LetterSpellDtoImplToJson(this);
+    return _$$LetterSpellDtoImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _LetterSpellDto extends LetterSpellDto {
-  const factory _LetterSpellDto({
-    @JsonKey(defaultValue: <String>[]) required final List<String> spells,
-    @JsonKey(defaultValue: <String>[]) required final List<String> accents,
-    @JsonKey(defaultValue: '') required final String audioSpell,
-    @JsonKey(defaultValue: '') required final String audioAccent,
-  }) = _$LetterSpellDtoImpl;
+  const factory _LetterSpellDto(
+      {@JsonKey(defaultValue: <String>[]) required final List<String> spells,
+      @JsonKey(defaultValue: <String>[]) required final List<String> accents,
+      @JsonKey(defaultValue: '') required final String audioSpell,
+      @JsonKey(defaultValue: '')
+      required final String audioAccent}) = _$LetterSpellDtoImpl;
   const _LetterSpellDto._() : super._();
 
   factory _LetterSpellDto.fromJson(Map<String, dynamic> json) =

@@ -15,7 +15,7 @@ enum ThingType {
       case ThingType.color:
         return AppImages.color;
       case ThingType.vietnameseFood:
-        return AppImages.vietnameseFood;
+        return AppImages.vietnamesefood;
       case ThingType.animal:
         return AppImages.animal;
       case ThingType.vehicle:

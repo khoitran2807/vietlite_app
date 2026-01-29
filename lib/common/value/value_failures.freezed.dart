@@ -12,8 +12,7 @@ part of 'value_failures.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$ValueFailure<T> {
@@ -23,39 +22,45 @@ mixin _$ValueFailure<T> {
     required TResult Function(T failedValue) empty,
     required TResult Function(T failedValue) invalidEmail,
     required TResult Function(T failedValue) invalidPassword,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(T failedValue)? empty,
     TResult? Function(T failedValue)? invalidEmail,
     TResult? Function(T failedValue)? invalidPassword,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(T failedValue)? empty,
     TResult Function(T failedValue)? invalidEmail,
     TResult Function(T failedValue)? invalidPassword,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(Empty<T> value) empty,
     required TResult Function(InvalidEmail<T> value) invalidEmail,
     required TResult Function(InvalidPassword<T> value) invalidPassword,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(Empty<T> value)? empty,
     TResult? Function(InvalidEmail<T> value)? invalidEmail,
     TResult? Function(InvalidPassword<T> value)? invalidPassword,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Empty<T> value)? empty,
     TResult Function(InvalidEmail<T> value)? invalidEmail,
     TResult Function(InvalidPassword<T> value)? invalidPassword,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 
   /// Create a copy of ValueFailure
   /// with the given fields replaced by the non-null parameter values.
@@ -67,9 +72,8 @@ mixin _$ValueFailure<T> {
 /// @nodoc
 abstract class $ValueFailureCopyWith<T, $Res> {
   factory $ValueFailureCopyWith(
-    ValueFailure<T> value,
-    $Res Function(ValueFailure<T>) then,
-  ) = _$ValueFailureCopyWithImpl<T, $Res, ValueFailure<T>>;
+          ValueFailure<T> value, $Res Function(ValueFailure<T>) then) =
+      _$ValueFailureCopyWithImpl<T, $Res, ValueFailure<T>>;
   @useResult
   $Res call({T failedValue});
 }
@@ -88,17 +92,15 @@ class _$ValueFailureCopyWithImpl<T, $Res, $Val extends ValueFailure<T>>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? failedValue = freezed}) {
-    return _then(
-      _value.copyWith(
-            failedValue:
-                freezed == failedValue
-                    ? _value.failedValue
-                    : failedValue // ignore: cast_nullable_to_non_nullable
-                        as T,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? failedValue = freezed,
+  }) {
+    return _then(_value.copyWith(
+      failedValue: freezed == failedValue
+          ? _value.failedValue
+          : failedValue // ignore: cast_nullable_to_non_nullable
+              as T,
+    ) as $Val);
   }
 }
 
@@ -106,9 +108,8 @@ class _$ValueFailureCopyWithImpl<T, $Res, $Val extends ValueFailure<T>>
 abstract class _$$EmptyImplCopyWith<T, $Res>
     implements $ValueFailureCopyWith<T, $Res> {
   factory _$$EmptyImplCopyWith(
-    _$EmptyImpl<T> value,
-    $Res Function(_$EmptyImpl<T>) then,
-  ) = __$$EmptyImplCopyWithImpl<T, $Res>;
+          _$EmptyImpl<T> value, $Res Function(_$EmptyImpl<T>) then) =
+      __$$EmptyImplCopyWithImpl<T, $Res>;
   @override
   @useResult
   $Res call({T failedValue});
@@ -119,24 +120,22 @@ class __$$EmptyImplCopyWithImpl<T, $Res>
     extends _$ValueFailureCopyWithImpl<T, $Res, _$EmptyImpl<T>>
     implements _$$EmptyImplCopyWith<T, $Res> {
   __$$EmptyImplCopyWithImpl(
-    _$EmptyImpl<T> _value,
-    $Res Function(_$EmptyImpl<T>) _then,
-  ) : super(_value, _then);
+      _$EmptyImpl<T> _value, $Res Function(_$EmptyImpl<T>) _then)
+      : super(_value, _then);
 
   /// Create a copy of ValueFailure
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? failedValue = freezed}) {
-    return _then(
-      _$EmptyImpl<T>(
-        failedValue:
-            freezed == failedValue
-                ? _value.failedValue
-                : failedValue // ignore: cast_nullable_to_non_nullable
-                    as T,
-      ),
-    );
+  $Res call({
+    Object? failedValue = freezed,
+  }) {
+    return _then(_$EmptyImpl<T>(
+      failedValue: freezed == failedValue
+          ? _value.failedValue
+          : failedValue // ignore: cast_nullable_to_non_nullable
+              as T,
+    ));
   }
 }
 
@@ -158,17 +157,13 @@ class _$EmptyImpl<T> implements Empty<T> {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$EmptyImpl<T> &&
-            const DeepCollectionEquality().equals(
-              other.failedValue,
-              failedValue,
-            ));
+            const DeepCollectionEquality()
+                .equals(other.failedValue, failedValue));
   }
 
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    const DeepCollectionEquality().hash(failedValue),
-  );
+      runtimeType, const DeepCollectionEquality().hash(failedValue));
 
   /// Create a copy of ValueFailure
   /// with the given fields replaced by the non-null parameter values.
@@ -264,10 +259,9 @@ abstract class Empty<T> implements ValueFailure<T> {
 /// @nodoc
 abstract class _$$InvalidEmailImplCopyWith<T, $Res>
     implements $ValueFailureCopyWith<T, $Res> {
-  factory _$$InvalidEmailImplCopyWith(
-    _$InvalidEmailImpl<T> value,
-    $Res Function(_$InvalidEmailImpl<T>) then,
-  ) = __$$InvalidEmailImplCopyWithImpl<T, $Res>;
+  factory _$$InvalidEmailImplCopyWith(_$InvalidEmailImpl<T> value,
+          $Res Function(_$InvalidEmailImpl<T>) then) =
+      __$$InvalidEmailImplCopyWithImpl<T, $Res>;
   @override
   @useResult
   $Res call({T failedValue});
@@ -278,24 +272,22 @@ class __$$InvalidEmailImplCopyWithImpl<T, $Res>
     extends _$ValueFailureCopyWithImpl<T, $Res, _$InvalidEmailImpl<T>>
     implements _$$InvalidEmailImplCopyWith<T, $Res> {
   __$$InvalidEmailImplCopyWithImpl(
-    _$InvalidEmailImpl<T> _value,
-    $Res Function(_$InvalidEmailImpl<T>) _then,
-  ) : super(_value, _then);
+      _$InvalidEmailImpl<T> _value, $Res Function(_$InvalidEmailImpl<T>) _then)
+      : super(_value, _then);
 
   /// Create a copy of ValueFailure
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? failedValue = freezed}) {
-    return _then(
-      _$InvalidEmailImpl<T>(
-        failedValue:
-            freezed == failedValue
-                ? _value.failedValue
-                : failedValue // ignore: cast_nullable_to_non_nullable
-                    as T,
-      ),
-    );
+  $Res call({
+    Object? failedValue = freezed,
+  }) {
+    return _then(_$InvalidEmailImpl<T>(
+      failedValue: freezed == failedValue
+          ? _value.failedValue
+          : failedValue // ignore: cast_nullable_to_non_nullable
+              as T,
+    ));
   }
 }
 
@@ -317,17 +309,13 @@ class _$InvalidEmailImpl<T> implements InvalidEmail<T> {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$InvalidEmailImpl<T> &&
-            const DeepCollectionEquality().equals(
-              other.failedValue,
-              failedValue,
-            ));
+            const DeepCollectionEquality()
+                .equals(other.failedValue, failedValue));
   }
 
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    const DeepCollectionEquality().hash(failedValue),
-  );
+      runtimeType, const DeepCollectionEquality().hash(failedValue));
 
   /// Create a copy of ValueFailure
   /// with the given fields replaced by the non-null parameter values.
@@ -336,9 +324,7 @@ class _$InvalidEmailImpl<T> implements InvalidEmail<T> {
   @pragma('vm:prefer-inline')
   _$$InvalidEmailImplCopyWith<T, _$InvalidEmailImpl<T>> get copyWith =>
       __$$InvalidEmailImplCopyWithImpl<T, _$InvalidEmailImpl<T>>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -427,10 +413,9 @@ abstract class InvalidEmail<T> implements ValueFailure<T> {
 /// @nodoc
 abstract class _$$InvalidPasswordImplCopyWith<T, $Res>
     implements $ValueFailureCopyWith<T, $Res> {
-  factory _$$InvalidPasswordImplCopyWith(
-    _$InvalidPasswordImpl<T> value,
-    $Res Function(_$InvalidPasswordImpl<T>) then,
-  ) = __$$InvalidPasswordImplCopyWithImpl<T, $Res>;
+  factory _$$InvalidPasswordImplCopyWith(_$InvalidPasswordImpl<T> value,
+          $Res Function(_$InvalidPasswordImpl<T>) then) =
+      __$$InvalidPasswordImplCopyWithImpl<T, $Res>;
   @override
   @useResult
   $Res call({T failedValue});
@@ -440,25 +425,23 @@ abstract class _$$InvalidPasswordImplCopyWith<T, $Res>
 class __$$InvalidPasswordImplCopyWithImpl<T, $Res>
     extends _$ValueFailureCopyWithImpl<T, $Res, _$InvalidPasswordImpl<T>>
     implements _$$InvalidPasswordImplCopyWith<T, $Res> {
-  __$$InvalidPasswordImplCopyWithImpl(
-    _$InvalidPasswordImpl<T> _value,
-    $Res Function(_$InvalidPasswordImpl<T>) _then,
-  ) : super(_value, _then);
+  __$$InvalidPasswordImplCopyWithImpl(_$InvalidPasswordImpl<T> _value,
+      $Res Function(_$InvalidPasswordImpl<T>) _then)
+      : super(_value, _then);
 
   /// Create a copy of ValueFailure
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? failedValue = freezed}) {
-    return _then(
-      _$InvalidPasswordImpl<T>(
-        failedValue:
-            freezed == failedValue
-                ? _value.failedValue
-                : failedValue // ignore: cast_nullable_to_non_nullable
-                    as T,
-      ),
-    );
+  $Res call({
+    Object? failedValue = freezed,
+  }) {
+    return _then(_$InvalidPasswordImpl<T>(
+      failedValue: freezed == failedValue
+          ? _value.failedValue
+          : failedValue // ignore: cast_nullable_to_non_nullable
+              as T,
+    ));
   }
 }
 
@@ -480,17 +463,13 @@ class _$InvalidPasswordImpl<T> implements InvalidPassword<T> {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$InvalidPasswordImpl<T> &&
-            const DeepCollectionEquality().equals(
-              other.failedValue,
-              failedValue,
-            ));
+            const DeepCollectionEquality()
+                .equals(other.failedValue, failedValue));
   }
 
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    const DeepCollectionEquality().hash(failedValue),
-  );
+      runtimeType, const DeepCollectionEquality().hash(failedValue));
 
   /// Create a copy of ValueFailure
   /// with the given fields replaced by the non-null parameter values.
@@ -499,9 +478,7 @@ class _$InvalidPasswordImpl<T> implements InvalidPassword<T> {
   @pragma('vm:prefer-inline')
   _$$InvalidPasswordImplCopyWith<T, _$InvalidPasswordImpl<T>> get copyWith =>
       __$$InvalidPasswordImplCopyWithImpl<T, _$InvalidPasswordImpl<T>>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   @optionalTypeArgs

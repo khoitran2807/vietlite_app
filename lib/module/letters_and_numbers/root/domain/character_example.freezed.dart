@@ -12,8 +12,7 @@ part of 'character_example.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$CharacterExample {
@@ -31,9 +30,8 @@ mixin _$CharacterExample {
 /// @nodoc
 abstract class $CharacterExampleCopyWith<$Res> {
   factory $CharacterExampleCopyWith(
-    CharacterExample value,
-    $Res Function(CharacterExample) then,
-  ) = _$CharacterExampleCopyWithImpl<$Res, CharacterExample>;
+          CharacterExample value, $Res Function(CharacterExample) then) =
+      _$CharacterExampleCopyWithImpl<$Res, CharacterExample>;
   @useResult
   $Res call({String title, String image, String audio});
 }
@@ -57,36 +55,29 @@ class _$CharacterExampleCopyWithImpl<$Res, $Val extends CharacterExample>
     Object? image = null,
     Object? audio = null,
   }) {
-    return _then(
-      _value.copyWith(
-            title:
-                null == title
-                    ? _value.title
-                    : title // ignore: cast_nullable_to_non_nullable
-                        as String,
-            image:
-                null == image
-                    ? _value.image
-                    : image // ignore: cast_nullable_to_non_nullable
-                        as String,
-            audio:
-                null == audio
-                    ? _value.audio
-                    : audio // ignore: cast_nullable_to_non_nullable
-                        as String,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      image: null == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String,
+      audio: null == audio
+          ? _value.audio
+          : audio // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$CharacterExampleImplCopyWith<$Res>
     implements $CharacterExampleCopyWith<$Res> {
-  factory _$$CharacterExampleImplCopyWith(
-    _$CharacterExampleImpl value,
-    $Res Function(_$CharacterExampleImpl) then,
-  ) = __$$CharacterExampleImplCopyWithImpl<$Res>;
+  factory _$$CharacterExampleImplCopyWith(_$CharacterExampleImpl value,
+          $Res Function(_$CharacterExampleImpl) then) =
+      __$$CharacterExampleImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String title, String image, String audio});
@@ -96,10 +87,9 @@ abstract class _$$CharacterExampleImplCopyWith<$Res>
 class __$$CharacterExampleImplCopyWithImpl<$Res>
     extends _$CharacterExampleCopyWithImpl<$Res, _$CharacterExampleImpl>
     implements _$$CharacterExampleImplCopyWith<$Res> {
-  __$$CharacterExampleImplCopyWithImpl(
-    _$CharacterExampleImpl _value,
-    $Res Function(_$CharacterExampleImpl) _then,
-  ) : super(_value, _then);
+  __$$CharacterExampleImplCopyWithImpl(_$CharacterExampleImpl _value,
+      $Res Function(_$CharacterExampleImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of CharacterExample
   /// with the given fields replaced by the non-null parameter values.
@@ -110,36 +100,29 @@ class __$$CharacterExampleImplCopyWithImpl<$Res>
     Object? image = null,
     Object? audio = null,
   }) {
-    return _then(
-      _$CharacterExampleImpl(
-        title:
-            null == title
-                ? _value.title
-                : title // ignore: cast_nullable_to_non_nullable
-                    as String,
-        image:
-            null == image
-                ? _value.image
-                : image // ignore: cast_nullable_to_non_nullable
-                    as String,
-        audio:
-            null == audio
-                ? _value.audio
-                : audio // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+    return _then(_$CharacterExampleImpl(
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      image: null == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String,
+      audio: null == audio
+          ? _value.audio
+          : audio // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$CharacterExampleImpl extends _CharacterExample {
-  const _$CharacterExampleImpl({
-    required this.title,
-    required this.image,
-    required this.audio,
-  }) : super._();
+  const _$CharacterExampleImpl(
+      {required this.title, required this.image, required this.audio})
+      : super._();
 
   @override
   final String title;
@@ -173,17 +156,14 @@ class _$CharacterExampleImpl extends _CharacterExample {
   @pragma('vm:prefer-inline')
   _$$CharacterExampleImplCopyWith<_$CharacterExampleImpl> get copyWith =>
       __$$CharacterExampleImplCopyWithImpl<_$CharacterExampleImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 }
 
 abstract class _CharacterExample extends CharacterExample {
-  const factory _CharacterExample({
-    required final String title,
-    required final String image,
-    required final String audio,
-  }) = _$CharacterExampleImpl;
+  const factory _CharacterExample(
+      {required final String title,
+      required final String image,
+      required final String audio}) = _$CharacterExampleImpl;
   const _CharacterExample._() : super._();
 
   @override

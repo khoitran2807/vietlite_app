@@ -12,8 +12,7 @@ part of 'number_detail_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$NumberDetailEvent {
@@ -22,40 +21,46 @@ mixin _$NumberDetailEvent {
   TResult when<TResult extends Object?>({
     required TResult Function(String id, String userId) getNumberDetail,
     required TResult Function(String userId, String progressId)
-    updateNumberDetailProgress,
-  }) => throw _privateConstructorUsedError;
+        updateNumberDetailProgress,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String id, String userId)? getNumberDetail,
     TResult? Function(String userId, String progressId)?
-    updateNumberDetailProgress,
-  }) => throw _privateConstructorUsedError;
+        updateNumberDetailProgress,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String id, String userId)? getNumberDetail,
     TResult Function(String userId, String progressId)?
-    updateNumberDetailProgress,
+        updateNumberDetailProgress,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_GetNumberDetail value) getNumberDetail,
     required TResult Function(_UpdateNumberDetailProgress value)
-    updateNumberDetailProgress,
-  }) => throw _privateConstructorUsedError;
+        updateNumberDetailProgress,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_GetNumberDetail value)? getNumberDetail,
     TResult? Function(_UpdateNumberDetailProgress value)?
-    updateNumberDetailProgress,
-  }) => throw _privateConstructorUsedError;
+        updateNumberDetailProgress,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_GetNumberDetail value)? getNumberDetail,
     TResult Function(_UpdateNumberDetailProgress value)?
-    updateNumberDetailProgress,
+        updateNumberDetailProgress,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 
   /// Create a copy of NumberDetailEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -67,9 +72,8 @@ mixin _$NumberDetailEvent {
 /// @nodoc
 abstract class $NumberDetailEventCopyWith<$Res> {
   factory $NumberDetailEventCopyWith(
-    NumberDetailEvent value,
-    $Res Function(NumberDetailEvent) then,
-  ) = _$NumberDetailEventCopyWithImpl<$Res, NumberDetailEvent>;
+          NumberDetailEvent value, $Res Function(NumberDetailEvent) then) =
+      _$NumberDetailEventCopyWithImpl<$Res, NumberDetailEvent>;
   @useResult
   $Res call({String userId});
 }
@@ -88,27 +92,24 @@ class _$NumberDetailEventCopyWithImpl<$Res, $Val extends NumberDetailEvent>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? userId = null}) {
-    return _then(
-      _value.copyWith(
-            userId:
-                null == userId
-                    ? _value.userId
-                    : userId // ignore: cast_nullable_to_non_nullable
-                        as String,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? userId = null,
+  }) {
+    return _then(_value.copyWith(
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$GetNumberDetailImplCopyWith<$Res>
     implements $NumberDetailEventCopyWith<$Res> {
-  factory _$$GetNumberDetailImplCopyWith(
-    _$GetNumberDetailImpl value,
-    $Res Function(_$GetNumberDetailImpl) then,
-  ) = __$$GetNumberDetailImplCopyWithImpl<$Res>;
+  factory _$$GetNumberDetailImplCopyWith(_$GetNumberDetailImpl value,
+          $Res Function(_$GetNumberDetailImpl) then) =
+      __$$GetNumberDetailImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String id, String userId});
@@ -119,29 +120,27 @@ class __$$GetNumberDetailImplCopyWithImpl<$Res>
     extends _$NumberDetailEventCopyWithImpl<$Res, _$GetNumberDetailImpl>
     implements _$$GetNumberDetailImplCopyWith<$Res> {
   __$$GetNumberDetailImplCopyWithImpl(
-    _$GetNumberDetailImpl _value,
-    $Res Function(_$GetNumberDetailImpl) _then,
-  ) : super(_value, _then);
+      _$GetNumberDetailImpl _value, $Res Function(_$GetNumberDetailImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of NumberDetailEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? id = null, Object? userId = null}) {
-    return _then(
-      _$GetNumberDetailImpl(
-        id:
-            null == id
-                ? _value.id
-                : id // ignore: cast_nullable_to_non_nullable
-                    as String,
-        userId:
-            null == userId
-                ? _value.userId
-                : userId // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+  $Res call({
+    Object? id = null,
+    Object? userId = null,
+  }) {
+    return _then(_$GetNumberDetailImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
@@ -179,16 +178,14 @@ class _$GetNumberDetailImpl implements _GetNumberDetail {
   @pragma('vm:prefer-inline')
   _$$GetNumberDetailImplCopyWith<_$GetNumberDetailImpl> get copyWith =>
       __$$GetNumberDetailImplCopyWithImpl<_$GetNumberDetailImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String id, String userId) getNumberDetail,
     required TResult Function(String userId, String progressId)
-    updateNumberDetailProgress,
+        updateNumberDetailProgress,
   }) {
     return getNumberDetail(id, userId);
   }
@@ -198,7 +195,7 @@ class _$GetNumberDetailImpl implements _GetNumberDetail {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String id, String userId)? getNumberDetail,
     TResult? Function(String userId, String progressId)?
-    updateNumberDetailProgress,
+        updateNumberDetailProgress,
   }) {
     return getNumberDetail?.call(id, userId);
   }
@@ -208,7 +205,7 @@ class _$GetNumberDetailImpl implements _GetNumberDetail {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String id, String userId)? getNumberDetail,
     TResult Function(String userId, String progressId)?
-    updateNumberDetailProgress,
+        updateNumberDetailProgress,
     required TResult orElse(),
   }) {
     if (getNumberDetail != null) {
@@ -222,7 +219,7 @@ class _$GetNumberDetailImpl implements _GetNumberDetail {
   TResult map<TResult extends Object?>({
     required TResult Function(_GetNumberDetail value) getNumberDetail,
     required TResult Function(_UpdateNumberDetailProgress value)
-    updateNumberDetailProgress,
+        updateNumberDetailProgress,
   }) {
     return getNumberDetail(this);
   }
@@ -232,7 +229,7 @@ class _$GetNumberDetailImpl implements _GetNumberDetail {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_GetNumberDetail value)? getNumberDetail,
     TResult? Function(_UpdateNumberDetailProgress value)?
-    updateNumberDetailProgress,
+        updateNumberDetailProgress,
   }) {
     return getNumberDetail?.call(this);
   }
@@ -242,7 +239,7 @@ class _$GetNumberDetailImpl implements _GetNumberDetail {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_GetNumberDetail value)? getNumberDetail,
     TResult Function(_UpdateNumberDetailProgress value)?
-    updateNumberDetailProgress,
+        updateNumberDetailProgress,
     required TResult orElse(),
   }) {
     if (getNumberDetail != null) {
@@ -253,10 +250,9 @@ class _$GetNumberDetailImpl implements _GetNumberDetail {
 }
 
 abstract class _GetNumberDetail implements NumberDetailEvent {
-  const factory _GetNumberDetail({
-    required final String id,
-    required final String userId,
-  }) = _$GetNumberDetailImpl;
+  const factory _GetNumberDetail(
+      {required final String id,
+      required final String userId}) = _$GetNumberDetailImpl;
 
   String get id;
   @override
@@ -274,9 +270,9 @@ abstract class _GetNumberDetail implements NumberDetailEvent {
 abstract class _$$UpdateNumberDetailProgressImplCopyWith<$Res>
     implements $NumberDetailEventCopyWith<$Res> {
   factory _$$UpdateNumberDetailProgressImplCopyWith(
-    _$UpdateNumberDetailProgressImpl value,
-    $Res Function(_$UpdateNumberDetailProgressImpl) then,
-  ) = __$$UpdateNumberDetailProgressImplCopyWithImpl<$Res>;
+          _$UpdateNumberDetailProgressImpl value,
+          $Res Function(_$UpdateNumberDetailProgressImpl) then) =
+      __$$UpdateNumberDetailProgressImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String userId, String progressId});
@@ -284,43 +280,40 @@ abstract class _$$UpdateNumberDetailProgressImplCopyWith<$Res>
 
 /// @nodoc
 class __$$UpdateNumberDetailProgressImplCopyWithImpl<$Res>
-    extends
-        _$NumberDetailEventCopyWithImpl<$Res, _$UpdateNumberDetailProgressImpl>
+    extends _$NumberDetailEventCopyWithImpl<$Res,
+        _$UpdateNumberDetailProgressImpl>
     implements _$$UpdateNumberDetailProgressImplCopyWith<$Res> {
   __$$UpdateNumberDetailProgressImplCopyWithImpl(
-    _$UpdateNumberDetailProgressImpl _value,
-    $Res Function(_$UpdateNumberDetailProgressImpl) _then,
-  ) : super(_value, _then);
+      _$UpdateNumberDetailProgressImpl _value,
+      $Res Function(_$UpdateNumberDetailProgressImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of NumberDetailEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? userId = null, Object? progressId = null}) {
-    return _then(
-      _$UpdateNumberDetailProgressImpl(
-        userId:
-            null == userId
-                ? _value.userId
-                : userId // ignore: cast_nullable_to_non_nullable
-                    as String,
-        progressId:
-            null == progressId
-                ? _value.progressId
-                : progressId // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+  $Res call({
+    Object? userId = null,
+    Object? progressId = null,
+  }) {
+    return _then(_$UpdateNumberDetailProgressImpl(
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+      progressId: null == progressId
+          ? _value.progressId
+          : progressId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$UpdateNumberDetailProgressImpl implements _UpdateNumberDetailProgress {
-  const _$UpdateNumberDetailProgressImpl({
-    required this.userId,
-    required this.progressId,
-  });
+  const _$UpdateNumberDetailProgressImpl(
+      {required this.userId, required this.progressId});
 
   @override
   final String userId;
@@ -351,16 +344,15 @@ class _$UpdateNumberDetailProgressImpl implements _UpdateNumberDetailProgress {
   @override
   @pragma('vm:prefer-inline')
   _$$UpdateNumberDetailProgressImplCopyWith<_$UpdateNumberDetailProgressImpl>
-  get copyWith => __$$UpdateNumberDetailProgressImplCopyWithImpl<
-    _$UpdateNumberDetailProgressImpl
-  >(this, _$identity);
+      get copyWith => __$$UpdateNumberDetailProgressImplCopyWithImpl<
+          _$UpdateNumberDetailProgressImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String id, String userId) getNumberDetail,
     required TResult Function(String userId, String progressId)
-    updateNumberDetailProgress,
+        updateNumberDetailProgress,
   }) {
     return updateNumberDetailProgress(userId, progressId);
   }
@@ -370,7 +362,7 @@ class _$UpdateNumberDetailProgressImpl implements _UpdateNumberDetailProgress {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String id, String userId)? getNumberDetail,
     TResult? Function(String userId, String progressId)?
-    updateNumberDetailProgress,
+        updateNumberDetailProgress,
   }) {
     return updateNumberDetailProgress?.call(userId, progressId);
   }
@@ -380,7 +372,7 @@ class _$UpdateNumberDetailProgressImpl implements _UpdateNumberDetailProgress {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String id, String userId)? getNumberDetail,
     TResult Function(String userId, String progressId)?
-    updateNumberDetailProgress,
+        updateNumberDetailProgress,
     required TResult orElse(),
   }) {
     if (updateNumberDetailProgress != null) {
@@ -394,7 +386,7 @@ class _$UpdateNumberDetailProgressImpl implements _UpdateNumberDetailProgress {
   TResult map<TResult extends Object?>({
     required TResult Function(_GetNumberDetail value) getNumberDetail,
     required TResult Function(_UpdateNumberDetailProgress value)
-    updateNumberDetailProgress,
+        updateNumberDetailProgress,
   }) {
     return updateNumberDetailProgress(this);
   }
@@ -404,7 +396,7 @@ class _$UpdateNumberDetailProgressImpl implements _UpdateNumberDetailProgress {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_GetNumberDetail value)? getNumberDetail,
     TResult? Function(_UpdateNumberDetailProgress value)?
-    updateNumberDetailProgress,
+        updateNumberDetailProgress,
   }) {
     return updateNumberDetailProgress?.call(this);
   }
@@ -414,7 +406,7 @@ class _$UpdateNumberDetailProgressImpl implements _UpdateNumberDetailProgress {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_GetNumberDetail value)? getNumberDetail,
     TResult Function(_UpdateNumberDetailProgress value)?
-    updateNumberDetailProgress,
+        updateNumberDetailProgress,
     required TResult orElse(),
   }) {
     if (updateNumberDetailProgress != null) {
@@ -425,10 +417,9 @@ class _$UpdateNumberDetailProgressImpl implements _UpdateNumberDetailProgress {
 }
 
 abstract class _UpdateNumberDetailProgress implements NumberDetailEvent {
-  const factory _UpdateNumberDetailProgress({
-    required final String userId,
-    required final String progressId,
-  }) = _$UpdateNumberDetailProgressImpl;
+  const factory _UpdateNumberDetailProgress(
+      {required final String userId,
+      required final String progressId}) = _$UpdateNumberDetailProgressImpl;
 
   @override
   String get userId;
@@ -439,7 +430,7 @@ abstract class _UpdateNumberDetailProgress implements NumberDetailEvent {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$UpdateNumberDetailProgressImplCopyWith<_$UpdateNumberDetailProgressImpl>
-  get copyWith => throw _privateConstructorUsedError;
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -461,16 +452,14 @@ mixin _$NumberDetailState {
 /// @nodoc
 abstract class $NumberDetailStateCopyWith<$Res> {
   factory $NumberDetailStateCopyWith(
-    NumberDetailState value,
-    $Res Function(NumberDetailState) then,
-  ) = _$NumberDetailStateCopyWithImpl<$Res, NumberDetailState>;
+          NumberDetailState value, $Res Function(NumberDetailState) then) =
+      _$NumberDetailStateCopyWithImpl<$Res, NumberDetailState>;
   @useResult
-  $Res call({
-    bool isLoading,
-    Number number,
-    Option<Either<AppFailure, Number>> failureOrSuccessOption,
-    Option<Either<AppFailure, Unit>> fetchNumberDetailProgress,
-  });
+  $Res call(
+      {bool isLoading,
+      Number number,
+      Option<Either<AppFailure, Number>> failureOrSuccessOption,
+      Option<Either<AppFailure, Unit>> fetchNumberDetailProgress});
 
   $NumberCopyWith<$Res> get number;
 }
@@ -495,31 +484,24 @@ class _$NumberDetailStateCopyWithImpl<$Res, $Val extends NumberDetailState>
     Object? failureOrSuccessOption = null,
     Object? fetchNumberDetailProgress = null,
   }) {
-    return _then(
-      _value.copyWith(
-            isLoading:
-                null == isLoading
-                    ? _value.isLoading
-                    : isLoading // ignore: cast_nullable_to_non_nullable
-                        as bool,
-            number:
-                null == number
-                    ? _value.number
-                    : number // ignore: cast_nullable_to_non_nullable
-                        as Number,
-            failureOrSuccessOption:
-                null == failureOrSuccessOption
-                    ? _value.failureOrSuccessOption
-                    : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
-                        as Option<Either<AppFailure, Number>>,
-            fetchNumberDetailProgress:
-                null == fetchNumberDetailProgress
-                    ? _value.fetchNumberDetailProgress
-                    : fetchNumberDetailProgress // ignore: cast_nullable_to_non_nullable
-                        as Option<Either<AppFailure, Unit>>,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      number: null == number
+          ? _value.number
+          : number // ignore: cast_nullable_to_non_nullable
+              as Number,
+      failureOrSuccessOption: null == failureOrSuccessOption
+          ? _value.failureOrSuccessOption
+          : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, Number>>,
+      fetchNumberDetailProgress: null == fetchNumberDetailProgress
+          ? _value.fetchNumberDetailProgress
+          : fetchNumberDetailProgress // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, Unit>>,
+    ) as $Val);
   }
 
   /// Create a copy of NumberDetailState
@@ -536,18 +518,16 @@ class _$NumberDetailStateCopyWithImpl<$Res, $Val extends NumberDetailState>
 /// @nodoc
 abstract class _$$NumberDetailStateImplCopyWith<$Res>
     implements $NumberDetailStateCopyWith<$Res> {
-  factory _$$NumberDetailStateImplCopyWith(
-    _$NumberDetailStateImpl value,
-    $Res Function(_$NumberDetailStateImpl) then,
-  ) = __$$NumberDetailStateImplCopyWithImpl<$Res>;
+  factory _$$NumberDetailStateImplCopyWith(_$NumberDetailStateImpl value,
+          $Res Function(_$NumberDetailStateImpl) then) =
+      __$$NumberDetailStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    bool isLoading,
-    Number number,
-    Option<Either<AppFailure, Number>> failureOrSuccessOption,
-    Option<Either<AppFailure, Unit>> fetchNumberDetailProgress,
-  });
+  $Res call(
+      {bool isLoading,
+      Number number,
+      Option<Either<AppFailure, Number>> failureOrSuccessOption,
+      Option<Either<AppFailure, Unit>> fetchNumberDetailProgress});
 
   @override
   $NumberCopyWith<$Res> get number;
@@ -557,10 +537,9 @@ abstract class _$$NumberDetailStateImplCopyWith<$Res>
 class __$$NumberDetailStateImplCopyWithImpl<$Res>
     extends _$NumberDetailStateCopyWithImpl<$Res, _$NumberDetailStateImpl>
     implements _$$NumberDetailStateImplCopyWith<$Res> {
-  __$$NumberDetailStateImplCopyWithImpl(
-    _$NumberDetailStateImpl _value,
-    $Res Function(_$NumberDetailStateImpl) _then,
-  ) : super(_value, _then);
+  __$$NumberDetailStateImplCopyWithImpl(_$NumberDetailStateImpl _value,
+      $Res Function(_$NumberDetailStateImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of NumberDetailState
   /// with the given fields replaced by the non-null parameter values.
@@ -572,42 +551,35 @@ class __$$NumberDetailStateImplCopyWithImpl<$Res>
     Object? failureOrSuccessOption = null,
     Object? fetchNumberDetailProgress = null,
   }) {
-    return _then(
-      _$NumberDetailStateImpl(
-        isLoading:
-            null == isLoading
-                ? _value.isLoading
-                : isLoading // ignore: cast_nullable_to_non_nullable
-                    as bool,
-        number:
-            null == number
-                ? _value.number
-                : number // ignore: cast_nullable_to_non_nullable
-                    as Number,
-        failureOrSuccessOption:
-            null == failureOrSuccessOption
-                ? _value.failureOrSuccessOption
-                : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
-                    as Option<Either<AppFailure, Number>>,
-        fetchNumberDetailProgress:
-            null == fetchNumberDetailProgress
-                ? _value.fetchNumberDetailProgress
-                : fetchNumberDetailProgress // ignore: cast_nullable_to_non_nullable
-                    as Option<Either<AppFailure, Unit>>,
-      ),
-    );
+    return _then(_$NumberDetailStateImpl(
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      number: null == number
+          ? _value.number
+          : number // ignore: cast_nullable_to_non_nullable
+              as Number,
+      failureOrSuccessOption: null == failureOrSuccessOption
+          ? _value.failureOrSuccessOption
+          : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, Number>>,
+      fetchNumberDetailProgress: null == fetchNumberDetailProgress
+          ? _value.fetchNumberDetailProgress
+          : fetchNumberDetailProgress // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, Unit>>,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$NumberDetailStateImpl implements _NumberDetailState {
-  const _$NumberDetailStateImpl({
-    required this.isLoading,
-    required this.number,
-    required this.failureOrSuccessOption,
-    required this.fetchNumberDetailProgress,
-  });
+  const _$NumberDetailStateImpl(
+      {required this.isLoading,
+      required this.number,
+      required this.failureOrSuccessOption,
+      required this.fetchNumberDetailProgress});
 
   @override
   final bool isLoading;
@@ -633,21 +605,14 @@ class _$NumberDetailStateImpl implements _NumberDetailState {
             (identical(other.number, number) || other.number == number) &&
             (identical(other.failureOrSuccessOption, failureOrSuccessOption) ||
                 other.failureOrSuccessOption == failureOrSuccessOption) &&
-            (identical(
-                  other.fetchNumberDetailProgress,
-                  fetchNumberDetailProgress,
-                ) ||
+            (identical(other.fetchNumberDetailProgress,
+                    fetchNumberDetailProgress) ||
                 other.fetchNumberDetailProgress == fetchNumberDetailProgress));
   }
 
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    isLoading,
-    number,
-    failureOrSuccessOption,
-    fetchNumberDetailProgress,
-  );
+  int get hashCode => Object.hash(runtimeType, isLoading, number,
+      failureOrSuccessOption, fetchNumberDetailProgress);
 
   /// Create a copy of NumberDetailState
   /// with the given fields replaced by the non-null parameter values.
@@ -656,18 +621,16 @@ class _$NumberDetailStateImpl implements _NumberDetailState {
   @pragma('vm:prefer-inline')
   _$$NumberDetailStateImplCopyWith<_$NumberDetailStateImpl> get copyWith =>
       __$$NumberDetailStateImplCopyWithImpl<_$NumberDetailStateImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 }
 
 abstract class _NumberDetailState implements NumberDetailState {
-  const factory _NumberDetailState({
-    required final bool isLoading,
-    required final Number number,
-    required final Option<Either<AppFailure, Number>> failureOrSuccessOption,
-    required final Option<Either<AppFailure, Unit>> fetchNumberDetailProgress,
-  }) = _$NumberDetailStateImpl;
+  const factory _NumberDetailState(
+      {required final bool isLoading,
+      required final Number number,
+      required final Option<Either<AppFailure, Number>> failureOrSuccessOption,
+      required final Option<Either<AppFailure, Unit>>
+          fetchNumberDetailProgress}) = _$NumberDetailStateImpl;
 
   @override
   bool get isLoading;

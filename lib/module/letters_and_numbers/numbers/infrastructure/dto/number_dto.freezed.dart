@@ -12,8 +12,7 @@ part of 'number_dto.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 NumberDto _$NumberDtoFromJson(Map<String, dynamic> json) {
   return _NumberDto.fromJson(json);
@@ -50,15 +49,14 @@ abstract class $NumberDtoCopyWith<$Res> {
   factory $NumberDtoCopyWith(NumberDto value, $Res Function(NumberDto) then) =
       _$NumberDtoCopyWithImpl<$Res, NumberDto>;
   @useResult
-  $Res call({
-    String id,
-    @JsonKey(defaultValue: '') String title,
-    @JsonKey(defaultValue: '') String textTitle,
-    @JsonKey(defaultValue: '') String audio,
-    @JsonKey(defaultValue: []) List<NumberExampleDto> examples,
-    @JsonKey(readValue: handleNullableMapKey) NumberSpellDto spell,
-    @JsonKey(readValue: handleNullableMapKey) NumberCountDto count,
-  });
+  $Res call(
+      {String id,
+      @JsonKey(defaultValue: '') String title,
+      @JsonKey(defaultValue: '') String textTitle,
+      @JsonKey(defaultValue: '') String audio,
+      @JsonKey(defaultValue: []) List<NumberExampleDto> examples,
+      @JsonKey(readValue: handleNullableMapKey) NumberSpellDto spell,
+      @JsonKey(readValue: handleNullableMapKey) NumberCountDto count});
 
   $NumberSpellDtoCopyWith<$Res> get spell;
   $NumberCountDtoCopyWith<$Res> get count;
@@ -87,46 +85,36 @@ class _$NumberDtoCopyWithImpl<$Res, $Val extends NumberDto>
     Object? spell = null,
     Object? count = null,
   }) {
-    return _then(
-      _value.copyWith(
-            id:
-                null == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as String,
-            title:
-                null == title
-                    ? _value.title
-                    : title // ignore: cast_nullable_to_non_nullable
-                        as String,
-            textTitle:
-                null == textTitle
-                    ? _value.textTitle
-                    : textTitle // ignore: cast_nullable_to_non_nullable
-                        as String,
-            audio:
-                null == audio
-                    ? _value.audio
-                    : audio // ignore: cast_nullable_to_non_nullable
-                        as String,
-            examples:
-                null == examples
-                    ? _value.examples
-                    : examples // ignore: cast_nullable_to_non_nullable
-                        as List<NumberExampleDto>,
-            spell:
-                null == spell
-                    ? _value.spell
-                    : spell // ignore: cast_nullable_to_non_nullable
-                        as NumberSpellDto,
-            count:
-                null == count
-                    ? _value.count
-                    : count // ignore: cast_nullable_to_non_nullable
-                        as NumberCountDto,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      textTitle: null == textTitle
+          ? _value.textTitle
+          : textTitle // ignore: cast_nullable_to_non_nullable
+              as String,
+      audio: null == audio
+          ? _value.audio
+          : audio // ignore: cast_nullable_to_non_nullable
+              as String,
+      examples: null == examples
+          ? _value.examples
+          : examples // ignore: cast_nullable_to_non_nullable
+              as List<NumberExampleDto>,
+      spell: null == spell
+          ? _value.spell
+          : spell // ignore: cast_nullable_to_non_nullable
+              as NumberSpellDto,
+      count: null == count
+          ? _value.count
+          : count // ignore: cast_nullable_to_non_nullable
+              as NumberCountDto,
+    ) as $Val);
   }
 
   /// Create a copy of NumberDto
@@ -154,20 +142,18 @@ class _$NumberDtoCopyWithImpl<$Res, $Val extends NumberDto>
 abstract class _$$NumberDtoImplCopyWith<$Res>
     implements $NumberDtoCopyWith<$Res> {
   factory _$$NumberDtoImplCopyWith(
-    _$NumberDtoImpl value,
-    $Res Function(_$NumberDtoImpl) then,
-  ) = __$$NumberDtoImplCopyWithImpl<$Res>;
+          _$NumberDtoImpl value, $Res Function(_$NumberDtoImpl) then) =
+      __$$NumberDtoImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String id,
-    @JsonKey(defaultValue: '') String title,
-    @JsonKey(defaultValue: '') String textTitle,
-    @JsonKey(defaultValue: '') String audio,
-    @JsonKey(defaultValue: []) List<NumberExampleDto> examples,
-    @JsonKey(readValue: handleNullableMapKey) NumberSpellDto spell,
-    @JsonKey(readValue: handleNullableMapKey) NumberCountDto count,
-  });
+  $Res call(
+      {String id,
+      @JsonKey(defaultValue: '') String title,
+      @JsonKey(defaultValue: '') String textTitle,
+      @JsonKey(defaultValue: '') String audio,
+      @JsonKey(defaultValue: []) List<NumberExampleDto> examples,
+      @JsonKey(readValue: handleNullableMapKey) NumberSpellDto spell,
+      @JsonKey(readValue: handleNullableMapKey) NumberCountDto count});
 
   @override
   $NumberSpellDtoCopyWith<$Res> get spell;
@@ -180,9 +166,8 @@ class __$$NumberDtoImplCopyWithImpl<$Res>
     extends _$NumberDtoCopyWithImpl<$Res, _$NumberDtoImpl>
     implements _$$NumberDtoImplCopyWith<$Res> {
   __$$NumberDtoImplCopyWithImpl(
-    _$NumberDtoImpl _value,
-    $Res Function(_$NumberDtoImpl) _then,
-  ) : super(_value, _then);
+      _$NumberDtoImpl _value, $Res Function(_$NumberDtoImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of NumberDto
   /// with the given fields replaced by the non-null parameter values.
@@ -197,61 +182,52 @@ class __$$NumberDtoImplCopyWithImpl<$Res>
     Object? spell = null,
     Object? count = null,
   }) {
-    return _then(
-      _$NumberDtoImpl(
-        id:
-            null == id
-                ? _value.id
-                : id // ignore: cast_nullable_to_non_nullable
-                    as String,
-        title:
-            null == title
-                ? _value.title
-                : title // ignore: cast_nullable_to_non_nullable
-                    as String,
-        textTitle:
-            null == textTitle
-                ? _value.textTitle
-                : textTitle // ignore: cast_nullable_to_non_nullable
-                    as String,
-        audio:
-            null == audio
-                ? _value.audio
-                : audio // ignore: cast_nullable_to_non_nullable
-                    as String,
-        examples:
-            null == examples
-                ? _value._examples
-                : examples // ignore: cast_nullable_to_non_nullable
-                    as List<NumberExampleDto>,
-        spell:
-            null == spell
-                ? _value.spell
-                : spell // ignore: cast_nullable_to_non_nullable
-                    as NumberSpellDto,
-        count:
-            null == count
-                ? _value.count
-                : count // ignore: cast_nullable_to_non_nullable
-                    as NumberCountDto,
-      ),
-    );
+    return _then(_$NumberDtoImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      textTitle: null == textTitle
+          ? _value.textTitle
+          : textTitle // ignore: cast_nullable_to_non_nullable
+              as String,
+      audio: null == audio
+          ? _value.audio
+          : audio // ignore: cast_nullable_to_non_nullable
+              as String,
+      examples: null == examples
+          ? _value._examples
+          : examples // ignore: cast_nullable_to_non_nullable
+              as List<NumberExampleDto>,
+      spell: null == spell
+          ? _value.spell
+          : spell // ignore: cast_nullable_to_non_nullable
+              as NumberSpellDto,
+      count: null == count
+          ? _value.count
+          : count // ignore: cast_nullable_to_non_nullable
+              as NumberCountDto,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$NumberDtoImpl extends _NumberDto {
-  const _$NumberDtoImpl({
-    required this.id,
-    @JsonKey(defaultValue: '') required this.title,
-    @JsonKey(defaultValue: '') required this.textTitle,
-    @JsonKey(defaultValue: '') required this.audio,
-    @JsonKey(defaultValue: []) required final List<NumberExampleDto> examples,
-    @JsonKey(readValue: handleNullableMapKey) required this.spell,
-    @JsonKey(readValue: handleNullableMapKey) required this.count,
-  }) : _examples = examples,
-       super._();
+  const _$NumberDtoImpl(
+      {required this.id,
+      @JsonKey(defaultValue: '') required this.title,
+      @JsonKey(defaultValue: '') required this.textTitle,
+      @JsonKey(defaultValue: '') required this.audio,
+      @JsonKey(defaultValue: []) required final List<NumberExampleDto> examples,
+      @JsonKey(readValue: handleNullableMapKey) required this.spell,
+      @JsonKey(readValue: handleNullableMapKey) required this.count})
+      : _examples = examples,
+        super._();
 
   factory _$NumberDtoImpl.fromJson(Map<String, dynamic> json) =>
       _$$NumberDtoImplFromJson(json);
@@ -305,16 +281,8 @@ class _$NumberDtoImpl extends _NumberDto {
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    id,
-    title,
-    textTitle,
-    audio,
-    const DeepCollectionEquality().hash(_examples),
-    spell,
-    count,
-  );
+  int get hashCode => Object.hash(runtimeType, id, title, textTitle, audio,
+      const DeepCollectionEquality().hash(_examples), spell, count);
 
   /// Create a copy of NumberDto
   /// with the given fields replaced by the non-null parameter values.
@@ -326,22 +294,23 @@ class _$NumberDtoImpl extends _NumberDto {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$NumberDtoImplToJson(this);
+    return _$$NumberDtoImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _NumberDto extends NumberDto {
-  const factory _NumberDto({
-    required final String id,
-    @JsonKey(defaultValue: '') required final String title,
-    @JsonKey(defaultValue: '') required final String textTitle,
-    @JsonKey(defaultValue: '') required final String audio,
-    @JsonKey(defaultValue: []) required final List<NumberExampleDto> examples,
-    @JsonKey(readValue: handleNullableMapKey)
-    required final NumberSpellDto spell,
-    @JsonKey(readValue: handleNullableMapKey)
-    required final NumberCountDto count,
-  }) = _$NumberDtoImpl;
+  const factory _NumberDto(
+      {required final String id,
+      @JsonKey(defaultValue: '') required final String title,
+      @JsonKey(defaultValue: '') required final String textTitle,
+      @JsonKey(defaultValue: '') required final String audio,
+      @JsonKey(defaultValue: []) required final List<NumberExampleDto> examples,
+      @JsonKey(readValue: handleNullableMapKey)
+      required final NumberSpellDto spell,
+      @JsonKey(readValue: handleNullableMapKey)
+      required final NumberCountDto count}) = _$NumberDtoImpl;
   const _NumberDto._() : super._();
 
   factory _NumberDto.fromJson(Map<String, dynamic> json) =
@@ -400,14 +369,12 @@ mixin _$NumberSpellDto {
 /// @nodoc
 abstract class $NumberSpellDtoCopyWith<$Res> {
   factory $NumberSpellDtoCopyWith(
-    NumberSpellDto value,
-    $Res Function(NumberSpellDto) then,
-  ) = _$NumberSpellDtoCopyWithImpl<$Res, NumberSpellDto>;
+          NumberSpellDto value, $Res Function(NumberSpellDto) then) =
+      _$NumberSpellDtoCopyWithImpl<$Res, NumberSpellDto>;
   @useResult
-  $Res call({
-    @JsonKey(defaultValue: '') String audio,
-    @JsonKey(defaultValue: <String>[]) List<String> details,
-  });
+  $Res call(
+      {@JsonKey(defaultValue: '') String audio,
+      @JsonKey(defaultValue: <String>[]) List<String> details});
 }
 
 /// @nodoc
@@ -424,38 +391,34 @@ class _$NumberSpellDtoCopyWithImpl<$Res, $Val extends NumberSpellDto>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? audio = null, Object? details = null}) {
-    return _then(
-      _value.copyWith(
-            audio:
-                null == audio
-                    ? _value.audio
-                    : audio // ignore: cast_nullable_to_non_nullable
-                        as String,
-            details:
-                null == details
-                    ? _value.details
-                    : details // ignore: cast_nullable_to_non_nullable
-                        as List<String>,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? audio = null,
+    Object? details = null,
+  }) {
+    return _then(_value.copyWith(
+      audio: null == audio
+          ? _value.audio
+          : audio // ignore: cast_nullable_to_non_nullable
+              as String,
+      details: null == details
+          ? _value.details
+          : details // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$NumberSpellDtoImplCopyWith<$Res>
     implements $NumberSpellDtoCopyWith<$Res> {
-  factory _$$NumberSpellDtoImplCopyWith(
-    _$NumberSpellDtoImpl value,
-    $Res Function(_$NumberSpellDtoImpl) then,
-  ) = __$$NumberSpellDtoImplCopyWithImpl<$Res>;
+  factory _$$NumberSpellDtoImplCopyWith(_$NumberSpellDtoImpl value,
+          $Res Function(_$NumberSpellDtoImpl) then) =
+      __$$NumberSpellDtoImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    @JsonKey(defaultValue: '') String audio,
-    @JsonKey(defaultValue: <String>[]) List<String> details,
-  });
+  $Res call(
+      {@JsonKey(defaultValue: '') String audio,
+      @JsonKey(defaultValue: <String>[]) List<String> details});
 }
 
 /// @nodoc
@@ -463,40 +426,38 @@ class __$$NumberSpellDtoImplCopyWithImpl<$Res>
     extends _$NumberSpellDtoCopyWithImpl<$Res, _$NumberSpellDtoImpl>
     implements _$$NumberSpellDtoImplCopyWith<$Res> {
   __$$NumberSpellDtoImplCopyWithImpl(
-    _$NumberSpellDtoImpl _value,
-    $Res Function(_$NumberSpellDtoImpl) _then,
-  ) : super(_value, _then);
+      _$NumberSpellDtoImpl _value, $Res Function(_$NumberSpellDtoImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of NumberSpellDto
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? audio = null, Object? details = null}) {
-    return _then(
-      _$NumberSpellDtoImpl(
-        audio:
-            null == audio
-                ? _value.audio
-                : audio // ignore: cast_nullable_to_non_nullable
-                    as String,
-        details:
-            null == details
-                ? _value._details
-                : details // ignore: cast_nullable_to_non_nullable
-                    as List<String>,
-      ),
-    );
+  $Res call({
+    Object? audio = null,
+    Object? details = null,
+  }) {
+    return _then(_$NumberSpellDtoImpl(
+      audio: null == audio
+          ? _value.audio
+          : audio // ignore: cast_nullable_to_non_nullable
+              as String,
+      details: null == details
+          ? _value._details
+          : details // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$NumberSpellDtoImpl extends _NumberSpellDto {
-  const _$NumberSpellDtoImpl({
-    @JsonKey(defaultValue: '') required this.audio,
-    @JsonKey(defaultValue: <String>[]) required final List<String> details,
-  }) : _details = details,
-       super._();
+  const _$NumberSpellDtoImpl(
+      {@JsonKey(defaultValue: '') required this.audio,
+      @JsonKey(defaultValue: <String>[]) required final List<String> details})
+      : _details = details,
+        super._();
 
   factory _$NumberSpellDtoImpl.fromJson(Map<String, dynamic> json) =>
       _$$NumberSpellDtoImplFromJson(json);
@@ -530,10 +491,7 @@ class _$NumberSpellDtoImpl extends _NumberSpellDto {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    audio,
-    const DeepCollectionEquality().hash(_details),
-  );
+      runtimeType, audio, const DeepCollectionEquality().hash(_details));
 
   /// Create a copy of NumberSpellDto
   /// with the given fields replaced by the non-null parameter values.
@@ -542,21 +500,21 @@ class _$NumberSpellDtoImpl extends _NumberSpellDto {
   @pragma('vm:prefer-inline')
   _$$NumberSpellDtoImplCopyWith<_$NumberSpellDtoImpl> get copyWith =>
       __$$NumberSpellDtoImplCopyWithImpl<_$NumberSpellDtoImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$NumberSpellDtoImplToJson(this);
+    return _$$NumberSpellDtoImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _NumberSpellDto extends NumberSpellDto {
-  const factory _NumberSpellDto({
-    @JsonKey(defaultValue: '') required final String audio,
-    @JsonKey(defaultValue: <String>[]) required final List<String> details,
-  }) = _$NumberSpellDtoImpl;
+  const factory _NumberSpellDto(
+      {@JsonKey(defaultValue: '') required final String audio,
+      @JsonKey(defaultValue: <String>[])
+      required final List<String> details}) = _$NumberSpellDtoImpl;
   const _NumberSpellDto._() : super._();
 
   factory _NumberSpellDto.fromJson(Map<String, dynamic> json) =
@@ -601,14 +559,12 @@ mixin _$NumberCountDto {
 /// @nodoc
 abstract class $NumberCountDtoCopyWith<$Res> {
   factory $NumberCountDtoCopyWith(
-    NumberCountDto value,
-    $Res Function(NumberCountDto) then,
-  ) = _$NumberCountDtoCopyWithImpl<$Res, NumberCountDto>;
+          NumberCountDto value, $Res Function(NumberCountDto) then) =
+      _$NumberCountDtoCopyWithImpl<$Res, NumberCountDto>;
   @useResult
-  $Res call({
-    @JsonKey(defaultValue: '') String noColor,
-    @JsonKey(defaultValue: '') String colored,
-  });
+  $Res call(
+      {@JsonKey(defaultValue: '') String noColor,
+      @JsonKey(defaultValue: '') String colored});
 }
 
 /// @nodoc
@@ -625,38 +581,34 @@ class _$NumberCountDtoCopyWithImpl<$Res, $Val extends NumberCountDto>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? noColor = null, Object? colored = null}) {
-    return _then(
-      _value.copyWith(
-            noColor:
-                null == noColor
-                    ? _value.noColor
-                    : noColor // ignore: cast_nullable_to_non_nullable
-                        as String,
-            colored:
-                null == colored
-                    ? _value.colored
-                    : colored // ignore: cast_nullable_to_non_nullable
-                        as String,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? noColor = null,
+    Object? colored = null,
+  }) {
+    return _then(_value.copyWith(
+      noColor: null == noColor
+          ? _value.noColor
+          : noColor // ignore: cast_nullable_to_non_nullable
+              as String,
+      colored: null == colored
+          ? _value.colored
+          : colored // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$NumberCountDtoImplCopyWith<$Res>
     implements $NumberCountDtoCopyWith<$Res> {
-  factory _$$NumberCountDtoImplCopyWith(
-    _$NumberCountDtoImpl value,
-    $Res Function(_$NumberCountDtoImpl) then,
-  ) = __$$NumberCountDtoImplCopyWithImpl<$Res>;
+  factory _$$NumberCountDtoImplCopyWith(_$NumberCountDtoImpl value,
+          $Res Function(_$NumberCountDtoImpl) then) =
+      __$$NumberCountDtoImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    @JsonKey(defaultValue: '') String noColor,
-    @JsonKey(defaultValue: '') String colored,
-  });
+  $Res call(
+      {@JsonKey(defaultValue: '') String noColor,
+      @JsonKey(defaultValue: '') String colored});
 }
 
 /// @nodoc
@@ -664,39 +616,37 @@ class __$$NumberCountDtoImplCopyWithImpl<$Res>
     extends _$NumberCountDtoCopyWithImpl<$Res, _$NumberCountDtoImpl>
     implements _$$NumberCountDtoImplCopyWith<$Res> {
   __$$NumberCountDtoImplCopyWithImpl(
-    _$NumberCountDtoImpl _value,
-    $Res Function(_$NumberCountDtoImpl) _then,
-  ) : super(_value, _then);
+      _$NumberCountDtoImpl _value, $Res Function(_$NumberCountDtoImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of NumberCountDto
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? noColor = null, Object? colored = null}) {
-    return _then(
-      _$NumberCountDtoImpl(
-        noColor:
-            null == noColor
-                ? _value.noColor
-                : noColor // ignore: cast_nullable_to_non_nullable
-                    as String,
-        colored:
-            null == colored
-                ? _value.colored
-                : colored // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+  $Res call({
+    Object? noColor = null,
+    Object? colored = null,
+  }) {
+    return _then(_$NumberCountDtoImpl(
+      noColor: null == noColor
+          ? _value.noColor
+          : noColor // ignore: cast_nullable_to_non_nullable
+              as String,
+      colored: null == colored
+          ? _value.colored
+          : colored // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$NumberCountDtoImpl extends _NumberCountDto {
-  const _$NumberCountDtoImpl({
-    @JsonKey(defaultValue: '') required this.noColor,
-    @JsonKey(defaultValue: '') required this.colored,
-  }) : super._();
+  const _$NumberCountDtoImpl(
+      {@JsonKey(defaultValue: '') required this.noColor,
+      @JsonKey(defaultValue: '') required this.colored})
+      : super._();
 
   factory _$NumberCountDtoImpl.fromJson(Map<String, dynamic> json) =>
       _$$NumberCountDtoImplFromJson(json);
@@ -733,21 +683,21 @@ class _$NumberCountDtoImpl extends _NumberCountDto {
   @pragma('vm:prefer-inline')
   _$$NumberCountDtoImplCopyWith<_$NumberCountDtoImpl> get copyWith =>
       __$$NumberCountDtoImplCopyWithImpl<_$NumberCountDtoImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$NumberCountDtoImplToJson(this);
+    return _$$NumberCountDtoImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _NumberCountDto extends NumberCountDto {
-  const factory _NumberCountDto({
-    @JsonKey(defaultValue: '') required final String noColor,
-    @JsonKey(defaultValue: '') required final String colored,
-  }) = _$NumberCountDtoImpl;
+  const factory _NumberCountDto(
+          {@JsonKey(defaultValue: '') required final String noColor,
+          @JsonKey(defaultValue: '') required final String colored}) =
+      _$NumberCountDtoImpl;
   const _NumberCountDto._() : super._();
 
   factory _NumberCountDto.fromJson(Map<String, dynamic> json) =
@@ -794,15 +744,13 @@ mixin _$NumberExampleDto {
 /// @nodoc
 abstract class $NumberExampleDtoCopyWith<$Res> {
   factory $NumberExampleDtoCopyWith(
-    NumberExampleDto value,
-    $Res Function(NumberExampleDto) then,
-  ) = _$NumberExampleDtoCopyWithImpl<$Res, NumberExampleDto>;
+          NumberExampleDto value, $Res Function(NumberExampleDto) then) =
+      _$NumberExampleDtoCopyWithImpl<$Res, NumberExampleDto>;
   @useResult
-  $Res call({
-    @JsonKey(defaultValue: '') String title,
-    @JsonKey(defaultValue: '') String image,
-    @JsonKey(defaultValue: '') String audio,
-  });
+  $Res call(
+      {@JsonKey(defaultValue: '') String title,
+      @JsonKey(defaultValue: '') String image,
+      @JsonKey(defaultValue: '') String audio});
 }
 
 /// @nodoc
@@ -824,53 +772,44 @@ class _$NumberExampleDtoCopyWithImpl<$Res, $Val extends NumberExampleDto>
     Object? image = null,
     Object? audio = null,
   }) {
-    return _then(
-      _value.copyWith(
-            title:
-                null == title
-                    ? _value.title
-                    : title // ignore: cast_nullable_to_non_nullable
-                        as String,
-            image:
-                null == image
-                    ? _value.image
-                    : image // ignore: cast_nullable_to_non_nullable
-                        as String,
-            audio:
-                null == audio
-                    ? _value.audio
-                    : audio // ignore: cast_nullable_to_non_nullable
-                        as String,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      image: null == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String,
+      audio: null == audio
+          ? _value.audio
+          : audio // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$NumberExampleDtoImplCopyWith<$Res>
     implements $NumberExampleDtoCopyWith<$Res> {
-  factory _$$NumberExampleDtoImplCopyWith(
-    _$NumberExampleDtoImpl value,
-    $Res Function(_$NumberExampleDtoImpl) then,
-  ) = __$$NumberExampleDtoImplCopyWithImpl<$Res>;
+  factory _$$NumberExampleDtoImplCopyWith(_$NumberExampleDtoImpl value,
+          $Res Function(_$NumberExampleDtoImpl) then) =
+      __$$NumberExampleDtoImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    @JsonKey(defaultValue: '') String title,
-    @JsonKey(defaultValue: '') String image,
-    @JsonKey(defaultValue: '') String audio,
-  });
+  $Res call(
+      {@JsonKey(defaultValue: '') String title,
+      @JsonKey(defaultValue: '') String image,
+      @JsonKey(defaultValue: '') String audio});
 }
 
 /// @nodoc
 class __$$NumberExampleDtoImplCopyWithImpl<$Res>
     extends _$NumberExampleDtoCopyWithImpl<$Res, _$NumberExampleDtoImpl>
     implements _$$NumberExampleDtoImplCopyWith<$Res> {
-  __$$NumberExampleDtoImplCopyWithImpl(
-    _$NumberExampleDtoImpl _value,
-    $Res Function(_$NumberExampleDtoImpl) _then,
-  ) : super(_value, _then);
+  __$$NumberExampleDtoImplCopyWithImpl(_$NumberExampleDtoImpl _value,
+      $Res Function(_$NumberExampleDtoImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of NumberExampleDto
   /// with the given fields replaced by the non-null parameter values.
@@ -881,36 +820,31 @@ class __$$NumberExampleDtoImplCopyWithImpl<$Res>
     Object? image = null,
     Object? audio = null,
   }) {
-    return _then(
-      _$NumberExampleDtoImpl(
-        title:
-            null == title
-                ? _value.title
-                : title // ignore: cast_nullable_to_non_nullable
-                    as String,
-        image:
-            null == image
-                ? _value.image
-                : image // ignore: cast_nullable_to_non_nullable
-                    as String,
-        audio:
-            null == audio
-                ? _value.audio
-                : audio // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+    return _then(_$NumberExampleDtoImpl(
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      image: null == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String,
+      audio: null == audio
+          ? _value.audio
+          : audio // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$NumberExampleDtoImpl extends _NumberExampleDto {
-  const _$NumberExampleDtoImpl({
-    @JsonKey(defaultValue: '') required this.title,
-    @JsonKey(defaultValue: '') required this.image,
-    @JsonKey(defaultValue: '') required this.audio,
-  }) : super._();
+  const _$NumberExampleDtoImpl(
+      {@JsonKey(defaultValue: '') required this.title,
+      @JsonKey(defaultValue: '') required this.image,
+      @JsonKey(defaultValue: '') required this.audio})
+      : super._();
 
   factory _$NumberExampleDtoImpl.fromJson(Map<String, dynamic> json) =>
       _$$NumberExampleDtoImplFromJson(json);
@@ -951,22 +885,22 @@ class _$NumberExampleDtoImpl extends _NumberExampleDto {
   @pragma('vm:prefer-inline')
   _$$NumberExampleDtoImplCopyWith<_$NumberExampleDtoImpl> get copyWith =>
       __$$NumberExampleDtoImplCopyWithImpl<_$NumberExampleDtoImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$NumberExampleDtoImplToJson(this);
+    return _$$NumberExampleDtoImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _NumberExampleDto extends NumberExampleDto {
-  const factory _NumberExampleDto({
-    @JsonKey(defaultValue: '') required final String title,
-    @JsonKey(defaultValue: '') required final String image,
-    @JsonKey(defaultValue: '') required final String audio,
-  }) = _$NumberExampleDtoImpl;
+  const factory _NumberExampleDto(
+          {@JsonKey(defaultValue: '') required final String title,
+          @JsonKey(defaultValue: '') required final String image,
+          @JsonKey(defaultValue: '') required final String audio}) =
+      _$NumberExampleDtoImpl;
   const _NumberExampleDto._() : super._();
 
   factory _NumberExampleDto.fromJson(Map<String, dynamic> json) =

@@ -12,8 +12,7 @@ part of 'letters_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$LettersEvent {
@@ -21,29 +20,35 @@ mixin _$LettersEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String userId) initialize,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String userId)? initialize,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String userId)? initialize,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initialize value) initialize,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initialize value)? initialize,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initialize value)? initialize,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 
   /// Create a copy of LettersEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -55,9 +60,8 @@ mixin _$LettersEvent {
 /// @nodoc
 abstract class $LettersEventCopyWith<$Res> {
   factory $LettersEventCopyWith(
-    LettersEvent value,
-    $Res Function(LettersEvent) then,
-  ) = _$LettersEventCopyWithImpl<$Res, LettersEvent>;
+          LettersEvent value, $Res Function(LettersEvent) then) =
+      _$LettersEventCopyWithImpl<$Res, LettersEvent>;
   @useResult
   $Res call({String userId});
 }
@@ -76,17 +80,15 @@ class _$LettersEventCopyWithImpl<$Res, $Val extends LettersEvent>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? userId = null}) {
-    return _then(
-      _value.copyWith(
-            userId:
-                null == userId
-                    ? _value.userId
-                    : userId // ignore: cast_nullable_to_non_nullable
-                        as String,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? userId = null,
+  }) {
+    return _then(_value.copyWith(
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
   }
 }
 
@@ -94,9 +96,8 @@ class _$LettersEventCopyWithImpl<$Res, $Val extends LettersEvent>
 abstract class _$$InitializeImplCopyWith<$Res>
     implements $LettersEventCopyWith<$Res> {
   factory _$$InitializeImplCopyWith(
-    _$InitializeImpl value,
-    $Res Function(_$InitializeImpl) then,
-  ) = __$$InitializeImplCopyWithImpl<$Res>;
+          _$InitializeImpl value, $Res Function(_$InitializeImpl) then) =
+      __$$InitializeImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String userId});
@@ -107,24 +108,22 @@ class __$$InitializeImplCopyWithImpl<$Res>
     extends _$LettersEventCopyWithImpl<$Res, _$InitializeImpl>
     implements _$$InitializeImplCopyWith<$Res> {
   __$$InitializeImplCopyWithImpl(
-    _$InitializeImpl _value,
-    $Res Function(_$InitializeImpl) _then,
-  ) : super(_value, _then);
+      _$InitializeImpl _value, $Res Function(_$InitializeImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of LettersEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? userId = null}) {
-    return _then(
-      _$InitializeImpl(
-        userId:
-            null == userId
-                ? _value.userId
-                : userId // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+  $Res call({
+    Object? userId = null,
+  }) {
+    return _then(_$InitializeImpl(
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
@@ -248,15 +247,13 @@ mixin _$LettersState {
 /// @nodoc
 abstract class $LettersStateCopyWith<$Res> {
   factory $LettersStateCopyWith(
-    LettersState value,
-    $Res Function(LettersState) then,
-  ) = _$LettersStateCopyWithImpl<$Res, LettersState>;
+          LettersState value, $Res Function(LettersState) then) =
+      _$LettersStateCopyWithImpl<$Res, LettersState>;
   @useResult
-  $Res call({
-    List<Letter> letters,
-    bool isLoading,
-    Option<Either<AppFailure, dynamic>> fetchFailure,
-  });
+  $Res call(
+      {List<Letter> letters,
+      bool isLoading,
+      Option<Either<AppFailure, dynamic>> fetchFailure});
 }
 
 /// @nodoc
@@ -278,26 +275,20 @@ class _$LettersStateCopyWithImpl<$Res, $Val extends LettersState>
     Object? isLoading = null,
     Object? fetchFailure = null,
   }) {
-    return _then(
-      _value.copyWith(
-            letters:
-                null == letters
-                    ? _value.letters
-                    : letters // ignore: cast_nullable_to_non_nullable
-                        as List<Letter>,
-            isLoading:
-                null == isLoading
-                    ? _value.isLoading
-                    : isLoading // ignore: cast_nullable_to_non_nullable
-                        as bool,
-            fetchFailure:
-                null == fetchFailure
-                    ? _value.fetchFailure
-                    : fetchFailure // ignore: cast_nullable_to_non_nullable
-                        as Option<Either<AppFailure, dynamic>>,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      letters: null == letters
+          ? _value.letters
+          : letters // ignore: cast_nullable_to_non_nullable
+              as List<Letter>,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      fetchFailure: null == fetchFailure
+          ? _value.fetchFailure
+          : fetchFailure // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ) as $Val);
   }
 }
 
@@ -305,16 +296,14 @@ class _$LettersStateCopyWithImpl<$Res, $Val extends LettersState>
 abstract class _$$LetterStateImplCopyWith<$Res>
     implements $LettersStateCopyWith<$Res> {
   factory _$$LetterStateImplCopyWith(
-    _$LetterStateImpl value,
-    $Res Function(_$LetterStateImpl) then,
-  ) = __$$LetterStateImplCopyWithImpl<$Res>;
+          _$LetterStateImpl value, $Res Function(_$LetterStateImpl) then) =
+      __$$LetterStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    List<Letter> letters,
-    bool isLoading,
-    Option<Either<AppFailure, dynamic>> fetchFailure,
-  });
+  $Res call(
+      {List<Letter> letters,
+      bool isLoading,
+      Option<Either<AppFailure, dynamic>> fetchFailure});
 }
 
 /// @nodoc
@@ -322,9 +311,8 @@ class __$$LetterStateImplCopyWithImpl<$Res>
     extends _$LettersStateCopyWithImpl<$Res, _$LetterStateImpl>
     implements _$$LetterStateImplCopyWith<$Res> {
   __$$LetterStateImplCopyWithImpl(
-    _$LetterStateImpl _value,
-    $Res Function(_$LetterStateImpl) _then,
-  ) : super(_value, _then);
+      _$LetterStateImpl _value, $Res Function(_$LetterStateImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of LettersState
   /// with the given fields replaced by the non-null parameter values.
@@ -335,36 +323,31 @@ class __$$LetterStateImplCopyWithImpl<$Res>
     Object? isLoading = null,
     Object? fetchFailure = null,
   }) {
-    return _then(
-      _$LetterStateImpl(
-        letters:
-            null == letters
-                ? _value._letters
-                : letters // ignore: cast_nullable_to_non_nullable
-                    as List<Letter>,
-        isLoading:
-            null == isLoading
-                ? _value.isLoading
-                : isLoading // ignore: cast_nullable_to_non_nullable
-                    as bool,
-        fetchFailure:
-            null == fetchFailure
-                ? _value.fetchFailure
-                : fetchFailure // ignore: cast_nullable_to_non_nullable
-                    as Option<Either<AppFailure, dynamic>>,
-      ),
-    );
+    return _then(_$LetterStateImpl(
+      letters: null == letters
+          ? _value._letters
+          : letters // ignore: cast_nullable_to_non_nullable
+              as List<Letter>,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      fetchFailure: null == fetchFailure
+          ? _value.fetchFailure
+          : fetchFailure // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$LetterStateImpl implements _LetterState {
-  const _$LetterStateImpl({
-    required final List<Letter> letters,
-    required this.isLoading,
-    required this.fetchFailure,
-  }) : _letters = letters;
+  const _$LetterStateImpl(
+      {required final List<Letter> letters,
+      required this.isLoading,
+      required this.fetchFailure})
+      : _letters = letters;
 
   final List<Letter> _letters;
   @override
@@ -397,12 +380,8 @@ class _$LetterStateImpl implements _LetterState {
   }
 
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    const DeepCollectionEquality().hash(_letters),
-    isLoading,
-    fetchFailure,
-  );
+  int get hashCode => Object.hash(runtimeType,
+      const DeepCollectionEquality().hash(_letters), isLoading, fetchFailure);
 
   /// Create a copy of LettersState
   /// with the given fields replaced by the non-null parameter values.
@@ -414,11 +393,11 @@ class _$LetterStateImpl implements _LetterState {
 }
 
 abstract class _LetterState implements LettersState {
-  const factory _LetterState({
-    required final List<Letter> letters,
-    required final bool isLoading,
-    required final Option<Either<AppFailure, dynamic>> fetchFailure,
-  }) = _$LetterStateImpl;
+  const factory _LetterState(
+          {required final List<Letter> letters,
+          required final bool isLoading,
+          required final Option<Either<AppFailure, dynamic>> fetchFailure}) =
+      _$LetterStateImpl;
 
   @override
   List<Letter> get letters;

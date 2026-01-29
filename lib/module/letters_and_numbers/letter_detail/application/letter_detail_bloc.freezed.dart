@@ -12,8 +12,7 @@ part of 'letter_detail_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$LetterDetailEvent {
@@ -22,40 +21,46 @@ mixin _$LetterDetailEvent {
   TResult when<TResult extends Object?>({
     required TResult Function(String id, String userId) getLetterDetail,
     required TResult Function(String userId, String progressId)
-    updateLetterDetailProgress,
-  }) => throw _privateConstructorUsedError;
+        updateLetterDetailProgress,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String id, String userId)? getLetterDetail,
     TResult? Function(String userId, String progressId)?
-    updateLetterDetailProgress,
-  }) => throw _privateConstructorUsedError;
+        updateLetterDetailProgress,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String id, String userId)? getLetterDetail,
     TResult Function(String userId, String progressId)?
-    updateLetterDetailProgress,
+        updateLetterDetailProgress,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_GetLetterDetail value) getLetterDetail,
     required TResult Function(_UpdateLetterDetailProgress value)
-    updateLetterDetailProgress,
-  }) => throw _privateConstructorUsedError;
+        updateLetterDetailProgress,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_GetLetterDetail value)? getLetterDetail,
     TResult? Function(_UpdateLetterDetailProgress value)?
-    updateLetterDetailProgress,
-  }) => throw _privateConstructorUsedError;
+        updateLetterDetailProgress,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_GetLetterDetail value)? getLetterDetail,
     TResult Function(_UpdateLetterDetailProgress value)?
-    updateLetterDetailProgress,
+        updateLetterDetailProgress,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 
   /// Create a copy of LetterDetailEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -67,9 +72,8 @@ mixin _$LetterDetailEvent {
 /// @nodoc
 abstract class $LetterDetailEventCopyWith<$Res> {
   factory $LetterDetailEventCopyWith(
-    LetterDetailEvent value,
-    $Res Function(LetterDetailEvent) then,
-  ) = _$LetterDetailEventCopyWithImpl<$Res, LetterDetailEvent>;
+          LetterDetailEvent value, $Res Function(LetterDetailEvent) then) =
+      _$LetterDetailEventCopyWithImpl<$Res, LetterDetailEvent>;
   @useResult
   $Res call({String userId});
 }
@@ -88,27 +92,24 @@ class _$LetterDetailEventCopyWithImpl<$Res, $Val extends LetterDetailEvent>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? userId = null}) {
-    return _then(
-      _value.copyWith(
-            userId:
-                null == userId
-                    ? _value.userId
-                    : userId // ignore: cast_nullable_to_non_nullable
-                        as String,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? userId = null,
+  }) {
+    return _then(_value.copyWith(
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$GetLetterDetailImplCopyWith<$Res>
     implements $LetterDetailEventCopyWith<$Res> {
-  factory _$$GetLetterDetailImplCopyWith(
-    _$GetLetterDetailImpl value,
-    $Res Function(_$GetLetterDetailImpl) then,
-  ) = __$$GetLetterDetailImplCopyWithImpl<$Res>;
+  factory _$$GetLetterDetailImplCopyWith(_$GetLetterDetailImpl value,
+          $Res Function(_$GetLetterDetailImpl) then) =
+      __$$GetLetterDetailImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String id, String userId});
@@ -119,29 +120,27 @@ class __$$GetLetterDetailImplCopyWithImpl<$Res>
     extends _$LetterDetailEventCopyWithImpl<$Res, _$GetLetterDetailImpl>
     implements _$$GetLetterDetailImplCopyWith<$Res> {
   __$$GetLetterDetailImplCopyWithImpl(
-    _$GetLetterDetailImpl _value,
-    $Res Function(_$GetLetterDetailImpl) _then,
-  ) : super(_value, _then);
+      _$GetLetterDetailImpl _value, $Res Function(_$GetLetterDetailImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of LetterDetailEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? id = null, Object? userId = null}) {
-    return _then(
-      _$GetLetterDetailImpl(
-        id:
-            null == id
-                ? _value.id
-                : id // ignore: cast_nullable_to_non_nullable
-                    as String,
-        userId:
-            null == userId
-                ? _value.userId
-                : userId // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+  $Res call({
+    Object? id = null,
+    Object? userId = null,
+  }) {
+    return _then(_$GetLetterDetailImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
@@ -179,16 +178,14 @@ class _$GetLetterDetailImpl implements _GetLetterDetail {
   @pragma('vm:prefer-inline')
   _$$GetLetterDetailImplCopyWith<_$GetLetterDetailImpl> get copyWith =>
       __$$GetLetterDetailImplCopyWithImpl<_$GetLetterDetailImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String id, String userId) getLetterDetail,
     required TResult Function(String userId, String progressId)
-    updateLetterDetailProgress,
+        updateLetterDetailProgress,
   }) {
     return getLetterDetail(id, userId);
   }
@@ -198,7 +195,7 @@ class _$GetLetterDetailImpl implements _GetLetterDetail {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String id, String userId)? getLetterDetail,
     TResult? Function(String userId, String progressId)?
-    updateLetterDetailProgress,
+        updateLetterDetailProgress,
   }) {
     return getLetterDetail?.call(id, userId);
   }
@@ -208,7 +205,7 @@ class _$GetLetterDetailImpl implements _GetLetterDetail {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String id, String userId)? getLetterDetail,
     TResult Function(String userId, String progressId)?
-    updateLetterDetailProgress,
+        updateLetterDetailProgress,
     required TResult orElse(),
   }) {
     if (getLetterDetail != null) {
@@ -222,7 +219,7 @@ class _$GetLetterDetailImpl implements _GetLetterDetail {
   TResult map<TResult extends Object?>({
     required TResult Function(_GetLetterDetail value) getLetterDetail,
     required TResult Function(_UpdateLetterDetailProgress value)
-    updateLetterDetailProgress,
+        updateLetterDetailProgress,
   }) {
     return getLetterDetail(this);
   }
@@ -232,7 +229,7 @@ class _$GetLetterDetailImpl implements _GetLetterDetail {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_GetLetterDetail value)? getLetterDetail,
     TResult? Function(_UpdateLetterDetailProgress value)?
-    updateLetterDetailProgress,
+        updateLetterDetailProgress,
   }) {
     return getLetterDetail?.call(this);
   }
@@ -242,7 +239,7 @@ class _$GetLetterDetailImpl implements _GetLetterDetail {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_GetLetterDetail value)? getLetterDetail,
     TResult Function(_UpdateLetterDetailProgress value)?
-    updateLetterDetailProgress,
+        updateLetterDetailProgress,
     required TResult orElse(),
   }) {
     if (getLetterDetail != null) {
@@ -253,10 +250,9 @@ class _$GetLetterDetailImpl implements _GetLetterDetail {
 }
 
 abstract class _GetLetterDetail implements LetterDetailEvent {
-  const factory _GetLetterDetail({
-    required final String id,
-    required final String userId,
-  }) = _$GetLetterDetailImpl;
+  const factory _GetLetterDetail(
+      {required final String id,
+      required final String userId}) = _$GetLetterDetailImpl;
 
   String get id;
   @override
@@ -274,9 +270,9 @@ abstract class _GetLetterDetail implements LetterDetailEvent {
 abstract class _$$UpdateLetterDetailProgressImplCopyWith<$Res>
     implements $LetterDetailEventCopyWith<$Res> {
   factory _$$UpdateLetterDetailProgressImplCopyWith(
-    _$UpdateLetterDetailProgressImpl value,
-    $Res Function(_$UpdateLetterDetailProgressImpl) then,
-  ) = __$$UpdateLetterDetailProgressImplCopyWithImpl<$Res>;
+          _$UpdateLetterDetailProgressImpl value,
+          $Res Function(_$UpdateLetterDetailProgressImpl) then) =
+      __$$UpdateLetterDetailProgressImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String userId, String progressId});
@@ -284,43 +280,40 @@ abstract class _$$UpdateLetterDetailProgressImplCopyWith<$Res>
 
 /// @nodoc
 class __$$UpdateLetterDetailProgressImplCopyWithImpl<$Res>
-    extends
-        _$LetterDetailEventCopyWithImpl<$Res, _$UpdateLetterDetailProgressImpl>
+    extends _$LetterDetailEventCopyWithImpl<$Res,
+        _$UpdateLetterDetailProgressImpl>
     implements _$$UpdateLetterDetailProgressImplCopyWith<$Res> {
   __$$UpdateLetterDetailProgressImplCopyWithImpl(
-    _$UpdateLetterDetailProgressImpl _value,
-    $Res Function(_$UpdateLetterDetailProgressImpl) _then,
-  ) : super(_value, _then);
+      _$UpdateLetterDetailProgressImpl _value,
+      $Res Function(_$UpdateLetterDetailProgressImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of LetterDetailEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? userId = null, Object? progressId = null}) {
-    return _then(
-      _$UpdateLetterDetailProgressImpl(
-        userId:
-            null == userId
-                ? _value.userId
-                : userId // ignore: cast_nullable_to_non_nullable
-                    as String,
-        progressId:
-            null == progressId
-                ? _value.progressId
-                : progressId // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+  $Res call({
+    Object? userId = null,
+    Object? progressId = null,
+  }) {
+    return _then(_$UpdateLetterDetailProgressImpl(
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+      progressId: null == progressId
+          ? _value.progressId
+          : progressId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$UpdateLetterDetailProgressImpl implements _UpdateLetterDetailProgress {
-  const _$UpdateLetterDetailProgressImpl({
-    required this.userId,
-    required this.progressId,
-  });
+  const _$UpdateLetterDetailProgressImpl(
+      {required this.userId, required this.progressId});
 
   @override
   final String userId;
@@ -351,16 +344,15 @@ class _$UpdateLetterDetailProgressImpl implements _UpdateLetterDetailProgress {
   @override
   @pragma('vm:prefer-inline')
   _$$UpdateLetterDetailProgressImplCopyWith<_$UpdateLetterDetailProgressImpl>
-  get copyWith => __$$UpdateLetterDetailProgressImplCopyWithImpl<
-    _$UpdateLetterDetailProgressImpl
-  >(this, _$identity);
+      get copyWith => __$$UpdateLetterDetailProgressImplCopyWithImpl<
+          _$UpdateLetterDetailProgressImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String id, String userId) getLetterDetail,
     required TResult Function(String userId, String progressId)
-    updateLetterDetailProgress,
+        updateLetterDetailProgress,
   }) {
     return updateLetterDetailProgress(userId, progressId);
   }
@@ -370,7 +362,7 @@ class _$UpdateLetterDetailProgressImpl implements _UpdateLetterDetailProgress {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String id, String userId)? getLetterDetail,
     TResult? Function(String userId, String progressId)?
-    updateLetterDetailProgress,
+        updateLetterDetailProgress,
   }) {
     return updateLetterDetailProgress?.call(userId, progressId);
   }
@@ -380,7 +372,7 @@ class _$UpdateLetterDetailProgressImpl implements _UpdateLetterDetailProgress {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String id, String userId)? getLetterDetail,
     TResult Function(String userId, String progressId)?
-    updateLetterDetailProgress,
+        updateLetterDetailProgress,
     required TResult orElse(),
   }) {
     if (updateLetterDetailProgress != null) {
@@ -394,7 +386,7 @@ class _$UpdateLetterDetailProgressImpl implements _UpdateLetterDetailProgress {
   TResult map<TResult extends Object?>({
     required TResult Function(_GetLetterDetail value) getLetterDetail,
     required TResult Function(_UpdateLetterDetailProgress value)
-    updateLetterDetailProgress,
+        updateLetterDetailProgress,
   }) {
     return updateLetterDetailProgress(this);
   }
@@ -404,7 +396,7 @@ class _$UpdateLetterDetailProgressImpl implements _UpdateLetterDetailProgress {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_GetLetterDetail value)? getLetterDetail,
     TResult? Function(_UpdateLetterDetailProgress value)?
-    updateLetterDetailProgress,
+        updateLetterDetailProgress,
   }) {
     return updateLetterDetailProgress?.call(this);
   }
@@ -414,7 +406,7 @@ class _$UpdateLetterDetailProgressImpl implements _UpdateLetterDetailProgress {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_GetLetterDetail value)? getLetterDetail,
     TResult Function(_UpdateLetterDetailProgress value)?
-    updateLetterDetailProgress,
+        updateLetterDetailProgress,
     required TResult orElse(),
   }) {
     if (updateLetterDetailProgress != null) {
@@ -425,10 +417,9 @@ class _$UpdateLetterDetailProgressImpl implements _UpdateLetterDetailProgress {
 }
 
 abstract class _UpdateLetterDetailProgress implements LetterDetailEvent {
-  const factory _UpdateLetterDetailProgress({
-    required final String userId,
-    required final String progressId,
-  }) = _$UpdateLetterDetailProgressImpl;
+  const factory _UpdateLetterDetailProgress(
+      {required final String userId,
+      required final String progressId}) = _$UpdateLetterDetailProgressImpl;
 
   @override
   String get userId;
@@ -439,7 +430,7 @@ abstract class _UpdateLetterDetailProgress implements LetterDetailEvent {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$UpdateLetterDetailProgressImplCopyWith<_$UpdateLetterDetailProgressImpl>
-  get copyWith => throw _privateConstructorUsedError;
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -461,16 +452,14 @@ mixin _$LetterDetailState {
 /// @nodoc
 abstract class $LetterDetailStateCopyWith<$Res> {
   factory $LetterDetailStateCopyWith(
-    LetterDetailState value,
-    $Res Function(LetterDetailState) then,
-  ) = _$LetterDetailStateCopyWithImpl<$Res, LetterDetailState>;
+          LetterDetailState value, $Res Function(LetterDetailState) then) =
+      _$LetterDetailStateCopyWithImpl<$Res, LetterDetailState>;
   @useResult
-  $Res call({
-    bool isLoading,
-    Letter letter,
-    Option<Either<AppFailure, Letter>> failureOrSuccessOption,
-    Option<Either<AppFailure, Unit>> fetchLetterDetailProgress,
-  });
+  $Res call(
+      {bool isLoading,
+      Letter letter,
+      Option<Either<AppFailure, Letter>> failureOrSuccessOption,
+      Option<Either<AppFailure, Unit>> fetchLetterDetailProgress});
 
   $LetterCopyWith<$Res> get letter;
 }
@@ -495,31 +484,24 @@ class _$LetterDetailStateCopyWithImpl<$Res, $Val extends LetterDetailState>
     Object? failureOrSuccessOption = null,
     Object? fetchLetterDetailProgress = null,
   }) {
-    return _then(
-      _value.copyWith(
-            isLoading:
-                null == isLoading
-                    ? _value.isLoading
-                    : isLoading // ignore: cast_nullable_to_non_nullable
-                        as bool,
-            letter:
-                null == letter
-                    ? _value.letter
-                    : letter // ignore: cast_nullable_to_non_nullable
-                        as Letter,
-            failureOrSuccessOption:
-                null == failureOrSuccessOption
-                    ? _value.failureOrSuccessOption
-                    : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
-                        as Option<Either<AppFailure, Letter>>,
-            fetchLetterDetailProgress:
-                null == fetchLetterDetailProgress
-                    ? _value.fetchLetterDetailProgress
-                    : fetchLetterDetailProgress // ignore: cast_nullable_to_non_nullable
-                        as Option<Either<AppFailure, Unit>>,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      letter: null == letter
+          ? _value.letter
+          : letter // ignore: cast_nullable_to_non_nullable
+              as Letter,
+      failureOrSuccessOption: null == failureOrSuccessOption
+          ? _value.failureOrSuccessOption
+          : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, Letter>>,
+      fetchLetterDetailProgress: null == fetchLetterDetailProgress
+          ? _value.fetchLetterDetailProgress
+          : fetchLetterDetailProgress // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, Unit>>,
+    ) as $Val);
   }
 
   /// Create a copy of LetterDetailState
@@ -536,18 +518,16 @@ class _$LetterDetailStateCopyWithImpl<$Res, $Val extends LetterDetailState>
 /// @nodoc
 abstract class _$$LetterDetailStateImplCopyWith<$Res>
     implements $LetterDetailStateCopyWith<$Res> {
-  factory _$$LetterDetailStateImplCopyWith(
-    _$LetterDetailStateImpl value,
-    $Res Function(_$LetterDetailStateImpl) then,
-  ) = __$$LetterDetailStateImplCopyWithImpl<$Res>;
+  factory _$$LetterDetailStateImplCopyWith(_$LetterDetailStateImpl value,
+          $Res Function(_$LetterDetailStateImpl) then) =
+      __$$LetterDetailStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    bool isLoading,
-    Letter letter,
-    Option<Either<AppFailure, Letter>> failureOrSuccessOption,
-    Option<Either<AppFailure, Unit>> fetchLetterDetailProgress,
-  });
+  $Res call(
+      {bool isLoading,
+      Letter letter,
+      Option<Either<AppFailure, Letter>> failureOrSuccessOption,
+      Option<Either<AppFailure, Unit>> fetchLetterDetailProgress});
 
   @override
   $LetterCopyWith<$Res> get letter;
@@ -557,10 +537,9 @@ abstract class _$$LetterDetailStateImplCopyWith<$Res>
 class __$$LetterDetailStateImplCopyWithImpl<$Res>
     extends _$LetterDetailStateCopyWithImpl<$Res, _$LetterDetailStateImpl>
     implements _$$LetterDetailStateImplCopyWith<$Res> {
-  __$$LetterDetailStateImplCopyWithImpl(
-    _$LetterDetailStateImpl _value,
-    $Res Function(_$LetterDetailStateImpl) _then,
-  ) : super(_value, _then);
+  __$$LetterDetailStateImplCopyWithImpl(_$LetterDetailStateImpl _value,
+      $Res Function(_$LetterDetailStateImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of LetterDetailState
   /// with the given fields replaced by the non-null parameter values.
@@ -572,42 +551,35 @@ class __$$LetterDetailStateImplCopyWithImpl<$Res>
     Object? failureOrSuccessOption = null,
     Object? fetchLetterDetailProgress = null,
   }) {
-    return _then(
-      _$LetterDetailStateImpl(
-        isLoading:
-            null == isLoading
-                ? _value.isLoading
-                : isLoading // ignore: cast_nullable_to_non_nullable
-                    as bool,
-        letter:
-            null == letter
-                ? _value.letter
-                : letter // ignore: cast_nullable_to_non_nullable
-                    as Letter,
-        failureOrSuccessOption:
-            null == failureOrSuccessOption
-                ? _value.failureOrSuccessOption
-                : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
-                    as Option<Either<AppFailure, Letter>>,
-        fetchLetterDetailProgress:
-            null == fetchLetterDetailProgress
-                ? _value.fetchLetterDetailProgress
-                : fetchLetterDetailProgress // ignore: cast_nullable_to_non_nullable
-                    as Option<Either<AppFailure, Unit>>,
-      ),
-    );
+    return _then(_$LetterDetailStateImpl(
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      letter: null == letter
+          ? _value.letter
+          : letter // ignore: cast_nullable_to_non_nullable
+              as Letter,
+      failureOrSuccessOption: null == failureOrSuccessOption
+          ? _value.failureOrSuccessOption
+          : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, Letter>>,
+      fetchLetterDetailProgress: null == fetchLetterDetailProgress
+          ? _value.fetchLetterDetailProgress
+          : fetchLetterDetailProgress // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, Unit>>,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$LetterDetailStateImpl implements _LetterDetailState {
-  const _$LetterDetailStateImpl({
-    required this.isLoading,
-    required this.letter,
-    required this.failureOrSuccessOption,
-    required this.fetchLetterDetailProgress,
-  });
+  const _$LetterDetailStateImpl(
+      {required this.isLoading,
+      required this.letter,
+      required this.failureOrSuccessOption,
+      required this.fetchLetterDetailProgress});
 
   @override
   final bool isLoading;
@@ -633,21 +605,14 @@ class _$LetterDetailStateImpl implements _LetterDetailState {
             (identical(other.letter, letter) || other.letter == letter) &&
             (identical(other.failureOrSuccessOption, failureOrSuccessOption) ||
                 other.failureOrSuccessOption == failureOrSuccessOption) &&
-            (identical(
-                  other.fetchLetterDetailProgress,
-                  fetchLetterDetailProgress,
-                ) ||
+            (identical(other.fetchLetterDetailProgress,
+                    fetchLetterDetailProgress) ||
                 other.fetchLetterDetailProgress == fetchLetterDetailProgress));
   }
 
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    isLoading,
-    letter,
-    failureOrSuccessOption,
-    fetchLetterDetailProgress,
-  );
+  int get hashCode => Object.hash(runtimeType, isLoading, letter,
+      failureOrSuccessOption, fetchLetterDetailProgress);
 
   /// Create a copy of LetterDetailState
   /// with the given fields replaced by the non-null parameter values.
@@ -656,18 +621,16 @@ class _$LetterDetailStateImpl implements _LetterDetailState {
   @pragma('vm:prefer-inline')
   _$$LetterDetailStateImplCopyWith<_$LetterDetailStateImpl> get copyWith =>
       __$$LetterDetailStateImplCopyWithImpl<_$LetterDetailStateImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 }
 
 abstract class _LetterDetailState implements LetterDetailState {
-  const factory _LetterDetailState({
-    required final bool isLoading,
-    required final Letter letter,
-    required final Option<Either<AppFailure, Letter>> failureOrSuccessOption,
-    required final Option<Either<AppFailure, Unit>> fetchLetterDetailProgress,
-  }) = _$LetterDetailStateImpl;
+  const factory _LetterDetailState(
+      {required final bool isLoading,
+      required final Letter letter,
+      required final Option<Either<AppFailure, Letter>> failureOrSuccessOption,
+      required final Option<Either<AppFailure, Unit>>
+          fetchLetterDetailProgress}) = _$LetterDetailStateImpl;
 
   @override
   bool get isLoading;

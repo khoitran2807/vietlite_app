@@ -12,8 +12,7 @@ part of 'premium_config.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PremiumConfig _$PremiumConfigFromJson(Map<String, dynamic> json) {
   return _PremiumConfig.fromJson(json);
@@ -38,9 +37,8 @@ mixin _$PremiumConfig {
 /// @nodoc
 abstract class $PremiumConfigCopyWith<$Res> {
   factory $PremiumConfigCopyWith(
-    PremiumConfig value,
-    $Res Function(PremiumConfig) then,
-  ) = _$PremiumConfigCopyWithImpl<$Res, PremiumConfig>;
+          PremiumConfig value, $Res Function(PremiumConfig) then) =
+      _$PremiumConfigCopyWithImpl<$Res, PremiumConfig>;
   @useResult
   $Res call({bool wordSelection, bool wordMatch, bool things});
 }
@@ -64,26 +62,20 @@ class _$PremiumConfigCopyWithImpl<$Res, $Val extends PremiumConfig>
     Object? wordMatch = null,
     Object? things = null,
   }) {
-    return _then(
-      _value.copyWith(
-            wordSelection:
-                null == wordSelection
-                    ? _value.wordSelection
-                    : wordSelection // ignore: cast_nullable_to_non_nullable
-                        as bool,
-            wordMatch:
-                null == wordMatch
-                    ? _value.wordMatch
-                    : wordMatch // ignore: cast_nullable_to_non_nullable
-                        as bool,
-            things:
-                null == things
-                    ? _value.things
-                    : things // ignore: cast_nullable_to_non_nullable
-                        as bool,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      wordSelection: null == wordSelection
+          ? _value.wordSelection
+          : wordSelection // ignore: cast_nullable_to_non_nullable
+              as bool,
+      wordMatch: null == wordMatch
+          ? _value.wordMatch
+          : wordMatch // ignore: cast_nullable_to_non_nullable
+              as bool,
+      things: null == things
+          ? _value.things
+          : things // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ) as $Val);
   }
 }
 
@@ -91,9 +83,8 @@ class _$PremiumConfigCopyWithImpl<$Res, $Val extends PremiumConfig>
 abstract class _$$PremiumConfigImplCopyWith<$Res>
     implements $PremiumConfigCopyWith<$Res> {
   factory _$$PremiumConfigImplCopyWith(
-    _$PremiumConfigImpl value,
-    $Res Function(_$PremiumConfigImpl) then,
-  ) = __$$PremiumConfigImplCopyWithImpl<$Res>;
+          _$PremiumConfigImpl value, $Res Function(_$PremiumConfigImpl) then) =
+      __$$PremiumConfigImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({bool wordSelection, bool wordMatch, bool things});
@@ -104,9 +95,8 @@ class __$$PremiumConfigImplCopyWithImpl<$Res>
     extends _$PremiumConfigCopyWithImpl<$Res, _$PremiumConfigImpl>
     implements _$$PremiumConfigImplCopyWith<$Res> {
   __$$PremiumConfigImplCopyWithImpl(
-    _$PremiumConfigImpl _value,
-    $Res Function(_$PremiumConfigImpl) _then,
-  ) : super(_value, _then);
+      _$PremiumConfigImpl _value, $Res Function(_$PremiumConfigImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of PremiumConfig
   /// with the given fields replaced by the non-null parameter values.
@@ -117,36 +107,29 @@ class __$$PremiumConfigImplCopyWithImpl<$Res>
     Object? wordMatch = null,
     Object? things = null,
   }) {
-    return _then(
-      _$PremiumConfigImpl(
-        wordSelection:
-            null == wordSelection
-                ? _value.wordSelection
-                : wordSelection // ignore: cast_nullable_to_non_nullable
-                    as bool,
-        wordMatch:
-            null == wordMatch
-                ? _value.wordMatch
-                : wordMatch // ignore: cast_nullable_to_non_nullable
-                    as bool,
-        things:
-            null == things
-                ? _value.things
-                : things // ignore: cast_nullable_to_non_nullable
-                    as bool,
-      ),
-    );
+    return _then(_$PremiumConfigImpl(
+      wordSelection: null == wordSelection
+          ? _value.wordSelection
+          : wordSelection // ignore: cast_nullable_to_non_nullable
+              as bool,
+      wordMatch: null == wordMatch
+          ? _value.wordMatch
+          : wordMatch // ignore: cast_nullable_to_non_nullable
+              as bool,
+      things: null == things
+          ? _value.things
+          : things // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$PremiumConfigImpl extends _PremiumConfig {
-  const _$PremiumConfigImpl({
-    this.wordSelection = false,
-    this.wordMatch = false,
-    this.things = false,
-  }) : super._();
+  const _$PremiumConfigImpl(
+      {this.wordSelection = false, this.wordMatch = false, this.things = false})
+      : super._();
 
   factory _$PremiumConfigImpl.fromJson(Map<String, dynamic> json) =>
       _$$PremiumConfigImplFromJson(json);
@@ -193,16 +176,17 @@ class _$PremiumConfigImpl extends _PremiumConfig {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$PremiumConfigImplToJson(this);
+    return _$$PremiumConfigImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PremiumConfig extends PremiumConfig {
-  const factory _PremiumConfig({
-    final bool wordSelection,
-    final bool wordMatch,
-    final bool things,
-  }) = _$PremiumConfigImpl;
+  const factory _PremiumConfig(
+      {final bool wordSelection,
+      final bool wordMatch,
+      final bool things}) = _$PremiumConfigImpl;
   const _PremiumConfig._() : super._();
 
   factory _PremiumConfig.fromJson(Map<String, dynamic> json) =

@@ -12,8 +12,7 @@ part of 'app_theme.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$AppTheme {
@@ -48,17 +47,15 @@ class _$AppThemeCopyWithImpl<$Res, $Val extends AppTheme>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? themeCode = null}) {
-    return _then(
-      _value.copyWith(
-            themeCode:
-                null == themeCode
-                    ? _value.themeCode
-                    : themeCode // ignore: cast_nullable_to_non_nullable
-                        as ThemeCode,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? themeCode = null,
+  }) {
+    return _then(_value.copyWith(
+      themeCode: null == themeCode
+          ? _value.themeCode
+          : themeCode // ignore: cast_nullable_to_non_nullable
+              as ThemeCode,
+    ) as $Val);
   }
 }
 
@@ -66,9 +63,8 @@ class _$AppThemeCopyWithImpl<$Res, $Val extends AppTheme>
 abstract class _$$ThemeCodeImplCopyWith<$Res>
     implements $AppThemeCopyWith<$Res> {
   factory _$$ThemeCodeImplCopyWith(
-    _$ThemeCodeImpl value,
-    $Res Function(_$ThemeCodeImpl) then,
-  ) = __$$ThemeCodeImplCopyWithImpl<$Res>;
+          _$ThemeCodeImpl value, $Res Function(_$ThemeCodeImpl) then) =
+      __$$ThemeCodeImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({ThemeCode themeCode});
@@ -79,24 +75,22 @@ class __$$ThemeCodeImplCopyWithImpl<$Res>
     extends _$AppThemeCopyWithImpl<$Res, _$ThemeCodeImpl>
     implements _$$ThemeCodeImplCopyWith<$Res> {
   __$$ThemeCodeImplCopyWithImpl(
-    _$ThemeCodeImpl _value,
-    $Res Function(_$ThemeCodeImpl) _then,
-  ) : super(_value, _then);
+      _$ThemeCodeImpl _value, $Res Function(_$ThemeCodeImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of AppTheme
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? themeCode = null}) {
-    return _then(
-      _$ThemeCodeImpl(
-        themeCode:
-            null == themeCode
-                ? _value.themeCode
-                : themeCode // ignore: cast_nullable_to_non_nullable
-                    as ThemeCode,
-      ),
-    );
+  $Res call({
+    Object? themeCode = null,
+  }) {
+    return _then(_$ThemeCodeImpl(
+      themeCode: null == themeCode
+          ? _value.themeCode
+          : themeCode // ignore: cast_nullable_to_non_nullable
+              as ThemeCode,
+    ));
   }
 }
 

@@ -12,8 +12,7 @@ part of 'number_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$NumberEvent {
@@ -21,29 +20,35 @@ mixin _$NumberEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String userId) initialize,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String userId)? initialize,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String userId)? initialize,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initialize value) initialize,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initialize value)? initialize,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initialize value)? initialize,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 
   /// Create a copy of NumberEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -55,9 +60,8 @@ mixin _$NumberEvent {
 /// @nodoc
 abstract class $NumberEventCopyWith<$Res> {
   factory $NumberEventCopyWith(
-    NumberEvent value,
-    $Res Function(NumberEvent) then,
-  ) = _$NumberEventCopyWithImpl<$Res, NumberEvent>;
+          NumberEvent value, $Res Function(NumberEvent) then) =
+      _$NumberEventCopyWithImpl<$Res, NumberEvent>;
   @useResult
   $Res call({String userId});
 }
@@ -76,17 +80,15 @@ class _$NumberEventCopyWithImpl<$Res, $Val extends NumberEvent>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? userId = null}) {
-    return _then(
-      _value.copyWith(
-            userId:
-                null == userId
-                    ? _value.userId
-                    : userId // ignore: cast_nullable_to_non_nullable
-                        as String,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? userId = null,
+  }) {
+    return _then(_value.copyWith(
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
   }
 }
 
@@ -94,9 +96,8 @@ class _$NumberEventCopyWithImpl<$Res, $Val extends NumberEvent>
 abstract class _$$InitializeImplCopyWith<$Res>
     implements $NumberEventCopyWith<$Res> {
   factory _$$InitializeImplCopyWith(
-    _$InitializeImpl value,
-    $Res Function(_$InitializeImpl) then,
-  ) = __$$InitializeImplCopyWithImpl<$Res>;
+          _$InitializeImpl value, $Res Function(_$InitializeImpl) then) =
+      __$$InitializeImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String userId});
@@ -107,24 +108,22 @@ class __$$InitializeImplCopyWithImpl<$Res>
     extends _$NumberEventCopyWithImpl<$Res, _$InitializeImpl>
     implements _$$InitializeImplCopyWith<$Res> {
   __$$InitializeImplCopyWithImpl(
-    _$InitializeImpl _value,
-    $Res Function(_$InitializeImpl) _then,
-  ) : super(_value, _then);
+      _$InitializeImpl _value, $Res Function(_$InitializeImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of NumberEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? userId = null}) {
-    return _then(
-      _$InitializeImpl(
-        userId:
-            null == userId
-                ? _value.userId
-                : userId // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+  $Res call({
+    Object? userId = null,
+  }) {
+    return _then(_$InitializeImpl(
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
@@ -248,15 +247,13 @@ mixin _$NumberState {
 /// @nodoc
 abstract class $NumberStateCopyWith<$Res> {
   factory $NumberStateCopyWith(
-    NumberState value,
-    $Res Function(NumberState) then,
-  ) = _$NumberStateCopyWithImpl<$Res, NumberState>;
+          NumberState value, $Res Function(NumberState) then) =
+      _$NumberStateCopyWithImpl<$Res, NumberState>;
   @useResult
-  $Res call({
-    List<Number> numbers,
-    bool isLoading,
-    Option<Either<AppFailure, dynamic>> fetchFailure,
-  });
+  $Res call(
+      {List<Number> numbers,
+      bool isLoading,
+      Option<Either<AppFailure, dynamic>> fetchFailure});
 }
 
 /// @nodoc
@@ -278,26 +275,20 @@ class _$NumberStateCopyWithImpl<$Res, $Val extends NumberState>
     Object? isLoading = null,
     Object? fetchFailure = null,
   }) {
-    return _then(
-      _value.copyWith(
-            numbers:
-                null == numbers
-                    ? _value.numbers
-                    : numbers // ignore: cast_nullable_to_non_nullable
-                        as List<Number>,
-            isLoading:
-                null == isLoading
-                    ? _value.isLoading
-                    : isLoading // ignore: cast_nullable_to_non_nullable
-                        as bool,
-            fetchFailure:
-                null == fetchFailure
-                    ? _value.fetchFailure
-                    : fetchFailure // ignore: cast_nullable_to_non_nullable
-                        as Option<Either<AppFailure, dynamic>>,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      numbers: null == numbers
+          ? _value.numbers
+          : numbers // ignore: cast_nullable_to_non_nullable
+              as List<Number>,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      fetchFailure: null == fetchFailure
+          ? _value.fetchFailure
+          : fetchFailure // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ) as $Val);
   }
 }
 
@@ -305,16 +296,14 @@ class _$NumberStateCopyWithImpl<$Res, $Val extends NumberState>
 abstract class _$$NumberStateImplCopyWith<$Res>
     implements $NumberStateCopyWith<$Res> {
   factory _$$NumberStateImplCopyWith(
-    _$NumberStateImpl value,
-    $Res Function(_$NumberStateImpl) then,
-  ) = __$$NumberStateImplCopyWithImpl<$Res>;
+          _$NumberStateImpl value, $Res Function(_$NumberStateImpl) then) =
+      __$$NumberStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    List<Number> numbers,
-    bool isLoading,
-    Option<Either<AppFailure, dynamic>> fetchFailure,
-  });
+  $Res call(
+      {List<Number> numbers,
+      bool isLoading,
+      Option<Either<AppFailure, dynamic>> fetchFailure});
 }
 
 /// @nodoc
@@ -322,9 +311,8 @@ class __$$NumberStateImplCopyWithImpl<$Res>
     extends _$NumberStateCopyWithImpl<$Res, _$NumberStateImpl>
     implements _$$NumberStateImplCopyWith<$Res> {
   __$$NumberStateImplCopyWithImpl(
-    _$NumberStateImpl _value,
-    $Res Function(_$NumberStateImpl) _then,
-  ) : super(_value, _then);
+      _$NumberStateImpl _value, $Res Function(_$NumberStateImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of NumberState
   /// with the given fields replaced by the non-null parameter values.
@@ -335,36 +323,31 @@ class __$$NumberStateImplCopyWithImpl<$Res>
     Object? isLoading = null,
     Object? fetchFailure = null,
   }) {
-    return _then(
-      _$NumberStateImpl(
-        numbers:
-            null == numbers
-                ? _value._numbers
-                : numbers // ignore: cast_nullable_to_non_nullable
-                    as List<Number>,
-        isLoading:
-            null == isLoading
-                ? _value.isLoading
-                : isLoading // ignore: cast_nullable_to_non_nullable
-                    as bool,
-        fetchFailure:
-            null == fetchFailure
-                ? _value.fetchFailure
-                : fetchFailure // ignore: cast_nullable_to_non_nullable
-                    as Option<Either<AppFailure, dynamic>>,
-      ),
-    );
+    return _then(_$NumberStateImpl(
+      numbers: null == numbers
+          ? _value._numbers
+          : numbers // ignore: cast_nullable_to_non_nullable
+              as List<Number>,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      fetchFailure: null == fetchFailure
+          ? _value.fetchFailure
+          : fetchFailure // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$NumberStateImpl implements _NumberState {
-  const _$NumberStateImpl({
-    required final List<Number> numbers,
-    required this.isLoading,
-    required this.fetchFailure,
-  }) : _numbers = numbers;
+  const _$NumberStateImpl(
+      {required final List<Number> numbers,
+      required this.isLoading,
+      required this.fetchFailure})
+      : _numbers = numbers;
 
   final List<Number> _numbers;
   @override
@@ -397,12 +380,8 @@ class _$NumberStateImpl implements _NumberState {
   }
 
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    const DeepCollectionEquality().hash(_numbers),
-    isLoading,
-    fetchFailure,
-  );
+  int get hashCode => Object.hash(runtimeType,
+      const DeepCollectionEquality().hash(_numbers), isLoading, fetchFailure);
 
   /// Create a copy of NumberState
   /// with the given fields replaced by the non-null parameter values.
@@ -414,11 +393,11 @@ class _$NumberStateImpl implements _NumberState {
 }
 
 abstract class _NumberState implements NumberState {
-  const factory _NumberState({
-    required final List<Number> numbers,
-    required final bool isLoading,
-    required final Option<Either<AppFailure, dynamic>> fetchFailure,
-  }) = _$NumberStateImpl;
+  const factory _NumberState(
+          {required final List<Number> numbers,
+          required final bool isLoading,
+          required final Option<Either<AppFailure, dynamic>> fetchFailure}) =
+      _$NumberStateImpl;
 
   @override
   List<Number> get numbers;

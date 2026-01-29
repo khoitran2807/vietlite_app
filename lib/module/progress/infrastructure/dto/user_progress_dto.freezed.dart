@@ -12,8 +12,7 @@ part of 'user_progress_dto.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 UserProgressDto _$UserProgressDtoFromJson(Map<String, dynamic> json) {
   return _UserProgressDto.fromJson(json);
@@ -42,16 +41,14 @@ mixin _$UserProgressDto {
 /// @nodoc
 abstract class $UserProgressDtoCopyWith<$Res> {
   factory $UserProgressDtoCopyWith(
-    UserProgressDto value,
-    $Res Function(UserProgressDto) then,
-  ) = _$UserProgressDtoCopyWithImpl<$Res, UserProgressDto>;
+          UserProgressDto value, $Res Function(UserProgressDto) then) =
+      _$UserProgressDtoCopyWithImpl<$Res, UserProgressDto>;
   @useResult
-  $Res call({
-    String id,
-    @JsonKey(fromJson: timeConvert, defaultValue: null) DateTime? writeAt,
-    @JsonKey(defaultValue: []) List<UserExerciseDto> exercises,
-    @JsonKey(defaultValue: ExerciseType.other) ExerciseType exerciseType,
-  });
+  $Res call(
+      {String id,
+      @JsonKey(fromJson: timeConvert, defaultValue: null) DateTime? writeAt,
+      @JsonKey(defaultValue: []) List<UserExerciseDto> exercises,
+      @JsonKey(defaultValue: ExerciseType.other) ExerciseType exerciseType});
 }
 
 /// @nodoc
@@ -74,49 +71,40 @@ class _$UserProgressDtoCopyWithImpl<$Res, $Val extends UserProgressDto>
     Object? exercises = null,
     Object? exerciseType = null,
   }) {
-    return _then(
-      _value.copyWith(
-            id:
-                null == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as String,
-            writeAt:
-                freezed == writeAt
-                    ? _value.writeAt
-                    : writeAt // ignore: cast_nullable_to_non_nullable
-                        as DateTime?,
-            exercises:
-                null == exercises
-                    ? _value.exercises
-                    : exercises // ignore: cast_nullable_to_non_nullable
-                        as List<UserExerciseDto>,
-            exerciseType:
-                null == exerciseType
-                    ? _value.exerciseType
-                    : exerciseType // ignore: cast_nullable_to_non_nullable
-                        as ExerciseType,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      writeAt: freezed == writeAt
+          ? _value.writeAt
+          : writeAt // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      exercises: null == exercises
+          ? _value.exercises
+          : exercises // ignore: cast_nullable_to_non_nullable
+              as List<UserExerciseDto>,
+      exerciseType: null == exerciseType
+          ? _value.exerciseType
+          : exerciseType // ignore: cast_nullable_to_non_nullable
+              as ExerciseType,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$UserProgressDtoImplCopyWith<$Res>
     implements $UserProgressDtoCopyWith<$Res> {
-  factory _$$UserProgressDtoImplCopyWith(
-    _$UserProgressDtoImpl value,
-    $Res Function(_$UserProgressDtoImpl) then,
-  ) = __$$UserProgressDtoImplCopyWithImpl<$Res>;
+  factory _$$UserProgressDtoImplCopyWith(_$UserProgressDtoImpl value,
+          $Res Function(_$UserProgressDtoImpl) then) =
+      __$$UserProgressDtoImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String id,
-    @JsonKey(fromJson: timeConvert, defaultValue: null) DateTime? writeAt,
-    @JsonKey(defaultValue: []) List<UserExerciseDto> exercises,
-    @JsonKey(defaultValue: ExerciseType.other) ExerciseType exerciseType,
-  });
+  $Res call(
+      {String id,
+      @JsonKey(fromJson: timeConvert, defaultValue: null) DateTime? writeAt,
+      @JsonKey(defaultValue: []) List<UserExerciseDto> exercises,
+      @JsonKey(defaultValue: ExerciseType.other) ExerciseType exerciseType});
 }
 
 /// @nodoc
@@ -124,9 +112,8 @@ class __$$UserProgressDtoImplCopyWithImpl<$Res>
     extends _$UserProgressDtoCopyWithImpl<$Res, _$UserProgressDtoImpl>
     implements _$$UserProgressDtoImplCopyWith<$Res> {
   __$$UserProgressDtoImplCopyWithImpl(
-    _$UserProgressDtoImpl _value,
-    $Res Function(_$UserProgressDtoImpl) _then,
-  ) : super(_value, _then);
+      _$UserProgressDtoImpl _value, $Res Function(_$UserProgressDtoImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of UserProgressDto
   /// with the given fields replaced by the non-null parameter values.
@@ -138,43 +125,37 @@ class __$$UserProgressDtoImplCopyWithImpl<$Res>
     Object? exercises = null,
     Object? exerciseType = null,
   }) {
-    return _then(
-      _$UserProgressDtoImpl(
-        id:
-            null == id
-                ? _value.id
-                : id // ignore: cast_nullable_to_non_nullable
-                    as String,
-        writeAt:
-            freezed == writeAt
-                ? _value.writeAt
-                : writeAt // ignore: cast_nullable_to_non_nullable
-                    as DateTime?,
-        exercises:
-            null == exercises
-                ? _value._exercises
-                : exercises // ignore: cast_nullable_to_non_nullable
-                    as List<UserExerciseDto>,
-        exerciseType:
-            null == exerciseType
-                ? _value.exerciseType
-                : exerciseType // ignore: cast_nullable_to_non_nullable
-                    as ExerciseType,
-      ),
-    );
+    return _then(_$UserProgressDtoImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      writeAt: freezed == writeAt
+          ? _value.writeAt
+          : writeAt // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      exercises: null == exercises
+          ? _value._exercises
+          : exercises // ignore: cast_nullable_to_non_nullable
+              as List<UserExerciseDto>,
+      exerciseType: null == exerciseType
+          ? _value.exerciseType
+          : exerciseType // ignore: cast_nullable_to_non_nullable
+              as ExerciseType,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$UserProgressDtoImpl extends _UserProgressDto {
-  const _$UserProgressDtoImpl({
-    required this.id,
-    @JsonKey(fromJson: timeConvert, defaultValue: null) required this.writeAt,
-    @JsonKey(defaultValue: []) required final List<UserExerciseDto> exercises,
-    @JsonKey(defaultValue: ExerciseType.other) required this.exerciseType,
-  }) : _exercises = exercises,
-       super._();
+  const _$UserProgressDtoImpl(
+      {required this.id,
+      @JsonKey(fromJson: timeConvert, defaultValue: null) required this.writeAt,
+      @JsonKey(defaultValue: []) required final List<UserExerciseDto> exercises,
+      @JsonKey(defaultValue: ExerciseType.other) required this.exerciseType})
+      : _exercises = exercises,
+        super._();
 
   factory _$UserProgressDtoImpl.fromJson(Map<String, dynamic> json) =>
       _$$UserProgressDtoImplFromJson(json);
@@ -209,23 +190,16 @@ class _$UserProgressDtoImpl extends _UserProgressDto {
             other is _$UserProgressDtoImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.writeAt, writeAt) || other.writeAt == writeAt) &&
-            const DeepCollectionEquality().equals(
-              other._exercises,
-              _exercises,
-            ) &&
+            const DeepCollectionEquality()
+                .equals(other._exercises, _exercises) &&
             (identical(other.exerciseType, exerciseType) ||
                 other.exerciseType == exerciseType));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    id,
-    writeAt,
-    const DeepCollectionEquality().hash(_exercises),
-    exerciseType,
-  );
+  int get hashCode => Object.hash(runtimeType, id, writeAt,
+      const DeepCollectionEquality().hash(_exercises), exerciseType);
 
   /// Create a copy of UserProgressDto
   /// with the given fields replaced by the non-null parameter values.
@@ -234,25 +208,24 @@ class _$UserProgressDtoImpl extends _UserProgressDto {
   @pragma('vm:prefer-inline')
   _$$UserProgressDtoImplCopyWith<_$UserProgressDtoImpl> get copyWith =>
       __$$UserProgressDtoImplCopyWithImpl<_$UserProgressDtoImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$UserProgressDtoImplToJson(this);
+    return _$$UserProgressDtoImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UserProgressDto extends UserProgressDto {
-  const factory _UserProgressDto({
-    required final String id,
-    @JsonKey(fromJson: timeConvert, defaultValue: null)
-    required final DateTime? writeAt,
-    @JsonKey(defaultValue: []) required final List<UserExerciseDto> exercises,
-    @JsonKey(defaultValue: ExerciseType.other)
-    required final ExerciseType exerciseType,
-  }) = _$UserProgressDtoImpl;
+  const factory _UserProgressDto(
+      {required final String id,
+      @JsonKey(fromJson: timeConvert, defaultValue: null)
+      required final DateTime? writeAt,
+      @JsonKey(defaultValue: []) required final List<UserExerciseDto> exercises,
+      @JsonKey(defaultValue: ExerciseType.other)
+      required final ExerciseType exerciseType}) = _$UserProgressDtoImpl;
   const _UserProgressDto._() : super._();
 
   factory _UserProgressDto.fromJson(Map<String, dynamic> json) =
@@ -303,15 +276,13 @@ mixin _$UserExerciseDto {
 /// @nodoc
 abstract class $UserExerciseDtoCopyWith<$Res> {
   factory $UserExerciseDtoCopyWith(
-    UserExerciseDto value,
-    $Res Function(UserExerciseDto) then,
-  ) = _$UserExerciseDtoCopyWithImpl<$Res, UserExerciseDto>;
+          UserExerciseDto value, $Res Function(UserExerciseDto) then) =
+      _$UserExerciseDtoCopyWithImpl<$Res, UserExerciseDto>;
   @useResult
-  $Res call({
-    String id,
-    @JsonKey(defaultValue: '') String lastAnswer,
-    @JsonKey(defaultValue: false) bool isCorrect,
-  });
+  $Res call(
+      {String id,
+      @JsonKey(defaultValue: '') String lastAnswer,
+      @JsonKey(defaultValue: false) bool isCorrect});
 }
 
 /// @nodoc
@@ -333,43 +304,35 @@ class _$UserExerciseDtoCopyWithImpl<$Res, $Val extends UserExerciseDto>
     Object? lastAnswer = null,
     Object? isCorrect = null,
   }) {
-    return _then(
-      _value.copyWith(
-            id:
-                null == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as String,
-            lastAnswer:
-                null == lastAnswer
-                    ? _value.lastAnswer
-                    : lastAnswer // ignore: cast_nullable_to_non_nullable
-                        as String,
-            isCorrect:
-                null == isCorrect
-                    ? _value.isCorrect
-                    : isCorrect // ignore: cast_nullable_to_non_nullable
-                        as bool,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      lastAnswer: null == lastAnswer
+          ? _value.lastAnswer
+          : lastAnswer // ignore: cast_nullable_to_non_nullable
+              as String,
+      isCorrect: null == isCorrect
+          ? _value.isCorrect
+          : isCorrect // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$UserExerciseDtoImplCopyWith<$Res>
     implements $UserExerciseDtoCopyWith<$Res> {
-  factory _$$UserExerciseDtoImplCopyWith(
-    _$UserExerciseDtoImpl value,
-    $Res Function(_$UserExerciseDtoImpl) then,
-  ) = __$$UserExerciseDtoImplCopyWithImpl<$Res>;
+  factory _$$UserExerciseDtoImplCopyWith(_$UserExerciseDtoImpl value,
+          $Res Function(_$UserExerciseDtoImpl) then) =
+      __$$UserExerciseDtoImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String id,
-    @JsonKey(defaultValue: '') String lastAnswer,
-    @JsonKey(defaultValue: false) bool isCorrect,
-  });
+  $Res call(
+      {String id,
+      @JsonKey(defaultValue: '') String lastAnswer,
+      @JsonKey(defaultValue: false) bool isCorrect});
 }
 
 /// @nodoc
@@ -377,9 +340,8 @@ class __$$UserExerciseDtoImplCopyWithImpl<$Res>
     extends _$UserExerciseDtoCopyWithImpl<$Res, _$UserExerciseDtoImpl>
     implements _$$UserExerciseDtoImplCopyWith<$Res> {
   __$$UserExerciseDtoImplCopyWithImpl(
-    _$UserExerciseDtoImpl _value,
-    $Res Function(_$UserExerciseDtoImpl) _then,
-  ) : super(_value, _then);
+      _$UserExerciseDtoImpl _value, $Res Function(_$UserExerciseDtoImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of UserExerciseDto
   /// with the given fields replaced by the non-null parameter values.
@@ -390,36 +352,31 @@ class __$$UserExerciseDtoImplCopyWithImpl<$Res>
     Object? lastAnswer = null,
     Object? isCorrect = null,
   }) {
-    return _then(
-      _$UserExerciseDtoImpl(
-        id:
-            null == id
-                ? _value.id
-                : id // ignore: cast_nullable_to_non_nullable
-                    as String,
-        lastAnswer:
-            null == lastAnswer
-                ? _value.lastAnswer
-                : lastAnswer // ignore: cast_nullable_to_non_nullable
-                    as String,
-        isCorrect:
-            null == isCorrect
-                ? _value.isCorrect
-                : isCorrect // ignore: cast_nullable_to_non_nullable
-                    as bool,
-      ),
-    );
+    return _then(_$UserExerciseDtoImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      lastAnswer: null == lastAnswer
+          ? _value.lastAnswer
+          : lastAnswer // ignore: cast_nullable_to_non_nullable
+              as String,
+      isCorrect: null == isCorrect
+          ? _value.isCorrect
+          : isCorrect // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$UserExerciseDtoImpl extends _UserExerciseDto {
-  const _$UserExerciseDtoImpl({
-    required this.id,
-    @JsonKey(defaultValue: '') required this.lastAnswer,
-    @JsonKey(defaultValue: false) required this.isCorrect,
-  }) : super._();
+  const _$UserExerciseDtoImpl(
+      {required this.id,
+      @JsonKey(defaultValue: '') required this.lastAnswer,
+      @JsonKey(defaultValue: false) required this.isCorrect})
+      : super._();
 
   factory _$UserExerciseDtoImpl.fromJson(Map<String, dynamic> json) =>
       _$$UserExerciseDtoImplFromJson(json);
@@ -461,22 +418,22 @@ class _$UserExerciseDtoImpl extends _UserExerciseDto {
   @pragma('vm:prefer-inline')
   _$$UserExerciseDtoImplCopyWith<_$UserExerciseDtoImpl> get copyWith =>
       __$$UserExerciseDtoImplCopyWithImpl<_$UserExerciseDtoImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$UserExerciseDtoImplToJson(this);
+    return _$$UserExerciseDtoImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _UserExerciseDto extends UserExerciseDto {
-  const factory _UserExerciseDto({
-    required final String id,
-    @JsonKey(defaultValue: '') required final String lastAnswer,
-    @JsonKey(defaultValue: false) required final bool isCorrect,
-  }) = _$UserExerciseDtoImpl;
+  const factory _UserExerciseDto(
+          {required final String id,
+          @JsonKey(defaultValue: '') required final String lastAnswer,
+          @JsonKey(defaultValue: false) required final bool isCorrect}) =
+      _$UserExerciseDtoImpl;
   const _UserExerciseDto._() : super._();
 
   factory _UserExerciseDto.fromJson(Map<String, dynamic> json) =

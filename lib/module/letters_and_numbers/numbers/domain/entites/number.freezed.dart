@@ -12,8 +12,7 @@ part of 'number.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$Number {
@@ -36,15 +35,14 @@ abstract class $NumberCopyWith<$Res> {
   factory $NumberCopyWith(Number value, $Res Function(Number) then) =
       _$NumberCopyWithImpl<$Res, Number>;
   @useResult
-  $Res call({
-    String id,
-    String title,
-    String textTitle,
-    String audio,
-    NumberSpell spell,
-    NumberCount count,
-    List<CharacterExample> examples,
-  });
+  $Res call(
+      {String id,
+      String title,
+      String textTitle,
+      String audio,
+      NumberSpell spell,
+      NumberCount count,
+      List<CharacterExample> examples});
 
   $NumberSpellCopyWith<$Res> get spell;
   $NumberCountCopyWith<$Res> get count;
@@ -73,46 +71,36 @@ class _$NumberCopyWithImpl<$Res, $Val extends Number>
     Object? count = null,
     Object? examples = null,
   }) {
-    return _then(
-      _value.copyWith(
-            id:
-                null == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as String,
-            title:
-                null == title
-                    ? _value.title
-                    : title // ignore: cast_nullable_to_non_nullable
-                        as String,
-            textTitle:
-                null == textTitle
-                    ? _value.textTitle
-                    : textTitle // ignore: cast_nullable_to_non_nullable
-                        as String,
-            audio:
-                null == audio
-                    ? _value.audio
-                    : audio // ignore: cast_nullable_to_non_nullable
-                        as String,
-            spell:
-                null == spell
-                    ? _value.spell
-                    : spell // ignore: cast_nullable_to_non_nullable
-                        as NumberSpell,
-            count:
-                null == count
-                    ? _value.count
-                    : count // ignore: cast_nullable_to_non_nullable
-                        as NumberCount,
-            examples:
-                null == examples
-                    ? _value.examples
-                    : examples // ignore: cast_nullable_to_non_nullable
-                        as List<CharacterExample>,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      textTitle: null == textTitle
+          ? _value.textTitle
+          : textTitle // ignore: cast_nullable_to_non_nullable
+              as String,
+      audio: null == audio
+          ? _value.audio
+          : audio // ignore: cast_nullable_to_non_nullable
+              as String,
+      spell: null == spell
+          ? _value.spell
+          : spell // ignore: cast_nullable_to_non_nullable
+              as NumberSpell,
+      count: null == count
+          ? _value.count
+          : count // ignore: cast_nullable_to_non_nullable
+              as NumberCount,
+      examples: null == examples
+          ? _value.examples
+          : examples // ignore: cast_nullable_to_non_nullable
+              as List<CharacterExample>,
+    ) as $Val);
   }
 
   /// Create a copy of Number
@@ -139,20 +127,18 @@ class _$NumberCopyWithImpl<$Res, $Val extends Number>
 /// @nodoc
 abstract class _$$NumberImplCopyWith<$Res> implements $NumberCopyWith<$Res> {
   factory _$$NumberImplCopyWith(
-    _$NumberImpl value,
-    $Res Function(_$NumberImpl) then,
-  ) = __$$NumberImplCopyWithImpl<$Res>;
+          _$NumberImpl value, $Res Function(_$NumberImpl) then) =
+      __$$NumberImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String id,
-    String title,
-    String textTitle,
-    String audio,
-    NumberSpell spell,
-    NumberCount count,
-    List<CharacterExample> examples,
-  });
+  $Res call(
+      {String id,
+      String title,
+      String textTitle,
+      String audio,
+      NumberSpell spell,
+      NumberCount count,
+      List<CharacterExample> examples});
 
   @override
   $NumberSpellCopyWith<$Res> get spell;
@@ -165,9 +151,8 @@ class __$$NumberImplCopyWithImpl<$Res>
     extends _$NumberCopyWithImpl<$Res, _$NumberImpl>
     implements _$$NumberImplCopyWith<$Res> {
   __$$NumberImplCopyWithImpl(
-    _$NumberImpl _value,
-    $Res Function(_$NumberImpl) _then,
-  ) : super(_value, _then);
+      _$NumberImpl _value, $Res Function(_$NumberImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of Number
   /// with the given fields replaced by the non-null parameter values.
@@ -182,61 +167,52 @@ class __$$NumberImplCopyWithImpl<$Res>
     Object? count = null,
     Object? examples = null,
   }) {
-    return _then(
-      _$NumberImpl(
-        id:
-            null == id
-                ? _value.id
-                : id // ignore: cast_nullable_to_non_nullable
-                    as String,
-        title:
-            null == title
-                ? _value.title
-                : title // ignore: cast_nullable_to_non_nullable
-                    as String,
-        textTitle:
-            null == textTitle
-                ? _value.textTitle
-                : textTitle // ignore: cast_nullable_to_non_nullable
-                    as String,
-        audio:
-            null == audio
-                ? _value.audio
-                : audio // ignore: cast_nullable_to_non_nullable
-                    as String,
-        spell:
-            null == spell
-                ? _value.spell
-                : spell // ignore: cast_nullable_to_non_nullable
-                    as NumberSpell,
-        count:
-            null == count
-                ? _value.count
-                : count // ignore: cast_nullable_to_non_nullable
-                    as NumberCount,
-        examples:
-            null == examples
-                ? _value._examples
-                : examples // ignore: cast_nullable_to_non_nullable
-                    as List<CharacterExample>,
-      ),
-    );
+    return _then(_$NumberImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      textTitle: null == textTitle
+          ? _value.textTitle
+          : textTitle // ignore: cast_nullable_to_non_nullable
+              as String,
+      audio: null == audio
+          ? _value.audio
+          : audio // ignore: cast_nullable_to_non_nullable
+              as String,
+      spell: null == spell
+          ? _value.spell
+          : spell // ignore: cast_nullable_to_non_nullable
+              as NumberSpell,
+      count: null == count
+          ? _value.count
+          : count // ignore: cast_nullable_to_non_nullable
+              as NumberCount,
+      examples: null == examples
+          ? _value._examples
+          : examples // ignore: cast_nullable_to_non_nullable
+              as List<CharacterExample>,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$NumberImpl extends _Number {
-  const _$NumberImpl({
-    required this.id,
-    required this.title,
-    required this.textTitle,
-    required this.audio,
-    required this.spell,
-    required this.count,
-    required final List<CharacterExample> examples,
-  }) : _examples = examples,
-       super._();
+  const _$NumberImpl(
+      {required this.id,
+      required this.title,
+      required this.textTitle,
+      required this.audio,
+      required this.spell,
+      required this.count,
+      required final List<CharacterExample> examples})
+      : _examples = examples,
+        super._();
 
   @override
   final String id;
@@ -279,16 +255,8 @@ class _$NumberImpl extends _Number {
   }
 
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    id,
-    title,
-    textTitle,
-    audio,
-    spell,
-    count,
-    const DeepCollectionEquality().hash(_examples),
-  );
+  int get hashCode => Object.hash(runtimeType, id, title, textTitle, audio,
+      spell, count, const DeepCollectionEquality().hash(_examples));
 
   /// Create a copy of Number
   /// with the given fields replaced by the non-null parameter values.
@@ -300,15 +268,14 @@ class _$NumberImpl extends _Number {
 }
 
 abstract class _Number extends Number {
-  const factory _Number({
-    required final String id,
-    required final String title,
-    required final String textTitle,
-    required final String audio,
-    required final NumberSpell spell,
-    required final NumberCount count,
-    required final List<CharacterExample> examples,
-  }) = _$NumberImpl;
+  const factory _Number(
+      {required final String id,
+      required final String title,
+      required final String textTitle,
+      required final String audio,
+      required final NumberSpell spell,
+      required final NumberCount count,
+      required final List<CharacterExample> examples}) = _$NumberImpl;
   const _Number._() : super._();
 
   @override
@@ -349,9 +316,8 @@ mixin _$NumberSpell {
 /// @nodoc
 abstract class $NumberSpellCopyWith<$Res> {
   factory $NumberSpellCopyWith(
-    NumberSpell value,
-    $Res Function(NumberSpell) then,
-  ) = _$NumberSpellCopyWithImpl<$Res, NumberSpell>;
+          NumberSpell value, $Res Function(NumberSpell) then) =
+      _$NumberSpellCopyWithImpl<$Res, NumberSpell>;
   @useResult
   $Res call({String audio, List<String> details});
 }
@@ -370,22 +336,20 @@ class _$NumberSpellCopyWithImpl<$Res, $Val extends NumberSpell>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? audio = null, Object? details = null}) {
-    return _then(
-      _value.copyWith(
-            audio:
-                null == audio
-                    ? _value.audio
-                    : audio // ignore: cast_nullable_to_non_nullable
-                        as String,
-            details:
-                null == details
-                    ? _value.details
-                    : details // ignore: cast_nullable_to_non_nullable
-                        as List<String>,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? audio = null,
+    Object? details = null,
+  }) {
+    return _then(_value.copyWith(
+      audio: null == audio
+          ? _value.audio
+          : audio // ignore: cast_nullable_to_non_nullable
+              as String,
+      details: null == details
+          ? _value.details
+          : details // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+    ) as $Val);
   }
 }
 
@@ -393,9 +357,8 @@ class _$NumberSpellCopyWithImpl<$Res, $Val extends NumberSpell>
 abstract class _$$NumberSpellImplCopyWith<$Res>
     implements $NumberSpellCopyWith<$Res> {
   factory _$$NumberSpellImplCopyWith(
-    _$NumberSpellImpl value,
-    $Res Function(_$NumberSpellImpl) then,
-  ) = __$$NumberSpellImplCopyWithImpl<$Res>;
+          _$NumberSpellImpl value, $Res Function(_$NumberSpellImpl) then) =
+      __$$NumberSpellImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String audio, List<String> details});
@@ -406,40 +369,37 @@ class __$$NumberSpellImplCopyWithImpl<$Res>
     extends _$NumberSpellCopyWithImpl<$Res, _$NumberSpellImpl>
     implements _$$NumberSpellImplCopyWith<$Res> {
   __$$NumberSpellImplCopyWithImpl(
-    _$NumberSpellImpl _value,
-    $Res Function(_$NumberSpellImpl) _then,
-  ) : super(_value, _then);
+      _$NumberSpellImpl _value, $Res Function(_$NumberSpellImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of NumberSpell
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? audio = null, Object? details = null}) {
-    return _then(
-      _$NumberSpellImpl(
-        audio:
-            null == audio
-                ? _value.audio
-                : audio // ignore: cast_nullable_to_non_nullable
-                    as String,
-        details:
-            null == details
-                ? _value._details
-                : details // ignore: cast_nullable_to_non_nullable
-                    as List<String>,
-      ),
-    );
+  $Res call({
+    Object? audio = null,
+    Object? details = null,
+  }) {
+    return _then(_$NumberSpellImpl(
+      audio: null == audio
+          ? _value.audio
+          : audio // ignore: cast_nullable_to_non_nullable
+              as String,
+      details: null == details
+          ? _value._details
+          : details // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$NumberSpellImpl extends _NumberSpell {
-  const _$NumberSpellImpl({
-    required this.audio,
-    required final List<String> details,
-  }) : _details = details,
-       super._();
+  const _$NumberSpellImpl(
+      {required this.audio, required final List<String> details})
+      : _details = details,
+        super._();
 
   @override
   final String audio;
@@ -467,10 +427,7 @@ class _$NumberSpellImpl extends _NumberSpell {
 
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    audio,
-    const DeepCollectionEquality().hash(_details),
-  );
+      runtimeType, audio, const DeepCollectionEquality().hash(_details));
 
   /// Create a copy of NumberSpell
   /// with the given fields replaced by the non-null parameter values.
@@ -482,10 +439,9 @@ class _$NumberSpellImpl extends _NumberSpell {
 }
 
 abstract class _NumberSpell extends NumberSpell {
-  const factory _NumberSpell({
-    required final String audio,
-    required final List<String> details,
-  }) = _$NumberSpellImpl;
+  const factory _NumberSpell(
+      {required final String audio,
+      required final List<String> details}) = _$NumberSpellImpl;
   const _NumberSpell._() : super._();
 
   @override
@@ -516,9 +472,8 @@ mixin _$NumberCount {
 /// @nodoc
 abstract class $NumberCountCopyWith<$Res> {
   factory $NumberCountCopyWith(
-    NumberCount value,
-    $Res Function(NumberCount) then,
-  ) = _$NumberCountCopyWithImpl<$Res, NumberCount>;
+          NumberCount value, $Res Function(NumberCount) then) =
+      _$NumberCountCopyWithImpl<$Res, NumberCount>;
   @useResult
   $Res call({String noColor, String colored});
 }
@@ -537,22 +492,20 @@ class _$NumberCountCopyWithImpl<$Res, $Val extends NumberCount>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? noColor = null, Object? colored = null}) {
-    return _then(
-      _value.copyWith(
-            noColor:
-                null == noColor
-                    ? _value.noColor
-                    : noColor // ignore: cast_nullable_to_non_nullable
-                        as String,
-            colored:
-                null == colored
-                    ? _value.colored
-                    : colored // ignore: cast_nullable_to_non_nullable
-                        as String,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? noColor = null,
+    Object? colored = null,
+  }) {
+    return _then(_value.copyWith(
+      noColor: null == noColor
+          ? _value.noColor
+          : noColor // ignore: cast_nullable_to_non_nullable
+              as String,
+      colored: null == colored
+          ? _value.colored
+          : colored // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
   }
 }
 
@@ -560,9 +513,8 @@ class _$NumberCountCopyWithImpl<$Res, $Val extends NumberCount>
 abstract class _$$NumberCountImplCopyWith<$Res>
     implements $NumberCountCopyWith<$Res> {
   factory _$$NumberCountImplCopyWith(
-    _$NumberCountImpl value,
-    $Res Function(_$NumberCountImpl) then,
-  ) = __$$NumberCountImplCopyWithImpl<$Res>;
+          _$NumberCountImpl value, $Res Function(_$NumberCountImpl) then) =
+      __$$NumberCountImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String noColor, String colored});
@@ -573,29 +525,27 @@ class __$$NumberCountImplCopyWithImpl<$Res>
     extends _$NumberCountCopyWithImpl<$Res, _$NumberCountImpl>
     implements _$$NumberCountImplCopyWith<$Res> {
   __$$NumberCountImplCopyWithImpl(
-    _$NumberCountImpl _value,
-    $Res Function(_$NumberCountImpl) _then,
-  ) : super(_value, _then);
+      _$NumberCountImpl _value, $Res Function(_$NumberCountImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of NumberCount
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? noColor = null, Object? colored = null}) {
-    return _then(
-      _$NumberCountImpl(
-        noColor:
-            null == noColor
-                ? _value.noColor
-                : noColor // ignore: cast_nullable_to_non_nullable
-                    as String,
-        colored:
-            null == colored
-                ? _value.colored
-                : colored // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+  $Res call({
+    Object? noColor = null,
+    Object? colored = null,
+  }) {
+    return _then(_$NumberCountImpl(
+      noColor: null == noColor
+          ? _value.noColor
+          : noColor // ignore: cast_nullable_to_non_nullable
+              as String,
+      colored: null == colored
+          ? _value.colored
+          : colored // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
@@ -603,7 +553,7 @@ class __$$NumberCountImplCopyWithImpl<$Res>
 
 class _$NumberCountImpl extends _NumberCount {
   const _$NumberCountImpl({required this.noColor, required this.colored})
-    : super._();
+      : super._();
 
   @override
   final String noColor;
@@ -637,10 +587,9 @@ class _$NumberCountImpl extends _NumberCount {
 }
 
 abstract class _NumberCount extends NumberCount {
-  const factory _NumberCount({
-    required final String noColor,
-    required final String colored,
-  }) = _$NumberCountImpl;
+  const factory _NumberCount(
+      {required final String noColor,
+      required final String colored}) = _$NumberCountImpl;
   const _NumberCount._() : super._();
 
   @override

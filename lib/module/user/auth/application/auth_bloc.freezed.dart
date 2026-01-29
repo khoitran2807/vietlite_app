@@ -12,8 +12,7 @@ part of 'auth_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$AuthEvent {
@@ -24,9 +23,10 @@ mixin _$AuthEvent {
     required TResult Function() getPremiumConfig,
     required TResult Function() signOut,
     required TResult Function(String currentPassword, String newPassword)
-    changePassword,
+        changePassword,
     required TResult Function() deleteUser,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initialize,
@@ -34,9 +34,10 @@ mixin _$AuthEvent {
     TResult? Function()? getPremiumConfig,
     TResult? Function()? signOut,
     TResult? Function(String currentPassword, String newPassword)?
-    changePassword,
+        changePassword,
     TResult? Function()? deleteUser,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
@@ -44,10 +45,11 @@ mixin _$AuthEvent {
     TResult Function()? getPremiumConfig,
     TResult Function()? signOut,
     TResult Function(String currentPassword, String newPassword)?
-    changePassword,
+        changePassword,
     TResult Function()? deleteUser,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initialize value) initialize,
@@ -56,7 +58,8 @@ mixin _$AuthEvent {
     required TResult Function(_SignOut value) signOut,
     required TResult Function(_ChangePassword value) changePassword,
     required TResult Function(_DeleteUser value) deleteUser,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initialize value)? initialize,
@@ -65,7 +68,8 @@ mixin _$AuthEvent {
     TResult? Function(_SignOut value)? signOut,
     TResult? Function(_ChangePassword value)? changePassword,
     TResult? Function(_DeleteUser value)? deleteUser,
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initialize value)? initialize,
@@ -75,7 +79,8 @@ mixin _$AuthEvent {
     TResult Function(_ChangePassword value)? changePassword,
     TResult Function(_DeleteUser value)? deleteUser,
     required TResult orElse(),
-  }) => throw _privateConstructorUsedError;
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -101,9 +106,8 @@ class _$AuthEventCopyWithImpl<$Res, $Val extends AuthEvent>
 /// @nodoc
 abstract class _$$InitializeImplCopyWith<$Res> {
   factory _$$InitializeImplCopyWith(
-    _$InitializeImpl value,
-    $Res Function(_$InitializeImpl) then,
-  ) = __$$InitializeImplCopyWithImpl<$Res>;
+          _$InitializeImpl value, $Res Function(_$InitializeImpl) then) =
+      __$$InitializeImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -111,9 +115,8 @@ class __$$InitializeImplCopyWithImpl<$Res>
     extends _$AuthEventCopyWithImpl<$Res, _$InitializeImpl>
     implements _$$InitializeImplCopyWith<$Res> {
   __$$InitializeImplCopyWithImpl(
-    _$InitializeImpl _value,
-    $Res Function(_$InitializeImpl) _then,
-  ) : super(_value, _then);
+      _$InitializeImpl _value, $Res Function(_$InitializeImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of AuthEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -146,7 +149,7 @@ class _$InitializeImpl implements _Initialize {
     required TResult Function() getPremiumConfig,
     required TResult Function() signOut,
     required TResult Function(String currentPassword, String newPassword)
-    changePassword,
+        changePassword,
     required TResult Function() deleteUser,
   }) {
     return initialize();
@@ -160,7 +163,7 @@ class _$InitializeImpl implements _Initialize {
     TResult? Function()? getPremiumConfig,
     TResult? Function()? signOut,
     TResult? Function(String currentPassword, String newPassword)?
-    changePassword,
+        changePassword,
     TResult? Function()? deleteUser,
   }) {
     return initialize?.call();
@@ -174,7 +177,7 @@ class _$InitializeImpl implements _Initialize {
     TResult Function()? getPremiumConfig,
     TResult Function()? signOut,
     TResult Function(String currentPassword, String newPassword)?
-    changePassword,
+        changePassword,
     TResult Function()? deleteUser,
     required TResult orElse(),
   }) {
@@ -235,9 +238,8 @@ abstract class _Initialize implements AuthEvent {
 /// @nodoc
 abstract class _$$UpdateUserImplCopyWith<$Res> {
   factory _$$UpdateUserImplCopyWith(
-    _$UpdateUserImpl value,
-    $Res Function(_$UpdateUserImpl) then,
-  ) = __$$UpdateUserImplCopyWithImpl<$Res>;
+          _$UpdateUserImpl value, $Res Function(_$UpdateUserImpl) then) =
+      __$$UpdateUserImplCopyWithImpl<$Res>;
   @useResult
   $Res call({AppUser user});
 
@@ -249,23 +251,22 @@ class __$$UpdateUserImplCopyWithImpl<$Res>
     extends _$AuthEventCopyWithImpl<$Res, _$UpdateUserImpl>
     implements _$$UpdateUserImplCopyWith<$Res> {
   __$$UpdateUserImplCopyWithImpl(
-    _$UpdateUserImpl _value,
-    $Res Function(_$UpdateUserImpl) _then,
-  ) : super(_value, _then);
+      _$UpdateUserImpl _value, $Res Function(_$UpdateUserImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of AuthEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? user = null}) {
-    return _then(
-      _$UpdateUserImpl(
-        null == user
-            ? _value.user
-            : user // ignore: cast_nullable_to_non_nullable
-                as AppUser,
-      ),
-    );
+  $Res call({
+    Object? user = null,
+  }) {
+    return _then(_$UpdateUserImpl(
+      null == user
+          ? _value.user
+          : user // ignore: cast_nullable_to_non_nullable
+              as AppUser,
+    ));
   }
 
   /// Create a copy of AuthEvent
@@ -319,7 +320,7 @@ class _$UpdateUserImpl implements _UpdateUser {
     required TResult Function() getPremiumConfig,
     required TResult Function() signOut,
     required TResult Function(String currentPassword, String newPassword)
-    changePassword,
+        changePassword,
     required TResult Function() deleteUser,
   }) {
     return updateUser(user);
@@ -333,7 +334,7 @@ class _$UpdateUserImpl implements _UpdateUser {
     TResult? Function()? getPremiumConfig,
     TResult? Function()? signOut,
     TResult? Function(String currentPassword, String newPassword)?
-    changePassword,
+        changePassword,
     TResult? Function()? deleteUser,
   }) {
     return updateUser?.call(user);
@@ -347,7 +348,7 @@ class _$UpdateUserImpl implements _UpdateUser {
     TResult Function()? getPremiumConfig,
     TResult Function()? signOut,
     TResult Function(String currentPassword, String newPassword)?
-    changePassword,
+        changePassword,
     TResult Function()? deleteUser,
     required TResult orElse(),
   }) {
@@ -415,20 +416,18 @@ abstract class _UpdateUser implements AuthEvent {
 
 /// @nodoc
 abstract class _$$GetPremiumConfigImplCopyWith<$Res> {
-  factory _$$GetPremiumConfigImplCopyWith(
-    _$GetPremiumConfigImpl value,
-    $Res Function(_$GetPremiumConfigImpl) then,
-  ) = __$$GetPremiumConfigImplCopyWithImpl<$Res>;
+  factory _$$GetPremiumConfigImplCopyWith(_$GetPremiumConfigImpl value,
+          $Res Function(_$GetPremiumConfigImpl) then) =
+      __$$GetPremiumConfigImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
 class __$$GetPremiumConfigImplCopyWithImpl<$Res>
     extends _$AuthEventCopyWithImpl<$Res, _$GetPremiumConfigImpl>
     implements _$$GetPremiumConfigImplCopyWith<$Res> {
-  __$$GetPremiumConfigImplCopyWithImpl(
-    _$GetPremiumConfigImpl _value,
-    $Res Function(_$GetPremiumConfigImpl) _then,
-  ) : super(_value, _then);
+  __$$GetPremiumConfigImplCopyWithImpl(_$GetPremiumConfigImpl _value,
+      $Res Function(_$GetPremiumConfigImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of AuthEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -461,7 +460,7 @@ class _$GetPremiumConfigImpl implements _GetPremiumConfig {
     required TResult Function() getPremiumConfig,
     required TResult Function() signOut,
     required TResult Function(String currentPassword, String newPassword)
-    changePassword,
+        changePassword,
     required TResult Function() deleteUser,
   }) {
     return getPremiumConfig();
@@ -475,7 +474,7 @@ class _$GetPremiumConfigImpl implements _GetPremiumConfig {
     TResult? Function()? getPremiumConfig,
     TResult? Function()? signOut,
     TResult? Function(String currentPassword, String newPassword)?
-    changePassword,
+        changePassword,
     TResult? Function()? deleteUser,
   }) {
     return getPremiumConfig?.call();
@@ -489,7 +488,7 @@ class _$GetPremiumConfigImpl implements _GetPremiumConfig {
     TResult Function()? getPremiumConfig,
     TResult Function()? signOut,
     TResult Function(String currentPassword, String newPassword)?
-    changePassword,
+        changePassword,
     TResult Function()? deleteUser,
     required TResult orElse(),
   }) {
@@ -550,9 +549,8 @@ abstract class _GetPremiumConfig implements AuthEvent {
 /// @nodoc
 abstract class _$$SignOutImplCopyWith<$Res> {
   factory _$$SignOutImplCopyWith(
-    _$SignOutImpl value,
-    $Res Function(_$SignOutImpl) then,
-  ) = __$$SignOutImplCopyWithImpl<$Res>;
+          _$SignOutImpl value, $Res Function(_$SignOutImpl) then) =
+      __$$SignOutImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -560,9 +558,8 @@ class __$$SignOutImplCopyWithImpl<$Res>
     extends _$AuthEventCopyWithImpl<$Res, _$SignOutImpl>
     implements _$$SignOutImplCopyWith<$Res> {
   __$$SignOutImplCopyWithImpl(
-    _$SignOutImpl _value,
-    $Res Function(_$SignOutImpl) _then,
-  ) : super(_value, _then);
+      _$SignOutImpl _value, $Res Function(_$SignOutImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of AuthEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -595,7 +592,7 @@ class _$SignOutImpl implements _SignOut {
     required TResult Function() getPremiumConfig,
     required TResult Function() signOut,
     required TResult Function(String currentPassword, String newPassword)
-    changePassword,
+        changePassword,
     required TResult Function() deleteUser,
   }) {
     return signOut();
@@ -609,7 +606,7 @@ class _$SignOutImpl implements _SignOut {
     TResult? Function()? getPremiumConfig,
     TResult? Function()? signOut,
     TResult? Function(String currentPassword, String newPassword)?
-    changePassword,
+        changePassword,
     TResult? Function()? deleteUser,
   }) {
     return signOut?.call();
@@ -623,7 +620,7 @@ class _$SignOutImpl implements _SignOut {
     TResult Function()? getPremiumConfig,
     TResult Function()? signOut,
     TResult Function(String currentPassword, String newPassword)?
-    changePassword,
+        changePassword,
     TResult Function()? deleteUser,
     required TResult orElse(),
   }) {
@@ -683,10 +680,9 @@ abstract class _SignOut implements AuthEvent {
 
 /// @nodoc
 abstract class _$$ChangePasswordImplCopyWith<$Res> {
-  factory _$$ChangePasswordImplCopyWith(
-    _$ChangePasswordImpl value,
-    $Res Function(_$ChangePasswordImpl) then,
-  ) = __$$ChangePasswordImplCopyWithImpl<$Res>;
+  factory _$$ChangePasswordImplCopyWith(_$ChangePasswordImpl value,
+          $Res Function(_$ChangePasswordImpl) then) =
+      __$$ChangePasswordImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String currentPassword, String newPassword});
 }
@@ -696,39 +692,35 @@ class __$$ChangePasswordImplCopyWithImpl<$Res>
     extends _$AuthEventCopyWithImpl<$Res, _$ChangePasswordImpl>
     implements _$$ChangePasswordImplCopyWith<$Res> {
   __$$ChangePasswordImplCopyWithImpl(
-    _$ChangePasswordImpl _value,
-    $Res Function(_$ChangePasswordImpl) _then,
-  ) : super(_value, _then);
+      _$ChangePasswordImpl _value, $Res Function(_$ChangePasswordImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of AuthEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? currentPassword = null, Object? newPassword = null}) {
-    return _then(
-      _$ChangePasswordImpl(
-        currentPassword:
-            null == currentPassword
-                ? _value.currentPassword
-                : currentPassword // ignore: cast_nullable_to_non_nullable
-                    as String,
-        newPassword:
-            null == newPassword
-                ? _value.newPassword
-                : newPassword // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+  $Res call({
+    Object? currentPassword = null,
+    Object? newPassword = null,
+  }) {
+    return _then(_$ChangePasswordImpl(
+      currentPassword: null == currentPassword
+          ? _value.currentPassword
+          : currentPassword // ignore: cast_nullable_to_non_nullable
+              as String,
+      newPassword: null == newPassword
+          ? _value.newPassword
+          : newPassword // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$ChangePasswordImpl implements _ChangePassword {
-  const _$ChangePasswordImpl({
-    required this.currentPassword,
-    required this.newPassword,
-  });
+  const _$ChangePasswordImpl(
+      {required this.currentPassword, required this.newPassword});
 
   @override
   final String currentPassword;
@@ -761,9 +753,7 @@ class _$ChangePasswordImpl implements _ChangePassword {
   @pragma('vm:prefer-inline')
   _$$ChangePasswordImplCopyWith<_$ChangePasswordImpl> get copyWith =>
       __$$ChangePasswordImplCopyWithImpl<_$ChangePasswordImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -773,7 +763,7 @@ class _$ChangePasswordImpl implements _ChangePassword {
     required TResult Function() getPremiumConfig,
     required TResult Function() signOut,
     required TResult Function(String currentPassword, String newPassword)
-    changePassword,
+        changePassword,
     required TResult Function() deleteUser,
   }) {
     return changePassword(currentPassword, newPassword);
@@ -787,7 +777,7 @@ class _$ChangePasswordImpl implements _ChangePassword {
     TResult? Function()? getPremiumConfig,
     TResult? Function()? signOut,
     TResult? Function(String currentPassword, String newPassword)?
-    changePassword,
+        changePassword,
     TResult? Function()? deleteUser,
   }) {
     return changePassword?.call(currentPassword, newPassword);
@@ -801,7 +791,7 @@ class _$ChangePasswordImpl implements _ChangePassword {
     TResult Function()? getPremiumConfig,
     TResult Function()? signOut,
     TResult Function(String currentPassword, String newPassword)?
-    changePassword,
+        changePassword,
     TResult Function()? deleteUser,
     required TResult orElse(),
   }) {
@@ -856,10 +846,9 @@ class _$ChangePasswordImpl implements _ChangePassword {
 }
 
 abstract class _ChangePassword implements AuthEvent {
-  const factory _ChangePassword({
-    required final String currentPassword,
-    required final String newPassword,
-  }) = _$ChangePasswordImpl;
+  const factory _ChangePassword(
+      {required final String currentPassword,
+      required final String newPassword}) = _$ChangePasswordImpl;
 
   String get currentPassword;
   String get newPassword;
@@ -874,9 +863,8 @@ abstract class _ChangePassword implements AuthEvent {
 /// @nodoc
 abstract class _$$DeleteUserImplCopyWith<$Res> {
   factory _$$DeleteUserImplCopyWith(
-    _$DeleteUserImpl value,
-    $Res Function(_$DeleteUserImpl) then,
-  ) = __$$DeleteUserImplCopyWithImpl<$Res>;
+          _$DeleteUserImpl value, $Res Function(_$DeleteUserImpl) then) =
+      __$$DeleteUserImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -884,9 +872,8 @@ class __$$DeleteUserImplCopyWithImpl<$Res>
     extends _$AuthEventCopyWithImpl<$Res, _$DeleteUserImpl>
     implements _$$DeleteUserImplCopyWith<$Res> {
   __$$DeleteUserImplCopyWithImpl(
-    _$DeleteUserImpl _value,
-    $Res Function(_$DeleteUserImpl) _then,
-  ) : super(_value, _then);
+      _$DeleteUserImpl _value, $Res Function(_$DeleteUserImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of AuthEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -919,7 +906,7 @@ class _$DeleteUserImpl implements _DeleteUser {
     required TResult Function() getPremiumConfig,
     required TResult Function() signOut,
     required TResult Function(String currentPassword, String newPassword)
-    changePassword,
+        changePassword,
     required TResult Function() deleteUser,
   }) {
     return deleteUser();
@@ -933,7 +920,7 @@ class _$DeleteUserImpl implements _DeleteUser {
     TResult? Function()? getPremiumConfig,
     TResult? Function()? signOut,
     TResult? Function(String currentPassword, String newPassword)?
-    changePassword,
+        changePassword,
     TResult? Function()? deleteUser,
   }) {
     return deleteUser?.call();
@@ -947,7 +934,7 @@ class _$DeleteUserImpl implements _DeleteUser {
     TResult Function()? getPremiumConfig,
     TResult Function()? signOut,
     TResult Function(String currentPassword, String newPassword)?
-    changePassword,
+        changePassword,
     TResult Function()? deleteUser,
     required TResult orElse(),
   }) {
@@ -1025,12 +1012,11 @@ abstract class $AuthStateCopyWith<$Res> {
   factory $AuthStateCopyWith(AuthState value, $Res Function(AuthState) then) =
       _$AuthStateCopyWithImpl<$Res, AuthState>;
   @useResult
-  $Res call({
-    AppUser appUser,
-    PremiumConfig premiumConfig,
-    bool isLoading,
-    Option<Either<AppFailure, dynamic>> failureOrSuccessOption,
-  });
+  $Res call(
+      {AppUser appUser,
+      PremiumConfig premiumConfig,
+      bool isLoading,
+      Option<Either<AppFailure, dynamic>> failureOrSuccessOption});
 
   $AppUserCopyWith<$Res> get appUser;
   $PremiumConfigCopyWith<$Res> get premiumConfig;
@@ -1056,31 +1042,24 @@ class _$AuthStateCopyWithImpl<$Res, $Val extends AuthState>
     Object? isLoading = null,
     Object? failureOrSuccessOption = null,
   }) {
-    return _then(
-      _value.copyWith(
-            appUser:
-                null == appUser
-                    ? _value.appUser
-                    : appUser // ignore: cast_nullable_to_non_nullable
-                        as AppUser,
-            premiumConfig:
-                null == premiumConfig
-                    ? _value.premiumConfig
-                    : premiumConfig // ignore: cast_nullable_to_non_nullable
-                        as PremiumConfig,
-            isLoading:
-                null == isLoading
-                    ? _value.isLoading
-                    : isLoading // ignore: cast_nullable_to_non_nullable
-                        as bool,
-            failureOrSuccessOption:
-                null == failureOrSuccessOption
-                    ? _value.failureOrSuccessOption
-                    : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
-                        as Option<Either<AppFailure, dynamic>>,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      appUser: null == appUser
+          ? _value.appUser
+          : appUser // ignore: cast_nullable_to_non_nullable
+              as AppUser,
+      premiumConfig: null == premiumConfig
+          ? _value.premiumConfig
+          : premiumConfig // ignore: cast_nullable_to_non_nullable
+              as PremiumConfig,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      failureOrSuccessOption: null == failureOrSuccessOption
+          ? _value.failureOrSuccessOption
+          : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ) as $Val);
   }
 
   /// Create a copy of AuthState
@@ -1108,17 +1087,15 @@ class _$AuthStateCopyWithImpl<$Res, $Val extends AuthState>
 abstract class _$$AuthStateImplCopyWith<$Res>
     implements $AuthStateCopyWith<$Res> {
   factory _$$AuthStateImplCopyWith(
-    _$AuthStateImpl value,
-    $Res Function(_$AuthStateImpl) then,
-  ) = __$$AuthStateImplCopyWithImpl<$Res>;
+          _$AuthStateImpl value, $Res Function(_$AuthStateImpl) then) =
+      __$$AuthStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    AppUser appUser,
-    PremiumConfig premiumConfig,
-    bool isLoading,
-    Option<Either<AppFailure, dynamic>> failureOrSuccessOption,
-  });
+  $Res call(
+      {AppUser appUser,
+      PremiumConfig premiumConfig,
+      bool isLoading,
+      Option<Either<AppFailure, dynamic>> failureOrSuccessOption});
 
   @override
   $AppUserCopyWith<$Res> get appUser;
@@ -1131,9 +1108,8 @@ class __$$AuthStateImplCopyWithImpl<$Res>
     extends _$AuthStateCopyWithImpl<$Res, _$AuthStateImpl>
     implements _$$AuthStateImplCopyWith<$Res> {
   __$$AuthStateImplCopyWithImpl(
-    _$AuthStateImpl _value,
-    $Res Function(_$AuthStateImpl) _then,
-  ) : super(_value, _then);
+      _$AuthStateImpl _value, $Res Function(_$AuthStateImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of AuthState
   /// with the given fields replaced by the non-null parameter values.
@@ -1145,42 +1121,36 @@ class __$$AuthStateImplCopyWithImpl<$Res>
     Object? isLoading = null,
     Object? failureOrSuccessOption = null,
   }) {
-    return _then(
-      _$AuthStateImpl(
-        appUser:
-            null == appUser
-                ? _value.appUser
-                : appUser // ignore: cast_nullable_to_non_nullable
-                    as AppUser,
-        premiumConfig:
-            null == premiumConfig
-                ? _value.premiumConfig
-                : premiumConfig // ignore: cast_nullable_to_non_nullable
-                    as PremiumConfig,
-        isLoading:
-            null == isLoading
-                ? _value.isLoading
-                : isLoading // ignore: cast_nullable_to_non_nullable
-                    as bool,
-        failureOrSuccessOption:
-            null == failureOrSuccessOption
-                ? _value.failureOrSuccessOption
-                : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
-                    as Option<Either<AppFailure, dynamic>>,
-      ),
-    );
+    return _then(_$AuthStateImpl(
+      appUser: null == appUser
+          ? _value.appUser
+          : appUser // ignore: cast_nullable_to_non_nullable
+              as AppUser,
+      premiumConfig: null == premiumConfig
+          ? _value.premiumConfig
+          : premiumConfig // ignore: cast_nullable_to_non_nullable
+              as PremiumConfig,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      failureOrSuccessOption: null == failureOrSuccessOption
+          ? _value.failureOrSuccessOption
+          : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
+              as Option<Either<AppFailure, dynamic>>,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$AuthStateImpl extends _AuthState {
-  const _$AuthStateImpl({
-    required this.appUser,
-    required this.premiumConfig,
-    required this.isLoading,
-    required this.failureOrSuccessOption,
-  }) : super._();
+  const _$AuthStateImpl(
+      {required this.appUser,
+      required this.premiumConfig,
+      required this.isLoading,
+      required this.failureOrSuccessOption})
+      : super._();
 
   @override
   final AppUser appUser;
@@ -1212,12 +1182,7 @@ class _$AuthStateImpl extends _AuthState {
 
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    appUser,
-    premiumConfig,
-    isLoading,
-    failureOrSuccessOption,
-  );
+      runtimeType, appUser, premiumConfig, isLoading, failureOrSuccessOption);
 
   /// Create a copy of AuthState
   /// with the given fields replaced by the non-null parameter values.
@@ -1229,12 +1194,12 @@ class _$AuthStateImpl extends _AuthState {
 }
 
 abstract class _AuthState extends AuthState {
-  const factory _AuthState({
-    required final AppUser appUser,
-    required final PremiumConfig premiumConfig,
-    required final bool isLoading,
-    required final Option<Either<AppFailure, dynamic>> failureOrSuccessOption,
-  }) = _$AuthStateImpl;
+  const factory _AuthState(
+      {required final AppUser appUser,
+      required final PremiumConfig premiumConfig,
+      required final bool isLoading,
+      required final Option<Either<AppFailure, dynamic>>
+          failureOrSuccessOption}) = _$AuthStateImpl;
   const _AuthState._() : super._();
 
   @override
